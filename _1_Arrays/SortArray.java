@@ -2,7 +2,7 @@ package sort;
 
 import java.util.Arrays;
 
-public class MainSortArray {
+public class SortArray {
 
 	public static void main(String[] args) {
 
@@ -15,7 +15,10 @@ public class MainSortArray {
 	public static int[] sort(int[] arr) {
 
 		int temp;
-
+		
+		// This sorts the array in Ascending order
+		// If I want to sort in Descending order , 
+		// Need to chage the sign in the if statement  (arr[i] < arr[j])
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] > arr[j]) {

@@ -1,6 +1,6 @@
 package sort;
 
-public class MainTwoDimmensionArray {
+public class TwoDimmensionArray {
 
 	public static void main(String[] args) {
 
