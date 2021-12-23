@@ -1,7 +1,7 @@
-## Content Table
+# Content Table
 
 1. [Array Defenition](#arr-define)
-2. [Two Dimmension Array](#2Dimenssion-array)
+2. [Two Dimmension Array](#two-dimenssion-array)
 
 
 ## Array Defenition
