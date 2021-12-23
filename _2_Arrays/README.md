@@ -2,7 +2,7 @@
 
 1. [Array Defenition](#arr-define)
 
-## Array Defenition(#Content-table)
+## Array Defenition [main content table](#Content-table)
 ```java
 import java.util.Arrays;
 
