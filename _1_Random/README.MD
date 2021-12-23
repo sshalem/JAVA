@@ -1,8 +1,8 @@
 ## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Random numbers generator](#Random)
+1. [General info](#general-info)
+2. [Technologies](#technologies)
+3. [Setup](#setup)
+4. [Random numbers generator](#Random)
 ## General info
 This project is simple Lorem ipsum dolor generator.
 	
