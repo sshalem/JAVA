@@ -37,7 +37,8 @@ public class ArraysDefenition {
 	}
 }
 ```
-## Two Dimmension Array [main content table](###Content-table)
+## Two Dimmension Array
+
 ```js
 public class TwoDimmensionArray {
 
