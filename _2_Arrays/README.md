@@ -2,7 +2,7 @@
 
 1. [Array Defenition](#arr-define)
 2. [Two Dimmension Array](#Two-Dimmension-Array)
-3. [Sort Arrya](#sort)
+3. [Sort](#sort-array)
 
 
 ## Array Defenition
