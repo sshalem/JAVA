@@ -1,10 +1,10 @@
-## Content Table(#main)
+## Content Table
 
 1. [Array Defenition](#arr-define)
 2. [Two Dimmension Array](#2Dimenssion-array)
 
 
-## Array Defenition [main content table](###Content-table)
+## Array Defenition
 ```java
 import java.util.Arrays;
 
