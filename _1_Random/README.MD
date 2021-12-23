@@ -23,7 +23,7 @@ $ npm start
 
 ## Random
 
-```java
+```js
 
 import java.util.Random;
 
