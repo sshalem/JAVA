@@ -2,8 +2,8 @@
 1. [General info](#general-info)
 2. [Technologies](#technologies)
 3. [Setup](#setup)
-4. [Random numbers generator](#Random Numbers Generator)
-5. [Random String Generator](#Random String Generator)
+4. [Random numbers generator](#Random-Numbers-Generator)
+5. [Random String Generator](#Random-String-Generator)
 
 
 ## General info
