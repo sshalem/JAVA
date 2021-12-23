@@ -2,8 +2,8 @@
 1. [General info](#general-info)
 2. [Technologies](#technologies)
 3. [Setup](#setup)
-4. [Random numbers generator](#Random numbers generator )
-5. [Random String Generator](#Random String Generator)
+4. [Random numbers generator](#Random-numbers-generator )
+5. [Random String Generator](#Random-String-Generator)
 ## General info
 This project is simple Lorem ipsum dolor generator.
 	
