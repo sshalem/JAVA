@@ -107,7 +107,8 @@ public class SortArray {
 }
 ```
 
-## excersize-1 [main](#Content-Table)
+## excersize-1 
+[main](#Content-Table)
 ```java
 import java.util.Random;
 
