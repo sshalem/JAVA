@@ -1,4 +1,4 @@
-# Content Table
+# Main Content Table
 
 1. [Array Defenition](#arr-define)
 2. [Two Dimmension Array](#Two-Dimmension-Array)
@@ -108,7 +108,7 @@ public class SortArray {
 ```
 
 ## excersize-1 
-[main](#Content-Table)
+[go to main](#main-Content-Table)
 ```java
 import java.util.Random;
 
