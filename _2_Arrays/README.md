@@ -2,7 +2,7 @@
 
 1. [Array Defenition](#arr-define)
 
-##Array Defenition
+## Array Defenition
 ```java
 import java.util.Arrays;
 
