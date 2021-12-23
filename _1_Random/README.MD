@@ -2,8 +2,10 @@
 1. [General info](#general-info)
 2. [Technologies](#technologies)
 3. [Setup](#setup)
-4. [Random numbers generator](#Random_numbers_generator)
-5. [Random String Generator](#Random_String_Generator)
+4. [Random numbers generator](#Random Numbers Generator)
+5. [Random String Generator](#Random String Generator)
+
+
 ## General info
 This project is simple Lorem ipsum dolor generator.
 	
@@ -22,7 +24,7 @@ $ npm install
 $ npm start
 ```
 
-## Random_numbers_generator
+## Random Numbers Generator
 
 ```java
 
@@ -50,7 +52,7 @@ public class RandomNumbersGenerator {
 	}
 }
 ```
-## Random_String_Generator
+## Random String Generator
 ```java
 import java.security.SecureRandom;
 import java.util.Random;
