@@ -29,7 +29,7 @@ public class RandomNumbersGenerator {
 }
 ```
 ## Random String Generator
-```java
+```js
 import java.security.SecureRandom;
 import java.util.Random;
 
