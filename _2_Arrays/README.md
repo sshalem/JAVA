@@ -1,8 +1,17 @@
 ## Content Table(#main)
 
 1. [Array Defenition](#arr-define)
+2. [Array Defenition](#arr-define)
+3. [Array Defenition](#arr-define)
+4. [Array Defenition](#arr-define)
+5. [Array Defenition](#arr-define)
+6. [Array Defenition](#arr-define)
+7. [Array Defenition](#arr-define)
+8. [Array Defenition](#arr-define)
+9. [Array Defenition](#arr-define)
+10. [Array Defenition](#arr-define)
 
-## Array Defenition [main content table](#Content-table)
+## Array Defenition [main content table](###Content-table)
 ```java
 import java.util.Arrays;
 
