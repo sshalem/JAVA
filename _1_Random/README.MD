@@ -1,33 +1,9 @@
 ## Table of contents
-1. [General info](#general-info)
-2. [Technologies](#technologies)
-3. [Setup](#setup)
-4. [Random numbers generator](#Random-Numbers-Generator)
-5. [Random String Generator](#Random-String-Generator)
-
-
-## General info
-This project is simple Lorem ipsum dolor generator.
+1. [Random numbers generator](#Random-Numbers-Generator)
+2. [Random String Generator](#Random-String-Generator)
 	
-## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
-	
-## Setup
-To run this project, install it locally using npm:
-
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
-
 ## Random Numbers Generator
-
 ```java
-
 import java.util.Random;
 
 public class RandomNumbersGenerator {
