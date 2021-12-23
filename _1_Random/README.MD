@@ -2,7 +2,8 @@
 1. [General info](#general-info)
 2. [Technologies](#technologies)
 3. [Setup](#setup)
-4. [Random numbers generator](#Random)
+4. [Random numbers generator](#Random numbers generator )
+5. [Random String Generator](#Random String Generator)
 ## General info
 This project is simple Lorem ipsum dolor generator.
 	
@@ -46,6 +47,37 @@ public class RandomNumbersGenerator {
 		// randomize number between 0-100
 		int r3 = (int) (Math.random() * 101);
 		System.out.println(r3);
+	}
+}
+```
+## Random String Generator
+```java
+import java.security.SecureRandom;
+import java.util.Random;
+
+public class RandomStringGenerator {
+
+	public static void main(String[] args) {
+
+		String generatedRandomString = randomStringGenerator(30);
+		System.out.println(generatedRandomString);
+	}
+
+	public static String randomStringGenerator(int length) {
+
+		Random random = new SecureRandom();
+		String alphaBet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+		StringBuilder randomString = new StringBuilder(length);
+
+		int alphaBetStringLength = alphaBet.length();
+
+		for (int i = 0; i < length; i++) {
+			int nextInt = random.nextInt(alphaBetStringLength);
+			char charAtAlphaBetString = alphaBet.charAt(nextInt);
+			randomString.append(charAtAlphaBetString);
+		}
+		return new String(randomString);
 	}
 }
 ```
