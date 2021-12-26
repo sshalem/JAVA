@@ -4,10 +4,10 @@
 |     |  Subjects                     |
 |:---:|:------------------------------| 
 |  1  |[Array Defenition](#1_Array-Defenition)    | 
-|  2  |[Two Dimmension Array](#2_Two-Dimmension-Array)      |   
+|  2  |[Two Dimmension Array](#2_Two-Dimmension-Array)  |   
 |  3  |[Sort Array](#3_sort-array)    |   
 |  4  |[ArrayTargil_1](#4_ArrayTargil_1)   |   
-|  5  |                             |   
+|  5  |[ArrayTargil_2](#5_ArrayTargil_2) |
 
 ## 1_Array Defenition
 
@@ -163,7 +163,20 @@ public class ArrayTargil_1 {
 
 ----------------------------------------------------------------------------------------------------------
 
+## 5_ArrayTargil_2 
 
+[Back_to_top](#Table-of-contents)
+
+<strong>Question</strong><br /> 
+
+write a class that creates an array of 10 numbers with Random numbers between 0-100,<br />
+and prints the total sum and the avarage.
+
+```java
+
+```
+
+----------------------------------------------------------------------------------------------------------
 
 
 
