@@ -1,6 +1,6 @@
 ## Table of contents
-* [1. Random numbers generator](#Random-Numbers-Generator)
-* [2. Random String Generator](#Random-String-Generator)
+* [1. Random numbers generator](#1. Random-Numbers-Generator)
+* [2. Random String Generator](#2. Random-String-Generator)
 	
 ## 1. Random Numbers Generator
 ```java
