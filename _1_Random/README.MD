@@ -1,6 +1,6 @@
 # Table of contents
 
-| top | Subjects                                             |
+|  _ | Subjects                                             |
 |-----|:--------------------------------------------------------| 
 |  1  |[Random numbers generator](#1_Random-Numbers-Generator)    | 
 |  2  |[Random String Generator](#2_Random-String-Generator)      |   
@@ -9,7 +9,7 @@
 
 ## 1_Random numbers generator
 
-[Back_to_top](#top)
+[Back_to_top](#_)
 ```java
 import java.util.Random;
 
@@ -37,7 +37,7 @@ public class RandomNumbersGenerator {
 ```
 ## 2_Random String Generator
 
-[Back_to_top](#top)
+[Back_to_top](#_)
 ```js
 import java.security.SecureRandom;
 import java.util.Random;
