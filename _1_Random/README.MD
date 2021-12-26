@@ -1,29 +1,15 @@
 # Table of contents
-* [1. Random numbers generator](#Random-Numbers-Generator)
-* [2. Random String Generator](#Random-String-Generator)
 
-# Add Tables
-Colons can be used to align columns.
-
-| 	  |                Subject                                   | Cool  |
-| --------|:---------------------------------------------------------| -----:|
-|  1      |  [Random numbers generator](#Random-Numbers-Generator)   | $1600 |
-|  2      |  [Random String Generator](#Random-String-Generator)     |   $12 |
-|  3      | 	                                                     |    $1 |
+|     |                Subject                                 | 
+|-----|:-------------------------------------------------------| 
+|  1  |[Random numbers generator](#Random-Numbers-Generator)   | 
+|  2  |[Random String Generator](#Random-String-Generator)     |   
+|  3  |                                                        |   
 
 
+## |-----|:-------------------------------------------------------| 
+## |  1  |[Random numbers generator](#Random-Numbers-Generator)   | 
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-
-## Random Numbers Generator
 ```java
 import java.util.Random;
 
