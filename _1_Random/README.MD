@@ -9,7 +9,7 @@
 
 ## 1_Random numbers generator
 
-[Back_to_top](#List of Subjects)
+[Back_to_top](#List-of-Subjects)
 ```java
 import java.util.Random;
 
@@ -37,7 +37,7 @@ public class RandomNumbersGenerator {
 ```
 ## 2_Random String Generator
 
-[Back_to_top](#List of Subjects)
+[Back_to_top](#List-of-Subjects)
 ```js
 import java.security.SecureRandom;
 import java.util.Random;
