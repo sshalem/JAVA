@@ -3,15 +3,16 @@
 
 |     |  Subjects                     |
 |:---:|:------------------------------| 
-|  1  |[Array Defenition](#arr-define)    | 
-|  2  |[Two Dimmension Array](#Two-Dimmension-Array)      |   
-|  3  |[Sort Array](#sort-array)    |   
-|  4  |[exercise 1](#excersize-1)   |   
+|  1  |[Array Defenition](#1_Array-Defenition)    | 
+|  2  |[Two Dimmension Array](#2_Two-Dimmension-Array)      |   
+|  3  |[Sort Array](#3_sort-array)    |   
+|  4  |[exercise 1](#4_excersize-1)   |   
 |  5  |                             |   
 
-## Array Defenition
+## 1_Array Defenition
 
 [Back_to_top](#Table-of-contents)
+
 ```java
 import java.util.Arrays;
 
@@ -47,7 +48,7 @@ public class ArraysDefenition {
 ```
 ----------------------------------------------------------------------------------------------------------
 
-## Two Dimmension Array
+## 2_Two Dimmension Array
 
 [Back_to_top](#Table-of-contents)
 ```js
@@ -81,7 +82,7 @@ public class TwoDimmensionArray {
 ```
 ----------------------------------------------------------------------------------------------------------
 
-## Sort Array
+## 3_Sort Array
 
 [Back_to_top](#Table-of-contents)
 ```java
@@ -119,16 +120,13 @@ public class SortArray {
 ```
 ----------------------------------------------------------------------------------------------------------
 
-## excersize-1 
+## 4_excersize-1 
 
 [Back_to_top](#Table-of-contents)
 
  Question:<br /> 
  	Write a class that creates an array of 10 numbers with Random numbers between 0-100,<br />
 	and prints the total sum and the avarage.<br />
- 
- 
-
 
 ```java
 import java.util.Random;
