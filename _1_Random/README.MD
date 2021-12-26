@@ -2,7 +2,7 @@
 * [1. Random numbers generator](#Random-Numbers-Generator)
 * [2. Random String Generator](#Random-String-Generator)
 	
-## 1. ## Random Numbers Generator
+## Random Numbers Generator
 ```java
 import java.util.Random;
 
@@ -28,7 +28,7 @@ public class RandomNumbersGenerator {
 	}
 }
 ```
-## 2. ## Random String Generator
+## Random String Generator
 ```js
 import java.security.SecureRandom;
 import java.util.Random;
