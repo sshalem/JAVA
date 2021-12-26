@@ -5,11 +5,13 @@
 # Add Tables
 Colons can be used to align columns.
 
-| 	  |                Subject                                      | Cool  |
-| --------|:-----------------------------------------------------------:| -----:|
-|  1      | [1. Random numbers generator](#Random-Numbers-Generator)    | $1600 |
-|  2      | [2. Random String Generator](#Random-String-Generator)      |   $12 |
-|  3      | are neat          					        |    $1 |
+| 	  |                Subject                                   | Cool  |
+| --------|:--------------------------------------------------------:| -----:|
+|  1      | [Random numbers generator](#Random-Numbers-Generator)    | $1600 |
+|  2      | [Random String Generator](#Random-String-Generator)      |   $12 |
+|  3      | are neat          					     |    $1 |
+
+
 
 There must be at least 3 dashes separating each header cell.
 The outer pipes (|) are optional, and you don't need to make the 
