@@ -5,7 +5,7 @@
 |:---:|:------------------------------| 
 |  1  |[Enum Basic](#1_enum-basic)    | 
 |  2  |[Enum methods](#2_Enum_methods)  |   
-|  3  |[Sort Array](#3_sort-array)    |   
+|  3  |[Enum_constructor](#3_Enum_constructor) |   
 |  4  |[ArrayTargil_1](#4_ArrayTargil_1)   |   
 |  5  |[ArrayTargil_2](#5_ArrayTargil_2) |
 |  6  |[ArrayTargil_3_remove_duplocations](#6_ArrayTargil_3_remove_duplocations) |
@@ -88,4 +88,47 @@ public class _2_Enum_methods {
 ----------------------------------------------------------------------------------------------------------
 
 
+## 3_Enum_constructor
 
+[Back_to_top](#Table-of-contents)
+```js
+//Java program to demonstrate that enums can have constructor
+//and concrete methods.
+
+//An enum (Note enum keyword inplace of class keyword)
+enum Colors {
+	RED,
+	GREEN,
+	BLUE;
+
+	// enum constructor called separately for each
+	// constant
+	private Colors() {
+		System.out.println("Constructor called for : " + this.toString());
+	}
+
+	public void colorInfo() {
+		System.out.println("Universal Color");
+	}
+}
+
+
+public class _3_Enum_constructor {
+
+	public static void main(String[] args) {
+		Colors c1 = Colors.RED;
+		System.out.println(c1);
+		c1.colorInfo();
+	}
+}
+
+/**
+	Output: 
+		Constructor called for : RED
+		Constructor called for : GREEN
+		Constructor called for : BLUE
+		RED
+		Universal Color
+*/
+```
+----------------------------------------------------------------------------------------------------------
