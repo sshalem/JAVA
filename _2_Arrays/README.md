@@ -124,7 +124,7 @@ public class SortArray {
 
 [Back_to_top](#Table-of-contents)
 
- Question:<br /> 
+**Question:**<br /> 
    Write a class that creates an array of 10 numbers with Random numbers between 0-100,<br />
    and prints the total sum and the avarage.<br />
 
