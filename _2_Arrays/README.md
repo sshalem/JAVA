@@ -123,18 +123,11 @@ public class SortArray {
 
 [Back_to_top](#Table-of-contents)
 
- Question:
+ Question:<br /> 
+ 	Write a class that creates an array of 10 numbers with Random numbers between 0-100,<br />
+	and prints the total sum and the avarage.<br />
  
- 	Write a class that creates an array of 10 numbers with Random numbers between 0-100,
-	and prints the total sum and the avarage.
  
- 
-
-
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
-
-This line is also a separate paragraph, but...--
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
 
 ```java
