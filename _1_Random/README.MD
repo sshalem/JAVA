@@ -1,8 +1,8 @@
 ## Table of contents
-* [1. Random numbers generator](#1. Random-Numbers-Generator)
-* [2. Random String Generator](#2. Random-String-Generator)
+* [1. Random numbers generator](#1.Random-Numbers-Generator)
+* [2. Random String Generator](#2.Random-String-Generator)
 	
-## 1. Random Numbers Generator
+## 1.Random Numbers Generator
 ```java
 import java.util.Random;
 
@@ -28,7 +28,7 @@ public class RandomNumbersGenerator {
 	}
 }
 ```
-## 2. Random String Generator
+## 2.Random String Generator
 ```js
 import java.security.SecureRandom;
 import java.util.Random;
