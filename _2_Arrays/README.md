@@ -6,7 +6,7 @@
 |  1  |[Array Defenition](#1_Array-Defenition)    | 
 |  2  |[Two Dimmension Array](#2_Two-Dimmension-Array)      |   
 |  3  |[Sort Array](#3_sort-array)    |   
-|  4  |[Array_Targil1](#4_excersize-1)   |   
+|  4  |[ArrayTargil_1](#4_ArrayTargil_1)   |   
 |  5  |                             |   
 
 ## 1_Array Defenition
@@ -120,7 +120,7 @@ public class SortArray {
 ```
 ----------------------------------------------------------------------------------------------------------
 
-## 4_excersize-1 
+## 4_ArrayTargil_1 
 
 [Back_to_top](#Table-of-contents)
 
