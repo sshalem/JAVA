@@ -2,12 +2,12 @@
 
 |     |  Subject                                                |
 |-----|:--------------------------------------------------------| 
-|  1  |[Random numbers generator](#Random-Numbers-Generator)    | 
+|  1  |[Random numbers generator](#1_Random-Numbers-Generator)    | 
 |  2  |[Random String Generator](#Random-String-Generator)      |   
 |  3  |                                                         |   
 
 
-## 1 Random numbers generator
+## 1_Random numbers generator
 
 ```java
 import java.util.Random;
