@@ -3,7 +3,7 @@
 |     |  Subject                                                |
 |-----|:--------------------------------------------------------| 
 |  1  |[Random numbers generator](#1_Random-Numbers-Generator)    | 
-|  2  |[Random String Generator](#Random-String-Generator)      |   
+|  2  |[Random String Generator](#2_Random-String-Generator)      |   
 |  3  |                                                         |   
 
 
@@ -34,7 +34,7 @@ public class RandomNumbersGenerator {
 	}
 }
 ```
-## Random String Generator
+## 2_Random String Generator
 ```js
 import java.security.SecureRandom;
 import java.util.Random;
