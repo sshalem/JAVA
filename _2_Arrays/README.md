@@ -241,7 +241,7 @@ codeFences.withLanguage()
 # Add Inline HTML
 
 <dl>
-  <dt>Definition list</dt>
+  <dt>Definition list</dt> 
   <dd>Is something people use sometimes.</dd>
 
   <dt>Markdown in HTML</dt>
