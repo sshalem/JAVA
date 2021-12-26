@@ -169,10 +169,11 @@ public class ArrayTargil_1 {
 
 <strong>Question</strong><br /> 
 
-write a class that creates an array of 10 numbers with Random numbers between 0-100,<br />
-and prints the total sum and the avarage.
+Write a class that creates an array[50] numbers with Random numbers between 0-100 <br />
+and prints the highest value and its index in the array
 
 ```java
+
 
 import java.util.Random;
 
@@ -181,8 +182,8 @@ public class ArrayTargil_2 {
 	public static void main(String[] args) {
 
 		/**
-		 * Write a class that creates an array of 10 numbers with Random numbers between
-		 * 0-100 and prints the total sum and the avarage
+		 * Write a class that creates an array[50] numbers with Random numbers between
+		 * 0-100 and prints , and prints the highest value and its index in the array
 		 */
 
 		int[] array = new int[50];
