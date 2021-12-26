@@ -6,7 +6,7 @@
 |  1  |[Array Defenition](#1_Array-Defenition)    | 
 |  2  |[Two Dimmension Array](#2_Two-Dimmension-Array)      |   
 |  3  |[Sort Array](#3_sort-array)    |   
-|  4  |[exercise 1](#4_excersize-1)   |   
+|  4  |[Array_Targil1](#4_excersize-1)   |   
 |  5  |                             |   
 
 ## 1_Array Defenition
