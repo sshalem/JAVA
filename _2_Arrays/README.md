@@ -124,12 +124,12 @@ public class SortArray {
 
 [Back_to_top](#Table-of-contents)
 
-### <strong>Question:</strong><br /> 
+### Question: <br /> 
 
 write a class that creates an array of 10 numbers with Random numbers between 0-100,<br />
 and prints the total sum and the avarage.
 
-### <strong>Answer:</strong><br /> 
+### Answer: <br /> 
 
 ```java
 import java.util.Random;
@@ -169,13 +169,13 @@ public class ArrayTargil_1 {
 
 [Back_to_top](#Table-of-contents)
 
-### <strong>Question:</strong><br /> 
+### Question: <br /> 
 
 Write a class that creates an array[50] numbers with Random numbers between 0-100 <br />
 and prints the highest value and its index in the array
 
 
-### <strong>Answer:</strong><br /> 
+### Answer: <br /> 
 
 ```java
 
