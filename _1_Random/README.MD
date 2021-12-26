@@ -1,7 +1,7 @@
 # Table of contents
 
 |     |                Subject                                  | 
-|-----|:-------------------------------------------------------:| 
+|-----|:--------------------------------------------------------| 
 |  1  |[Random numbers generator](#Random-Numbers-Generator)    | 
 |  2  |[Random String Generator](#Random-String-Generator)      |   
 |  3  |                                                         |   
