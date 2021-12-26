@@ -7,8 +7,7 @@
 |  3  |                                                        |   
 
 
-## |-----|:-------------------------------------------------------| 
-## |  1  |[Random numbers generator](#Random-Numbers-Generator)   | 
+## 1 Random numbers generator
 
 ```java
 import java.util.Random;
