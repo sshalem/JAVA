@@ -118,6 +118,9 @@ public class SortArray {
 ## excersize-1 
 
 [Back_to_top](#Table-of-contents)
+
+ * Write a class that creates an array of 10 numbers with Random numbers between 0-100 and prints the total sum and the avarage
+ 
 ```java
 import java.util.Random;
 
