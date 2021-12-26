@@ -1,6 +1,6 @@
 # Table of contents
 
-|     |  List of Subjects                                             |
+|     |  List-of-Subjects                                             |
 |-----|:--------------------------------------------------------| 
 |  1  |[Random numbers generator](#1_Random-Numbers-Generator)    | 
 |  2  |[Random String Generator](#2_Random-String-Generator)      |   
