@@ -7,8 +7,8 @@ Colons can be used to align columns.
 
 | 	  |                Subject                                   | Cool  |
 | --------|:--------------------------------------------------------:| -----:|
-|  1      |:  [Random numbers generator](#Random-Numbers-Generator)  | $1600 |
-|  2      |:  [Random String Generator](#Random-String-Generator)    |   $12 |
+|  1      |  [Random numbers generator](#Random-Numbers-Generator)  :| $1600 |
+|  2      |  [Random String Generator](#Random-String-Generator)    :|   $12 |
 |  3      | 	                                                     |    $1 |
 
 
