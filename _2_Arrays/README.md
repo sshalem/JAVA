@@ -9,6 +9,8 @@
 |  4  |[ArrayTargil_1](#4_ArrayTargil_1)   |   
 |  5  |[ArrayTargil_2](#5_ArrayTargil_2) |
 |  6  |[ArrayTargil_3_remove_duplocations](#6_ArrayTargil_3_remove_duplocations) |
+|  7  |[ArrayTargil_4](#7_ArrayTargil_4) |
+|  8  |[ArrayTargil_5](#8_ArrayTargil_5) |
 
 
 
@@ -320,9 +322,50 @@ class ArrayManipulation {
 
 ```
 
+
 ----------------------------------------------------------------------------------------------------------
 
+## 7_ArrayTargil_4 
 
+[Back_to_top](#Table-of-contents)
+
+### Question: <br /> 
+
+Write a class that remove duplications of integer numbers. <br />
+example: If I get receive a array of [1 ,2 ,5 ,1 ,6 ,1 ,5 ,4 ,8] <br />
+I should return [1 ,2 ,5 ,6, 4, 8] <br />
+Need to create a dynamic array <br />
+
+### Answer: <br /> 
+
+```java
+
+
+
+```
+
+----------------------------------------------------------------------------------------------------------
+
+## 8_ArrayTargil_5 
+
+[Back_to_top](#Table-of-contents)
+
+### Question: <br /> 
+
+Write a class that remove duplications of integer numbers. <br />
+example: If I get receive a array of [1 ,2 ,5 ,1 ,6 ,1 ,5 ,4 ,8] <br />
+I should return [1 ,2 ,5 ,6, 4, 8] <br />
+Need to create a dynamic array <br />
+
+### Answer: <br /> 
+
+```java
+
+
+
+```
+
+----------------------------------------------------------------------------------------------------------
 # spring-security 
 
 * this is an  example
