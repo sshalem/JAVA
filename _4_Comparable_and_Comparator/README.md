@@ -14,9 +14,8 @@
   <dd>How can we sort a list in JAVA</dd>  
 
   <dt>Answer:</dt>
-	<dd>in order to <em>sort</em> a list in the JAVA</br >
-	<dd>needs to know the strategy of sorting...</br >
-	<dd>w/o a strategy the JAVA will not know if sort by id, height, name etc...</dd>
+	<dd>in order to <em>sort</em> a list in the JAVA , we need to know the strategy of sorting...</br >
+	w/o a strategy the JAVA will not know if sort by id, height, name etc...</dd>
 </dl>
 
 
