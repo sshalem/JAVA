@@ -19,18 +19,26 @@
 ## 1_Create_Directory
 [Back_to_top](#Table-of-contents)
 
-Here the PErson Class Implements the Comparable which has only 1 method to implement :
-- compareTo(Person o) 
-
-And we cannot make more methods of compareTo(Person o) in the person Class</br>
-thus we can have only ONE strategy for Sorting.
-
-
-[Back_to_top](#Table-of-contents)
-
 ```java
+import java.io.File;
 
+public class _1_Create_Directory {
 
+	public static void main(String[] args) {
+
+		// (1) creating a directory     
+		File fileExeFolder = new File("F:/_CreateFolderByJAVA");
+		fileExeFolder.mkdir();
+
+		// check if folder is exist
+		if (fileExeFolder.exists()) {
+			System.out.println("Folder allready exist");
+		} else {
+			fileExeFolder.mkdir();
+			System.out.println("Folder created");
+		}
+	}
+}
 ```
 ----------------------------------------------------------------------------------------------------------
 
@@ -39,8 +47,34 @@ thus we can have only ONE strategy for Sorting.
 [Back_to_top](#Table-of-contents)
 
 ```java
+import java.io.File;
+import java.io.IOException;
 
+public class _2_Create_File {
 
+	public static void main(String[] args) {
+
+		// (1) creating a directory  
+		File fileExeFolder = new File("F:/_CreateFolderByJAVA");
+
+		// check if folder is exist
+		if (fileExeFolder.exists()) {
+			System.out.println("Folder allready exist");
+		} else {
+			fileExeFolder.mkdir();
+			System.out.println("Folder created");
+		}
+
+		// (2) creating files in the
+		File oneTxtFile = new File("F:/_CreateFolderByJAVA/one.txt");
+
+		try {
+			oneTxtFile.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
 ```
 ----------------------------------------------------------------------------------------------------------
 
@@ -50,7 +84,50 @@ thus we can have only ONE strategy for Sorting.
 [Back_to_top](#Table-of-contents)
 
 ```java
+import java.io.File;
+import java.io.IOException;
 
+public class _3_check_number_of_files_or_directories_in_folder {
+
+	public static void main(String[] args) {
+
+		// (1) creating a directory        
+		File fileExeFolder = new File("F:/_CreateFolderByJAVA");
+
+		// check if folder is exist
+		if (fileExeFolder.exists()) {
+			System.out.println("Folder allready exist");
+		} else {
+			fileExeFolder.mkdir();
+			System.out.println("Folder created");
+		}
+
+		// (2) creating 6 files in the folder
+		File oneTxtFile = new File("F:/_CreateFolderByJAVA/one.txt");
+		File twoTxtFile = new File("F:/_CreateFolderByJAVA/two.txt");
+		File threeTxtFile = new File("F:/_CreateFolderByJAVA/three.txt");
+		File fourTxtFile = new File("F:/_CreateFolderByJAVA/four.txt");
+		File fiveTxtFile = new File("F:/_CreateFolderByJAVA/five.txt");
+		File sixTxtFile = new File("F:/_CreateFolderByJAVA/six.txt");
+
+		try {
+			oneTxtFile.createNewFile();
+			twoTxtFile.createNewFile();
+			threeTxtFile.createNewFile();
+			fourTxtFile.createNewFile();
+			fiveTxtFile.createNewFile();
+			sixTxtFile.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		// (3) How many Files/Folders in a directory
+		if (fileExeFolder.isDirectory()) {
+			File[] listFiles = fileExeFolder.listFiles();
+			System.out.println(listFiles.length);
+		}
+	}
+}
 ```
 ----------------------------------------------------------------------------------------------------------
 
@@ -59,6 +136,54 @@ thus we can have only ONE strategy for Sorting.
 
 [Back_to_top](#Table-of-contents)
 ```java
+import java.io.File;
+
+public class _4_check_Subdirectories_In_Directory {
+
+	public static void main(String[] args) {
+
+		// (1) creating a directory        
+		File fileExeFolder = new File("F:/_CreateFolderByJAVA");
+		fileExeFolder.mkdir();
+
+		// check if folder is exist
+		if (fileExeFolder.exists()) {
+			System.out.println("Folder allready exist");
+		} else {
+			fileExeFolder.mkdir();
+			System.out.println("Folder created");
+		}
+
+		// (2) creating 3 more directories inside the folder _CreateFolderByJAVA
+		File subDir_1 = new File("F:/_CreateFolderByJAVA/subDir_1");
+		subDir_1.mkdir();
+
+		File subDir_2 = new File("F:/_CreateFolderByJAVA/subDir_2");
+		subDir_2.mkdir();
+
+		File subDir_3 = new File("F:/_CreateFolderByJAVA/subDir_3");
+		subDir_3.mkdir();
+
+		File[] listFiles = fileExeFolder.listFiles();
+
+		// (3) How many Files/Folders in a directory
+		if (fileExeFolder.isDirectory()) {
+			System.out.println(listFiles.length);
+		}
+
+		// (4) How many SubDirectories in a directory
+		int numberOfSubDirectories = 0;
+
+		for (File file : listFiles) {
+			if (file.isDirectory()) {
+				System.out.println(file.getName());
+				numberOfSubDirectories++;
+			}
+		}
+
+		System.out.println(numberOfSubDirectories);
+	}
+}
 
 ```
 ----------------------------------------------------------------------------------------------------------
@@ -67,7 +192,61 @@ thus we can have only ONE strategy for Sorting.
 
 [Back_to_top](#Table-of-contents)
 ```java
+import java.io.File;
 
+public class _5_show_only_txt_files {
+
+	public static void main(String[] args) {
+
+		// (1) creating a directory        
+		File fileExeFolder = new File("F:/_CreateFolderByJAVA");
+		fileExeFolder.mkdir();
+
+		// check if folder is exist
+		if (fileExeFolder.exists()) {
+			System.out.println("Folder allready exist");
+		} else {
+			fileExeFolder.mkdir();
+			System.out.println("Folder created");
+		}
+
+		// (2) creating 3 more directories inside the folder _CreateFolderByJAVA
+		File subDir_1 = new File("F:/_CreateFolderByJAVA/subDir_1");
+		subDir_1.mkdir();
+
+		File subDir_2 = new File("F:/_CreateFolderByJAVA/subDir_2");
+		subDir_2.mkdir();
+
+		File subDir_3 = new File("F:/_CreateFolderByJAVA/subDir_3");
+		subDir_3.mkdir();
+
+		File[] listFiles = fileExeFolder.listFiles();
+
+		// (3) How many Files/Folders in a directory
+		if (fileExeFolder.isDirectory()) {
+			System.out.println(listFiles.length);
+		}
+
+		// (4) How many SubDirectories in a directory
+		int numberOfSubDirectories = 0;
+
+		for (File file : listFiles) {
+			if (file.isDirectory()) {
+				System.out.println(file.getName());
+				numberOfSubDirectories++;
+			}
+		}
+
+		System.out.println(numberOfSubDirectories);
+
+		// (5) Show only txt files
+		for (File file : listFiles) {
+			if (file.getName().endsWith(".txt")) {
+				System.out.println(file.getName());
+			}
+		}
+	}
+}
 ```
 ----------------------------------------------------------------------------------------------------------
 
@@ -75,7 +254,75 @@ thus we can have only ONE strategy for Sorting.
 
 [Back_to_top](#Table-of-contents)
 ```java
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
+class SortFilesBySize implements Comparator<File> {
+
+	@Override
+	public int compare(File o1, File o2) {
+		return (int) (o1.length() - o2.length());
+	}
+
+}
+
+public class _6_SortAndDisplayFilesBySize {
+
+	public static void main(String[] args) {
+
+		// (1) creating a directory        
+		File fileExeFolder = new File("F:/_CreateFolderByJAVA");
+
+		// check if folder is exist
+		if (fileExeFolder.exists()) {
+			System.out.println("Folder allready exist");
+		} else {
+			fileExeFolder.mkdir();
+			System.out.println("Folder created");
+		}
+
+		// (2) creating 6 files in the folder
+		File oneTxtFile = new File("F:/_CreateFolderByJAVA/one.txt");
+		File twoTxtFile = new File("F:/_CreateFolderByJAVA/two.txt");
+		File threeTxtFile = new File("F:/_CreateFolderByJAVA/three.txt");
+		File fourTxtFile = new File("F:/_CreateFolderByJAVA/four.txt");
+		File fiveTxtFile = new File("F:/_CreateFolderByJAVA/five.txt");
+		File sixTxtFile = new File("F:/_CreateFolderByJAVA/six.txt");
+
+		try {
+			oneTxtFile.createNewFile();
+			twoTxtFile.createNewFile();
+			threeTxtFile.createNewFile();
+			fourTxtFile.createNewFile();
+			fiveTxtFile.createNewFile();
+			sixTxtFile.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		// (3) Add to ArrayList the content of an directory
+		List<File> arrayFiles = new ArrayList<>();
+
+		File[] listFiles = fileExeFolder.listFiles();
+
+		for (File file : listFiles) {
+			arrayFiles.add(file);
+		}
+		System.out.println(arrayFiles);
+
+		// After we add all files and placed them in an ArrayList
+		// We can sort the files by : size, name
+
+		// (4) sort & display fileBySize
+		Collections.sort(arrayFiles, new SortFilesBySize());
+		System.out.println(arrayFiles);
+
+	}
+}
 ```
 ----------------------------------------------------------------------------------------------------------
 
@@ -83,7 +330,78 @@ thus we can have only ONE strategy for Sorting.
 
 [Back_to_top](#Table-of-contents)
 ```java
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
+class SortAndDisplayDirectoryFirst implements Comparator<File> {
+
+	@Override
+	public int compare(File o1, File o2) {
+		if (o1.isDirectory() && o2.isDirectory())
+			return 0;
+		if (o1.isFile() && o2.isFile())
+			return 0;
+		return -1;
+	}
+
+}
+
+public class _7_SortAndDisplayFilesByName {
+
+	public static void main(String[] args) {
+
+		// (1) creating a directory        
+		File fileExeFolder = new File("F:/_CreateFolderByJAVA");
+
+		// check if folder is exist
+		if (fileExeFolder.exists()) {
+			System.out.println("Folder allready exist");
+		} else {
+			fileExeFolder.mkdir();
+			System.out.println("Folder created");
+		}
+
+		// (2) creating 6 files in the folder
+		File oneTxtFile = new File("F:/_CreateFolderByJAVA/one.txt");
+		File twoTxtFile = new File("F:/_CreateFolderByJAVA/two.txt");
+		File threeTxtFile = new File("F:/_CreateFolderByJAVA/three.txt");
+		File fourTxtFile = new File("F:/_CreateFolderByJAVA/four.txt");
+		File fiveTxtFile = new File("F:/_CreateFolderByJAVA/five.txt");
+		File sixTxtFile = new File("F:/_CreateFolderByJAVA/six.txt");
+
+		try {
+			oneTxtFile.createNewFile();
+			twoTxtFile.createNewFile();
+			threeTxtFile.createNewFile();
+			fourTxtFile.createNewFile();
+			fiveTxtFile.createNewFile();
+			sixTxtFile.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		// (3) Add to ArrayList the content of an directory
+		List<File> arrayFiles = new ArrayList<>();
+
+		File[] listFiles = fileExeFolder.listFiles();
+
+		for (File file : listFiles) {
+			arrayFiles.add(file);
+		}
+		System.out.println(arrayFiles);
+
+		// After we add all files and placed them in an ArrayList
+		// We can sort the files by : size, name
+
+		// (4) sort & display Directory First
+		Collections.sort(arrayFiles, new SortAndDisplayDirectoryFirst());
+		System.out.println(arrayFiles);
+	}
+}
 ```
 ----------------------------------------------------------------------------------------------------------
 
@@ -91,7 +409,74 @@ thus we can have only ONE strategy for Sorting.
 
 [Back_to_top](#Table-of-contents)
 ```java
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
+class SortFilesByName implements Comparator<File> {
+
+	@Override
+	public int compare(File o1, File o2) {
+		return o1.getName().compareTo(o2.getName());
+	}
+
+}
+
+public class _8_SortAndDisplayDirectoryFirst {
+
+	public static void main(String[] args) {
+
+		// (1) creating a directory        
+		File fileExeFolder = new File("F:/_CreateFolderByJAVA");
+
+		// check if folder is exist
+		if (fileExeFolder.exists()) {
+			System.out.println("Folder allready exist");
+		} else {
+			fileExeFolder.mkdir();
+			System.out.println("Folder created");
+		}
+
+		// (2) creating 6 files in the folder
+		File oneTxtFile = new File("F:/_CreateFolderByJAVA/one.txt");
+		File twoTxtFile = new File("F:/_CreateFolderByJAVA/two.txt");
+		File threeTxtFile = new File("F:/_CreateFolderByJAVA/three.txt");
+		File fourTxtFile = new File("F:/_CreateFolderByJAVA/four.txt");
+		File fiveTxtFile = new File("F:/_CreateFolderByJAVA/five.txt");
+		File sixTxtFile = new File("F:/_CreateFolderByJAVA/six.txt");
+
+		try {
+			oneTxtFile.createNewFile();
+			twoTxtFile.createNewFile();
+			threeTxtFile.createNewFile();
+			fourTxtFile.createNewFile();
+			fiveTxtFile.createNewFile();
+			sixTxtFile.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		// (3) Add to ArrayList the content of an directory
+		List<File> arrayFiles = new ArrayList<>();
+
+		File[] listFiles = fileExeFolder.listFiles();
+
+		for (File file : listFiles) {
+			arrayFiles.add(file);
+		}
+		System.out.println(arrayFiles);
+
+		// After we add all files and placed them in an ArrayList
+		// We can sort the files by : size, name
+
+		// (4) sort & display fileByName
+		Collections.sort(arrayFiles, new SortFilesByName());
+		System.out.println(arrayFiles);
+	}
+}
 ```
 ----------------------------------------------------------------------------------------------------------
 
