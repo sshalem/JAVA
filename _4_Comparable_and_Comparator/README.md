@@ -194,6 +194,15 @@ public class _1_Comparable_Implementaion {
 ## 2_Sort_Using_Comparator
 
 [Back_to_top](#Table-of-contents)
+
+Here we create 4 classes that Implement the Comparator, thus we will have 4 strategies for Sorting:
+1. CompareByAge (int)
+2. CompareByName (String)
+3. CompareById (int)
+4. CompareByHeight (float)
+	
+
+[Back_to_top](#Table-of-contents)
 ```java
 
 import java.util.ArrayList;
