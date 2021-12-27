@@ -9,6 +9,18 @@
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
+<dl>
+  <dt>Question:</dt>
+  <dt>  How can we sort a list in JAVA</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Answer:</dt>
+	<dd>in order to sort a list in the JAVA</dd>
+	<dd>needs to know the strategy of sorting...</dd>
+	<dd>w/o a strategy the JAVA will not know if sort by id, height, name etc...</dd>
+</dl>
+
+
  Question: How can we sort a list in JAVA
 		 answer : in order to sort a list in the JAVA
 		 needs to know the strategy of sorting...
