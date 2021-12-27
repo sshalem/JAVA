@@ -13,7 +13,7 @@
 |  6  |[SortAndDisplayFilesBySize](#6_SortAndDisplayFilesBySize) |
 |  7  |[SortAndDisplayFilesByName](#7_SortAndDisplayFilesByName) |
 |  8  |[SortAndDisplayDirectoryFirst](#8_SortAndDisplayDirectoryFirst) |
-|  8  |[Write_Read_Text_to_from_file](#9_Write_Read_Text_to_from_file) |
+|  9  |[Write_Read_Text_to_from_file](#9_Write_Read_Text_to_from_file) |
 
 
 
