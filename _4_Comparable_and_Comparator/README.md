@@ -17,8 +17,7 @@
 		Comparator is implemented in an external class that leads to the multiple Sorting strategies Implementations
 		For each Sort Strategy , we implement a suited Comparator implementation
 		Comparator : you can make as many as you like
-		
-![Uploading image.png…]()
+
 
 
 
