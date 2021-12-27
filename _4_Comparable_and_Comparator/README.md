@@ -3,13 +3,11 @@
 
 |     |  Subjects                     |
 |:---:|:------------------------------| 
-|  1  |[Sort_Comparable](#1_sort_comparable)    | 
-|  2  |[Sort_comparator](#2_sort_comparator)  |   
-|  3  |[Enum_constructor](#3_Enum_constructor) |   
-|  4  |[Enum_Switch_Case](#4_Enum_Switch_Case)   |   
-|  5  |[Enum_Private_Field_Constructor_And_GetterSetter](#5_EnumPrivateFieldConstructorAndGetterSetter) |
-|  6  |[Enum_Sort_Using_Compartor_and_Comparable](#6_Enum_Sort_Using_Compartor_and_Comparable) |
-
+|  1  |[Sort_Using Comparable](#1_Sort_Using_Comparable)    | 
+|  2  |[Sort_Using Comparator](#2_Sort_Using_Comparator)  |   
+|  3  |[Sort_Integer_Numbers](#3_Sort_Integer_Numbers) |   
+|  4  |[Sort_String](#4_Sort_String)   |   
+|  5  |[Sort_Enum](#5_Sort_Enum) |
 
 
 
