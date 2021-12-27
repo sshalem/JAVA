@@ -52,7 +52,7 @@ Here the PErson Class Implements the Comparable which has only 1 method to imple
 - compareTo(Person o) 
 
 And we cannot make more methods of compareTo(Person o) in the person Class</br>
-thus we can have only strategy for Sorting.
+thus we can have only ONE strategy for Sorting.
 
 
 [Back_to_top](#Table-of-contents)
