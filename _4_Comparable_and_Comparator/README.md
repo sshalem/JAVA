@@ -46,6 +46,14 @@
 
 
 ## 1_Sort_Using_Comparable
+[Back_to_top](#Table-of-contents)
+
+Here the PErson Class Implements the Comparable which has only 1 method to implement :
+- compareTo(Person o) 
+
+And we cannot make more methods of compareTo(Person o) in the person Class
+thus we can have only strategy for Sorting.
+
 
 [Back_to_top](#Table-of-contents)
 
