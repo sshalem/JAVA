@@ -14,32 +14,29 @@
   <dd>How can we sort a list in JAVA</dd>  
 
   <dt>Answer:</dt>
-	<dd>in order to <em>sort</em> a list in the JAVA , we need to know the strategy of sorting...</br >
+	<dd>in order to <em>sort</em> a list in the JAVA ,</br>
+	we need to know the strategy of sorting...</br >
 	w/o a strategy the JAVA will not know if sort by id, height, name etc...</dd>
 </dl>
-
-
-
- Question: How can we sort a list in JAVA
-		 answer : in order to sort a list in the JAVA
-		 needs to know the strategy of sorting...
-		 w/o a strategy the JAVA will not know if sort by id, height, name etc...
 
 		 (2) there are 2 ways to sort:
 				1. implement comparable interface
 				2. implement comparator interface
 		
-		
-		Comparable
-		Comparable interface is implemented in the class itself - in the example its implemented in Person class.
-		Comparable :  is only suited for 1 Sort strategy implementation.
-		
-		Comparator
-		Comparator is implemented in an external class that leads to the multiple Sorting strategies Implementations
-		For each Sort Strategy , we implement a suited Comparator implementation
-		Comparator : you can make as many as you like
+<dl>
+```
+  <dt>Comparable</dt>
+```
+  <dd>Comparable interface is implemented in the class itself - in the example its implemented in Person class.</br>
+      Comparable :  is only suited for 1 Sort strategy implementation.</dd>  
 
-
+```
+  <dt>Comparator</dt>
+ ```
+	<dd>Comparator is implemented in an external class that leads to the multiple Sorting strategies Implementations</br>
+	    For each Sort Strategy , we implement a suited Comparator implementation</br>
+	    Comparator : you can make as many as you like</dd>
+</dl>		
 
 
 # Table of contents
