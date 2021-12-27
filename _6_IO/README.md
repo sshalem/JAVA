@@ -1,5 +1,8 @@
-
-# Create File/Directory ,Write/Read Text files, Binary files, Write/Read Objects to files
+# Subjects Covered in this repository
+1. Create File/Directory 
+2. Write/Read Text to/from files,
+3. Write/Read Binary Type (Such JPG) to/from files,
+4. Write/Read Objects to/from file
 
 ## Table-of-contents
 
