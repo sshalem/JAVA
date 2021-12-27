@@ -136,7 +136,10 @@ code fences
 
 ```sql
 codeFences.withLanguage()
-SELECT * FROM customers WHERE price > 2000;
+
+SELECT * 
+FROM customers 
+WHERE price > 2000;
 ```
 
 ```java
