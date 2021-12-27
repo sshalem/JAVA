@@ -194,7 +194,7 @@ public class _1_Comparable_Implementaion {
 ## 2_Sort_Using_Comparator
 
 [Back_to_top](#Table-of-contents)
-```js
+```java
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -410,7 +410,7 @@ public class _2_Comparator_implementaion {
 
 [Back_to_top](#Table-of-contents)
 
-```js
+```java
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -450,7 +450,7 @@ public class _3_SortIntegerNumbers {
 ## 4_Sort_String
 
 [Back_to_top](#Table-of-contents)
-```js
+```java
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -492,7 +492,7 @@ public class _4_SortString {
 ## 5_Sort_Enum
 
 [Back_to_top](#Table-of-contents)
-```js
+```java
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
