@@ -16,7 +16,7 @@
 
 
 
-## 1_Sort_Using_Comparable
+## 1_Create_Directory
 [Back_to_top](#Table-of-contents)
 
 Here the PErson Class Implements the Comparable which has only 1 method to implement :
@@ -34,7 +34,7 @@ thus we can have only ONE strategy for Sorting.
 ```
 ----------------------------------------------------------------------------------------------------------
 
-## 2_Sort_Using_Comparator
+## 2_Create_File
 
 [Back_to_top](#Table-of-contents)
 
@@ -45,7 +45,7 @@ thus we can have only ONE strategy for Sorting.
 ----------------------------------------------------------------------------------------------------------
 
 
-## 3_Sort_Integer_Numbers
+## 3_check_number_of_files_or_directories_in_folder
 
 [Back_to_top](#Table-of-contents)
 
@@ -55,7 +55,7 @@ thus we can have only ONE strategy for Sorting.
 ----------------------------------------------------------------------------------------------------------
 
 
-## 4_Sort_String
+## 4_check_Subdirectories_In_Directory
 
 [Back_to_top](#Table-of-contents)
 ```java
@@ -63,7 +63,31 @@ thus we can have only ONE strategy for Sorting.
 ```
 ----------------------------------------------------------------------------------------------------------
 
-## 5_Sort_Enum
+## 5_show_only_txt_files
+
+[Back_to_top](#Table-of-contents)
+```java
+
+```
+----------------------------------------------------------------------------------------------------------
+
+## 6_SortAndDisplayFilesBySize
+
+[Back_to_top](#Table-of-contents)
+```java
+
+```
+----------------------------------------------------------------------------------------------------------
+
+## 7_SortAndDisplayFilesByName
+
+[Back_to_top](#Table-of-contents)
+```java
+
+```
+----------------------------------------------------------------------------------------------------------
+
+## 8_SortAndDisplayDirectoryFirst
 
 [Back_to_top](#Table-of-contents)
 ```java
