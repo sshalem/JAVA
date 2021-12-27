@@ -1,13 +1,5 @@
 
- # Add Inline HTML
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+ # Sort using Comparable or Comparator
 
 <dl>
   <dt>Question:</dt>
@@ -24,15 +16,13 @@
 				2. implement comparator interface
 		
 <dl>
-```
+
   <dt>Comparable</dt>
-```
   <dd>Comparable interface is implemented in the class itself - in the example its implemented in Person class.</br>
       Comparable :  is only suited for 1 Sort strategy implementation.</dd>  
 
-```
+
   <dt>Comparator</dt>
- ```
 	<dd>Comparator is implemented in an external class that leads to the multiple Sorting strategies Implementations</br>
 	    For each Sort Strategy , we implement a suited Comparator implementation</br>
 	    Comparator : you can make as many as you like</dd>
