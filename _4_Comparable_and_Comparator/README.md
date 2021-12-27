@@ -24,9 +24,11 @@
 
   <dt>Comparator</dt>
 	<dd>Comparator is implemented in an external class that leads to the multiple Sorting strategies Implementations</br>
-	    For each Sort Strategy , we implement a suited Comparator implementation</br>
-	    Comparator : you can make as many as you like</dd>
-</dl>		
+	    For each Sort Strategy , we create a class that implements a suited Comparator implementation for that specific type</br>
+	    Comparator : you can make as many as you like</dd>	
+</dl>	
+
+
 
 
 # Table of contents
