@@ -134,8 +134,9 @@ Code blocks are normally indented four spaces or one tab. When they’re in a li
 code fences
 ```
 
-```js
+```sql
 codeFences.withLanguage()
+SELECT * FROM customers WHERE price > 2000;
 ```
 
 ```java
