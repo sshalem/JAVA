@@ -51,7 +51,7 @@
 Here the PErson Class Implements the Comparable which has only 1 method to implement :
 - compareTo(Person o) 
 
-And we cannot make more methods of compareTo(Person o) in the person Class
+And we cannot make more methods of compareTo(Person o) in the person Class</br>
 thus we can have only strategy for Sorting.
 
 
