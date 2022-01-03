@@ -39,7 +39,11 @@ from https://shields.io/ we can use the following:
 
 7. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e)
 
+8. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=plastic)
 
+9. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=flat-square)
+
+10. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=for-the-badge)
 
 
 
