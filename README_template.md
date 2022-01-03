@@ -36,7 +36,9 @@ from https://shields.io/ we can use the following:
 
 ![](https://img.shields.io/badge/MyLabel-MyMsg-blue)
 
-https://img.shields.io/depfu/sshalem/project?color=yellow&label=shabtay&logo=testApp&logoColor=red
+![](https://img.shields.io/depfu/sshalem/project?color=yellow&label=shabtay&logo=testApp&logoColor=red)
+
+
 
 
 
