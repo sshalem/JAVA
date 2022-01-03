@@ -6,10 +6,7 @@
 |     |  Subjects                     |
 |:---:|:------------------------------| 
 |  1  |[Create_Directory](#1_Create_Directory)    | 
-|  2  |[Create_File](#2_Create_File)  |   
-|  3  |[check_number_of_files_or_directories_in_folder](#3_check_number_of_files_or_directories_in_folder) |   
-|  4  |[check_Subdirectories_In_Directory](#4_check_Subdirectories_In_Directory)   |   
-|  5  |[show_only_txt_files](#5_show_only_txt_files) |
+
 
 # ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) List of libraries used 
 
@@ -100,7 +97,7 @@ https://via.placeholder.com/45/00FF00/000000?Text=green+color
 
 
 
-## 1_Sort_Using_Comparable
+## 1_Create_Directory
 [Back_to_top](#Table-of-contents)
 
 Here the PErson Class Implements the Comparable which has only 1 method to implement :
