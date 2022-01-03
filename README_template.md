@@ -21,7 +21,7 @@
 5. JUnit5 - **testing the CustomerFacade logic**
 6. JUnit5 - **Testing the CustomerController (_Using Rest Assured_)**
 
-![#00ff00](https://via.placeholder.com/50x20/00ff00/000000?Text=green+color) 
+![#00ff00](https://via.placeholder.com/350x90/00ff00/000000?Text=IMPORTANT) 
 - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) red
 - ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) yellow
 - ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) blue
@@ -60,18 +60,6 @@ Green – 008000 </br>
 ![#ff6600](https://placehold.it/400x90/ff6600/000?text=WARNING!)
 
 ![#009955](https://placehold.it/350x90/009955/fff?text=SUCCESS!)
-
-<font size="1"> This is my text number1</font> 
-
- <font size="2"> This is my text number 2 </font>
- 
- <font size="3"> This is my text number 3</font> 
- 
- <font size="4"> This is my text number 4</font> 
- 
- <font size="5"> This is my text number 5</font> 
- 
- <font size="6"> This is my text number 6</font>
 
 ## 1_Sort_Using_Comparable
 [Back_to_top](#Table-of-contents)
