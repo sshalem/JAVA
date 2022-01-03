@@ -28,6 +28,7 @@ from https://shields.io/ we can use the following:
 
 ![AppVeyor](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
 
+<img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/Home/Services/testing">
 
 # COLOR!
 
