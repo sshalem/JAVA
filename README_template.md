@@ -1,5 +1,4 @@
-
-# Create File/Directory ,Write/Read to ```+ File ```
+# Create File/Directory ,Write/Read to 
 
 |     |  Subjects                     |
 |:---:|:------------------------------| 
