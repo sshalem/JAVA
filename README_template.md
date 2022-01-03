@@ -22,8 +22,9 @@
 5. JUnit5 - **testing the CustomerFacade logic**
 6. JUnit5 - **Testing the CustomerController (_Using Rest Assured_)**
 
-![](https://img.shields.io/static/v1?label=&message=Testing+All+Kinds+off+Git+Color&color=green)
+from https://shields.io/ we can use the following:
 
+![](https://img.shields.io/static/v1?label=&message=Testing+All+Kinds+off+Git+Color&color=green)
 ![AppVeyor](https://img.shields.io/appveyor/build/sjasfc/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
 
 
