@@ -26,13 +26,15 @@ from https://shields.io/ we can use the following:
 
 ![](https://img.shields.io/static/v1?label=&message=Testing+All+Kinds+off+Git+Color&color=green)
 
-https://img.shields.io/badge/MyLable-MuMsg-brightgreen
+<img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/Home/Services/testing">
 
 ![AppVeyor](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
 
-<img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/Home/Services/testing">
-
 ![AppVeyor](https://img.shields.io/badge/MyLabel-MyMsg-green)
+
+![](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
+
+![](https://img.shields.io/badge/MyLabel-MyMsg-green)
 
 
 
