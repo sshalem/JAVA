@@ -14,6 +14,42 @@
 |  8  |[SortAndDisplayDirectoryFirst](#8_SortAndDisplayDirectoryFirst) |
 
 
+# ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=#List+of+libraries+used) List of libraries used 
+
+1. Spring boot version : **2.4.12**  _(Works withdata.sql file w/n issue)_  
+2. JAVA version : **8** +C+
+3. I used **JPQL & SQL Query** methods
+4. application.properties : **define logging for JPA query**
+5. JUnit5 - **testing the CustomerFacade logic**
+6. JUnit5 - **Testing the CustomerController (_Using Rest Assured_)**
+
+![#00ff00](https://via.placeholder.com/50x20/00ff00/000000?Text=green+color) 
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) red
+- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) yellow
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) blue
+- ![#00ff00](https://via.placeholder.com/468x30/00ff00/000000?text=green+color) green
+
+https://placeholder.com/
+
+The first color is always the background color 00FF00, and the second color 000000 is the text color.</br>
+https://via.placeholder.com/45/00FF00/000000?Text=green+color
+
+Popular Hex Color Codes :</br>
+
+White – FFFFFF </br>
+Black – 000000 </br>
+Red – FF0000 </br>
+Blue – 0000FF </br>
+Yellow – FFFF00 </br>
+Green – 008000 </br>
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 
 ## 1_Sort_Using_Comparable
