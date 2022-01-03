@@ -24,6 +24,9 @@
 
 ![](https://img.shields.io/static/v1?label=&message=Testing+All+Kinds+off+Git+Color&color=green)
 
+![AppVeyor](https://img.shields.io/appveyor/build/sjasfc/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
+
+
 # COLOR!
 
 Popular Hex Color Codes :</br>
