@@ -47,9 +47,7 @@ from https://shields.io/ we can use the following:
 
 11. ![NodePing uptime](https://img.shields.io/nodeping/uptime/e.g.%20jkiwn052-ntpp-4lbb-8d45-ihew6d9ucoei)
 
-
-
-
+12. ![Wercker Build branch](https://img.shields.io/wercker/build/wercker/go-wercker-api/master?color=blue&label=shabtay&logo=what%20ever%20possible&logoColor=yellow)
 
 
 # COLOR!
