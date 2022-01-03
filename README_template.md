@@ -32,6 +32,8 @@ https://img.shields.io/badge/MyLable-MuMsg-brightgreen
 
 <img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/Home/Services/testing">
 
+https://img.shields.io/badge/MyLabel-MyMsg-green
+
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/Home/Services/testing?style=flat-square)
 
 # COLOR!
