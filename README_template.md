@@ -37,13 +37,13 @@ from https://shields.io/ we can use the following:
 
 6. ![](https://img.shields.io/badge/MyLabel-MyMsg-blue)
 
-7. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e)
+7. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e) flat
 
-8. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=plastic)
+8. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=plastic) plastic
 
-9. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=flat-square)
+9. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=flat-square) flat-square
 
-10. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=for-the-badge)
+10. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=for-the-badge) for-the-badge
 
 
 
