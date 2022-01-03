@@ -1,8 +1,5 @@
 # Create File/Directory ,Write/Read to 
 
-My Important Paragrapgh
-{: .alert .alert-info}
-
 
 |     |  Subjects                     |
 |:---:|:------------------------------| 
@@ -128,30 +125,12 @@ thus we can have only ONE strategy for Sorting.
 ```
 ----------------------------------------------------------------------------------------------------------
 
+<div class="panel panel-danger">
+**Danger**
+{: .panel-heading}
+<div class="panel-body">
 
-## 3_Sort_Integer_Numbers
+DANGER DESCRIPTION
 
-[Back_to_top](#Table-of-contents)
-
-```java
-
-```
-----------------------------------------------------------------------------------------------------------
-
-
-## 4_Sort_String
-
-[Back_to_top](#Table-of-contents)
-```java
-
-```
-----------------------------------------------------------------------------------------------------------
-
-## 5_Sort_Enum
-
-[Back_to_top](#Table-of-contents)
-```java
-
-```
-----------------------------------------------------------------------------------------------------------
-
+</div>
+</div>
