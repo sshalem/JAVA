@@ -21,7 +21,9 @@
 5. JUnit5 - **testing the CustomerFacade logic**
 6. JUnit5 - **Testing the CustomerController (_Using Rest Assured_)**
 
-![#00ff00](https://via.placeholder.com/350x90/00ff00/000000?Text=IMPORTANT) 
+![#00ff00](https://via.placeholder.com/350x90/00ff00/000000?text=IMPORTANT)
+![](https://via.placeholder.com/400x90/ff0000/000000?text=IMPORTANT!)
+
 - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) red
 - ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) yellow
 - ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) blue
