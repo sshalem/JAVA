@@ -22,7 +22,7 @@
 5. JUnit5 - **testing the CustomerFacade logic**
 6. JUnit5 - **Testing the CustomerController (_Using Rest Assured_)**
 
-![](https://img.shields.io/static/v1?label=&message=shabtay&color=green)
+![](https://img.shields.io/static/v1?label=&message=Testing+All+Kinds+off+Git+Color&color=green)
 
 # COLOR!
 
