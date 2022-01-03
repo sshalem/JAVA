@@ -37,7 +37,7 @@ from https://shields.io/ we can use the following:
 
 6. ![](https://img.shields.io/badge/MyLabel-MyMsg-blue)
 
-7. ![PingPong uptime (last 10 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e) flat
+7. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e) flat
 
 8. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=plastic) plastic
 
