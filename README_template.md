@@ -1,6 +1,7 @@
 # Create File/Directory ,Write/Read to 
 
-### <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Puzzle Icon {: #puzzle}
+### <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Puzzle Icon 
+{: #puzzle}
 
 |     |  Subjects                     |
 |:---:|:------------------------------| 
