@@ -125,12 +125,9 @@ thus we can have only ONE strategy for Sorting.
 ```
 ----------------------------------------------------------------------------------------------------------
 
-<div class="panel panel-danger">
-**Danger**
-{: .panel-heading}
-<div class="panel-body">
-
-DANGER DESCRIPTION
-
-</div>
-</div>
+This is a paragraph
+{::comment}
+This is a comment which is
+completely ignored.
+{:/comment}
+... paragraph continues here.
