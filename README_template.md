@@ -1,4 +1,6 @@
 # Create File/Directory ,Write/Read to 
+{: .alert .alert-info}
+
 
 |     |  Subjects                     |
 |:---:|:------------------------------| 
@@ -7,11 +9,6 @@
 |  3  |[check_number_of_files_or_directories_in_folder](#3_check_number_of_files_or_directories_in_folder) |   
 |  4  |[check_Subdirectories_In_Directory](#4_check_Subdirectories_In_Directory)   |   
 |  5  |[show_only_txt_files](#5_show_only_txt_files) |
-|  6  |[SortAndDisplayFilesBySize](#6_SortAndDisplayFilesBySize) |
-|  7  |[SortAndDisplayFilesByName](#7_SortAndDisplayFilesByName) |
-|  8  |[SortAndDisplayDirectoryFirst](#8_SortAndDisplayDirectoryFirst) |
-
-
 
 # ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) List of libraries used 
 
