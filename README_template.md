@@ -27,7 +27,7 @@ from https://shields.io/ we can use the following:
 
 1. ![](https://img.shields.io/static/v1?label=&message=Testing+All+Kinds+off+Git+Color&color=green)
 
-2. <img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/Home/Services/testing">
+2. ![](https://img.shields.io/depfu/sshalem/project?color=yellow&label=shabtay&logo=testApp&logoColor=red)
 
 3. ![AppVeyor](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
 
@@ -37,7 +37,11 @@ from https://shields.io/ we can use the following:
 
 6. ![](https://img.shields.io/badge/MyLabel-MyMsg-blue)
 
-7. ![](https://img.shields.io/depfu/sshalem/project?color=yellow&label=shabtay&logo=testApp&logoColor=red)
+7. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e)
+
+
+
+
 
 
 
