@@ -12,6 +12,7 @@
 |  8  |[SortAndDisplayDirectoryFirst](#8_SortAndDisplayDirectoryFirst) |
 
 
+
 # ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) List of libraries used 
 
 1. Spring boot version : **2.4.12**  _(Works withdata.sql file w/n issue)_  
@@ -20,6 +21,20 @@
 4. application.properties : **define logging for JPA query**
 5. JUnit5 - **testing the CustomerFacade logic**
 6. JUnit5 - **Testing the CustomerController (_Using Rest Assured_)**
+
+![](https://img.shields.io/static/v1?label=&message=shabtay&color=green)
+
+# COLOR!
+
+Popular Hex Color Codes :</br>
+
+White – FFFFFF </br>
+Black – 000000 </br>
+Red – FF0000 </br>
+Blue – 0000FF </br>
+Yellow – FFFF00 </br>
+Green – 008000 </br>
+
 
 ![#00ff00](https://via.placeholder.com/350x90/00ff00/000000?text=IMPORTANT)
 ![](https://via.placeholder.com/400x90/ff0000/000000?text=IMPORTANT!)
@@ -35,7 +50,7 @@ https://placeholder.com/
 The first color is always the background color 00FF00, and the second color 000000 is the text color.</br>
 https://via.placeholder.com/45/00FF00/000000?Text=green+color
 
-## COLOR!
+
 
 - ![#ff0000](https://via.placeholder.com/12/ff0000?text=+) red!
 - ![#9900c5](https://via.placeholder.com/15/9900c5?text=+) purple!
@@ -48,14 +63,6 @@ https://via.placeholder.com/45/00FF00/000000?Text=green+color
 ![](https://via.placeholder.com/350x90/009955/fff?text=SUCCESS!)
 
 
-Popular Hex Color Codes :</br>
-
-White – FFFFFF </br>
-Black – 000000 </br>
-Red – FF0000 </br>
-Blue – 0000FF </br>
-Yellow – FFFF00 </br>
-Green – 008000 </br>
 
 ```diff
 - text in red
