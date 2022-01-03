@@ -45,7 +45,7 @@ from https://shields.io/ we can use the following:
 
 10. ![PingPong uptime (last 30 days)](https://img.shields.io/pingpong/uptime/sp_2e80bc00b6054faeb2b87e2464be337e?style=for-the-badge) for-the-badge
 
-
+11. ![NodePing uptime](https://img.shields.io/nodeping/uptime/e.g.%20jkiwn052-ntpp-4lbb-8d45-ihew6d9ucoei)
 
 
 
