@@ -24,19 +24,20 @@
 
 from https://shields.io/ we can use the following:
 
-![](https://img.shields.io/static/v1?label=&message=Testing+All+Kinds+off+Git+Color&color=green)
 
-<img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/Home/Services/testing">
+1. ![](https://img.shields.io/static/v1?label=&message=Testing+All+Kinds+off+Git+Color&color=green)
 
-![AppVeyor](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
+2. <img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/Home/Services/testing">
 
-![AppVeyor](https://img.shields.io/badge/MyLabel-MyMsg-green)
+3. ![AppVeyor](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
 
-![](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
+4. ![AppVeyor](https://img.shields.io/badge/MyLabel-MyMsg-green)
 
-![](https://img.shields.io/badge/MyLabel-MyMsg-blue)
+5. ![](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
 
-![](https://img.shields.io/depfu/sshalem/project?color=yellow&label=shabtay&logo=testApp&logoColor=red)
+6. ![](https://img.shields.io/badge/MyLabel-MyMsg-blue)
+
+7. ![](https://img.shields.io/depfu/sshalem/project?color=yellow&label=shabtay&logo=testApp&logoColor=red)
 
 
 
