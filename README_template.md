@@ -1,7 +1,7 @@
 # Create File/Directory ,Write/Read to 
 
-### <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Puzzle Icon 
-{: #puzzle}
+### GitLab Orange Heading
+{: .gitlab-orange}
 
 |     |  Subjects                     |
 |:---:|:------------------------------| 
