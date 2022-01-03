@@ -115,19 +115,3 @@ thus we can have only ONE strategy for Sorting.
 ```
 ----------------------------------------------------------------------------------------------------------
 
-## 2_Sort_Using_Comparator
-
-[Back_to_top](#Table-of-contents)
-
-```java
-
-
-```
-----------------------------------------------------------------------------------------------------------
-
-This is a paragraph
-{::comment}
-This is a comment which is
-completely ignored.
-{:/comment}
-... paragraph continues here.
