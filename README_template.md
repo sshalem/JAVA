@@ -46,6 +46,7 @@ Green – 008000 </br>
 + text in green
 ! text in orange
 # text in gray
+_ text in red
 @@ text in purple (and bold)@@
 ```
 
