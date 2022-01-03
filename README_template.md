@@ -88,7 +88,7 @@ https://via.placeholder.com/45/00FF00/000000?Text=green+color
 ![](https://via.placeholder.com/350x90/009955/fff?text=SUCCESS!)
 
 
-{+ additions +}
++ additions +
 
 ```diff
 - text in red
