@@ -28,12 +28,23 @@
 - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) red
 - ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) yellow
 - ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) blue
-- ![#00ff00](https://via.placeholder.com/468x30/00ff00/000000?text=green+color) green
+- ![](https://via.placeholder.com/468x30/00ff00/000000?text=green+color) green
 
 https://placeholder.com/
 
 The first color is always the background color 00FF00, and the second color 000000 is the text color.</br>
 https://via.placeholder.com/45/00FF00/000000?Text=green+color
+
+## COLOR!
+
+- ![#ff0000](https://via.placeholder.com/12/ff0000?text=+) red!
+- ![#9900c5](https://via.placeholder.com/15/9900c5?text=+) purple!
+- ![#157500](https://via.placeholder.com/20/157500?text=+) green!
+
+![](https://via.placeholder.com/400x90/ff0000/000000?text=IMPORTANT!)
+![](https://via.placeholder.com/400x90/ff6600/000?text=WARNING!)
+![](https://via.placeholder.com/350x90/009955/fff?text=SUCCESS!)
+
 
 Popular Hex Color Codes :</br>
 
@@ -52,17 +63,7 @@ Green – 008000 </br>
 @@ text in purple (and bold)@@
 ```
 
-## COLOR!
 
-- ![#ff0000](https://via.placeholder.com/12/ff0000?text=+) red!
-- ![#9900c5](https://via.placeholder.com/15/9900c5?text=+) purple!
-- ![#157500](https://via.placeholder.com/20/157500?text=+) green!
-
-![](https://via.placeholder.com/400x90/ff0000/000000?text=IMPORTANT!)
-
-![](https://via.placeholder.com/400x90/ff6600/000?text=WARNING!)
-
-![](https://via.placeholder.com/350x90/009955/fff?text=SUCCESS!)
 
 ## 1_Sort_Using_Comparable
 [Back_to_top](#Table-of-contents)
