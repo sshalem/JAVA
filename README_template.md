@@ -42,7 +42,9 @@ https://via.placeholder.com/45/00FF00/000000?Text=green+color
 - ![#157500](https://via.placeholder.com/20/157500?text=+) green!
 
 ![](https://via.placeholder.com/400x90/ff0000/000000?text=IMPORTANT!)
+
 ![](https://via.placeholder.com/400x90/ff6600/000?text=WARNING!)
+
 ![](https://via.placeholder.com/350x90/009955/fff?text=SUCCESS!)
 
 
