@@ -1,6 +1,6 @@
-
-# Create File/Directory ,Write/Read to File
-
+```diff
+# +Create File/Directory ,Write/Read to File
+```
 
 |     |  Subjects                     |
 |:---:|:------------------------------| 
@@ -14,7 +14,7 @@
 |  8  |[SortAndDisplayDirectoryFirst](#8_SortAndDisplayDirectoryFirst) |
 
 
-# ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=#List+of+libraries+used) List of libraries used 
+# ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) List of libraries used 
 
 1. Spring boot version : **2.4.12**  _(Works withdata.sql file w/n issue)_  
 2. JAVA version : **8** +C+
