@@ -34,11 +34,8 @@ from https://shields.io/ we can use the following:
 
 ![](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
 
-![](https://img.shields.io/badge/MyLabel-MyMsg-green)
+![](https://img.shields.io/badge/MyLabel-MyMsg-blue)
 
-
-
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/Home/Services/testing?style=flat-square)
 
 # COLOR!
 
