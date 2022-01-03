@@ -49,6 +49,7 @@ from https://shields.io/ we can use the following:
 
 12. ![Wercker Build branch](https://img.shields.io/wercker/build/wercker/go-wercker-api/master?color=blue&label=shabtay&logo=what%20ever%20possible&logoColor=yellow)
 
+13. ![](https://img.shields.io/librariesio/release/hex/phoenix)
 
 # COLOR!
 
