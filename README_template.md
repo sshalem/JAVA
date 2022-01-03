@@ -25,7 +25,8 @@
 from https://shields.io/ we can use the following:
 
 ![](https://img.shields.io/static/v1?label=&message=Testing+All+Kinds+off+Git+Color&color=green)
-![AppVeyor](https://img.shields.io/appveyor/build/sjasfc/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
+
+![AppVeyor](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
 
 
 # COLOR!
