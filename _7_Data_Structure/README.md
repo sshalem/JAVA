@@ -13,11 +13,32 @@ with each project, I add another service (Or modify cetain properties) and show 
 
 |     |  Subject           |
 |:---:|:------------------------------| 
-|  1  |[Services: C-O](#__)    | 
-|  2  |[Services: C-O-E](#___)  |   
-|  3  |[Services: C-O-E-G-Multiple-Service-Instances](#____) |   
+|  1  |[Array]()    | 
+|  2  |[LinkedList]()  |   
+|  3  |[Stack]() |   
 |  3a |[Services: C-O-E-G-Multiple-Service-Instances-AutoPort](#_____) |   
 |  4  |[Services: C-O-E-G-MIAP_Resiliance4J](#______) |  
+
+
+
+	1. Array (Also ArrayList)
+	2. LinkedList
+	3. Stack
+	4. Queue
+	5. HashTable
+	6. Binary Tree
+	7. AVL Tree
+	8. Heaps
+	9. Tries
+	10. Graphs
+	11. Undirected Graphs 
+	12. Sorting Algorithms
+	13. Searching Algorithms
+
+String Manipulation Algorithms ![image](https://user-images.githubusercontent.com/36256986/149768759-59ec3c44-da6c-4d98-b42f-aa32049bc051.png)
+
+
+
 
 
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) C-Customer
