@@ -26,8 +26,10 @@
 	
 	/**
 	* Here I make a dynamic array 
-	* If array reached it's last element , 
-	* I create new array with twice the length of previous one
+	* Why?
+	* If array reached it's last element , I want to extend the array
+	* Thus, I create new array with twice the length of previous one
+	* Then copy the content fo Old Array to new one
 	*/
 	public void insert(int number) {
 		if (count == array.length) {
