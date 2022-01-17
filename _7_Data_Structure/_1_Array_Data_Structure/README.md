@@ -11,7 +11,7 @@
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) print 
 
 
-|  <img src="https://img.shields.io/badge/-O(x)%20-blue" height=40px>  |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=40px>           |
+|  <img src="https://img.shields.io/badge/-O(x)%20-blue" height=35px>  |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=35px>           |
 |:-----:|:------------------------------| 
 | <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px> |[Lookup by index --> array[3]]()    | 
 | <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Lookup by value --> we itterate over an arrary with max length on N elements ]()  |   
