@@ -41,6 +41,12 @@
 		count++;
 	}
 
+	/**
+	* To remove an element at specific Index
+	* I am acutally need to Shift Left all the elemnts 
+	* from the specific index position.
+	* I start the loop from ->  int i = index
+	*/
 	public void removeAt(int index) {
 		if (index < 0 || index >= count) {
 			throw new IllegalArgumentException();
@@ -52,7 +58,6 @@
 	}
 
 	public int indexOf(int number) {
-
 		for (int i = 0; i < count; i++) {
 			if (array[i] == number) {
 				return i;
@@ -61,6 +66,10 @@
 		return -1;
 	}
 
+	/**
+	* this method prints to console only the
+	* number of elements inside the array 
+	*/
 	public void print() {
 		for (int i = 0; i < count; i++) {
 			System.out.println(array[i]);
