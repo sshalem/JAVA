@@ -15,6 +15,28 @@
 ![Array_Runttime_Complexity](https://user-images.githubusercontent.com/36256986/149771830-270a1188-eb1e-49e0-b2ff-747cd805a857.png)
 
 
+
+|     |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-brightgreen" height=60px>           |
+|:---:|:------------------------------| 
+|  1  |[Array]()    | 
+|  2  |[LinkedList]()  |   
+|  3  |[Stack]() |   
+|  4  |[Queue]() |   
+|  5  |[HashTable]() |  
+|  6  |[Binary Tree]()    | 
+|  7  |[AVL Tree]()  |   
+|  8  |[Heaps]() |   
+|  9  |[Tries]() |   
+|  10  |[Graphs]() |  
+|  11  |[Undirected Graphs]() |  
+|  12  |[Sorting Algorithms]() |  
+|  13  |[Searching Algorithms]() |  
+|  14  |[String Manipulation Algorithms]() |  
+
+
+
+
+
 ```java
 	public class Array {
 
