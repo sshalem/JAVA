@@ -21,7 +21,12 @@ _
 		super();
 		this.array = new int[length];
 	}
-
+	
+	/**
+	* Here I make a dynamic array 
+	* If array reached it's last element , 
+	* I create new array with twice the length of previous one
+	*/
 	public void insert(int number) {
 		if (count == array.length) {
 			int[] newArray = new int[count * 2];
