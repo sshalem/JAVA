@@ -12,7 +12,7 @@
 
 ### Also will see the Run time Complexity
 
-![Array_Runttime_Complexity](https://user-images.githubusercontent.com/36256986/149771830-270a1188-eb1e-49e0-b2ff-747cd805a857.png)
+![Array_Runttime_Complexity](https://user-images.githubusercontent.com/36256986/149771830-270a1188-eb1e-49e0-b2ff-747cd805a857.png height=300px width=200px)
 
 
 ```java
