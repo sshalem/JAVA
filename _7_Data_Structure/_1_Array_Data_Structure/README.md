@@ -16,22 +16,12 @@
 
 
 
-|     |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=40px>           |
-|:---:|:------------------------------| 
-|  1  |[Array]()    | 
-|  2  |[LinkedList]()  |   
-|  3  |[Stack]() |   
-|  4  |[Queue]() |   
-|  5  |[HashTable]() |  
-|  6  |[Binary Tree]()    | 
-|  7  |[AVL Tree]()  |   
-|  8  |[Heaps]() |   
-|  9  |[Tries]() |   
-|  10  |[Graphs]() |  
-|  11  |[Undirected Graphs]() |  
-|  12  |[Sorting Algorithms]() |  
-|  13  |[Searching Algorithms]() |  
-|  14  |[String Manipulation Algorithms]() |  
+|  O(x) |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=40px>           |
+|:-----:|:------------------------------| 
+| O(1)  |[Lookup by index --> array[3]]()    | 
+| O(n)  |[Lookup by value --> we itterate over an arrary with max length on N elements ]()  |   
+| O(n)  |[Insert --> we itterate over an arrary with max length on N elements]() |   
+| O(n)  |[Delete --> we itterate over an arrary with max length on N elements]() |   
 
 
 
