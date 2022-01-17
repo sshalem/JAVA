@@ -1,28 +1,12 @@
 <img src="https://img.shields.io/badge/-%20Array Data Structure%20-brightgreen" height=50px>
+_
+## I will implement ArrayList Class from Scratch , with following methods:
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) insert
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) removeAt
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) indexOf
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) print 
 
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) C-Customer
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) O-Order
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) E-Eureka
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) G-Gateway 
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) MI-Multiple Instances 
-
-
-In this project I have 4 microservices:
-
-|     |  micro-services           |
-|:---:|:------------------------------| 
-|  1  |[customer-service](#_)    | 
-|  2  |[order-service](#_) |  
-|  3  |[eureka-discovery-server-service](#_) |
-|  4  |[spring-cloud-gateway](#_) |
-
-**_Spring-Cloud-Gateway_** is responsible for:
-	1. routing
-	2. load balancing
-
-I create 3 instances for **customer MS** and 2 instances for **order MS**. </br>
-I added to **CustomerController** and **OrderController** the following lines ,in order to see that Load Blanaced is working.</br>
-This way we can see which instance is processing the Request.</br>
+## Also will see the Run time Complexity
 
 ```java
 	private static final Logger log = LoggerFactory.getLogger(OrderController.class);
@@ -72,7 +56,7 @@ This way we can see which instance is processing the Request.</br>
 
 
 
-[Back_to_top](#Table-of-contents)
+[Back_to_top](#_)
 
 ```java
 
