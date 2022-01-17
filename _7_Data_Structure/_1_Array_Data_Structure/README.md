@@ -11,7 +11,7 @@
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) print 
 
 
-|  O(x) |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=40px>           |
+|  <img src="https://img.shields.io/badge/-O(x)%20-blue" height=40px>  |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=40px>           |
 |:-----:|:------------------------------| 
 | O(1)  |[Lookup by index --> array[3]]()    | 
 | O(n)  |[Lookup by value --> we itterate over an arrary with max length on N elements ]()  |   
