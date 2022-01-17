@@ -10,11 +10,6 @@
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) indexOf
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) print 
 
-### Also will see the Run time Complexity
-
-![Array_Runttime_Complexity](https://user-images.githubusercontent.com/36256986/149771830-270a1188-eb1e-49e0-b2ff-747cd805a857.png)
-
-
 
 |  O(x) |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=40px>           |
 |:-----:|:------------------------------| 
