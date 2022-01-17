@@ -24,7 +24,7 @@
 
 ```
 
-<img src="https://img.shields.io/badge/-Lets test the LinkedList %20-blue" height=40px> 
+<img src="https://img.shields.io/badge/-Test the LinkedList %20-blue" height=40px> 
 
 ```java
 
