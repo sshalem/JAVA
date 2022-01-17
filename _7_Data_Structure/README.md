@@ -34,11 +34,7 @@ with each project, I add another service (Or modify cetain properties) and show 
 	11. Undirected Graphs 
 	12. Sorting Algorithms
 	13. Searching Algorithms
-
-String Manipulation Algorithms ![image](https://user-images.githubusercontent.com/36256986/149768759-59ec3c44-da6c-4d98-b42f-aa32049bc051.png)
-
-
-
+	14. String Manipulation Algorithms
 
 
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) C-Customer
