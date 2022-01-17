@@ -1,7 +1,5 @@
 <img src="https://img.shields.io/badge/-Data Structures%20-brightgreen" height=70px>
 
- <img src="https://img.shields.io/badge/- Table of contents%20-brightgreen" height=50px> 
-
 |     |  Subject           |
 |:---:|:------------------------------| 
 |  1  |[Array]()    | 
