@@ -16,7 +16,7 @@
 
 
 
-|     |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-brightgreen" height=60px>           |
+|     |  <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=40px>           |
 |:---:|:------------------------------| 
 |  1  |[Array]()    | 
 |  2  |[LinkedList]()  |   
