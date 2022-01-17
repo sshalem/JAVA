@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/-Data-Structures%20-brightgreen" height=70px>
+<img src="https://img.shields.io/badge/-Data Structures%20-brightgreen" height=70px>
 
 * In this repository I have several projects that I build step by step **_MICRO-SERVICE ARCHITECTURE_** .</br>
 the first project starts with 2 simple microservices : </br>
