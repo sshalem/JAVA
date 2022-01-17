@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/-(3)%20 C    O    E    G    MI%20-brightgreen" height=50px>
+<img src="https://img.shields.io/badge/-%20Array Data Structure%20-brightgreen" height=50px>
 
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) C-Customer
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) O-Order
