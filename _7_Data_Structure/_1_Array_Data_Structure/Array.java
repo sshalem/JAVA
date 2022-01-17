@@ -11,7 +11,6 @@ public class Array {
 	}
 
 	public void insert(int number) {
-
 		if (count == array.length) {
 			int[] newArray = new int[count * 2];
 			for (int i = 0; i < count; i++) {
@@ -19,7 +18,6 @@ public class Array {
 			}
 			array = newArray;
 		}
-
 		array[count] = number;
 		count++;
 	}
@@ -28,7 +26,7 @@ public class Array {
 		if (index < 0 || index >= count) {
 			throw new IllegalArgumentException();
 		}
-		for (int i = index; i < count; i++) {
+		for (int i = index; i < count-1; i++) {
 			array[i] = array[i + 1];
 		}
 		count--;
