@@ -3,7 +3,7 @@
 
 
 
-### I will implement ArrayList Class from Scratch , with following methods:
+### implementation of simple ArrayList Class from Scratch , with following methods:
 
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) insert
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) removeAt
@@ -17,9 +17,6 @@
 | O(n)  |[Lookup by value --> we itterate over an arrary with max length on N elements ]()  |   
 | O(n)  |[Insert --> we itterate over an arrary with max length on N elements]() |   
 | O(n)  |[Delete --> we itterate over an arrary with max length on N elements]() |   
-
-
-
 
 
 ```java
@@ -62,7 +59,7 @@
 		if (index < 0 || index >= count) {
 			throw new IllegalArgumentException();
 		}
-		for (int i = index; i < count; i++) {
+		for (int i = index; i < count-1; i++) {
 			array[i] = array[i + 1];
 		}
 		count--;
@@ -91,6 +88,11 @@
 
 ```
 
+### Now lets run some methods 
+
+```java
+
+```
 
 [Back_to_top](#_)
 
