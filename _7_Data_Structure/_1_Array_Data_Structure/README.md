@@ -30,13 +30,15 @@
 		this.array = new int[length];
 	}
 	
+
 	/**
-	* Here I make a dynamic array 
-	* Why?
-	* If array reached it's last element , I want to extend the array
-	* Thus, I create new array with twice the length of previous one
-	* Then copy the content fo Old Array to new one
-	*/
+	 * If array reached it's last element , I want to extend the array.
+	 * Check if Count  == array.length
+	 * If(true)
+	 * 1. create 'newArray' with the length of old 'array' multiplied by 2.
+	 * 2. Loop thru old 'array' and copy each element to 'newArray'
+	 * 3. assign following 'array = newArray' 
+	 */
 	public void insert(int number) {
 		if (count == array.length) {
 			int[] newArray = new int[count * 2];
@@ -51,9 +53,10 @@
 
 	/**
 	* To remove an element at specific Index
-	* I am acutally need to Shift Left all the elemnts 
+	* I Shift to Left all the elements 
 	* from the specific index position.
-	* I start the loop from ->  int i = index
+	* I start the loop from -->  int i = index
+	* I loop till -->  i < count-1 
 	*/
 	public void removeAt(int index) {
 		if (index < 0 || index >= count) {
