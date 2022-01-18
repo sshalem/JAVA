@@ -85,25 +85,31 @@ public class LinkedList {
 }
 ```
 
+### Insert item at last of Linked List
+```java
+public void insertLast(Object data) {
+
+	Node node = new Node();
+	node.data = data;
+	node.next = null;
+
+	if (first == null) {
+		first = node;
+		last = node;			
+	} else {
+		last.next = node;
+		last = node;			
+	}
+	size++;
+}
+```
+
+
 <img src="https://img.shields.io/badge/-Test the LinkedList %20-blue" height=40px> 
 
 
 ```java
-public void insertLast(Object data) {
 
-		Node node = new Node();
-		node.data = data;
-		node.next = null;
-
-		if (first == null) {
-			first = node;
-			last = node;			
-		} else {
-			last.next = node;
-			last = node;			
-		}
-		size++;
-	}
 ```
 
 [Back_to_top](#_)
