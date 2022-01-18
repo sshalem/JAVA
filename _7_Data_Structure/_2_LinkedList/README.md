@@ -13,11 +13,11 @@ Example :
 	Step1: When we add new element and its the first one we insert , it’s the head element and Head=last. (Because it's first Element in the List), and it points to Null.
 	Step2: When we add second Elemnt , (we update the data ) and assign refrence for the next node: </br>
 	
-	```java
-	Node node = new Node();
-	last.next = node;
-	last = node;
-	```
+```java
+Node node = new Node();
+last.next = node;
+last = node;
+```
 	
 	
 ![singly_Linked_List](https://user-images.githubusercontent.com/36256986/150023770-8a88d115-efda-4ccc-9e31-dfcd015fca34.PNG)
