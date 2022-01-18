@@ -15,7 +15,8 @@ Example :</br>
 		When we add new element and its the first one we insert , it’s the head element and Head=last. 
 		(Because it's first Element in the List), and it points to Null.
 	add second element:
-		When we add second Elemnt , (we update the data ) and assign refrence for the next node: 
+		When we add second Elemnt , (we update the data ) and assign refrence for the next node
+		and so on...
 	
 ```java
 Node node = new Node();
