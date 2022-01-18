@@ -1,6 +1,10 @@
 ###### _
 <img src="https://img.shields.io/badge/-%20LinkedList Data Structure%20-brightgreen" height=50px>
 
+we have 2 types of linked list:
+1. Singly Linked List
+2. Doubly Linked List
+
 
 
 ### implementation of simple ArrayList Class from Scratch , with following methods:
