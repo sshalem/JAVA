@@ -222,8 +222,7 @@ public void insertFirst(Object data) {
 	}
 ```
 
-### Interview Question
-### reverse 
+### (Interview Question) : reverse 
 ```java
 	/**
 	 * This method is a very popular Interview question:
@@ -262,8 +261,7 @@ public void insertFirst(Object data) {
 	}
 ```
 
-### Interview Question
-### Find the K'th number from the END of the LinkedList in one Pass
+### (Interview Question) : Find the K'th number from the END of the LinkedList in one Pass
 ```java
 	/**
 	 * This method is a very popular Interview question:
