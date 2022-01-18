@@ -36,7 +36,7 @@ last = node;
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-### I implementation of singly LinkedList Class from Scratch , with following methods:
+### I implement of singly LinkedList Class from Scratch , with following methods:
 
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) insertLast
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) insertFirst
