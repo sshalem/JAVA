@@ -28,7 +28,7 @@ last = node;
 ![singly_Linked_List](https://user-images.githubusercontent.com/36256986/150023770-8a88d115-efda-4ccc-9e31-dfcd015fca34.PNG)
 
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 
 <img src="https://img.shields.io/badge/-Doubly Linked List%20-blue" height=35px>
 
