@@ -6,7 +6,10 @@ we have 2 types of linked list:
 1. Singly Linked List
 2. Doubly Linked List
 
+<img src="https://img.shields.io/badge/-Singly Linked List%20-blue" height=35px>
 
+
+<img src="https://img.shields.io/badge/-Doubly Linked List%20-blue" height=35px>
 
 
 
