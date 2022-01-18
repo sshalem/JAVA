@@ -58,7 +58,7 @@ last = node;
 | <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Insert --> we itterate over an arrary with max length on N elements]() |   
 | <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Delete --> we itterate over an arrary with max length on N elements]() |   
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 #### The LinkedList class (Before adding all the methods) has following with :
 1. private class Node
 2. three fields 
