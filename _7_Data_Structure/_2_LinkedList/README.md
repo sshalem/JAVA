@@ -34,12 +34,20 @@ last = node;
 
 ![Doubly_Linked_List](https://user-images.githubusercontent.com/36256986/150023766-bde4fb5e-2f7e-498e-8394-5f165929edbb.PNG)
 
+------------------------------------------------------------------------------------------------------------------------------------
 
-### implementation of simple ArrayList Class from Scratch , with following methods:
+### I implementation of singly LinkedList Class from Scratch , with following methods:
 
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) insert
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) removeAt
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) insertLast
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) insertFirst
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) indexOf
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) contains
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) removeFirst
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) removeLast
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) size
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) toArray
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) reverse
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) getDataOfNodeFromEndOfLinkedList
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) print 
 
 
