@@ -221,7 +221,7 @@ public Object[] toArray() {
 	return obj;
 }
 ```
-<img src="https://img.shields.io/badge/-Interview Question: reverse%20-orange" height=25px>
+<img src="https://img.shields.io/badge/-Interview Question: reverse%20-orange" height=35px>
 
 ```java
 /**
@@ -261,9 +261,8 @@ public void reverse() {
 }
 ```
 
-<img src="https://img.shields.io/badge/-Interview Question: Find the Kth number from the END of the LinkedList in one Pass%20-orange" height=25px>
+<img src="https://img.shields.io/badge/-Interview Question: Find the Kth number from the END of the LinkedList in one Pass%20-orange" height=35px>
 
-### Find the K'th number from the END of the LinkedList in one Pass
 ```java
 /**
  * This method is a very popular Interview question:
