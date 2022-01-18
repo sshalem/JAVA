@@ -51,9 +51,23 @@ last = node;
 | <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Delete --> we itterate over an arrary with max length on N elements]() |   
 
 
-```java
-	
+```java	
+public class LinkedList {
 
+	private class Node {
+		private Object data;
+		private Node next;
+
+		@Override
+		public String toString() {
+			return "" + data;
+		}
+	}
+
+	public Node first;
+	public Node last;
+	public int size;
+}
 ```
 
 <img src="https://img.shields.io/badge/-Test the LinkedList %20-blue" height=40px> 
