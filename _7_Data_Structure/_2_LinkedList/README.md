@@ -8,9 +8,9 @@
 
 <img src="https://img.shields.io/badge/-Singly Linked List%20-blue" height=35px>
 
-with singly Linked List Each time we insert new Node (at begin or end) to LinkedList , we set a reference to next Node.
-Example :
-	Step1: When we add new element and its the first one we insert , it’s the head element and Head=last. (Because it's first Element in the List), and it points to Null.
+with singly Linked List Each time we insert new Node (at begin or end) to LinkedList , we set a reference to next Node.</br>
+Example :</br>
+	Step1: When we add new element and its the first one we insert , it’s the head element and Head=last. (Because it's first Element in the List), and it points to Null.</br>
 	Step2: When we add second Elemnt , (we update the data ) and assign refrence for the next node: </br>
 	
 ```java
