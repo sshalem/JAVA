@@ -3,8 +3,10 @@
 
 we have 2 types of linked list:
 
-<img src="https://img.shields.io/badge/-1. %20-blue" height=20px>  Singly Linked List
-<img src="https://img.shields.io/badge/-2. %20-blue" height=20px>  Doubly Linked List
+1. Singly Linked List
+2. Doubly Linked List
+
+
 
 
 
