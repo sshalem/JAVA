@@ -1,14 +1,17 @@
 ###### _
 <img src="https://img.shields.io/badge/-%20LinkedList Data Structure%20-brightgreen" height=50px>
 
-we have 2 types of linked list:
+### we have 2 types of linked list:
 
-1. Singly Linked List
-2. Doubly Linked List
+#### 1. Singly Linked List
+#### 2. Doubly Linked List
 
 <img src="https://img.shields.io/badge/-Singly Linked List%20-blue" height=35px>
 
 ![singly_Linked_List](https://user-images.githubusercontent.com/36256986/150023770-8a88d115-efda-4ccc-9e31-dfcd015fca34.PNG)
+
+
+
 
 <img src="https://img.shields.io/badge/-Doubly Linked List%20-blue" height=35px>
 
