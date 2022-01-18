@@ -2,6 +2,7 @@
 <img src="https://img.shields.io/badge/-%20LinkedList Data Structure%20-brightgreen" height=50px>
 
 we have 2 types of linked list:
+
 <img src="https://img.shields.io/badge/-1. %20-blue" height=20px>  Singly Linked List
 <img src="https://img.shields.io/badge/-2. %20-blue" height=20px>  Doubly Linked List
 
