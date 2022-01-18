@@ -50,6 +50,8 @@ last = node;
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) getDataOfNodeFromEndOfLinkedList
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) print 
 
+------------------------------------------------------------------------------------------------------------------------------------
+
 <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=35px>
 
 |  <img src="https://img.shields.io/badge/-O(x)%20-blue" height=30px>  |             |
