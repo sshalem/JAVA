@@ -56,10 +56,13 @@ last = node;
 
 |  <img src="https://img.shields.io/badge/-O(x)%20-blue" height=30px>  |             |
 |:-----:|:------------------------------| 
-| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px> |[Lookup by index/value]   | 
-| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Lookup by value --> we itterate over an arrary with max length on N elements ]  |   
-| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Insert --> we itterate over an arrary with max length on N elements] |   
-| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Delete --> we itterate over an arrary with max length on N elements] |   
+| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px> |[Lookup by index/value]()   | 
+| <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[Insert begin/end]()  |   
+| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Insert middle]()  |  
+| <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[Delete begin]() |   
+| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Delete middle]() |   
+| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Delete End]() |   
+| <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[Delete End Doubly Linked List]() |   
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ### The LinkedList class (Before adding all the methods) has following with :
