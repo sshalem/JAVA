@@ -11,11 +11,11 @@
 with singly Linked List Each time we insert new Node (at begin or end) to LinkedList , we set a reference to next Node.</br>
 Example :</br>
 	
-	add First Element: </br>
-		When we add new element and its the first one we insert , it’s the head element and Head=last. </br>
-	(Because it's first Element in the List), and it points to Null.</br>
-	add second element:</br>
-		When we add second Elemnt , (we update the data ) and assign refrence for the next node: </br>
+	add First Element: 
+		When we add new element and its the first one we insert , it’s the head element and Head=last. 
+		(Because it's first Element in the List), and it points to Null.
+	add second element:
+		When we add second Elemnt , (we update the data ) and assign refrence for the next node: 
 	
 ```java
 Node node = new Node();
