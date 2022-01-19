@@ -40,6 +40,8 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) isEmpty
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) toString
 
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
 ```java
 public class Stack {
 
