@@ -3,7 +3,7 @@
 |     |  Subject           |
 |:---:|:------------------------------| 
 |  1  |[Array](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_1_Array)   | 
-|  2  |[LinkedList]()  |   
+|  2  |[LinkedList](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_2_LinkedList)  |   
 |  3  |[Stack]() |   
 |  4  |[Queue]() |   
 |  5  |[HashTable]() |  
