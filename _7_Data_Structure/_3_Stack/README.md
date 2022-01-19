@@ -10,7 +10,7 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 |:-----:|:------------------------------| 
 |   1   |[Runtime Complexity](#__)   | 
 |   2   |[Stack implement from scratch](#___)   | 
-|   3   |[push]()   | 
+|   3   |[Interview Question - Reverse String](#____)  | 
 |   4   |[push]()   | 
 
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -81,6 +81,9 @@ public class Stack {
 [Back_to_top](#_)
 
 -----------------------------------------------------------------
+###### ____ 
+
+<img src="https://img.shields.io/badge/-Interview Question Reverse String%20-blue" height=35px> 
 
 ```java
 public String reverse(String str) {
