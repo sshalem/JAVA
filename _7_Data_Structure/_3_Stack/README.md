@@ -17,13 +17,10 @@
 
 |  <img src="https://img.shields.io/badge/-O(x)%20-blue" height=30px>  |             |
 |:-----:|:------------------------------| 
-| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px> |[Lookup by index/value]()   | 
-| <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[Insert begin/end]()  |   
-| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Insert middle]()  |  
-| <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[Delete begin]() |   
-| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Delete middle]() |   
-| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[Delete End]() |   
-| <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[Delete End Doubly Linked List]() |   
+| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px> |[push]()   | 
+| <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[pop]()  |   
+| <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[peek]()  |  
+| <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[empty]() |   
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
