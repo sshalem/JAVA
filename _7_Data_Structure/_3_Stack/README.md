@@ -24,7 +24,7 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-<img src="https://img.shields.io/badge/-Stack - implement from scratch%20-blue" height=35px>  
+<img src="https://img.shields.io/badge/-Stack implement from scratch%20-blue" height=35px>  
 
 ```java
 public class Stack {
