@@ -6,18 +6,6 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 * We don’t have lookups (Stack are not meant for that)
 * Stack Extends Vector Class
 
-
-
-
-### I implement of singly LinkedList Class from Scratch , with following methods:
-
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) push
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) pop
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) peek
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) empty
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) toString
- 
-
 ------------------------------------------------------------------------------------------------------------------------------------
 
 <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=35px>
@@ -32,6 +20,14 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 ------------------------------------------------------------------------------------------------------------------------------------
 
 <img src="https://img.shields.io/badge/-Stack implement from scratch%20-blue" height=35px>  
+
+### I implement of Stack class from Scratch , with following methods:
+
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) push
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) pop
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) peek
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) isEmpty
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) toString
 
 ```java
 public class Stack {
