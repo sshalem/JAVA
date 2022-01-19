@@ -14,7 +14,7 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 |   4   |[push]()   | 
 
 ------------------------------------------------------------------------------------------------------------------------------------
-######## __
+###### __
 
 <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=35px>
 
