@@ -105,4 +105,4 @@ public String reverse(String str) {
 	return reverse.toString();
 }
 ```
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=15px>](#_)
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
