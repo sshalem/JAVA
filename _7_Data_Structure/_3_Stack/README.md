@@ -2,7 +2,10 @@
 <img src="https://img.shields.io/badge/-%20Stack Data Structure%20-brightgreen" height=50px>
 
 Stack is a **LIFO** (Last In first Out) </br>
-Internally , Stack uses an **_Array_** or a **_LinkedList_**.
+Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
+	- We don’t have lookups (Stack are not meant for that)
+	- Stack Extends Vector Class
+
 
 
 
