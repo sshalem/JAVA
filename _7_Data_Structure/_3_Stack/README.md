@@ -87,6 +87,9 @@ public class Stack {
 
 <img src="https://img.shields.io/badge/-Interview Question Reverse String%20-blue" height=35px> 
 
+Reverse a String , for example : if I have a String of  **"abcdefg"** </br>
+I want to have an algorithm to reverse the string to get **"gfedcba"** </br>
+
 ```java
 public String reverse(String str) {
  
