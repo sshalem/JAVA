@@ -1,7 +1,7 @@
 ###### _
 <img src="https://img.shields.io/badge/-%20Queue Data Structure%20-brightgreen" height=50px>
 
-Stack is a **LIFO** (Last In first Out) </br>
+Queue is a **FIFO**  **_First In First Out_** </br>
 Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 * We don’t have lookups (Stack are not meant for that)
 * Stack Extends Vector Class
