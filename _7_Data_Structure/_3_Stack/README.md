@@ -3,8 +3,8 @@
 
 Stack is a **LIFO** (Last In first Out) </br>
 Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
-	- We don’t have lookups (Stack are not meant for that)
-	- Stack Extends Vector Class
+* We don’t have lookups (Stack are not meant for that)
+* Stack Extends Vector Class
 
 
 
