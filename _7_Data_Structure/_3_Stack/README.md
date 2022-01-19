@@ -4,17 +4,12 @@
 
 ### I implement of singly LinkedList Class from Scratch , with following methods:
 
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) insertLast
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) insertFirst
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) indexOf
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) contains
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) removeFirst
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) removeLast
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) size
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) toArray
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) reverse
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) getDataOfNodeFromEndOfLinkedList
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) print 
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) push
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) pop
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) peek
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) empty
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) toString
+ 
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
