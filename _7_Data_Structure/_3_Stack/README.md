@@ -6,8 +6,15 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 * We don’t have lookups (Stack are not meant for that)
 * Stack Extends Vector Class
 
-------------------------------------------------------------------------------------------------------------------------------------
+|       |             |
+|:-----:|:------------------------------| 
+|   1   |[Runtime Complexity](#__)   | 
+|   2   |[push]()   | 
+|   3   |[push]()   | 
+|   4   |[push]()   | 
 
+------------------------------------------------------------------------------------------------------------------------------------
+######## __
 <img src="https://img.shields.io/badge/-Runtime Complexity%20-blue" height=35px>
 
 |  <img src="https://img.shields.io/badge/-O(x)%20-blue" height=30px>  |             |
