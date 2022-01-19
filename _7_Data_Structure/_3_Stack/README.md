@@ -11,7 +11,7 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 |   1   |[Runtime Complexity](#__)   | 
 |   2   |[Stack implement from scratch](#___)   | 
 |   3   |[Interview Question - Reverse String](#____)  | 
-|   4   |[push]()   | 
+
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ###### __
