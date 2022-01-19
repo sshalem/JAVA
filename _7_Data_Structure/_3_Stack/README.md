@@ -69,4 +69,26 @@ public class Stack {
 
 [Back_to_top](#_)
 
+-----------------------------------------------------------------
 
+```java
+public String reverse(String str) {
+ 
+	if (str == null)
+		throw new IllegalArgumentException();
+
+	Stack<Character> stack = new Stack<Character>();
+
+	for (int i = 0; i < str.length(); i++) {
+		stack.push(str.charAt(i));
+	}
+
+	StringBuffer reverse = new StringBuffer();
+	for (int i = 0; i < str.length(); i++) {
+		Character pop = stack.pop();
+		reverse.append(pop);
+	}
+	return reverse.toString();
+}
+```
+[Back_to_top](#_)
