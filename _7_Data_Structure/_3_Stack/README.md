@@ -9,7 +9,7 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 |       |             |
 |:-----:|:------------------------------| 
 |   1   |[Runtime Complexity](#__)   | 
-|   2   |[push]()   | 
+|   2   |[Stack implement from scratch](#___)   | 
 |   3   |[push]()   | 
 |   4   |[push]()   | 
 
@@ -25,7 +25,10 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 | <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[peek]()  |  
 | <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[empty]() |   
 
+[Back_to_top](#_)
+
 ------------------------------------------------------------------------------------------------------------------------------------
+###### ___
 
 <img src="https://img.shields.io/badge/-Stack implement from scratch%20-blue" height=35px>  
 
