@@ -6,7 +6,7 @@
 #### 1. Singly Linked List
 #### 2. Doubly Linked List
 
-<img src="https://img.shields.io/badge/-Singly Linked List%20-blue" height=35px>
+<img src="https://img.shields.io/badge/-Singly Linked List%20-blue" height=45px>
 
 with singly Linked List Each time we insert new Node (at begin or end) to LinkedList , we set a reference to next Node.</br>
 Example :</br>
@@ -30,7 +30,7 @@ last = node;
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
-<img src="https://img.shields.io/badge/-Doubly Linked List%20-blue" height=35px>
+<img src="https://img.shields.io/badge/-Doubly Linked List%20-blue" height=45px>
 
 ![Doubly_Linked_List](https://user-images.githubusercontent.com/36256986/150023766-bde4fb5e-2f7e-498e-8394-5f165929edbb.PNG)
 
