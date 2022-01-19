@@ -2,7 +2,7 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
-|  1  |[Array]()    | 
+|  1  |[Array](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_1_Array)   | 
 |  2  |[LinkedList]()  |   
 |  3  |[Stack]() |   
 |  4  |[Queue]() |   
@@ -16,12 +16,3 @@
 |  12  |[Sorting Algorithms]() |  
 |  13  |[Searching Algorithms]() |  
 |  14  |[String Manipulation Algorithms]() |  
-
-
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) [Array](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_1_Array)
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) 
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) 
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) 
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) 
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) 
-
