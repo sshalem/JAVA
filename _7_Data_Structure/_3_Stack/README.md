@@ -25,7 +25,7 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 | <img src="https://img.shields.io/badge/-O(n)%20-orange" height=25px>  |[peek]()  |  
 | <img src="https://img.shields.io/badge/-O(1)%20-orange" height=25px>  |[empty]() |   
 
-[Back_to_top](#_)
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ###### ___
@@ -78,7 +78,7 @@ public class Stack {
 }
 ```
 
-[Back_to_top](#_)
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 -----------------------------------------------------------------
 ###### ____ 
