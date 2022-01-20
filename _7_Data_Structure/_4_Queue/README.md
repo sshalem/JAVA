@@ -4,7 +4,8 @@
 Queue is a **FIFO**  **_First In First Out_** </br>
 Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </br>
 
-<img src="https://img.shields.io/badge/-Examples of Queue implementations%20-brightgreen" height=35px>
+<img src="https://img.shields.io/badge/-Examples of Queue implementations%20-brightgreen" height=30px>
+
 1. Queue
 2. PriorityQueue
 3. BlockingQueue
