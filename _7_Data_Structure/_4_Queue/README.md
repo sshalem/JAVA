@@ -149,7 +149,7 @@ The elements of the priority queue are ordered according to the natural ordering
 -----------------------------------------------------------------
 ###### _____ 
 
-<img src="https://img.shields.io/badge/-Interview question : implement Queue with 2 stacks%20-blue" height=35px> 
+<img src="https://img.shields.io/badge/-Interview question : Reverse Queue%20-blue" height=35px> 
 
 
 ```java
