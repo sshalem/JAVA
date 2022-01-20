@@ -137,7 +137,7 @@ The elements of the priority queue are ordered according to the natural ordering
 
 ![PriorityQueue](https://user-images.githubusercontent.com/36256986/150425164-d7ed397c-9ca3-4043-a7b7-5cda942c782b.PNG)
 
-<img src="https://user-images.githubusercontent.com/36256986/150425164-d7ed397c-9ca3-4043-a7b7-5cda942c782b.PNG" width="200" height="300" />
+<img src="https://user-images.githubusercontent.com/36256986/150425164-d7ed397c-9ca3-4043-a7b7-5cda942c782b.PNG" width="400" height="500" />
 
 
 ```java
