@@ -131,7 +131,7 @@ public class ArrayQueue {
 <img src="https://img.shields.io/badge/-PriorityQueue%20-blue" height=35px> 
 
 A PriorityQueue is used when the objects are supposed to be processed based on the **priority**. </br>
-It is known that a Queue follows the First-In-First-Out algorithm, but sometimes the elements of the queue are needed to be processed according to the priority, that’s when the PriorityQueue comes into play.</br>
+It is known that a Queue follows the **First-In-First-Out** algorithm, but sometimes the elements of the queue are needed to be processed according to the priority, that’s when the PriorityQueue comes into play.</br>
 The PriorityQueue is based on the priority heap.</br>
 The elements of the priority queue are ordered according to the natural ordering, or, by a Comparator provided at queue construction time, depending on which constructor is used.  
 
