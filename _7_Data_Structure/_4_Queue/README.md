@@ -3,6 +3,12 @@
 
 Queue is a **FIFO**  **_First In First Out_** </br>
 Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </br>
+Examples of Queue: </br>
+1. Queue
+2. PriorityQueue
+3. BlockingQueue
+4. PriorityBlockingQueue
+5. ...
 
 |       |             |
 |:-----:|:------------------------------| 
