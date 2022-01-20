@@ -30,13 +30,35 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 
 <img src="https://img.shields.io/badge/-Queue implement by CircularArray%20-blue" height=35px>  
 
-### I implement of Stack class from Scratch , with following methods:
+### Implement Queue by Circular Array , with following methods:
 
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) enqueue
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) dequeue
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) peek
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) isEmpty
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) isFull
+
+Queue Implementation using Circular Array.
+	We add to the rear of the array.
+	We remove front the front of the array.
+
+Let's add to queue 3 items :
+	[10, 20, 30, 0, 0]
+
+If we remove 2 items from Queue we get the following array:
+	[0, 0, 30, 0, 0]
+	
+Let's now add 4 items to Queue
+	[60, 70, 30, 40, 50]
+	
+We can see it's in a Circular.
+
+Let's say we add 1 more items what will happen?
+	[60, 70, 30, 40, 50]
+
+We will get IllegalStateException
+![image](https://user-images.githubusercontent.com/36256986/150240245-7be3fe6c-5ca2-4477-aaac-23e1222e42a1.png)
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
