@@ -135,8 +135,6 @@ It is known that a Queue follows the **First-In-First-Out** algorithm, but somet
 The PriorityQueue is based on the priority heap.</br>
 The elements of the priority queue are ordered according to the natural ordering, or, by a Comparator provided at queue construction time, depending on which constructor is used.  
 
-![PriorityQueue](https://user-images.githubusercontent.com/36256986/150425164-d7ed397c-9ca3-4043-a7b7-5cda942c782b.PNG)
-
 <img src="https://user-images.githubusercontent.com/36256986/150425164-d7ed397c-9ca3-4043-a7b7-5cda942c782b.PNG" width="600" height="600" />
 
 
