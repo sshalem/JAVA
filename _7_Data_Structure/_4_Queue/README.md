@@ -18,6 +18,7 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 |   2   |[Queue implement by CircularArray](#___)   |
 |   3   |[PriorityQueue](#____)   | 
 |   4   |[Interview question : implement Queue with 2 stacks](#_____)  | 
+|   5   |[Interview question : Reverse Queue](#______)  | 
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -192,3 +193,53 @@ public class QueueImplWith2Stacks {
 }
 ```
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+-----------------------------------------------------------------
+
+###### _____ 
+
+<img src="https://img.shields.io/badge/-Interview question : implement Queue with 2 stacks%20-blue" height=35px> 
+
+
+```java
+import java.util.Stack;
+
+public class QueueImplWith2Stacks {
+
+	/**
+	 * Q [10, 20, 30, 40] 
+	 * S1 --> enqueue 
+	 * S2 --> dequeue
+	 */
+	public Stack<Integer> stack1 = new Stack<Integer>();
+	public Stack<Integer> stack2 = new Stack<Integer>();
+
+	public void enqueue(int item) {
+		stack1.push(item);
+	}
+
+	public int dequeue() {
+		if (stack1.isEmpty() && stack2.isEmpty())
+			throw new IllegalStateException();
+		if (stack2.isEmpty()) {
+			while (!stack1.isEmpty()) {
+				stack2.push(stack1.pop());
+			}
+		}
+		return stack2.pop();
+	}
+
+	public int peek() {
+		if (stack1.isEmpty() && stack2.isEmpty())
+			throw new IllegalStateException();
+		if (stack2.isEmpty()) {
+			while (!stack1.isEmpty()) {
+				stack2.push(stack1.pop());
+			}
+		}
+		return stack2.peek();
+	}
+}
+```
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
