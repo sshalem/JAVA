@@ -15,8 +15,9 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 |       |             |
 |:-----:|:------------------------------| 
 |   1   |[Runtime Complexity](#__)   | 
-|   2   |[Queue implement by CircularArray](#___)   | 
-|   3   |[Interview question : implement Queue with 2 stacks](#____)  | 
+|   2   |[Queue implement by CircularArray](#___)   |
+|   3   |[PriorityQueue](#____)   | 
+|   4   |[Interview question : implement Queue with 2 stacks](#_____)  | 
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -125,7 +126,19 @@ public class ArrayQueue {
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 -----------------------------------------------------------------
-###### ____ 
+###### _____ 
+
+<img src="https://img.shields.io/badge/-PriorityQueue%20-blue" height=35px> 
+
+
+```java
+
+```
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+###### _____ 
+
+-----------------------------------------------------------------
 
 <img src="https://img.shields.io/badge/-Interview question : implement Queue with 2 stacks%20-blue" height=35px> 
 
