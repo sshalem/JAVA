@@ -282,41 +282,69 @@ class ArrayManipulation {
 
 	public int[] removeDuplications(int[] array) {
 
-		int randomeSize = array.length;
-		int duplicated = 0;
+		/**
+		 * check for duplications, and update the length on the dynamic array
+		 */
+		int dynamicArrayLength = calculateDynamicArrayLength(array);
 
-		// check for duplicated numbers.
-		// If duplication is found, the randomSize of new array is subtracted by 1
-		for (int i = 1; i < array.length; i++) {
-			for (int j = i - 1; 0 <= j; j--) {
-				if (array[i] == array[j])
-					duplicated++;
-			}
-			if (0 < duplicated) {
-				randomeSize--;
-			}
-			duplicated = 0;
-		}
+		/**
+		 * define new array with the length calculated in the above code
+		 * dynamicArrayLength number. I copy The first element of the array
+		 * dynamicArray[0] should be same as original array. I start to add to the
+		 * dynamicArray from its index 1 --> dynamicArray[1].
+		 */
 
-		// define new array with the size of the randomSize number
-		int[] newSize = new int[randomeSize];
+		int[] arrayWithoutDuplication = createNewArrayWithoutDuplication(array, dynamicArrayLength);
+
+		return arrayWithoutDuplication;
+
+	}
+
+	private int[] createNewArrayWithoutDuplication(int[] array, int dynamicArrayLength) {
+
+		int[] dynamicArray = new int[dynamicArrayLength];
+		dynamicArray[0] = array[0];
 		int index = 1;
-		newSize[0] = array[0];
+
+		boolean isDuplicated = false;
 
 		for (int i = 1; i < array.length; i++) {
 			for (int j = i - 1; 0 <= j; j--) {
 				if (array[i] == array[j])
-					duplicated++;
+					isDuplicated = true;
 			}
-			if (duplicated == 0) {
-				newSize[index] = array[i];
+			if (isDuplicated == false) {
+				dynamicArray[index] = array[i];
 				index++;
 			}
-			duplicated = 0;
+			isDuplicated = false;
 		}
+		return dynamicArray;
 
-		return newSize;
+	}
 
+	private int calculateDynamicArrayLength(int[] array) {
+		/**
+		 * this will store the length of new dynamicArray
+		 */
+		int dynamicArrayLength = array.length;
+		boolean isDuplicated = false;
+
+		/**
+		 * check for duplicated numbers. If isDuplicated == true, the dynamicArrayLength
+		 * is subtracted by 1
+		 */
+		for (int i = 0; i < array.length; i++) {
+			for (int j = i + 1; j < array.length; j++) {
+				if (array[i] == array[j])
+					isDuplicated = true;
+			}
+			if (isDuplicated == true) {
+				dynamicArrayLength--;
+			}
+			isDuplicated = false;
+		}
+		return dynamicArrayLength;
 	}
 }
 
