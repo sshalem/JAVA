@@ -74,6 +74,9 @@ public class ArrayQueue {
 			throw new IllegalStateException();
 		}
 		array[rear] = item;
+		/**
+		* This is to make the Array Circular
+		*/
 		rear = (rear + 1) % array.length;
 		count++;
 	}
@@ -81,6 +84,9 @@ public class ArrayQueue {
 	public int dequeue() {
 		int item = array[front];
 		array[front] = 0;
+		/**
+		* This is to make the Array Circular
+		*/
 		front = (front + 1) % array.length;
 		count--;
 		return item;
