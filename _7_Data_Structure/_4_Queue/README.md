@@ -19,6 +19,7 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 |   3   |[PriorityQueue](#____)   | 
 |   4   |[Interview question : Reverse Queue](#_____)  | 
 |   5   |[Interview question : implement Queue with 2 stacks](#______)  | 
+|   6   |[Interview question : implement Queue using LinkedList](#_______)  | 
 
 
 
@@ -319,3 +320,38 @@ public class QueueImplWith2Stacks {
 ```
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
+-----------------------------------------------------------------
+
+###### _______ 
+
+<img src="https://img.shields.io/badge/-Interview question : implement Queue using LinkedList%20-blue" height=35px> 
+
+
+```java
+
+```
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+-----------------------------------------------------------------
+
+###### ______ 
+
+<img src="https://img.shields.io/badge/-Interview question : implement Queue with 2 stacks%20-blue" height=35px> 
+
+
+```java
+
+```
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+-----------------------------------------------------------------
+
+###### ______ 
+
+<img src="https://img.shields.io/badge/-Interview question : implement Queue with 2 stacks%20-blue" height=35px> 
+
+
+```java
+
+```
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
