@@ -1,5 +1,5 @@
 ###### _
-<img src="https://img.shields.io/badge/-%20Queue Data Structure%20-brightgreen" height=50px>
+<img src="https://img.shields.io/badge/-%20Queue - Data Structure%20-brightgreen" height=50px>
 
 Queue is a **FIFO**  **_First In First Out_** </br>
 Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </br>
