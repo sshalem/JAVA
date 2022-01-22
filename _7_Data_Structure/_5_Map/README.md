@@ -14,13 +14,9 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 
 |       |    <img src="https://img.shields.io/badge/-Table of Content%20-blue" height=30px>         |
 |:-----:|:------------------------------| 
-|   1   |[Runtime Complexity](#__)   | 
-|   2   |[Queue implement by CircularArray](#___)   |
-|   3   |[PriorityQueue](#____)   | 
-|   4   |[Interview question : Reverse Queue](#_____)  | 
-|   5   |[Interview question : Reverse last K element of Queue](#______)  | 
-|   6   |[Interview question : implement Queue with 2 stacks](#_______)  | 
-|   7   |[Interview question : implement Queue using LinkedList](#________)  | 
+|   1   |[Runtime Complexity](#_)   | 
+|   2   |[Interview question : Find the first Non repeated character](#__) | 
+
 
 
 
@@ -42,9 +38,9 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 
 -----------------------------------------------------------------
 
-###### ______ 
+###### __ 
 
-<img src="https://img.shields.io/badge/-Interview question : %20-blue" height=35px> 
+<img src="https://img.shields.io/badge/-Interview question : Find the first Non repeated character%20-blue" height=35px> 
 
 
 ```java
