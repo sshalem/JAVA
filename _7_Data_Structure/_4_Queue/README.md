@@ -12,7 +12,7 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 4. PriorityBlockingQueue
 5. ...
 
-|       |             |
+|       |    Table of Content         |
 |:-----:|:------------------------------| 
 |   1   |[Runtime Complexity](#__)   | 
 |   2   |[Queue implement by CircularArray](#___)   |
