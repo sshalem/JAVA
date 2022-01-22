@@ -269,6 +269,14 @@ public class QueueReverse {
 
 <img src="https://img.shields.io/badge/-Interview question : Reverse last K element of Queue%20-blue" height=35px> 
 
+Given an integer K and a queue of integers, write code to reverse the </br>
+order of the first K elements of the queue. </br>
+K = 3</br>
+Input: Q = [10, 20, 30, 40, 50], </br>
+
+Output: Q = [30, 20, 10, 40, 50]</br>
+
+
 
 ```java
 import java.util.Queue;
