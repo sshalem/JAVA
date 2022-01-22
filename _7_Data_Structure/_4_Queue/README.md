@@ -418,7 +418,7 @@ public class LinkedListQueue {
 
 ###### ______ 
 
-<img src="https://img.shields.io/badge/-Interview question : implement Queue with 2 stacks%20-blue" height=35px> 
+<img src="https://img.shields.io/badge/-Interview question : %20-blue" height=35px> 
 
 
 ```java
@@ -430,7 +430,19 @@ public class LinkedListQueue {
 
 ###### ______ 
 
-<img src="https://img.shields.io/badge/-Interview question : implement Queue with 2 stacks%20-blue" height=35px> 
+<img src="https://img.shields.io/badge/-Interview question : %20-blue" height=35px> 
+
+
+```java
+
+```
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+-----------------------------------------------------------------
+
+###### ______ 
+
+<img src="https://img.shields.io/badge/-Interview question : %20-blue" height=35px> 
 
 
 ```java
