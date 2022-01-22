@@ -12,7 +12,7 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 4. PriorityBlockingQueue
 5. ...
 
-|       |    Table of Content         |
+|       |    <img src="https://img.shields.io/badge/-Table of Content%20-blue" height=30px>         |
 |:-----:|:------------------------------| 
 |   1   |[Runtime Complexity](#__)   | 
 |   2   |[Queue implement by CircularArray](#___)   |
