@@ -18,8 +18,9 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 |   2   |[Queue implement by CircularArray](#___)   |
 |   3   |[PriorityQueue](#____)   | 
 |   4   |[Interview question : Reverse Queue](#_____)  | 
-|   5   |[Interview question : implement Queue with 2 stacks](#______)  | 
-|   6   |[Interview question : implement Queue using LinkedList](#_______)  | 
+|   5   |[Interview question : Reverse last K element of Queue](#______)  | 
+|   6   |[Interview question : implement Queue with 2 stacks](#_______)  | 
+|   7   |[Interview question : implement Queue using LinkedList](#________)  | 
 
 
 
@@ -264,8 +265,48 @@ public class QueueReverse {
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 -----------------------------------------------------------------
-
 ###### ______ 
+
+<img src="https://img.shields.io/badge/-Interview question : Reverse last K element of Queue%20-blue" height=35px> 
+
+
+```java
+import java.util.Queue;
+import java.util.Stack;
+
+public class QueueReverser {
+    public static void reverse(Queue<Integer> queue, int k) {
+        if (k < 0 || k > queue.size())
+            throw new IllegalArgumentException();
+
+        java.util.Stack<Integer> stack = new Stack<>();
+
+        // Dequeue the first K elements from the queue
+        // and push them onto the stack
+        for (int i = 0; i < k; i++)
+            stack.push(queue.remove());
+
+        // Enqueue the content of the stack at the
+        // back of the queue
+        while (!stack.empty())
+            queue.add(stack.pop());
+
+        // Add the remaining items in the queue (items
+        // after the first K elements) to the back of the
+        // queue and remove them from the beginning of the queue
+        for (int i = 0; i < queue.size() - k; i++)
+            queue.add(queue.remove());
+
+    }
+}
+
+```
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+
+-----------------------------------------------------------------
+
+###### _______ 
 
 <img src="https://img.shields.io/badge/-Interview question : implement Queue with 2 stacks%20-blue" height=35px> 
 
@@ -314,7 +355,7 @@ public class QueueImplWith2Stacks {
 
 -----------------------------------------------------------------
 
-###### _______ 
+###### _________ 
 
 <img src="https://img.shields.io/badge/-Interview question : implement Queue using LinkedList%20-blue" height=35px> 
 
