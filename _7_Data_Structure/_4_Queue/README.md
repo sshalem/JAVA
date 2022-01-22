@@ -230,44 +230,36 @@ public class PriorityQueueImpl {
 
 
 ```java
+import java.util.Queue;
 import java.util.Stack;
 
-public class QueueImplWith2Stacks {
+public class QueueReverse {
 
-	/**
-	 * Q [10, 20, 30, 40] 
-	 * S1 --> enqueue 
-	 * S2 --> dequeue
-	 */
-	public Stack<Integer> stack1 = new Stack<Integer>();
-	public Stack<Integer> stack2 = new Stack<Integer>();
+	public Queue<Integer> reverseQueue(Queue<Integer> queue) {
 
-	public void enqueue(int item) {
-		stack1.push(item);
-	}
+		/**
+		 * Here we reverse the QUeue by using a Stack
+		 * Queue [10, 20 ,30, 40] 
+		 * queue.remove() till it's empty and move it to a stack [10, 20 , 30, 40]
+		 * 
+		 * Now, Move from stack to Queue
+		 */
+		Stack<Integer> stack = new Stack<Integer>();
 
-	public int dequeue() {
-		if (stack1.isEmpty() && stack2.isEmpty())
-			throw new IllegalStateException();
-		if (stack2.isEmpty()) {
-			while (!stack1.isEmpty()) {
-				stack2.push(stack1.pop());
-			}
+		while (!queue.isEmpty()) {
+			Integer removeFromQueue = queue.remove();
+			stack.push(removeFromQueue);
 		}
-		return stack2.pop();
-	}
-
-	public int peek() {
-		if (stack1.isEmpty() && stack2.isEmpty())
-			throw new IllegalStateException();
-		if (stack2.isEmpty()) {
-			while (!stack1.isEmpty()) {
-				stack2.push(stack1.pop());
-			}
+					
+		while(!stack.empty()) {
+			Integer pop = stack.pop();
+			queue.add(pop);
 		}
-		return stack2.peek();
+			
+		return queue;
 	}
 }
+
 ```
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
