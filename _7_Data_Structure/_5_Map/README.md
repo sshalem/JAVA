@@ -1,16 +1,14 @@
 ###### _
-<img src="https://img.shields.io/badge/-%20Map : Data Structure%20-brightgreen" height=50px>
+<img src="https://img.shields.io/badge/-%20Map : Data Structure%20-blue" height=50px>
 
-Queue is a **FIFO**  **_First In First Out_** </br>
-Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </br>
+* Map is a Key,Value  --> Map<K,V>
 
-<img src="https://img.shields.io/badge/-Examples of Queue implementations%20-brightgreen" height=30px>
+(Note :	Set has also Hash implemented --> HashSet, but it only has a key)
 
-1. Queue
-2. PriorityQueue
-3. BlockingQueue
-4. PriorityBlockingQueue
-5. ...
+<img src="https://img.shields.io/badge/-Examples of Map implementations%20-brightgreen" height=30px>
+
+1. HashMap (Can have key as null, can have value as null)
+2. HashTable (Thread safe)
 
 |       |    <img src="https://img.shields.io/badge/-Table of Content%20-blue" height=30px>         |
 |:-----:|:------------------------------| 
