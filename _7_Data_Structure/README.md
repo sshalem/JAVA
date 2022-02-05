@@ -15,7 +15,7 @@
 |  9  |[Tries]() |   
 |  10  |[Graphs]() |  
 |  11  |[Undirected Graphs]() |  
-|      | <img src="https://img.shields.io/badge/-Sorting & Searching %20-blue" height=25px> | 
+|      | <img src="https://img.shields.io/badge/-Sorting & Searching %20-brown" height=25px> | 
 |  12  |[Sorting Algorithms]() |  
 |  13  |[Searching Algorithms]() |  
 |  14  |[String Manipulation Algorithms]() |  
