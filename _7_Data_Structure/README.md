@@ -7,7 +7,7 @@
 |  3  |[Stack](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_3_Stack) |   
 |  4  |[Queue](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_4_Queue) |   
 |  5  |[HashMap / HashTable](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_5_Map) |  
-|     |<img src="https://img.shields.io/badge/-Data Structures%20-blue" height=25px>()    | 
+|     |<img src="https://img.shields.io/badge/-Non Linear Data Structures%20-brigthgreen" height=25px>()    | 
 |  6  |[Binary Tree]()    | 
 |  7  |[AVL Tree]()  |   
 |  8  |[Heaps]() |   
