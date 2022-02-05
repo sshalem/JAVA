@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/-Data Structures%20-brightgreen" height=70px>
+<img src="https://img.shields.io/badge/-Data Structures%20-blue" height=70px>
 
 |     |  Subject           |
 |:---:|:------------------------------| 
@@ -6,7 +6,7 @@
 |  2  |[LinkedList](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_2_LinkedList)  |   
 |  3  |[Stack](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_3_Stack) |   
 |  4  |[Queue](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_4_Queue) |   
-|  5  |[HashMap / HashTable]() |  
+|  5  |[HashMap / HashTable](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure/_5_Map) |  
 |  6  |[Binary Tree]()    | 
 |  7  |[AVL Tree]()  |   
 |  8  |[Heaps]() |   
