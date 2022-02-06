@@ -22,7 +22,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 ###### __
 
-<img src="https://img.shields.io/badge/-UML Class, Inheritance, Interface , Composed %20-blue" height=30px> 
+<img src="https://img.shields.io/badge/-UML Class, Inheritance, Interface , Composed , Dependency%20-blue" height=30px> 
 
 ### [UML of a simple Class](#__)
 
