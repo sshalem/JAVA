@@ -24,7 +24,7 @@
 
 <img src="https://img.shields.io/badge/-UML Class, Inheritance, Interface , Composed %20-blue" height=30px> 
 
-## [Class](#__)
+### [Class](#__)
 
 ![uml_diagram](https://user-images.githubusercontent.com/36256986/152701038-b5151b51-b399-4697-8012-f59bfca24062.jpg)
 
