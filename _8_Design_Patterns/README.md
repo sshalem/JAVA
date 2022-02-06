@@ -28,6 +28,26 @@
 
 ![uml_diagram](https://user-images.githubusercontent.com/36256986/152701038-b5151b51-b399-4697-8012-f59bfca24062.jpg)
 
+```java
+public class Animal {
+
+	private int id;
+	private String name;
+	private int age;
+
+	public Animal() {
+
+	}
+
+	public void printAnimalName() {
+		System.out.println(this.name);
+	}
+
+	public int getYearOfBirth(int currentYear) {
+		return currentYear - this.age;
+	}
+}
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
