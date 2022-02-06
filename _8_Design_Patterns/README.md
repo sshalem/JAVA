@@ -24,7 +24,7 @@
 
 <img src="https://img.shields.io/badge/-UML Class, Inheritance, Interface , Composed %20-blue" height=30px> 
 
-### [Class](#__)
+### [UML of a simple Class](#__)
 
 ![UML_Class](https://user-images.githubusercontent.com/36256986/152701203-884cbce0-42cf-4b91-9d60-c4c6d1cf0c62.PNG)
 
