@@ -56,7 +56,11 @@ public class Animal {
 ```java
 ```
 
-https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/instance.puml
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Zingam/Markdown-Document-UML-Use-Test/master/UML/Instance.puml)
+
+![Class Diagram](https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/instance.puml)
+
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
