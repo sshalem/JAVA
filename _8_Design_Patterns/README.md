@@ -51,7 +51,7 @@ public class Animal {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
-### [UML of ](#__)
+### [UML of Inheritance](#__)
 
 ```java
 ```
