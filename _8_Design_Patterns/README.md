@@ -1,8 +1,8 @@
 ###### _
 
-<img src="https://img.shields.io/badge/-JAVA%20-blue" height=70px>
+<img src="https://img.shields.io/badge/-JAVA Design Patterns%20-blue" height=70px>
 
-|     |  <img src="https://img.shields.io/badge/-Design Patterns%20-brightgreen" height=35px>           |
+|     |             |
 |:---:|:------------------------------| 
 |     |<img src="https://img.shields.io/badge/-Creational%20-blue" height=30px>  | 
 |  1  |[Random](#)   | 
