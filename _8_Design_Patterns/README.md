@@ -26,7 +26,8 @@
 
 ### [Class](#__)
 
-![uml_diagram](https://user-images.githubusercontent.com/36256986/152701038-b5151b51-b399-4697-8012-f59bfca24062.jpg)
+![uml_diagram](https://user-images.githubusercontent.com/36256986/152701193-f2ed4b2d-a2c5-4948-9c1c-b82c6d4dc8f4.jpg)
+
 
 ```java
 public class Animal {
