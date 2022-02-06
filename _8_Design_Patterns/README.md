@@ -55,19 +55,6 @@ public class Animal {
 
 ```java
 ```
-@startuml
-
-Instance <|-- VulkanRootObject
-
-class Instance {
-    -- Contructors & destructors --
-    - Instance()
-    
-    -- Public methods --
-    + Initialize() : bool
-}
-
-@enduml
 
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
