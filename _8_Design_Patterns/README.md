@@ -6,6 +6,8 @@
 
 <img src="https://img.shields.io/badge/Note-Repository%20must%20be%20PUBLIC%20in%20order%20to%20be%20able%20to%20use%20plantuml%20Proxy-red" height=35px>
 
+http://www.plantuml.com/plantuml/proxy
+
 
 
 [1. PlantUml Home Page](https://plantuml.com/) </br>
