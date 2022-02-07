@@ -1,0 +1,14 @@
+@startuml
+class Animal {
+
+	- id : int
+	- name : String
+	- age : int
+
+    + Animal() : ctor
+==================
+
+   + printAnimalName() : void
+   + getYearOfBirth(currentYear : int) : int
+}
+@enduml
