@@ -4,9 +4,7 @@
 
 ### [link for creating UML</br>](#_)
 
-![](https://img.shields.io/badge/NOTE-MyMsg-blue)
-
-<img src="https://img.shields.io/badge/Note-Repository%20must%20be%20Public%20in%20order%20to%20be%20able%20to%20use%20plantuml%20Proxy-red" height=40px>
+<img src="https://img.shields.io/badge/Note-Repository%20must%20be%20Public%20in%20order%20to%20be%20able%20to%20use%20plantuml%20Proxy-red" height=35px>
 
 
 
