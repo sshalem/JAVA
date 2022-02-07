@@ -42,7 +42,8 @@ http://www.plantuml.com/plantuml/proxy
 
 ### [UML of a simple Class](#__)
 
-![Class_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/sshalem/JAVA/master/_8_Design_Patterns/UML/Class_UML.puml) 
+![uml_diagram](https://user-images.githubusercontent.com/36256986/152887402-6b594459-0015-4e5d-9a0c-6b7f99888464.jpg)
+
 
 ```java
 public class Animal {
@@ -65,40 +66,15 @@ public class Animal {
 }
 ```
 
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
-
-### [UML of Inheritance](#__)
-
-![Inheritance_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/sshalem/JAVA/master/_8_Design_Patterns/UML/Inheritance_UML.puml)
-
-* In the UML ,we can see that : </br>
-
- 	the **empty Triangle arrow** pointing Parent class.
-
 ```java
 public class Shape {
-
 }
 
-public class Circle extends Shape{
-	
+public class Circle extends Shape{	
 }
 ```
 
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
-
-### [UML of Composition](#__)
-
-![Composition_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/sshalem/JAVA/master/_8_Design_Patterns/UML/Composition_Uml.puml)
-
-* Composition is described with a **_Filled Diamond_** at Parent Class.</br>
-  It means , that a Parent will have field composed from the Composed Class </br>
-  For example , a Person has following organs : Heart, Hands, Legs.</br>
-  So, Class of Person will have fields of Classes : Heart, Hands, Legs</br>
-  In the UML ,we can see that : </br>
-
- 	the **_Filled Diamond_** is pointing to Parent class.
 ```java
 public class Heart {
 }
@@ -116,11 +92,6 @@ public class Person {
 }
 ```
 
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
-
-
-### [UML of Interface](#__)
-
 ```java
 public interface orderDao {
 }
@@ -129,22 +100,9 @@ public class OrderDaoImpl implements orderDao {
 }
 ```
 
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
-
-
-### [UML of ](#__)
-
-```java
-```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 
-### [UML of ](#__)
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 ------------------------------------------------------------------------------------------------------------------------------------
