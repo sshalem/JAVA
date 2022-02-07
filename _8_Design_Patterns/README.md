@@ -64,7 +64,7 @@ public class Animal {
 }
 ```
 
-### [Inheritance (Extends)] (#__)
+### [Inheritance (Extends)](#__)
 ```java
 public class Shape {
 }
@@ -73,7 +73,7 @@ public class Circle extends Shape{
 }
 ```
 
-### [Interface(Implements)] (#__)
+### [Interface(Implements)](#__)
 
 ```java
 public interface orderDao {
@@ -83,7 +83,7 @@ public class OrderDaoImpl implements orderDao {
 }
 ```
 
-### [Composition] (#__)
+### [Composition](#__)
 
 ```java
 public class Heart {
