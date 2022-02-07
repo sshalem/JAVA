@@ -2,6 +2,10 @@
 
 <img src="https://img.shields.io/badge/-JAVA Design Patterns%20-blue" height=70px>
 
+link for creating UML</br>
+https://plantuml.com/class-diagram
+
+
 |     |             |
 |:---:|:------------------------------| 
 |     |<img src="https://img.shields.io/badge/-UML fondamentals%20-blue" height=30px>  | 
