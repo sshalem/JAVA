@@ -73,7 +73,7 @@ public class Animal {
 
 * In the UML ,we can see that : </br>
 
- 	the **empty arrow** goes from the Child class to the Parent class.
+ 	the **empty Triangle arrow** goes from the Child class to the Parent class.
 
 ```java
 public class Shape {
