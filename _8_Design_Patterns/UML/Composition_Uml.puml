@@ -1,0 +1,10 @@
+@startuml
+class Person
+class Heart
+class Hands
+class Legs
+
+Person *-- Heart
+Person *-- Hands
+Person *-- Legs
+@enduml
