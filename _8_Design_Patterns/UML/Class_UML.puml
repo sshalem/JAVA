@@ -1,17 +1,14 @@
 @startuml
-
 class Animal {
 
 	- id : int
 	- name : String
 	- age : int
 
-    -- Contructors --
-    + Animal()
-    
-    -- Public methods --
-    + printAnimalName() : void
-	+ getYearOfBirth(currentYear : int) : int
-}
+    + Animal() : ctor
+==================
 
+   + printAnimalName() : void
+   + getYearOfBirth(currentYear : int) : int
+}
 @enduml
