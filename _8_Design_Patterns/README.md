@@ -92,11 +92,11 @@ public class Circle extends Shape{
 
 ![Composition_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/sshalem/JAVA/master/_8_Design_Patterns/UML/Composition_Uml.puml)
 
-* Composition is described with a **_Filled Diamond_** at Parent Class.
-* It means , that a Parent will have field composed from the Composed Class
-* For example , a Person has following organs : Heart, Hands, Legs.
-* So, Class of Person will have fields of Classes : Heart, Hands, Legs
-* In the UML ,we can see that : </br>
+* Composition is described with a **_Filled Diamond_** at Parent Class.</br>
+  It means , that a Parent will have field composed from the Composed Class </br>
+  For example , a Person has following organs : Heart, Hands, Legs.</br>
+  So, Class of Person will have fields of Classes : Heart, Hands, Legs</br>
+  In the UML ,we can see that : </br>
 
  	the **_Filled Diamond_** pointing Parent class.
 ```java
