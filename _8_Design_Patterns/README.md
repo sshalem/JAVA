@@ -100,6 +100,20 @@ public class Circle extends Shape{
 
  	the **_Filled Diamond_** pointing Parent class.
 ```java
+public class Heart {
+}
+
+public class Hands {
+}
+
+public class Legs {
+}
+
+public class Person {
+	private Heart heart;
+	private Legs legs;
+	private Hands hands;
+}
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
