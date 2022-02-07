@@ -71,7 +71,8 @@ public class Animal {
 
 ![Inheritance_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/sshalem/JAVA/master/_8_Design_Patterns/UML/Inheritance_UML.puml)
 
-* In the UML ,we can see that :
+* In the UML ,we can see that : </br>
+
  	the **empty arrow** goes from the Child class to the Parent class.
 
 ```java
