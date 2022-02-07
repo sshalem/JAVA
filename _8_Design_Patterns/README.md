@@ -98,7 +98,7 @@ public class Circle extends Shape{
   So, Class of Person will have fields of Classes : Heart, Hands, Legs</br>
   In the UML ,we can see that : </br>
 
- 	the **_Filled Diamond_** pointing Parent class.
+ 	the **_Filled Diamond_** is pointing to Parent class.
 ```java
 public class Heart {
 }
