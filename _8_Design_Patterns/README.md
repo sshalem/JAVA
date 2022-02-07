@@ -31,9 +31,6 @@ https://plantuml.com/class-diagram
 
 ### [UML of a simple Class](#__)
 
-![UML_Class](https://user-images.githubusercontent.com/36256986/152701203-884cbce0-42cf-4b91-9d60-c4c6d1cf0c62.PNG)
-
-
 ![Class_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/sshalem/JAVA/master/_8_Design_Patterns/UML/Class_UML.puml) 
 
 ```java
@@ -60,6 +57,8 @@ public class Animal {
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 ### [UML of Inheritance](#__)
+
+![Class_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/sshalem/JAVA/master/_8_Design_Patterns/UML/Class_UML.puml) 
 
 ```java
 ```
