@@ -69,7 +69,7 @@ public class Animal {
 
 ### [UML of Inheritance](#__)
 
-![Class_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/UML/Inheritance_UML.puml) 
+![Inheritance_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/https://github.com/sshalem/JAVA/master/_8_Design_Patterns/UML/Inheritance_UML.puml)
 
 ```java
 ```
