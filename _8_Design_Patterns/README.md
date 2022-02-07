@@ -73,7 +73,7 @@ public class Animal {
 
 * In the UML ,we can see that : </br>
 
- 	the **empty Triangle arrow** goes from the Child class to the Parent class.
+ 	the **empty Triangle arrow** pointing Parent class.
 
 ```java
 public class Shape {
@@ -88,11 +88,17 @@ public class Circle extends Shape{
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 
-
 ### [UML of Composition](#__)
 
-![Inheritance_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/)
+![Composition_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/)
 
+* Composition is described with a **_Filled Diamond_** at Parent Class.
+* It means , that a Parent will have field composed from the Composed Class
+* For example , a Person has following organs : Heart, Hands, Legs.
+* So, Class of Person will have fields of Classes : Heart, Hands, Legs
+* In the UML ,we can see that : </br>
+
+ 	the **_Filled Diamond_** pointing Parent class.
 ```java
 ```
 
