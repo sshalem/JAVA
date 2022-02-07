@@ -65,7 +65,7 @@ public class Animal {
 
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/UML/Class_UML.puml)
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=//www.plantuml.com/plantuml/png/PKuxhi903AoVJ-4oqHCNG48A700AAaehCS5IuY2lGuEuEyxkTanbpyVZBZcPh_C4_KGfuL5bfWdV07yxb07tAEhRh3HpR5StqN4ZQEIg0WR-QxHfW-rzCJZy020RdnQfuZx7rPnuBJ8KTMI_CTdbVXBpHzElPgoPAdLjRVr0nph4vry0)
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
