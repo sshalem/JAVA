@@ -6,9 +6,9 @@
 
 ![](https://img.shields.io/badge/NOTE-MyMsg-blue)
 
-![](https://img.shields.io/badge/Note-Repository-must-be-Public-in-order-to-be-able-to-use-plantuml-Proxy-blue)
+<img src="https://img.shields.io/badge/Note-Repository%20must%20be%20Public%20in%20order%20to%20be%20able%20to%20use%20plantuml%20Proxy-red" height=40px>
 
-<img src="https://img.shields.io/badge/-Repository must be **Public** in order to be able to use plantuml Proxy %20-blue" height=40px>
+
 
 [1. PlantUml Home Page](https://plantuml.com/) </br>
 [2. Creat UML for JAVA](https://plantuml.com/class-diagram) </br>
