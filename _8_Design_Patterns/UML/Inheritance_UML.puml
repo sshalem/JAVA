@@ -1,15 +1,15 @@
 @startuml
-class Animal {
+class Shape {
 
 ==================
 
 }
 
-class Dog {
+class Circle {
 
 ==
  
 }
 
-Animal <|-- Dog
+Shape <|-- Circle
 @enduml
