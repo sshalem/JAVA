@@ -44,7 +44,7 @@ http://www.plantuml.com/plantuml/proxy
 
 ![uml_diagram](https://user-images.githubusercontent.com/36256986/152887402-6b594459-0015-4e5d-9a0c-6b7f99888464.jpg)
 
-
+### [Class UML] 
 ```java
 public class Animal {
 
@@ -65,7 +65,7 @@ public class Animal {
 	}
 }
 ```
-
+### [Inheritance (Extends)] 
 ```java
 public class Shape {
 }
@@ -74,6 +74,16 @@ public class Circle extends Shape{
 }
 ```
 
+### [Interface(Implements)] 
+```java
+public interface orderDao {
+}
+
+public class OrderDaoImpl implements orderDao {
+}
+```
+
+### [Composition] 
 
 ```java
 public class Heart {
@@ -92,13 +102,6 @@ public class Person {
 }
 ```
 
-```java
-public interface orderDao {
-}
-
-public class OrderDaoImpl implements orderDao {
-}
-```
 
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
