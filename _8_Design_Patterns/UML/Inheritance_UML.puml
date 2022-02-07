@@ -1,4 +1,22 @@
 @startuml
-class Inheritance{
+class Animal {
+
+	- id : int
+	- name : String
+	- age : int
+
+    + Animal() : ctor
+==================
+
+   + printAnimalName() : void
+   + getYearOfBirth(currentYear : int) : int
 }
+
+class Dog {
+
+==
+ 
+}
+
+Animal <|-- Dog
 @enduml
