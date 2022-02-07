@@ -4,6 +4,9 @@
 
 ### [link for creating UML</br>](#_)
 
+5. ![](https://img.shields.io/appveyor/build/myApp/sdafnol?color=dfe&label=dsgf&logo=efw&logoColor=edgws)
+
+6. ![](https://img.shields.io/badge/MyLabel-MyMsg-blue)
 
 <img src="https://img.shields.io/badge/-Repository must be **Public** in order to be able to use plantuml Proxy %20-blue" height=40px>
 
