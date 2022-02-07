@@ -4,7 +4,9 @@
 
 ### [link for creating UML</br>](#_)
 
-https://plantuml.com/class-diagram
+[plantUml server](https://plantuml.com/class-diagram)
+[Blog of UML with GitHub](https://blog.anoff.io/2018-07-31-diagrams-with-plantuml/)
+[GitHub repo explained of GitHub usage with PlantUml](https://github.com/jonashackt/plantuml-markdown)
 
 
 |     |             |
