@@ -89,7 +89,9 @@ public class Circle extends Shape{
 
 
 
-### [UML of ](#__)
+### [UML of Composition](#__)
+
+![Inheritance_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/)
 
 ```java
 ```
