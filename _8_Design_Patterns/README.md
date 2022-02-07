@@ -4,6 +4,9 @@
 
 ### [link for creating UML</br>](#_)
 
+
+<img src="https://img.shields.io/badge/-Repository must be **Public** in order to be able to use plantuml Proxy %20-blue" height=70px>
+
 [1. PlantUml Home Page](https://plantuml.com/) </br>
 [2. Creat UML for JAVA](https://plantuml.com/class-diagram) </br>
 [2. Blog of UML with GitHub](https://blog.anoff.io/2018-07-31-diagrams-with-plantuml/) </br>
