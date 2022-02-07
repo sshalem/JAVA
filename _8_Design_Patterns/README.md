@@ -71,9 +71,14 @@ public class Animal {
 
 ![Inheritance_Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/sshalem/JAVA/master/_8_Design_Patterns/UML/Inheritance_UML.puml)
 
-
-
 ```java
+public class Shape {
+
+}
+
+public class Circle extends Shape{
+	
+}
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
