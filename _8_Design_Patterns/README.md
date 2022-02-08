@@ -21,7 +21,7 @@ http://www.plantuml.com/plantuml/proxy
 |     |             |
 |:---:|:------------------------------| 
 |     |<img src="https://img.shields.io/badge/-UML fondamentals%20-blue" height=30px>  | 
-|     |[Class, Inheritance,  Interface ,  Composition,  Dependency](#__)   |
+|     |[UML](https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/UML/README.md)|
 |     |<img src="https://img.shields.io/badge/-Creational%20-blue" height=30px>  | 
 |  1  |[Random](#)   | 
 |  2  |[Random](#)   | 
