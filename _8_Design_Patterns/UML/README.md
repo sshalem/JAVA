@@ -67,6 +67,9 @@ public class Animal {
 
 <img src="https://img.shields.io/badge/-JAVA code for UML of INHERITANCE%20-blue" height=30px>
 
+* **INHERITANCE (EXTENDS)** 
+* The UML sign for **EXTENDS** is a **EMPTY TRIANGLE WITH LINE** pointing to the Class.
+
 ```java
 public class Shape {
 }
@@ -80,6 +83,9 @@ public class Circle extends Shape{
 -------------------------------------------------------------------------------
 
 <img src="https://img.shields.io/badge/-JAVA code for UML of INTERFACE%20-blue" height=30px>
+
+* **INTERFACE (Implements)** 
+* The UML sign for **IMPLEMENTS** is a **EMPTY TRIANGLE  WITH DASHED LINE** pointing to the Interface.
 
 ```java
 public interface orderDao {
@@ -95,6 +101,10 @@ public class OrderDaoImpl implements orderDao {
 
 <img src="https://img.shields.io/badge/-JAVA code for UML of COMPOSITION%20-blue" height=30px>
 
+* **COMPOSITION** means that, a Class that has as fields of class names. </br>
+  In our Example:  Person has fields of : Heart , Hands ,Legs
+* The UML sign for **COMPOSITION** is a **FILLED DIAMOND**.
+  
 ```java
 public class Heart {
 }
@@ -116,9 +126,9 @@ public class Person {
 
 <img src="https://img.shields.io/badge/-JAVA code for UML of DEPENDENCY%20-blue" height=30px>
 
-* Depenedeny means that, somewhere in the shape class we use Document class. </br>
+* **DEPENDENCY** means that, somewhere in the shape class we use Document class. </br>
   It can be a parameter (As we have in the code) or a local value defined in the render method.
-  
+* The UML sign for **DEPENDENCY** is a **ARROW WITH DASHED LINE**.
 
 ```java
 public class Document {
