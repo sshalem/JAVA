@@ -34,7 +34,8 @@ http://www.plantuml.com/plantuml/proxy
 
 <img src="https://img.shields.io/badge/-MAMENTO Pattern%20-blue" height=30px> 
 
-* We use **MAMENTO Pattern** for undo mechanism.
+* We use **MAMENTO Pattern** for undo mechanism. </br>
+ The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (UNDO via rollback)
 
 
 
