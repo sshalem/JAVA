@@ -40,7 +40,8 @@ http://www.plantuml.com/plantuml/proxy
 
 <img src="https://img.shields.io/badge/-UML Class, Inheritance, Interface , Composed , Dependency%20-blue" height=30px> 
 
-![uml_diagram](https://user-images.githubusercontent.com/36256986/152887402-6b594459-0015-4e5d-9a0c-6b7f99888464.jpg)
+![uml_diagram](https://user-images.githubusercontent.com/36256986/152957624-51e4aa04-892c-4a98-a0cc-d1eebc762693.jpg)
+
 
 ### [Class UML](#__) 
 ```java
