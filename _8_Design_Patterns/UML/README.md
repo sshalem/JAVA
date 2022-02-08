@@ -38,7 +38,7 @@ http://www.plantuml.com/plantuml/proxy
 ![uml_diagram](https://user-images.githubusercontent.com/36256986/152957624-51e4aa04-892c-4a98-a0cc-d1eebc762693.jpg)
 
 
-### [Class UML](#__) 
+<img src="https://img.shields.io/badge/-JAVA code for UML of CLASS%20-blue" height=30px>
 ```java
 public class Animal {
 
@@ -60,7 +60,7 @@ public class Animal {
 }
 ```
 
-### [Inheritance (Extends)](#__)
+<img src="https://img.shields.io/badge/-JAVA code for UML of INHERITANCE%20-blue" height=30px>
 ```java
 public class Shape {
 }
@@ -69,7 +69,7 @@ public class Circle extends Shape{
 }
 ```
 
-### [Interface(Implements)](#__)
+<img src="https://img.shields.io/badge/-JAVA code for UML of INTERFACE%20-blue" height=30px>
 
 ```java
 public interface orderDao {
@@ -79,7 +79,7 @@ public class OrderDaoImpl implements orderDao {
 }
 ```
 
-### [Composition](#__)
+<img src="https://img.shields.io/badge/-JAVA code for UML of COMPOSITION%20-blue" height=30px>
 
 ```java
 public class Heart {
@@ -98,7 +98,11 @@ public class Person {
 }
 ```
 
+<img src="https://img.shields.io/badge/-JAVA code for UML of DEPENDENCY%20-blue" height=30px>
 
+```java
+
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
