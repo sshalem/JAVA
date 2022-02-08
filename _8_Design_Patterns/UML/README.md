@@ -121,7 +121,7 @@ public class Document {
 }
 
 public class Person {
-render(Document doc)
+	render(Document doc)
 }
 
 ```
