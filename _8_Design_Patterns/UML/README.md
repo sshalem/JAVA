@@ -39,6 +39,7 @@ http://www.plantuml.com/plantuml/proxy
 
 
 <img src="https://img.shields.io/badge/-JAVA code for UML of CLASS%20-blue" height=30px>
+
 ```java
 public class Animal {
 
