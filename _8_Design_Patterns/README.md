@@ -23,7 +23,7 @@ http://www.plantuml.com/plantuml/proxy
 |     |<img src="https://img.shields.io/badge/-UML fondamentals%20-blue" height=30px>  | 
 |     |[UML](https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/UML/README.md)|
 |     |<img src="https://img.shields.io/badge/-Creational%20-blue" height=30px>  | 
-|  1  |[Random](#)   | 
+|  1  |[Mamento (used for undo](#)   | 
 |  2  |[Random](#)   | 
 |     |<img src="https://img.shields.io/badge/-Structural%20-blue" height=30px>  | 
 |  3  |[Random](#)   | 
@@ -38,70 +38,9 @@ http://www.plantuml.com/plantuml/proxy
 ------------------------------------------------------------------------------------------------------------------------------------
 ###### __
 
-<img src="https://img.shields.io/badge/-UML Class, Inheritance, Interface , Composed , Dependency%20-blue" height=30px> 
+<img src="https://img.shields.io/badge/-MAMENTO Pattern%20-blue" height=30px> 
 
-![uml_diagram](https://user-images.githubusercontent.com/36256986/152957624-51e4aa04-892c-4a98-a0cc-d1eebc762693.jpg)
-
-
-### [Class UML](#__) 
-```java
-public class Animal {
-
-	private int id;
-	private String name;
-	private int age;
-
-	public Animal() {
-
-	}
-
-	public void printAnimalName() {
-		System.out.println(this.name);
-	}
-
-	public int getYearOfBirth(int currentYear) {
-		return currentYear - this.age;
-	}
-}
-```
-
-### [Inheritance (Extends)](#__)
-```java
-public class Shape {
-}
-
-public class Circle extends Shape{	
-}
-```
-
-### [Interface(Implements)](#__)
-
-```java
-public interface orderDao {
-}
-
-public class OrderDaoImpl implements orderDao {
-}
-```
-
-### [Composition](#__)
-
-```java
-public class Heart {
-}
-
-public class Hands {
-}
-
-public class Legs {
-}
-
-public class Person {
-	private Heart heart;
-	private Legs legs;
-	private Hands hands;
-}
-```
+* We use **MAMENTO Pattern** for undo mechanism.
 
 
 
