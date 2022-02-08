@@ -61,7 +61,12 @@ public class Animal {
 }
 ```
 
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+-------------------------------------------------------------------------------
+
 <img src="https://img.shields.io/badge/-JAVA code for UML of INHERITANCE%20-blue" height=30px>
+
 ```java
 public class Shape {
 }
@@ -69,6 +74,10 @@ public class Shape {
 public class Circle extends Shape{	
 }
 ```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+-------------------------------------------------------------------------------
 
 <img src="https://img.shields.io/badge/-JAVA code for UML of INTERFACE%20-blue" height=30px>
 
@@ -79,6 +88,10 @@ public interface orderDao {
 public class OrderDaoImpl implements orderDao {
 }
 ```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+-------------------------------------------------------------------------------
 
 <img src="https://img.shields.io/badge/-JAVA code for UML of COMPOSITION%20-blue" height=30px>
 
@@ -109,4 +122,4 @@ public class Person {
 
 
 
-------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
