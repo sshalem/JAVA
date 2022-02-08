@@ -116,6 +116,10 @@ public class Person {
 
 <img src="https://img.shields.io/badge/-JAVA code for UML of DEPENDENCY%20-blue" height=30px>
 
+* Depenedeny means that, somewhere in the shape class we use Document class. </br>
+  It can be a parameter (As we have in the code) or a local value defined in the render method.
+  
+
 ```java
 public class Document {
 }
