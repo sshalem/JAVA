@@ -1,6 +1,6 @@
 ###### _
 
-<img src="https://img.shields.io/badge/-JAVA Design Patterns%20-blue" height=70px>
+<img src="https://img.shields.io/badge/-UML%20-blue" height=70px>
 
 ### [link for creating UML</br>](#_)
 
@@ -21,18 +21,13 @@ http://www.plantuml.com/plantuml/proxy
 |     |             |
 |:---:|:------------------------------| 
 |     |<img src="https://img.shields.io/badge/-UML fondamentals%20-blue" height=30px>  | 
-|     |[Class, Inheritance,  Interface ,  Composition,  Dependency](#__)   |
-|     |<img src="https://img.shields.io/badge/-Creational%20-blue" height=30px>  | 
-|  1  |[Random](#)   | 
-|  2  |[Random](#)   | 
-|     |<img src="https://img.shields.io/badge/-Structural%20-blue" height=30px>  | 
-|  3  |[Random](#)   | 
-|  4  |[Random](#)   |  
-|  5  |[Random](#)   | 
-|     |<img src="https://img.shields.io/badge/-Behavioural%20-blue" height=30px>  | 
-|  6  |[Random](#)   | 
-|  7  |[Random](#)   | 
-|  8  |[Random](#)   | 
+|  1  |[Class](#__)   |
+|  2  |[Inheritance](#__)   |
+|  3  |[Interface](#__)   |
+|  4  |[Composition](#__)   |
+|  5  |[Dependency](#__)   |
+
+<img src="https://img.shields.io/badge/-UML fondamentals%20-blue" height=30px>  
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
