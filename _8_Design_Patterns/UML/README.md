@@ -112,9 +112,17 @@ public class Person {
 }
 ```
 
+-------------------------------------------------------------------------------
+
 <img src="https://img.shields.io/badge/-JAVA code for UML of DEPENDENCY%20-blue" height=30px>
 
 ```java
+public class Document {
+}
+
+public class Person {
+render(Document doc)
+}
 
 ```
 
