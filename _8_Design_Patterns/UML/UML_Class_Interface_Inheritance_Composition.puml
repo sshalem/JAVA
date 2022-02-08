@@ -13,7 +13,7 @@ class Animal {
 + getYearOfBirth(currentYear : int) : int
 }
 
-note top of Shape: Extends
+note top of Shape: Inheritance(Extends)
 class Shape
 class Circle 
 Shape <|-- Circle : extends
