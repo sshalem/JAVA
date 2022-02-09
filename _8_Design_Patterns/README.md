@@ -23,7 +23,7 @@ http://www.plantuml.com/plantuml/proxy
 |     |[UML](https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/UML/README.md)|
 |     |[Creational]  | 
 |     |Structural]  | 
-|     |Behavioural]  |
-|  1  |[Mamento (used for undo mechanism)](#__)   | 
+|     |[Behavioural](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural)  |
+|  1  |[Mamento (used for undo mechanism)]()   | 
 
 
