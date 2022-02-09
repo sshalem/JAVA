@@ -3,6 +3,7 @@ package demoMemento;
 public class Originator {
 
 	private String content;
+	private String name;
 
 	public Originator() {
 		super();
@@ -16,8 +17,16 @@ public class Originator {
 		this.content = content;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public Memento createState() {
-		return new Memento(content);
+		return new Memento(content, name);
 	}
 
 	public void undoState(Memento memento) {
