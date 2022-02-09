@@ -20,7 +20,7 @@ http://www.plantuml.com/plantuml/proxy
 
 |     |             |
 |:---:|:------------------------------| 
-|     |<img src="https://img.shields.io/badge/-UML fondamentals%20-blue" height=30px>  | 
+|     |[<img src="https://img.shields.io/badge/-UML fondamentals%20-blue" height=30px>](https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/UML/README.md)  | 
 |     |[UML](https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/UML/README.md)|
 |     |<img src="https://img.shields.io/badge/-Creational%20-blue" height=30px>  | 
 |     |<img src="https://img.shields.io/badge/-Structural%20-blue" height=30px>  | 
@@ -28,19 +28,3 @@ http://www.plantuml.com/plantuml/proxy
 |  1  |[Mamento (used for undo mechanism)](#__)   | 
 
 
-
-------------------------------------------------------------------------------------------------------------------------------------
-###### __
-
-<img src="https://img.shields.io/badge/-MAMENTO Pattern%20-blue" height=30px> 
-
-* We use **MAMENTO Pattern** for undo mechanism. </br>
- The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (UNDO via rollback)
-
-
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
-
-
-
-------------------------------------------------------------------------------------------------------------------------------------
