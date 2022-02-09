@@ -32,6 +32,55 @@
 
 <img src="https://img.shields.io/badge/-Java Code of Mamento%20-blue" height=30px> 
 
+### [Memento]
+
+```java
+public class Memento {
+
+	private String content;
+	private String name;
+
+	public Memento(String content, String name) {
+		super();
+		this.content = content;
+		this.name = name;
+	}
+
+	/**
+	 * G/S of content & name
+	 */	
+}
+```
+
+### [CareTaker]
+
+```java
+public class CareTaker {
+
+ private List<Memento> states = new ArrayList<>();
+
+	public void push(Memento memento) {
+		this.states.add(memento);
+	}
+
+	public Memento pop() {
+		int lastIndex = this.states.size() - 1;
+		Memento popLastState = this.states.get(lastIndex);
+		this.states.remove(popLastState);
+		return popLastState;
+	}
+}
+```
+
+
+```java
+```
+
+
+```java
+```
+
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 
