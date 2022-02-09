@@ -22,13 +22,14 @@ public class MainMemento {
 		Memento createState3 = originator.createState();
 		careTaker.push(createState3);
 
-		Memento pop = careTaker.pop();
-		Memento pop1 = careTaker.pop();
-		Memento pop2 = careTaker.pop();
-
-		System.out.println(pop.getContent() + " " + pop.getName());
-		System.out.println(pop1.getContent() + " " + pop1.getName());
-		System.out.println(pop2.getContent() + " " + pop2.getName());
+		originator.undoState(careTaker.pop());
+		System.out.println(originator.getContent() + " " + originator.getName());
+		
+		originator.undoState(careTaker.pop());
+		System.out.println(originator.getContent() + " " + originator.getName());
+		
+		originator.undoState(careTaker.pop());
+		System.out.println(originator.getContent() + " " + originator.getName());
 
 	}
 
