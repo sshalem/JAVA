@@ -35,8 +35,8 @@ Internally , Stack uses an **_Array_** or a **_LinkedList_**. </br>
 ### I implement of Stack class from Scratch , with following methods:
 
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) push
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) pop - Return the Object & Remove it from Stack
-- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) peek - Return the Object but keep it in Stack
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) pop - Return the Object & **_Remove_** it from Stack
+- ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) peek - Return the Object but **_Keep_** it in Stack
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) isEmpty
 - ![#c5f015](https://via.placeholder.com/10/c5f015/000000?text=+) toString
 
