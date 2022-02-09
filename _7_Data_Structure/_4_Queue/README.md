@@ -6,11 +6,12 @@ Internally , Queue uses an **_Array_** or a **_LinkedList_** or **_Stack_**. </b
 
 <img src="https://img.shields.io/badge/-Examples of Queue implementations%20-brightgreen" height=30px>
 
-1. Queue
-2. PriorityQueue
-3. BlockingQueue
-4. PriorityBlockingQueue
-5. ...
+1. Queue (Interface)
+2. Deque (Interface extends Queue)
+3. PriorityQueue
+4. BlockingQueue
+5. PriorityBlockingQueue
+6. ArrayDeque (Implements Deque)
 
 |       |    <img src="https://img.shields.io/badge/-Table of Content%20-blue" height=30px>         |
 |:-----:|:------------------------------| 
