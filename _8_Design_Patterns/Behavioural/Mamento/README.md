@@ -6,14 +6,16 @@
 |     |             |
 |:---:|:------------------------------| 
 |  1  |[UML_of_Mamento (used for undo mechanism)](#__)   | 
-|  2  |[Java_Code_of_Mamento](#__)   | 
+|  2  |[Java_Code_of_Mamento](#___)   | 
+|  3  |[plantuml Mamento](#____)   | 
+
 
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ###### __
 
-<img src="https://img.shields.io/badge/-MAMENTO Pattern%20-blue" height=30px> 
+<img src="https://img.shields.io/badge/-UML_of_Mamento%20-blue" height=30px> 
 
 * We use **MAMENTO Pattern** for undo mechanism. </br>
  The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (UNDO via rollback)
@@ -23,6 +25,75 @@
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+###### ___
+
+<img src="https://img.shields.io/badge/-Java Code of Mamento%20-blue" height=30px> 
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+###### ____
+
+<img src="https://img.shields.io/badge/-plantuml Mamento%20-blue" height=30px> 
+
+```java
+@startuml
+
+class Originator{
+-content : String
+-name : String
+..
++ Originator() : ctor
+===
++getContent() : String
++setContent(String) : void
++createMemento() : Memento
++undoState(Memento) : void
+}
+
+class Memento{
+-content : String
+-name : String
+..
++Memento(String,String) : ctor
+==
++getContent() : String
++getName() : String
+}
+
+class CareTaker{
+- states : List<Memento>
+==
++ push(Memento) : void
++ pop() : Memento
+}
+
+
+Originator ..> Memento
+CareTaker *..> Memento
+
+class MainMemento{
+
+==(main mathod)==
++ originator : Originator
++ careTaker : CareTaker
+
+}
+
+
+MainMemento ..> Originator
+MainMemento ..> CareTaker 
+
+@enduml
+```
+
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
