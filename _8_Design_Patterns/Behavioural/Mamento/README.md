@@ -32,7 +32,7 @@
 
 <img src="https://img.shields.io/badge/-Java Code of Mamento%20-blue" height=30px> 
 
-### [Memento]
+### [Memento]()
 
 ```java
 public class Memento {
@@ -52,13 +52,13 @@ public class Memento {
 }
 ```
 
-### [CareTaker]
+### [CareTaker]()
 
 ```java
 public class CareTaker {
 
- private List<Memento> states = new ArrayList<>();
-
+	private List<Memento> states = new ArrayList<>();
+	
 	public void push(Memento memento) {
 		this.states.add(memento);
 	}
