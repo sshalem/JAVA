@@ -20,11 +20,7 @@
 
 <img src="https://img.shields.io/badge/-UML_of_Mamento%20-blue" height=30px> 
 
-* We use **MEMENTO Pattern** for undo mechanism. </br>
- The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (UNDO via rollback)
-
 ![UML_MEMENTO](https://user-images.githubusercontent.com/36256986/153154289-5e62c553-f98d-47d1-b65f-a2e42e8e3267.PNG)
-
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=25px>](#_)
 
@@ -115,13 +111,19 @@ public class Originator {
 public class MainMemento {
 
 	public static void main(String[] args) {
-
+	
+		// (1) Create Instances of Originator & CareTaker
 		Originator originator = new Originator();
 		CareTaker careTaker = new CareTaker();
-
+		
+		// (2) set contnet & name 
 		originator.setContent("shabtay");
 		originator.setName("shalem");
+		
+		// (3) create a state --> which return a Memento Object from Originator class
 		Memento createState = originator.createState();
+		
+		// (4) add the Memento to the Stack (In our example I used List for Simplicity , but Stack is more handy at this situation)
 		careTaker.push(createState);
 
 		originator.setContent("karin");
@@ -134,13 +136,17 @@ public class MainMemento {
 		Memento createState3 = originator.createState();
 		careTaker.push(createState3);
 
-		Memento pop = careTaker.pop();
-		Memento pop1 = careTaker.pop();
-		Memento pop2 = careTaker.pop();
-
-		System.out.println(pop.getContent() + " " + pop.getName());
-		System.out.println(pop1.getContent() + " " + pop1.getName());
-		System.out.println(pop2.getContent() + " " + pop2.getName());
+		// (5) to Undo , just need to call careTaker.pop()
+		// Then we update the current state in te undoState() method 		
+		// And now we can chceck the Content & Name if the current state and see if it was rollback
+		originator.undoState(careTaker.pop());
+		System.out.println(originator.getContent() + " " + originator.getName());
+		
+		originator.undoState(careTaker.pop());
+		System.out.println(originator.getContent() + " " + originator.getName());
+		
+		originator.undoState(careTaker.pop());
+		System.out.println(originator.getContent() + " " + originator.getName());
 
 	}
 
