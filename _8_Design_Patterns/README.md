@@ -21,9 +21,9 @@ http://www.plantuml.com/plantuml/proxy
 |     |             |
 |:---:|:------------------------------| 
 |     |[UML](https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/UML/README.md)|
-|     |[Creational]()  | 
+|     |[Creational]()  |  
 |     |[Structural]()  | 
-|     |[<img src="https://img.shields.io/badge/-Behavioural%20-green" height=30px>](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural)  |
+|     |[<img src="https://img.shields.io/badge/-Behavioural%20-blue" height=30px>](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural)  |
 |  1  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural/Mamento)   | 
 
 
