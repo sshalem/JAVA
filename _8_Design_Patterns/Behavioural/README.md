@@ -5,7 +5,7 @@
 
 |     |             |
 |:---:|:------------------------------| 
-|  1  |[Mamento (used for undo mechanism)](#__)   | 
+|  1  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural/Mamento)   | 
 
 
 
