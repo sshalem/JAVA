@@ -76,51 +76,7 @@ Thread Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/-Create Thread%20-brightgreen" height=40px>
-
-<img src="https://img.shields.io/badge/-application.properties : eureka discovery server%20-blue" height=25px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-
-###### __
-
-<img src="https://img.shields.io/badge/-Create Thread%20-brightgreen" height=40px>
-
-<img src="https://img.shields.io/badge/-application.properties : eureka discovery server%20-blue" height=25px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
-
---------------------------------------------------------------------------------------------------
-
-###### __
-
-<img src="https://img.shields.io/badge/-Create Thread%20-brightgreen" height=40px>
-
-<img src="https://img.shields.io/badge/-application.properties : eureka discovery server%20-blue" height=25px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
-
---------------------------------------------------------------------------------------------------
-
-###### __
-
-<img src="https://img.shields.io/badge/-Create Thread%20-brightgreen" height=40px>
-
-<img src="https://img.shields.io/badge/-application.properties : eureka discovery server%20-blue" height=25px>
+<img src="https://img.shields.io/badge/- %20-blue" height=40px>
 
 ```java
 ```
@@ -131,35 +87,7 @@ Thread Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/-Create Thread%20-brightgreen" height=40px>
-
-<img src="https://img.shields.io/badge/-application.properties : eureka discovery server%20-blue" height=25px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### __
-
-<img src="https://img.shields.io/badge/-Create Thread%20-brightgreen" height=40px>
-
-<img src="https://img.shields.io/badge/-application.properties : eureka discovery server%20-blue" height=25px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### __
-
-<img src="https://img.shields.io/badge/-Create Thread%20-brightgreen" height=40px>
-
-<img src="https://img.shields.io/badge/-application.properties : eureka discovery server%20-blue" height=25px>
+<img src="https://img.shields.io/badge/- %20-blue" height=40px>
 
 ```java
 ```
