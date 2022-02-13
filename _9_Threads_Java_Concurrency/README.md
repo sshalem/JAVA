@@ -5,9 +5,9 @@
 |     |  Subject           |
 |:---:|:------------------------------| 
 |  1  |[How to Create Thread](#__)   | 
-|  2  |[Race Condition](#__)   | 
-|  3  |[synchronize , sleep , wait, notify, notify all](#__)   | 
-|  4  |[Lock](#__)   | 
+|  2  |[sleep ,synchronize, wait, notify, notify all](#__)   | 
+|  3  |[Race Condition](#__)   | 
+|  4  |[Lock, DeadLock ,Yield](#__)   | 
 |  5  |[Semaphore](#__)   | 
 |  6  |[CountDownLatch](#__)   | 
 |  7  |[ReadWriteLock](#__)   | 
