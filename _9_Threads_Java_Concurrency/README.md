@@ -25,13 +25,17 @@ public class MyRunnableThread implements Runnable {
 	}
 }
 
+
 public class Main {
-
 	public static void main(String[] args) {
-
+		
+		// Create an Instance of MyRunnableThread class
 		Runnable myRunnable = new MyRunnableThread();
+		
+		// Create a Thread Instance , I gave it the name of `MyRunnable-Thread`
 		Thread thread = new Thread(myRunnable, "MyRunnable-Thread");
 
+		// activate the Trace
 		thread.start();
 		
 		System.out.println("Main Thread is finished :" + Thread.currentThread().getName());
