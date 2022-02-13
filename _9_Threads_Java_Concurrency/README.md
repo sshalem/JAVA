@@ -95,7 +95,7 @@ public class Main {
 ```
 
 ### Console output shows : 
-#### * they statred to run , but ```diff **_not at a chronical order_** ```
+#### * they statred to run , but ```not at a chronical order```
 #### * they finished to run, but  **_not at a chronical order_**
 
 ```
