@@ -36,7 +36,7 @@ public class MyRunnableThread implements Runnable {
 	public void run() {
 
 		System.out.println("hello My Id is  : " + Thread.currentThread().getId());
-		System.out.println("hello My Id is  : " + Thread.currentThread().getName());
+		System.out.println("hello My Thread Name is  : " + Thread.currentThread().getName());
 		System.out.println("Thread Execution is finished");
 	}
 }
