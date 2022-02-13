@@ -77,23 +77,44 @@ public class Main {
 	public static void main(String[] args) {
 		
 		MyRunnableThread myRunnable = new MyRunnableThread();
-		
-		Thread t1 = new Thread(myRunnable, "MyRunnable-first");
-		Thread t2 = new Thread(myRunnable, "MyRunnable-second");
-		Thread t3 = new Thread(myRunnable, "MyRunnable-third");
-		Thread t4 = new Thread(myRunnable, "MyRunnable-forth");
+
+		Thread t1 = new Thread(myRunnable, "<first>");
+		Thread t2 = new Thread(myRunnable, "<second>");
+		Thread t3 = new Thread(myRunnable, "<third>");
+		Thread t4 = new Thread(myRunnable, "<forth>");
 
 		// activate the Trace
 		t1.start();
 		t2.start();
 		t3.start();
 		t4.start();
-		
+
 		System.out.println("Main Thread is finished :" + Thread.currentThread().getName());
 	}
 }
 ```
 
+### Console output shows : 
+### * they statred to run not at a chronical order
+### * they finished to run not at a chronical order
+
+```
+Thread Id : 13
+Thread Name : <first>
+Thread Id : 15
+Thread Id : 16
+Main Thread is finished :main
+Thread Id : 14
+Thread Name : <second>
+Thread <second> Execution is finished
+Thread Name : <forth>
+Thread Name : <third>
+Thread <first> Execution is finished
+Thread <third> Execution is finished
+Thread <forth> Execution is finished
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
 
