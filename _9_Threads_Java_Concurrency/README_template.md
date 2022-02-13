@@ -1,6 +1,6 @@
-<img src="https://img.shields.io/badge/-Threads Java Concurrency%20-brightgreen" height=70px>
-
 ###### _
+
+<img src="https://img.shields.io/badge/-Threads Java Concurrency%20-brightgreen" height=70px>
 
 |     |  Subject           |
 |:---:|:------------------------------| 
