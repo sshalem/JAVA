@@ -4,7 +4,7 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
-|  1  |[Create Thread](#__)   | 
+|  1  |[How to Create Thread](#__)   | 
 |  2  |[Race Condition](#__)   | 
 |  3  |[synchronize , sleep , wait, notify, notify all](#__)   | 
 |  4  |[Lock](#__)   | 
@@ -27,7 +27,7 @@
 
 ###### __
 
-<img src="https://img.shields.io/badge/-1. Create Thread%20-blue" height=40px>
+<img src="https://img.shields.io/badge/-1. How to Create Thread%20-blue" height=40px>
 
 ```java
 public class MyRunnableThread implements Runnable {
