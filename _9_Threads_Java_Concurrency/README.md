@@ -46,7 +46,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// Create an Instance of MyRunnableThread class
-		Runnable myRunnable = new MyRunnableThread();
+		MyRunnableThread myRunnable = new MyRunnableThread();
 		
 		// Create a Thread Instance , I gave it the name of `MyRunnable-Thread`
 		Thread thread = new Thread(myRunnable, "MyRunnable-Thread");
