@@ -11,7 +11,7 @@
 
 ###### __
 
-<img src="https://img.shields.io/badge/-Create Thread%20-blue" height=40px>
+<img src="https://img.shields.io/badge/-1. Create Thread%20-blue" height=40px>
 
 ```java
 public class MyRunnableThread implements Runnable {
