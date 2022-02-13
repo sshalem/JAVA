@@ -12,3 +12,22 @@
 |  8  |[Design Patterns](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns) |   
 |  9  |[Threads (Concurrency)]() | 
 
+
+
+--------------------------------------------------------------------------------------------------
+
+###### ___
+
+<img src="https://img.shields.io/badge/-Application.properties of each Project%20-brightgreen" height=40px>
+
+<img src="https://img.shields.io/badge/-application.properties : eureka discovery server%20-blue" height=25px>
+
+```java
+server.port=8761
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+<img src="https://img.shields.io/badge/-application.properties : spring cloud gateway%20-blue" height=25px>
