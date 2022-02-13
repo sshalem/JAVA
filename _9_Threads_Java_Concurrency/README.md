@@ -35,9 +35,9 @@ public class MyRunnableThread implements Runnable {
 	@Override
 	public void run() {
 
-		System.out.println("hello My Id is  : " + Thread.currentThread().getId());
-		System.out.println("hello My Thread Name is  : " + Thread.currentThread().getName());
-		System.out.println("Thread Execution is finished");
+		System.out.println("Thread Id : " + Thread.currentThread().getId());
+		System.out.println("Thread Name : " + Thread.currentThread().getName());
+		System.out.println("Thread "  + Thread.currentThread().getName() + "Execution is finished");
 	}
 }
 
@@ -63,9 +63,9 @@ public class Main {
 
 ```
 Main Thread is finished :main
-hello My Id is  : 13
-hello My Thread Name is  : MyRunnable-Thread
-Thread Execution is finished
+Thread Id : 13
+Thread Name : MyRunnable-Thread
+Thread MyRunnable-Thread Execution is finished
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
