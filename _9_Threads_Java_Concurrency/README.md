@@ -39,6 +39,15 @@ public class Main {
 }
 ```
 
+The Output in console is follows:
+
+```
+Main Thread is finished :main
+hello My Id is  : 13
+hello My Id is  : MyRunnable-Thread
+Thread Execution is finished
+```
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
