@@ -59,7 +59,7 @@ public class Main {
 }
 ```
 
-The Output in console is follows:
+### The Output in console is follows:
 
 ```
 Main Thread is finished :main
@@ -69,6 +69,31 @@ Thread Execution is finished
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+### Lets create Multiple Threads for the same Object:
+
+```java
+public class Main {
+	public static void main(String[] args) {
+		
+		MyRunnableThread myRunnable = new MyRunnableThread();
+		
+		Thread t1 = new Thread(myRunnable, "MyRunnable-first");
+		Thread t2 = new Thread(myRunnable, "MyRunnable-second");
+		Thread t3 = new Thread(myRunnable, "MyRunnable-third");
+		Thread t4 = new Thread(myRunnable, "MyRunnable-forth");
+
+		// activate the Trace
+		t1.start();
+		t2.start();
+		t3.start();
+		t4.start();
+		
+		System.out.println("Main Thread is finished :" + Thread.currentThread().getName());
+	}
+}
+```
+
 
 --------------------------------------------------------------------------------------------------
 
