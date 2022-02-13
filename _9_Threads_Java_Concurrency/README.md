@@ -95,8 +95,8 @@ public class Main {
 ```
 
 ### Console output shows : 
-### * they statred to run , but **_not at a chronical order_**
-### * they finished to run not at a chronical order
+#### * they statred to run , ### but **_not at a chronical order_**
+#### * they finished to run, but  **_not at a chronical order_**
 
 ```
 Thread Id : 13
