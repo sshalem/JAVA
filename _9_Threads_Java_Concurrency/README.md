@@ -31,14 +31,10 @@
 
 ## [There are 2 ways to create a Thread:]()
 
-#### [1. Creating Class that Extends th Thread Class]()
-#### [2. Creating Class that Implements the Runnable Interface]()
+<img src="https://img.shields.io/badge/-1.1. Create Class That extends Thread Class%20-brightgreen" height=27px>
 
 
-<img src="https://img.shields.io/badge/-1.1. Create Class That extends Thread Class%20-brightgreen" height=30px>
-
-
-<img src="https://img.shields.io/badge/-1.2. Creating Class that Implements the Runnable Interface%20-brightgreen" height=30px>
+<img src="https://img.shields.io/badge/-1.2. Creating Class that Implements the Runnable Interface%20-brightgreen" height=27px>
 
 ```java
 public class MyRunnableThread implements Runnable {
