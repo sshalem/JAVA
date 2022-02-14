@@ -33,6 +33,35 @@
 
 <img src="https://img.shields.io/badge/-1.1. Create Class That extends Thread Class%20-brightgreen" height=27px>
 
+```java
+public class MyThread extends Thread {
+
+	@Override
+	public void run() {
+		System.out.println("Thread Id : " + Thread.currentThread().getId());
+		System.out.println("Thread Name : " + Thread.currentThread().getName());
+		System.out.println("Thread " + Thread.currentThread().getName() + "Execution is finished");
+	}
+}
+
+
+public class Main {
+	public static void main(String[] args) {
+
+		// Create an Instance of MyThread class
+		MyThread myThread = new MyThread();
+
+		// Create a Thread Instance , I gave it the name of `MyThread`
+		Thread thread = new Thread(myThread, "MyThread");
+
+		// activate the Trace
+		thread.start();
+
+		System.out.println("Main Thread is finished :" + Thread.currentThread().getName());
+	}
+}
+```
+
 
 <img src="https://img.shields.io/badge/-1.2. Creating Class that Implements the Runnable Interface%20-brightgreen" height=27px>
 
