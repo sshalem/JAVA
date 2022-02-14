@@ -31,8 +31,8 @@
 
 ### [There are 2 ways to create a Thread:]()
 
-1. Creating Class that Extends th Thread Class
-2. Creating Class that Implements the Runnable Interface
+##### [1. Creating Class that Extends th Thread Class]()
+##### [2. Creating Class that Implements the Runnable Interface]()
 
 
 ```java
