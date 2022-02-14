@@ -35,10 +35,10 @@
 #### [2. Creating Class that Implements the Runnable Interface]()
 
 
-<img src="https://img.shields.io/badge/-Create Thread By Extending Thread Class%20-brightgreen" height=30px>
+<img src="https://img.shields.io/badge/-1.1. Create Class That extends Thread Class%20-brightgreen" height=30px>
 
 
-<img src="https://img.shields.io/badge/-Create Thread By Extending Thread Class%20-brightgreen" height=30px>
+<img src="https://img.shields.io/badge/-1.2. Creating Class that Implements the Runnable Interface%20-brightgreen" height=30px>
 
 ```java
 public class MyRunnableThread implements Runnable {
