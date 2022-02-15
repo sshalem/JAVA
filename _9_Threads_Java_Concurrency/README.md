@@ -44,6 +44,7 @@ Threads can go through five different status in its life cycle as shown below.
 4. Timed Waiting
 5. Terminated
 
+</br>
 
 1. [New](#__) : Whenever a new thread is created, it is always in the new state. For a thread in the new state, the code has not been run yet and thus has not begun its execution.
 2. [Active](#__) : When a thread invokes the **start()** method, it moves from the new state to the active state. The active state contains two states within it:
