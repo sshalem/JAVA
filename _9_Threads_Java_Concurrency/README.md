@@ -5,7 +5,7 @@
 |     |  Subject           |
 |:---:|:------------------------------| 
 |  1  |[Thread Life Cycle](#1)   | 
-|  2  |[Multi-Threading VS MultiTasking VS MultiProcessing](#2)   | 
+|  2  |[Thread vs Process vs Task](#2)   | 
 |  3  |[How to Create Thread](#3)   | 
 |  4  |[sleep](#4)   | 
 |  5  |[Race Condition](#5)   | 
@@ -78,9 +78,18 @@ A terminated thread means the thread is no more in the system. In other words, t
 
 ###### 2
 
-<img src="https://img.shields.io/badge/-2 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-2. Thread vs Process vs Task %20-blue" height=40px>
 
-https://www.javatpoint.com/multithreading-in-java
+[Process vs Thread vs Task](https://beginnersbook.com/2015/01/what-is-the-difference-between-a-process-and-a-thread-in-java/)
+
+Question:
+	* In Java : waht is the difference between Process vs Task vs Thread?
+Answer:
+	* [Process](#__) : A program in execution 
+	* [Thread](#__) : A thread is a subset(part) of the process.
+	* [Task](#__) : A process is sometime referred as **task**
+
+* New threads are easily created. However the creation of new processes require **duplication of the parent process**.
 
 ```java
 ```
