@@ -35,6 +35,14 @@
 
 https://www.javatpoint.com/life-cycle-of-a-thread
 
+Threads can go through five different status in its life cycle as shown below.
+
+1. [New](#__) : When the thread instance is created, it will be in “New” state.
+2. [Runnable](#__) : When the thread is started, it is called “Runnable” state.
+3. [Running](#__) : When the thread is running, it is called “Running” state.
+4. [Waiting](#__) : When the thread is put on hold or it is waiting for the other thread to complete, then that state will be known as “waiting” state.
+5. [Terminated](#__) : When the thread is dead, it will be known as “terminated” state.
+
 ```java
 ```
 
