@@ -4,7 +4,7 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
-|  1  |[Thread Life Cycle, Multi-Threading VS MultiTasking VS MultiProcessing](#1)   | 
+|  1  |[Thread Life Cycle](#1)   | 
 |  2  |[Multi-Threading VS MultiTasking VS MultiProcessing](#2)   | 
 |  3  |[How to Create Thread](#3)   | 
 |  4  |[sleep](#4)   | 
@@ -17,13 +17,14 @@
 |  11 |[Volatile](#11)   | 
 |  12 |[AtomicInteger](#12)   | 
 |  13 |[AtomicLong](#13)   | 
-|  14 |[ThreadPoolExecutor](#14)   | 
-|  15 |[Executer Interface, ExecutorService Interface, Executers Class](#15)   | 
+|  14 |[Priority of Threads](#14)   | 
+|  15 |[ThreadPoolExecutor](#15)   | 
 |  16 |[Executer Interface, ExecutorService Interface, Executers Class](#16)   | 
-|  17 |[Future , CompletableFuture](#17)   | 
-|  18 |[BlockingQueue](#18)   | 
-|  19 |[ThreadPoolExecutor](#19)   | 
-|  20 |[ConcurrentMap](#20)   | 
+|  17 |[Executer Interface, ExecutorService Interface, Executers Class](#17)   | 
+|  18 |[Future , CompletableFuture](#18)   | 
+|  19 |[BlockingQueue](#19)   | 
+|  20 |[ThreadPoolExecutor](#20)   | 
+|  21 |[ConcurrentMap](#21)   | 
 
 
 --------------------------------------------------------------------------------------------------
@@ -32,19 +33,33 @@
 
 <img src="https://img.shields.io/badge/-1. Thread Life Cycle %20-blue" height=40px>
 
+https://www.javatpoint.com/life-cycle-of-a-thread
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+
+###### 2
+
+<img src="https://img.shields.io/badge/-2 %20-blue" height=40px>
+
+https://www.javatpoint.com/multithreading-in-java
+
 ```java
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 
+-------------------------------------------------------------------------------------------------
 
+###### 3
 
---------------------------------------------------------------------------------------------------
-
-###### 2
-
-<img src="https://img.shields.io/badge/-2. How to Create Thread%20-blue" height=40px>
+<img src="https://img.shields.io/badge/-3. How to Create Thread%20-blue" height=40px>
 
 ## [There are 2 ways to create a Thread:]()
 
@@ -172,21 +187,9 @@ Thread <forth> Execution is finished
 --------------------------------------------------------------------------------------------------
 
 
-
-###### 3
-
-<img src="https://img.shields.io/badge/-3 %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
 ###### 4
 
-<img src="https://img.shields.io/badge/-4 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-4. sleep %20-blue" height=40px>
 
 ```java
 ```
@@ -358,6 +361,17 @@ https://www.javatpoint.com/deadlock-in-java
 ###### 19
 
 <img src="https://img.shields.io/badge/-19 %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 20
+
+<img src="https://img.shields.io/badge/-20 %20-blue" height=40px>
 
 ```java
 ```
