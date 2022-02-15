@@ -5,7 +5,7 @@
 |     |  Subject           |
 |:---:|:------------------------------| 
 |  1  |[Thread Life Cycle](#__)   | 
-|  2  |[How to Create Thread](#How to Create Thread)   | 
+|  2  |[How to Create Thread](#How_to_Create_Thread)   | 
 |  3  |[sleep](#____)   | 
 |  4  |[Race Condition](#_____)   | 
 |  5  |[synchronize, Lock, wait, notify, notify all](#______)   | 
