@@ -189,6 +189,15 @@ Thread MyRunnable-Thread Execution is finished
 ### [Multiple Threads for the same Object](#__)
 
 ```java
+public class MyRunnableThread implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println(" ---> Thread Name : " + Thread.currentThread().getName());
+		System.out.println("Thread " + Thread.currentThread().getName() + "Execution is finished");
+	}
+}
+
 public class Main {
 	public static void main(String[] args) {
 		
@@ -215,19 +224,15 @@ public class Main {
 #### * they finished to run, but  ```not at a chronical order```
 
 ```
-Thread Id : 13
-Thread Name : <first>
-Thread Id : 15
-Thread Id : 16
-Main Thread is finished :main
-Thread Id : 14
-Thread Name : <second>
-Thread <second> Execution is finished
-Thread Name : <forth>
-Thread Name : <third>
-Thread <first> Execution is finished
-Thread <third> Execution is finished
-Thread <forth> Execution is finished
+ ---> Thread Name : <first>
+ ---> Thread Name : <third>
+ ---> Thread Name : <forth>
+Thread <forth>Execution is finished
+Main Thread is finished : main
+ ---> Thread Name : <second>
+Thread <second>Execution is finished
+Thread <first>Execution is finished
+Thread <third>Execution is finished
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
