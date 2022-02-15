@@ -111,7 +111,7 @@ A terminated thread means the thread is no more in the system. In other words, t
 By extending Thread class
 By implementing Runnable interface.
 
-[1. Create Class That extends Thread Class](#__)
+### [1. Create Class That extends Thread Class](#__)
 
 ```java
 public class MyThread extends Thread {
@@ -143,7 +143,7 @@ public class Main {
 ```
 
 
-[2. Creating Class that Implements the Runnable Interface](#__)
+### [2. Creating Class that Implements the Runnable Interface](#__)
 
 ```java
 public class MyRunnableThread implements Runnable {
