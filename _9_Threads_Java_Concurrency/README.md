@@ -4,25 +4,26 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
-|  1  |[Thread Life Cycle](#1)   | 
-|  2  |[How to Create Thread](#2)   | 
-|  3  |[sleep](#3)   | 
-|  4  |[Race Condition](#4)   | 
-|  5  |[synchronize, Lock, wait, notify, notify all](#5)   | 
-|  6  |[DeadLock ,Yield](#6)   | 
-|  7  |[Semaphore](#7)   | 
-|  8  |[CountDownLatch](#8)   | 
-|  9  |[ReadWriteLock](#9)   | 
-|  10 |[Volatile](#10)   | 
-|  11 |[AtomicInteger](#11)   | 
-|  12 |[AtomicLong](#12)   | 
-|  13 |[ThreadPoolExecutor](#13)   | 
-|  14 |[Executer Interface, ExecutorService Interface, Executers Class](#14)   | 
+|  1  |[Thread Life Cycle, Multi-Threading VS MultiTasking VS MultiProcessing](#1)   | 
+|  2  |[Multi-Threading VS MultiTasking VS MultiProcessing](#2)   | 
+|  3  |[How to Create Thread](#3)   | 
+|  4  |[sleep](#4)   | 
+|  5  |[Race Condition](#5)   | 
+|  6  |[synchronize, Lock, wait, notify, notify all](#6)   | 
+|  7  |[DeadLock ,Yield](#7)   | 
+|  8  |[Semaphore](#8)   | 
+|  9  |[CountDownLatch](#9)   | 
+|  10 |[ReadWriteLock](#10)   | 
+|  11 |[Volatile](#11)   | 
+|  12 |[AtomicInteger](#12)   | 
+|  13 |[AtomicLong](#13)   | 
+|  14 |[ThreadPoolExecutor](#14)   | 
 |  15 |[Executer Interface, ExecutorService Interface, Executers Class](#15)   | 
-|  16 |[Future , CompletableFuture](#16)   | 
-|  17 |[BlockingQueue](#17)   | 
-|  18 |[ThreadPoolExecutor](#18)   | 
-|  19 |[ConcurrentMap](#19)   | 
+|  16 |[Executer Interface, ExecutorService Interface, Executers Class](#16)   | 
+|  17 |[Future , CompletableFuture](#17)   | 
+|  18 |[BlockingQueue](#18)   | 
+|  19 |[ThreadPoolExecutor](#19)   | 
+|  20 |[ConcurrentMap](#20)   | 
 
 
 --------------------------------------------------------------------------------------------------
@@ -207,12 +208,8 @@ Thread <forth> Execution is finished
 
 ###### 6
 
-<img src="https://img.shields.io/badge/-6. DeadLock ,Yield %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-6 %20-blue" height=40px>
 
-https://www.javatpoint.com/deadlock-in-java
-
-1. What is deadlock and when it can occur?
-2. What is Yield?
 
 ```java
 ```
@@ -223,7 +220,12 @@ https://www.javatpoint.com/deadlock-in-java
 
 ###### 7
 
-<img src="https://img.shields.io/badge/-7 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-7. . DeadLock ,Yield %20-blue" height=40px>
+
+https://www.javatpoint.com/deadlock-in-java
+
+1. What is deadlock and when it can occur?
+2. What is Yield?
 
 ```java
 ```
