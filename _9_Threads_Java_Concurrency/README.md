@@ -211,6 +211,9 @@ Thread <forth> Execution is finished
 
 https://www.javatpoint.com/deadlock-in-java
 
+1. What is deadlock and when it can occur?
+2. What is Yield?
+
 ```java
 ```
 
