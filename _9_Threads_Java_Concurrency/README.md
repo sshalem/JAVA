@@ -4,6 +4,7 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
+|     |[Top 50 Java Thread Interview Questions](https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-interview-questions-answers.html?m=1#ixzz7JncfbQkM)   | 
 |  1  |[Thread Life Cycle](#1)   | 
 |  2  |[Thread vs Process vs Task](#2)   | 
 |  3  |[How to Create Thread](#3)   | 
