@@ -63,8 +63,8 @@ A real example of timed waiting is when we invoke the **sleep()** method on a sp
 The **sleep()** method puts the thread in the timed wait state. After the time runs out, the thread wakes up and start its execution from when it has left earlier.
 
 5. [Terminated](#__) : A thread reaches the termination state because of the following reasons: 
-* When a thread has finished its job, then it exists or terminates normally.
-* **Abnormal termination** : It occurs when some unusual events such as an unhandled exception or segmentation fault.
+	* When a thread has finished its job, then it exists or terminates normally.
+	* **Abnormal termination** : It occurs when some unusual events such as an unhandled exception or segmentation fault.
 A terminated thread means the thread is no more in the system. In other words, the thread is dead, and there is no way one can respawn (active after kill) the dead thread.
 
 ```java
