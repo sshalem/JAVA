@@ -82,10 +82,10 @@ A terminated thread means the thread is no more in the system. In other words, t
 
 [Process vs Thread vs Task](https://beginnersbook.com/2015/01/what-is-the-difference-between-a-process-and-a-thread-in-java/)
 
-* Question:</br>
+* [Question](#__):</br>
 	* In Java : what is the difference between Process vs Task vs Thread?
 	
-* Answer:</br>
+* [Answer](#__):</br>
 	* [Process](#__) : A program in execution 
 	* [Thread](#__) : A thread is a subset(part) of the process.
 	* [Task](#__) : A process is sometime referred as **task**
