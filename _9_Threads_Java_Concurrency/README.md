@@ -5,13 +5,13 @@
 |     |  Subject           |
 |:---:|:------------------------------| 
 |  1  |[Thread Life Cycle](#__)   | 
-|  2  |[How to Create Thread](#___)   | 
-|  3  |[sleep](#__)   | 
-|  4  |[Race Condition](#__)   | 
-|  5  |[synchronize, Lock, wait, notify, notify all](#__)   | 
-|  6  |[DeadLock ,Yield](#__)   | 
-|  7  |[Semaphore](#__)   | 
-|  8  |[CountDownLatch](#__)   | 
+|  2  |[How to Create Thread](#<img src="https://img.shields.io/badge/-1. How to Create Thread%20-blue" height=40px>)   | 
+|  3  |[sleep](#____)   | 
+|  4  |[Race Condition](#_____)   | 
+|  5  |[synchronize, Lock, wait, notify, notify all](#______)   | 
+|  6  |[DeadLock ,Yield](#_______)   | 
+|  7  |[Semaphore](#________)   | 
+|  8  |[CountDownLatch](#_________)   | 
 |  9  |[ReadWriteLock](#__)   | 
 |  10  |[Volatile](#__)   | 
 |  11 |[AtomicInteger](#__)   | 
@@ -29,7 +29,7 @@
 
 ###### ___
 
-<img src="https://img.shields.io/badge/-1. How to Create Thread%20-blue" height=40px>
+###### <img src="https://img.shields.io/badge/-1. How to Create Thread%20-blue" height=40px>
 
 ## [There are 2 ways to create a Thread:]()
 
