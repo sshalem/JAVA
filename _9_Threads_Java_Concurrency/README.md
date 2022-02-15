@@ -5,34 +5,31 @@
 |     |  Subject           |
 |:---:|:------------------------------| 
 |  1  |[Thread Life Cycle](#__)   | 
-|  2  |[How to Create Thread](#How_to_Create_Thread)   | 
+|  2  |[How to Create Thread](#___)   | 
 |  3  |[sleep](#____)   | 
 |  4  |[Race Condition](#_____)   | 
 |  5  |[synchronize, Lock, wait, notify, notify all](#______)   | 
 |  6  |[DeadLock ,Yield](#_______)   | 
 |  7  |[Semaphore](#________)   | 
 |  8  |[CountDownLatch](#_________)   | 
-|  9  |[ReadWriteLock](#__)   | 
-|  10  |[Volatile](#__)   | 
-|  11 |[AtomicInteger](#__)   | 
-|  12 |[AtomicLong](#__)   | 
-|  13 |[ThreadPoolExecutor](#__)   | 
-|  14 |[Executer Interface, ExecutorService Interface, Executers Class](#__)   | 
-|  15 |[Executer Interface, ExecutorService Interface, Executers Class](#__)   | 
-|  16 |[Future , CompletableFuture](#__)   | 
-|  17 |[BlockingQueue](#__)   | 
-|  18 |[ThreadPoolExecutor](#__)   | 
-|  19 |[ConcurrentMap](#__)   | 
+|  9  |[ReadWriteLock](#__________)   | 
+|  10  |[Volatile](#___________)   | 
+|  11 |[AtomicInteger](#____________)   | 
+|  12 |[AtomicLong](#_____________)   | 
+|  13 |[ThreadPoolExecutor](#______________)   | 
+|  14 |[Executer Interface, ExecutorService Interface, Executers Class](#_______________)   | 
+|  15 |[Executer Interface, ExecutorService Interface, Executers Class](#________________)   | 
+|  16 |[Future , CompletableFuture](#_________________)   | 
+|  17 |[BlockingQueue](#__________________)   | 
+|  18 |[ThreadPoolExecutor](#___________________)   | 
+|  19 |[ConcurrentMap](#____________________)   | 
 
 
 --------------------------------------------------------------------------------------------------
 
 ###### ___
 
-###### How_to_Create_Thread
-
-
-###### <img src="https://img.shields.io/badge/-1. How to Create Thread%20-blue" height=40px>
+<img src="https://img.shields.io/badge/-1. How to Create Thread%20-blue" height=40px>
 
 ## [There are 2 ways to create a Thread:]()
 
