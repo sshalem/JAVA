@@ -194,7 +194,7 @@ public class MyRunnableThread implements Runnable {
 	@Override
 	public void run() {
 		System.out.println(" ---> Thread Name : " + Thread.currentThread().getName());
-		System.out.println("Thread " + Thread.currentThread().getName() + "Execution is finished");
+		System.out.println("Thread " + Thread.currentThread().getName() + " Execution is finished");
 	}
 }
 
@@ -214,7 +214,7 @@ public class Main {
 		t3.start();
 		t4.start();
 
-		System.out.println("Main Thread is finished :" + Thread.currentThread().getName());
+		System.out.println("Main Thread is finished : " + Thread.currentThread().getName());
 	}
 }
 ```
@@ -227,12 +227,12 @@ public class Main {
  ---> Thread Name : <first>
  ---> Thread Name : <third>
  ---> Thread Name : <forth>
-Thread <forth>Execution is finished
+Thread <forth> Execution is finished
 Main Thread is finished : main
  ---> Thread Name : <second>
-Thread <second>Execution is finished
-Thread <first>Execution is finished
-Thread <third>Execution is finished
+Thread <second> Execution is finished
+Thread <first> Execution is finished
+Thread <third> Execution is finished
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
