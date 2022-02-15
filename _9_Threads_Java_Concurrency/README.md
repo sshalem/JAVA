@@ -244,7 +244,8 @@ Thread <third> Execution is finished
 
 <img src="https://img.shields.io/badge/-4. sleep %20-blue" height=40px>
 
-Thread.sleep() in Java is being used to halt the working of a thread for a given amount of time. The time up to which the thread remains in the sleeping state is known as the **sleeping time of the thread**. After the sleeping time is over, the thread starts its execution from where it has left.
+Thread.sleep() in Java is being used to halt the working of a thread for a given amount of time.</br>
+The time up to which the thread remains in the sleeping state is known as the **sleeping time of the thread**. After the sleeping time is over, the thread starts its execution from where it has left.
 
 
 ```java
