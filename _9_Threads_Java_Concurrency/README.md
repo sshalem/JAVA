@@ -186,7 +186,7 @@ Thread MyRunnable-Thread Execution is finished
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
-### Lets create Multiple Threads for the same Object:
+### [Multiple Threads for the same Object](#__)
 
 ```java
 public class Main {
