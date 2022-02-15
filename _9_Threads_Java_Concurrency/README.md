@@ -36,7 +36,7 @@
 https://www.javatpoint.com/life-cycle-of-a-thread
 https://www.softwaretestinghelp.com/java/java-threads/
 
-Threads can go through five different status in its life cycle as shown below.
+Threads can go through **_five different status_** in its life cycle as shown below.
 
 1. New
 2. Active
