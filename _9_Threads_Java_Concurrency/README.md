@@ -4,29 +4,30 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
-|  1  |[How to Create Thread](#__)   | 
-|  2  |[sleep](#__)   | 
-|  3  |[Race Condition](#__)   | 
-|  4  |[synchronize, Lock, wait, notify, notify all](#__)   | 
-|  5  |[DeadLock ,Yield](#__)   | 
-|  6  |[Semaphore](#__)   | 
-|  7  |[CountDownLatch](#__)   | 
-|  8  |[ReadWriteLock](#__)   | 
-|  9  |[Volatile](#__)   | 
-|  10 |[AtomicInteger](#__)   | 
-|  11 |[AtomicLong](#__)   | 
-|  12 |[ThreadPoolExecutor](#__)   | 
-|  13 |[Executer Interface, ExecutorService Interface, Executers Class](#__)   | 
+|  1  |[Thread Life Cycle](#__)   | 
+|  2  |[How to Create Thread](#___)   | 
+|  3  |[sleep](#__)   | 
+|  4  |[Race Condition](#__)   | 
+|  5  |[synchronize, Lock, wait, notify, notify all](#__)   | 
+|  6  |[DeadLock ,Yield](#__)   | 
+|  7  |[Semaphore](#__)   | 
+|  8  |[CountDownLatch](#__)   | 
+|  9  |[ReadWriteLock](#__)   | 
+|  10  |[Volatile](#__)   | 
+|  11 |[AtomicInteger](#__)   | 
+|  12 |[AtomicLong](#__)   | 
+|  13 |[ThreadPoolExecutor](#__)   | 
 |  14 |[Executer Interface, ExecutorService Interface, Executers Class](#__)   | 
-|  15 |[Future , CompletableFuture](#__)   | 
-|  16 |[BlockingQueue](#__)   | 
-|  17 |[ThreadPoolExecutor](#__)   | 
-|  18 |[ConcurrentMap](#__)   | 
+|  15 |[Executer Interface, ExecutorService Interface, Executers Class](#__)   | 
+|  16 |[Future , CompletableFuture](#__)   | 
+|  17 |[BlockingQueue](#__)   | 
+|  18 |[ThreadPoolExecutor](#__)   | 
+|  19 |[ConcurrentMap](#__)   | 
 
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### ___
 
 <img src="https://img.shields.io/badge/-1. How to Create Thread%20-blue" height=40px>
 
@@ -159,7 +160,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-2 %20-blue" height=40px>
 
 ```java
 ```
@@ -170,7 +171,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-3 %20-blue" height=40px>
 
 ```java
 ```
@@ -181,7 +182,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-4 %20-blue" height=40px>
 
 ```java
 ```
@@ -192,7 +193,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-5 %20-blue" height=40px>
 
 ```java
 ```
@@ -203,7 +204,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-6 %20-blue" height=40px>
 
 ```java
 ```
@@ -214,7 +215,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-7 %20-blue" height=40px>
 
 ```java
 ```
@@ -225,7 +226,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-8 %20-blue" height=40px>
 
 ```java
 ```
@@ -236,7 +237,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-9 %20-blue" height=40px>
 
 ```java
 ```
@@ -247,7 +248,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-10 %20-blue" height=40px>
 
 ```java
 ```
@@ -258,7 +259,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-11 %20-blue" height=40px>
 
 ```java
 ```
@@ -269,7 +270,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-12 %20-blue" height=40px>
 
 ```java
 ```
@@ -280,7 +281,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-13 %20-blue" height=40px>
 
 ```java
 ```
@@ -291,7 +292,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-14 %20-blue" height=40px>
 
 ```java
 ```
@@ -302,7 +303,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-15 %20-blue" height=40px>
 
 ```java
 ```
@@ -313,7 +314,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-16 %20-blue" height=40px>
 
 ```java
 ```
@@ -324,7 +325,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-17 %20-blue" height=40px>
 
 ```java
 ```
@@ -335,7 +336,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-18 %20-blue" height=40px>
 
 ```java
 ```
@@ -346,7 +347,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-19 %20-blue" height=40px>
 
 ```java
 ```
@@ -357,7 +358,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-20 %20-blue" height=40px>
 
 ```java
 ```
@@ -368,7 +369,7 @@ Thread <forth> Execution is finished
 
 ###### __
 
-<img src="https://img.shields.io/badge/- %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-21 %20-blue" height=40px>
 
 ```java
 ```
