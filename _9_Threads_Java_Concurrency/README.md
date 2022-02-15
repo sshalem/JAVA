@@ -5,7 +5,7 @@
 |     |  Subject           |
 |:---:|:------------------------------| 
 |  1  |[Thread Life Cycle](#__)   | 
-|  2  |[How to Create Thread](#_2_)   | 
+|  2  |[How to Create Thread](#__)   | 
 |  3  |[sleep](#____)   | 
 |  4  |[Race Condition](#_____)   | 
 |  5  |[synchronize, Lock, wait, notify, notify all](#______)   | 
@@ -27,7 +27,7 @@
 
 --------------------------------------------------------------------------------------------------
 
-###### _2_
+###### __
 
 <img src="https://img.shields.io/badge/-1. How to Create Thread%20-blue" height=40px>
 
