@@ -248,6 +248,50 @@ Thread.sleep() in Java is being used to halt the working of a thread for a given
 
 
 ```java
+public class MyRunnableThread implements Runnable {
+	@Override
+	public void run() {
+
+		long startTime = LocalTime.now().toSecondOfDay();
+
+		try {
+			Thread.sleep(2000);
+			System.out.println(" ---> Thread Name : " + Thread.currentThread().getName());
+
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+		long endTime = LocalTime.now().toSecondOfDay();
+		long time = endTime - startTime;
+
+		System.out.println("Thread Sleep " + time + " sec");
+		System.out.println("Thread " + Thread.currentThread().getName() + " Execution is finished");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyRunnableThread myRunnable = new MyRunnableThread();
+
+		Thread t1 = new Thread(myRunnable, "<first>");
+
+		// activate the Trace
+		t1.start();
+
+		System.out.println("Main Thread is finished : " + Thread.currentThread().getName());
+	}
+}
+```
+
+### Console output shows : 
+
+```
+Main Thread is finished : main
+ ---> Thread Name : <first>
+Thread Sleep 2 sec
+Thread <first> Execution is finished
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
