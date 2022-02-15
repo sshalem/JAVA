@@ -104,9 +104,14 @@ A terminated thread means the thread is no more in the system. In other words, t
 
 <img src="https://img.shields.io/badge/-3. How to Create Thread%20-blue" height=40px>
 
-## [There are 2 ways to create a Thread:]()
+[There are two ways to create a thread:](#__)
+1. By extending Thread class
+2. By implementing Runnable interface.
 
-<img src="https://img.shields.io/badge/-1.1. Create Class That extends Thread Class%20-brightgreen" height=27px>
+By extending Thread class
+By implementing Runnable interface.
+
+[1. Create Class That extends Thread Class](#__)
 
 ```java
 public class MyThread extends Thread {
@@ -138,7 +143,7 @@ public class Main {
 ```
 
 
-<img src="https://img.shields.io/badge/-1.2. Creating Class that Implements the Runnable Interface%20-brightgreen" height=27px>
+[2. Creating Class that Implements the Runnable Interface](#__)
 
 ```java
 public class MyRunnableThread implements Runnable {
