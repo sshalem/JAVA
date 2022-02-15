@@ -223,7 +223,7 @@ Thread <forth> Execution is finished
 
 ###### 7
 
-<img src="https://img.shields.io/badge/-7. . DeadLock ,Yield %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-7. DeadLock ,Yield %20-blue" height=40px>
 
 https://www.javatpoint.com/deadlock-in-java
 
