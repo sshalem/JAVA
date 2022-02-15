@@ -33,8 +33,7 @@
 
 <img src="https://img.shields.io/badge/-1. Thread Life Cycle %20-blue" height=40px>
 
-https://www.javatpoint.com/life-cycle-of-a-thread
-https://www.softwaretestinghelp.com/java/java-threads/
+[Link to Life Cycle Of a Thread](https://www.javatpoint.com/life-cycle-of-a-thread)
 
 Threads can go through **_five different status_** in its life cycle as shown below.
 
