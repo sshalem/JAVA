@@ -4,32 +4,46 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
-|  1  |[Thread Life Cycle](#__)   | 
+|  1  |[Thread Life Cycle](#1)   | 
 |  2  |[How to Create Thread](#2)   | 
-|  3  |[sleep](#____)   | 
-|  4  |[Race Condition](#_____)   | 
-|  5  |[synchronize, Lock, wait, notify, notify all](#______)   | 
-|  6  |[DeadLock ,Yield](#_______)   | 
-|  7  |[Semaphore](#________)   | 
-|  8  |[CountDownLatch](#_________)   | 
-|  9  |[ReadWriteLock](#__________)   | 
-|  10  |[Volatile](#___________)   | 
-|  11 |[AtomicInteger](#____________)   | 
-|  12 |[AtomicLong](#_____________)   | 
-|  13 |[ThreadPoolExecutor](#______________)   | 
-|  14 |[Executer Interface, ExecutorService Interface, Executers Class](#_______________)   | 
-|  15 |[Executer Interface, ExecutorService Interface, Executers Class](#________________)   | 
-|  16 |[Future , CompletableFuture](#_________________)   | 
-|  17 |[BlockingQueue](#__________________)   | 
-|  18 |[ThreadPoolExecutor](#___________________)   | 
-|  19 |[ConcurrentMap](#____________________)   | 
+|  3  |[sleep](#3)   | 
+|  4  |[Race Condition](#4)   | 
+|  5  |[synchronize, Lock, wait, notify, notify all](#5)   | 
+|  6  |[DeadLock ,Yield](#6)   | 
+|  7  |[Semaphore](#7)   | 
+|  8  |[CountDownLatch](#8)   | 
+|  9  |[ReadWriteLock](#9)   | 
+|  10 |[Volatile](#10)   | 
+|  11 |[AtomicInteger](#11)   | 
+|  12 |[AtomicLong](#12)   | 
+|  13 |[ThreadPoolExecutor](#13)   | 
+|  14 |[Executer Interface, ExecutorService Interface, Executers Class](#14)   | 
+|  15 |[Executer Interface, ExecutorService Interface, Executers Class](#15)   | 
+|  16 |[Future , CompletableFuture](#16)   | 
+|  17 |[BlockingQueue](#17)   | 
+|  18 |[ThreadPoolExecutor](#18)   | 
+|  19 |[ConcurrentMap](#19)   | 
+
+
+--------------------------------------------------------------------------------------------------
+
+###### 1
+
+<img src="https://img.shields.io/badge/-1. Thread Life Cycle %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+
 
 
 --------------------------------------------------------------------------------------------------
 
 ###### 2
 
-<img src="https://img.shields.io/badge/-1. How to Create Thread%20-blue" height=40px>
+<img src="https://img.shields.io/badge/-2. How to Create Thread%20-blue" height=40px>
 
 ## [There are 2 ways to create a Thread:]()
 
@@ -158,18 +172,7 @@ Thread <forth> Execution is finished
 
 
 
-###### __
-
-<img src="https://img.shields.io/badge/-2 %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### __
+###### 3
 
 <img src="https://img.shields.io/badge/-3 %20-blue" height=40px>
 
@@ -180,7 +183,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 4
 
 <img src="https://img.shields.io/badge/-4 %20-blue" height=40px>
 
@@ -191,7 +194,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 5
 
 <img src="https://img.shields.io/badge/-5 %20-blue" height=40px>
 
@@ -202,7 +205,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 6
 
 <img src="https://img.shields.io/badge/-6 %20-blue" height=40px>
 
@@ -213,7 +216,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 7
 
 <img src="https://img.shields.io/badge/-7 %20-blue" height=40px>
 
@@ -224,7 +227,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 8
 
 <img src="https://img.shields.io/badge/-8 %20-blue" height=40px>
 
@@ -235,7 +238,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 9
 
 <img src="https://img.shields.io/badge/-9 %20-blue" height=40px>
 
@@ -246,7 +249,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 10
 
 <img src="https://img.shields.io/badge/-10 %20-blue" height=40px>
 
@@ -257,7 +260,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 11
 
 <img src="https://img.shields.io/badge/-11 %20-blue" height=40px>
 
@@ -268,7 +271,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 12
 
 <img src="https://img.shields.io/badge/-12 %20-blue" height=40px>
 
@@ -279,7 +282,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 13
 
 <img src="https://img.shields.io/badge/-13 %20-blue" height=40px>
 
@@ -290,7 +293,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 14
 
 <img src="https://img.shields.io/badge/-14 %20-blue" height=40px>
 
@@ -301,7 +304,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 15
 
 <img src="https://img.shields.io/badge/-15 %20-blue" height=40px>
 
@@ -312,7 +315,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 16
 
 <img src="https://img.shields.io/badge/-16 %20-blue" height=40px>
 
@@ -323,7 +326,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 17
 
 <img src="https://img.shields.io/badge/-17 %20-blue" height=40px>
 
@@ -334,7 +337,7 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 18
 
 <img src="https://img.shields.io/badge/-18 %20-blue" height=40px>
 
@@ -345,31 +348,9 @@ Thread <forth> Execution is finished
 
 --------------------------------------------------------------------------------------------------
 
-###### __
+###### 19
 
 <img src="https://img.shields.io/badge/-19 %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### __
-
-<img src="https://img.shields.io/badge/-20 %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### __
-
-<img src="https://img.shields.io/badge/-21 %20-blue" height=40px>
 
 ```java
 ```
