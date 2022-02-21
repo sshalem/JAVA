@@ -305,29 +305,13 @@ Thread <first> Execution is finished
 
 <img src="https://img.shields.io/badge/-5. synchronize, Lock, wait, notify, notify all %20-blue" height=40px>
 
-### [Background](#-)
+### [synchronized](#-)
 
 [See explanation of synchronization in link](https://github.com/sshalem/JAVA/blob/master/_9_Threads_Java_Concurrency/synchronization.md)
 
-Somtimes in the same program there are several Threads , which operate on the same Object. </br>
-In this situation , it is possible that one Thread will stop its running and the other Thread will run (CPU can run 1 Thread at given time) , w/o first Thread finishing it's operations , which can cause later on bugs ,error's. </br>
-
-* Example :
-	* Two Threads working on Object that presents a Stack.</br>
-	If First Thread add item to the Stack and didn't have time to update the Index of the Stack, because the CPU stopped giving time to First Thread, and Second Thread get time from CPU and removed item from the Stack.</br>
-	This is what keyword **_synchronized_** came to solve. </br>
- 
-### [_synchronized_](#-)
-
-Every Object 
-
-בכל אובייקט קיים משתנה דגל בשם “lock flag". המילה השמורה synchronized  מאפשרת שליטה מסוימת במשתנה זה. משתנה זה – כשהוא מודלק במסגרת פעולתו של thread נתון (וכל עוד אותו thread נתון לא כיבה אותו), הגישה אליו מתוך threads אחרים (אשר גם מנסים לגשת אליו תחת השפעתה של המילה השמורה synchronized) לא מתאפשרת. ניתן לדמיין את אופן השימוש במשתנה lock flag למעין מפתח שיש בכל אובייקט וש-thread לוקח לידיו כאשר עליו לבצע בלוק synchronized (יוסבר בהמשך). </br>
- 
-קיימות שתי דרכים טכניות להשתמש במילה השמורה synchronized :
-1. אפשרות אחת כוללת כתיבה של בלוק פקודות שכותרתו synchronized ושבשורת הכותרת שלו מופיע בסוגריים עגולות, לאחר המילה synchronized, ה-reference של האובייקט שאליו הבלוק מתייחס. </br>
 ### [_What is Monitor_](#-)
 
-[_What is Monitor_](#-) in Java Concurrency is a synchronization mechanism.</br>
+[_What is Monitor_](#-) in Java Concurrency is a Monitor is a synchronization mechanism.</br>
 [Monitor :](#-) code block (or Method) that is embedded with **synchronized** keyword.(The lock is implemented in the background automatically by JVM)
 
 In the JVM, every object and class is logically associated with a monitor (wait(), notify(), notifyAll()). To implement the mutual exclusion capability of monitors, a lock (sometimes called a mutex) is associated with each object and class. (This is called a semaphore in operating systems) </br>
