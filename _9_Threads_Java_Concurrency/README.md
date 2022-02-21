@@ -249,6 +249,7 @@ Thread <third> Execution is finished
 The time up to which the thread remains in the sleeping state is known as the **sleeping time of the thread**.</br>
 After the sleeping time is over, the thread starts its execution from where it has left.
 
+[Note:](#-) Sleep() method does not release the lock on object during Synchronization.
 
 ```java
 public class MyRunnableThread implements Runnable {
@@ -314,8 +315,8 @@ and their operation interleaves on each other.
 
 Race conditions can occur when two or more threads read and write the same variable according to one of these two patterns:
 
-1. Read-modify-write
-2. Check-then-act
+[1. Read-modify-write](#-)
+[2. Check-then-act](#-)
 
 	* The read-modify-write pattern means, that two or more threads first read a given variable, then modify its value and write it back to the variable. For this to cause a problem, the new value must depend one way or another on the previous value. The problem that can occur is, if two threads read the value (into CPU registers) then modify the value (in the CPU registers) and then write the values back. This situation is explained in more detail later.
 
