@@ -307,17 +307,18 @@ Thread <first> Execution is finished
 
 #### Background
 
-Somtimes in the same program there are several Threads , which operate the same Object. </br>
-In this situation , it is possible that one Thread will stop its running and the other Thread will run (CPU can run 1 Thread at given time) , w/o first Thread finishing it's operations , which can cause later on bugs and error's.
+Somtimes in the same program there are several Threads , which operate on the same Object. </br>
+In this situation , it is possible that one Thread will stop its running and the other Thread will run (CPU can run 1 Thread at given time) , w/o first Thread finishing it's operations , which can cause later on bugs ,error's. </br>
 
-
-לעתים יש באותה תכנית מספר threads, אשר פועלים על אותו אובייקט. במקרה כזה, בהחלט ייתכן מצב שבו תופסק לרגע פעילותו של thread אחד, ותחל פעולתו של השני (יש לזכור שכל CPU מסוגל לבצע בכל רגע נתון אך ורק thread אחד), וזאת מבלי שהראשון יסיים סדרה של פעולות, אשר אי השלמתה עלול לגרום לטעויות בהמשך. </br>
+Example :
+	Two Threads working on Object that presents a Stack.</br>
+	If First Thread add item to the Stack and didn't have time to update the Index of the Stack, because the CPU stopped giving time to First Thread, and Second Thread get time from CPU and removed item from the Stack.</br>
+	This is what keyword **_synchronized_** came to solve. </br>
  
-דוגמא אחת למצב כזה היא שני threads אשר פועלים על אובייקט שמתאר מחסנית של נתונים. אם thread אחד ביצע הוספה של פריט אל המחסנית ולא הספיק לעדכן את מספר האינדקס במחסנית כיוון ש-thread שני הפסיק את פעולתו והתחיל לבצע פעולה של הסרת פריט מהמחסנית – במקרה כזה הפריט שכביכול הוסף 'כאילו' לא הוסף. המילה השמורה synchronized באה לפתור בעיה זו.
+בכל אובייקט קיים משתנה דגל בשם “lock flag". המילה השמורה synchronized  מאפשרת שליטה מסוימת במשתנה זה. משתנה זה – כשהוא מודלק במסגרת פעולתו של thread נתון (וכל עוד אותו thread נתון לא כיבה אותו), הגישה אליו מתוך threads אחרים (אשר גם מנסים לגשת אליו תחת השפעתה של המילה השמורה synchronized) לא מתאפשרת. ניתן לדמיין את אופן השימוש במשתנה lock flag למעין מפתח שיש בכל אובייקט וש-thread לוקח לידיו כאשר עליו לבצע בלוק synchronized (יוסבר בהמשך). </br>
  
-בכל אובייקט קיים משתנה דגל בשם “lock flag". המילה השמורה synchronized  מאפשרת שליטה מסוימת במשתנה זה. משתנה זה – כשהוא מודלק במסגרת פעולתו של thread נתון (וכל עוד אותו thread נתון לא כיבה אותו), הגישה אליו מתוך threads אחרים (אשר גם מנסים לגשת אליו תחת השפעתה של המילה השמורה synchronized) לא מתאפשרת. ניתן לדמיין את אופן השימוש במשתנה lock flag למעין מפתח שיש בכל אובייקט וש-thread לוקח לידיו כאשר עליו לבצע בלוק synchronized (יוסבר בהמשך).
- 
-קיימות שתי דרכים טכניות להשתמש במילה השמורה synchronized. אפשרות אחת כוללת כתיבה של בלוק פקודות שכותרתו synchronized ושבשורת הכותרת שלו מופיע בסוגריים עגולות, לאחר המילה synchronized, ה-reference של האובייקט שאליו הבלוק מתייחס.
+קיימות שתי דרכים טכניות להשתמש במילה השמורה synchronized :
+1. אפשרות אחת כוללת כתיבה של בלוק פקודות שכותרתו synchronized ושבשורת הכותרת שלו מופיע בסוגריים עגולות, לאחר המילה synchronized, ה-reference של האובייקט שאליו הבלוק מתייחס. </br>
 
 
 
