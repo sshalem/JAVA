@@ -323,7 +323,7 @@ Every Object
  
 קיימות שתי דרכים טכניות להשתמש במילה השמורה synchronized :
 1. אפשרות אחת כוללת כתיבה של בלוק פקודות שכותרתו synchronized ושבשורת הכותרת שלו מופיע בסוגריים עגולות, לאחר המילה synchronized, ה-reference של האובייקט שאליו הבלוק מתייחס. </br>
-### [_What is Monitor_]
+### [_What is Monitor_](#-)
 
 [_What is Monitor_](#-) in Java Concurrency is a synchronization mechanism.</br>
 [Monitor :](#-) code block (or Method) that is embedded with **synchronized** keyword.(The lock is implemented in the background automatically by JVM)
