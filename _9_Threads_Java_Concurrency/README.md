@@ -312,7 +312,8 @@ Thread <first> Execution is finished
 #### [Question : What is a Monitor?](#-)
 
 #### [Answer:](#-) </br>
-	in Java Concurrency, a [Monitor](#-) is a synchronization mechanism. [Monitor](#-) is a Method/block code, that is embedded with **synchronized** keyword.(The lock is implemented in the background automatically by JVM)
+
+in Java Concurrency, a [Monitor](#-) is a synchronization mechanism. [Monitor](#-) is a Method/block code, that is embedded with **synchronized** keyword.(The lock is implemented in the background automatically by JVM)
 
 
 In the JVM, every object and class is logically associated with a monitor (wait(), notify(), notifyAll()). To implement the mutual exclusion capability of monitors, a lock (sometimes called a mutex) is associated with each object and class. (This is called a semaphore in operating systems) </br>
