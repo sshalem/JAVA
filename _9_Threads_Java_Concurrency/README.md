@@ -9,8 +9,8 @@
 |  2  |[Thread vs Process vs Task](#2)   | 
 |  3  |[How to Create Thread](#3)   | 
 |  4  |[sleep](#4)   | 
-|  5  |[synchronize, Lock, wait, notify, notify all](#5)   | 
-|  6  |[Race Condition](#6)   | 
+|  5  |[Race Condition](#5)   | 
+|  6  |[synchronize, Lock, wait, notify, notify all](#6)  | 
 |  7  |[DeadLock ,Yield](#7)   | 
 |  8  |[Semaphore](#8)   | 
 |  9  |[CountDownLatch](#9)   | 
@@ -299,11 +299,27 @@ Thread <first> Execution is finished
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
+
 --------------------------------------------------------------------------------------------------
+
 
 ###### 5
 
-<img src="https://img.shields.io/badge/-5. synchronize, Lock, wait, notify, notify all %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-5. Race Condition %20-blue" height=40px>
+
+**_Race conditions_** occur when two threads operate on the **_same object_** without proper synchronization </br>
+and their operation interleaves on each other.
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 6
+
+<img src="https://img.shields.io/badge/-6. synchronize, Lock, wait, notify, notify all %20-blue" height=40px>
 
 ### [synchronized](#-)
 
@@ -329,20 +345,6 @@ Each object/class is associated with a Monitor (beacuse it is with synchronized 
 	* **[wait](#-)** : **wait()** method causes the current thread to wait until another thread invokes the notify() or notifyAll() methods for that object.
 	* **[notify()](#-)** : The notify() method wakes up a single thread that is waiting on that object’s **Monitor**.</br>
 	* **[notifyAll()](#-)** : The notifyAll() method wakes up all threads that are waiting on that object’s **Monitor**. A thread waits on an object’s **Monitor** by calling one of the wait() method. These methods can throw **_IllegalMonitorStateException_** if the current thread is not the owner of the object’s **Monitor**.
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 6
-
-<img src="https://img.shields.io/badge/-6. Race Condition %20-blue" height=40px>
-
-**_Race conditions_** occur when two threads operate on the **_same object_** without proper synchronization </br>
-and their operation interleaves on each other.
 
 ```java
 ```
