@@ -309,10 +309,10 @@ Thread <first> Execution is finished
 
 [See explanation of synchronization in link](https://github.com/sshalem/JAVA/blob/master/_9_Threads_Java_Concurrency/synchronization.md)
 
-#### * [Question](#-)
-	* Whai is a Monitor?
+#### [Question](#-)
+	* What is a Monitor?
 
-#### * [Answer](#-)
+#### [Answer](#-)
 	* in Java Concurrency, a [Monitor](#-) is a synchronization mechanism. [Monitor](#-) is a Method/block code, that is embedded with **synchronized** keyword.(The lock is implemented in the background automatically by JVM)
 
 
