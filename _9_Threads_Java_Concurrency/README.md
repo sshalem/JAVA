@@ -316,14 +316,12 @@ Thread <first> Execution is finished
 	* in Java Concurrency, a [Monitor](#-) is a synchronization mechanism. [Monitor](#-) is a Method/block code, that is embedded with **synchronized** keyword.(The lock is implemented in the background automatically by JVM)
 
 
-In the JVM, every object and class is logically associated with a monitor (wait(), notify(), notifyAll()). To implement the mutual exclusion capability of monitors, a lock (sometimes called a mutex) is associated with each object and class. (This is called a semaphore in operating systems) </br>
+In the JVM, every object and class is logically associated with a Monitor. To implement the mutual exclusion capability of Monitors, a lock (sometimes called a mutex) is associated with each object and class. (This is called a semaphore in operating systems) </br>
 
-If one thread owns a lock on some data, then **NO others** can obtain that lock until the thread that owns the lock releases it. It would be not convenient if we need to write a semaphore all the time when we do multi-threading programming. Luckily, we don't need to since JVM does that for us automatically.</br>
+If one thread owns a lock on some data, then **NO others** can obtain that lock until the thread that owns the lock releases it. It would be not convenient if we need to write a semaphore all the time when we do multi-threading programming.</br>
+Luckily, we don't need to since JVM does that for us automatically.</br>
 
-To claim a **Monitor region** which means **data not accessible by more than one thread**, Java provide **synchronized statements** and **synchronized methods**.</br>
-Once the code is embedded with synchronized keyword, it is a monitor region. The locks are implemented in the background automatically by JVM.
-
-Each object/class is associated with a Monitor (beacuse it is with synchronized keyword), and following methods can only be invoked within a synchronized statement or synchronized method. (wait(), notify(), notifyAll()) </br>
+Each object/class is associated with a Monitor (beacuse it is with synchronized keyword), and following methods can only be invoked within a synchronized statement or synchronized method. (**wait(), notify(), notifyAll()** ) </br>
 
 ```java
 ```
