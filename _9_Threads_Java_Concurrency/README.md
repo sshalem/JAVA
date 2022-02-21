@@ -323,7 +323,7 @@ Luckily, we don't need to since JVM does that for us automatically.</br>
 
 Each object/class is associated with a Monitor (beacuse it is with synchronized keyword), and following methods can only be invoked within a synchronized statement or synchronized method. (**wait(), notify(), notifyAll()** ) </br>
 
-**[wait(), notify(), notifyAll()](#-) 
+**[wait(), notify(), notifyAll()](#-)**
 
 These are final methods defined in the Object class and can be called **only from within a synchronized** context. </br>
 **[wait](#-)** : **wait()** method causes the current thread to wait until another thread invokes the notify() or notifyAll() methods for that object.
