@@ -323,6 +323,13 @@ Luckily, we don't need to since JVM does that for us automatically.</br>
 
 Each object/class is associated with a Monitor (beacuse it is with synchronized keyword), and following methods can only be invoked within a synchronized statement or synchronized method. (**wait(), notify(), notifyAll()** ) </br>
 
+**[wait(), notify(), notifyAll()](#-) 
+
+These are final methods defined in the Object class and can be called **only from within a synchronized** context. </br>
+**[wait](#-)** : **wait()** method causes the current thread to wait until another thread invokes the notify() or notifyAll() methods for that object.
+**[notify()](#-)** : The notify() method wakes up a single thread that is waiting on that object’s **Monitor**.</br>
+**[notifyAll()](#-)** : The notifyAll() method wakes up all threads that are waiting on that object’s **Monitor**. A thread waits on an object’s **Monitor** by calling one of the wait() method. These methods can throw **_IllegalMonitorStateException_** if the current thread is not the owner of the object’s **Monitor**.
+
 ```java
 ```
 
