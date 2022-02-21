@@ -21,7 +21,7 @@
 כדי לפתור בעייתיות זו באמצעות המילה השמורה synchronized יש להוסיף אותה עפ"י ההסבר שהוצג באופן הבא:</br>
 
 
-```java 
+```java
 public class StackBlockSynchronized {
  
 	private int top = 0;
