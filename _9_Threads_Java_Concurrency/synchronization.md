@@ -67,7 +67,7 @@ public class StackMethodSynchronized {
 }
 ```
  
-המתודה הבאה:
+קוד של מתודה עם synchronized block :
 ```java
 public void push(int num) {
 	synchronized (this) {
@@ -76,8 +76,8 @@ public void push(int num) {
 	}
 }
 ```
-זהה למתודה:
-
+הקוד הבא של מתודה מסנכרנת זהה לקוד של "מתטדה עם בלוק סינכרון" :
+  
 ```java
 public synchronized void push(int num) {
 	data[top] = num;
