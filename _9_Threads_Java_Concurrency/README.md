@@ -9,8 +9,8 @@
 |  2  |[Thread vs Process vs Task](#2)   | 
 |  3  |[How to Create Thread](#3)   | 
 |  4  |[sleep](#4)   | 
-|  5  |[Race Condition](#5)   | 
-|  6  |[synchronize, Lock, wait, notify, notify all](#6)   | 
+|  5  |[synchronize, Lock, wait, notify, notify all](#5)   | 
+|  6  |[Race Condition](#)   | 
 |  7  |[DeadLock ,Yield](#7)   | 
 |  8  |[Semaphore](#8)   | 
 |  9  |[CountDownLatch](#9)   | 
@@ -303,10 +303,8 @@ Thread <first> Execution is finished
 
 ###### 5
 
-<img src="https://img.shields.io/badge/-5. Race Condition %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-5. synchronize, Lock, wait, notify, notify all %20-blue" height=40px>
 
-**_Race conditions_** occur when two threads operate on the **_same object_** without proper synchronization </br>
-and their operation interleaves on each other.
 
 ```java
 ```
@@ -317,8 +315,10 @@ and their operation interleaves on each other.
 
 ###### 6
 
-<img src="https://img.shields.io/badge/-6 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-6. Race Condition %20-blue" height=40px>
 
+**_Race conditions_** occur when two threads operate on the **_same object_** without proper synchronization </br>
+and their operation interleaves on each other.
 
 ```java
 ```
