@@ -305,7 +305,13 @@ Thread <first> Execution is finished
 
 <img src="https://img.shields.io/badge/-5. synchronize, Lock, wait, notify, notify all %20-blue" height=40px>
 
-לעתים יש באותה תכנית מספר threads, אשר פועלים על אותו אובייקט. במקרה כזה, בהחלט ייתכן מצב שבו תופסק לרגע פעילותו של thread אחד, ותחל פעולתו של השני (יש לזכור שכל CPU מסוגל לבצע בכל רגע נתון אך ורק thread אחד), וזאת מבלי שהראשון יסיים סדרה של פעולות, אשר אי השלמתה עלול לגרום לטעויות בהמשך.
+#### Background
+
+Somtimes in the same program there are several Threads , which operate the same Object. </br>
+In this situation , it is possible that one Thread will stop its running and the other Thread will run (CPU can run 1 Thread at given time) , w/o first Thread finishing it's operations , which can cause later on bugs and error's.
+
+
+לעתים יש באותה תכנית מספר threads, אשר פועלים על אותו אובייקט. במקרה כזה, בהחלט ייתכן מצב שבו תופסק לרגע פעילותו של thread אחד, ותחל פעולתו של השני (יש לזכור שכל CPU מסוגל לבצע בכל רגע נתון אך ורק thread אחד), וזאת מבלי שהראשון יסיים סדרה של פעולות, אשר אי השלמתה עלול לגרום לטעויות בהמשך. </br>
  
 דוגמא אחת למצב כזה היא שני threads אשר פועלים על אובייקט שמתאר מחסנית של נתונים. אם thread אחד ביצע הוספה של פריט אל המחסנית ולא הספיק לעדכן את מספר האינדקס במחסנית כיוון ש-thread שני הפסיק את פעולתו והתחיל לבצע פעולה של הסרת פריט מהמחסנית – במקרה כזה הפריט שכביכול הוסף 'כאילו' לא הוסף. המילה השמורה synchronized באה לפתור בעיה זו.
  
