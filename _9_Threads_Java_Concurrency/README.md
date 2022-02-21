@@ -311,7 +311,7 @@ Somtimes in the same program there are several Threads , which operate on the sa
 In this situation , it is possible that one Thread will stop its running and the other Thread will run (CPU can run 1 Thread at given time) , w/o first Thread finishing it's operations , which can cause later on bugs ,error's. </br>
 
 Example :
-	Two Threads working on Object that presents a Stack.</br>
+	* Two Threads working on Object that presents a Stack.</br>
 	If First Thread add item to the Stack and didn't have time to update the Index of the Stack, because the CPU stopped giving time to First Thread, and Second Thread get time from CPU and removed item from the Stack.</br>
 	This is what keyword **_synchronized_** came to solve. </br>
  
