@@ -305,7 +305,7 @@ Thread <first> Execution is finished
 
 <img src="https://img.shields.io/badge/-5. synchronize, Lock, wait, notify, notify all %20-blue" height=40px>
 
-#### [Background](#-)
+### [Background](#-)
 
 Somtimes in the same program there are several Threads , which operate on the same Object. </br>
 In this situation , it is possible that one Thread will stop its running and the other Thread will run (CPU can run 1 Thread at given time) , w/o first Thread finishing it's operations , which can cause later on bugs ,error's. </br>
@@ -315,7 +315,7 @@ In this situation , it is possible that one Thread will stop its running and the
 	If First Thread add item to the Stack and didn't have time to update the Index of the Stack, because the CPU stopped giving time to First Thread, and Second Thread get time from CPU and removed item from the Stack.</br>
 	This is what keyword **_synchronized_** came to solve. </br>
  
-#### [_synchronized_](#-)
+### [_synchronized_](#-)
 
 Every Object 
 
@@ -324,7 +324,7 @@ Every Object
 קיימות שתי דרכים טכניות להשתמש במילה השמורה synchronized :
 1. אפשרות אחת כוללת כתיבה של בלוק פקודות שכותרתו synchronized ושבשורת הכותרת שלו מופיע בסוגריים עגולות, לאחר המילה synchronized, ה-reference של האובייקט שאליו הבלוק מתייחס. </br>
 
-#### [_What is Monitor_](#-)
+### [_What is Monitor_](#-)
 
 **Monitor** in Java Concurrency is a synchronization mechanism.</br>
 Monitor - code block (or Method) that is embedded with synchronized keyword, The lock is implemented in the background automatically by JVM.
