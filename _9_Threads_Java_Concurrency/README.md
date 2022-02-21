@@ -10,7 +10,7 @@
 |  3  |[How to Create Thread](#3)   | 
 |  4  |[sleep](#4)   | 
 |  5  |[synchronize, Lock, wait, notify, notify all](#5)   | 
-|  6  |[Race Condition](#)   | 
+|  6  |[Race Condition](#6)   | 
 |  7  |[DeadLock ,Yield](#7)   | 
 |  8  |[Semaphore](#8)   | 
 |  9  |[CountDownLatch](#9)   | 
