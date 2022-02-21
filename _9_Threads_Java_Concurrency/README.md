@@ -303,7 +303,9 @@ Thread <first> Execution is finished
 
 ###### 5
 
-<img src="https://img.shields.io/badge/-5 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-5. Race Condition %20-blue" height=40px>
+
+**_Race conditions_** occur when two threads operate on the same object without proper synchronization and their operation interleaves on each other.
 
 ```java
 ```
