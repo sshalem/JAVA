@@ -307,6 +307,8 @@ Thread <first> Execution is finished
 
 ### [Background](#-)
 
+[See explanation of synchronization in link](https://github.com/sshalem/JAVA/blob/master/_9_Threads_Java_Concurrency/synchronization.md)
+
 Somtimes in the same program there are several Threads , which operate on the same Object. </br>
 In this situation , it is possible that one Thread will stop its running and the other Thread will run (CPU can run 1 Thread at given time) , w/o first Thread finishing it's operations , which can cause later on bugs ,error's. </br>
 
