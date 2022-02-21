@@ -310,6 +310,17 @@ Thread <first> Execution is finished
 **_Race conditions_** occur when two threads operate on the **_same object_** without proper synchronization </br>
 and their operation interleaves on each other.
 
+**[Two Types of Race Conditions](#-)** </br>
+
+Race conditions can occur when two or more threads read and write the same variable according to one of these two patterns:
+
+1. Read-modify-write
+2. Check-then-act
+
+	* The read-modify-write pattern means, that two or more threads first read a given variable, then modify its value and write it back to the variable. For this to cause a problem, the new value must depend one way or another on the previous value. The problem that can occur is, if two threads read the value (into CPU registers) then modify the value (in the CPU registers) and then write the values back. This situation is explained in more detail later.
+
+	* The check-then-act pattern means, that two or more threads check a given condition, for instance if a Map contains a given value, and then go on to act based on that information, e.g. taking the value from the Map. The problem may occur if two threads check the Map for a given value at the same time - see that the value is present - and then both threads try to take (remove) that value. However, only one of the threads can actually take the value. The other thread will get a null value back. This could also happen if a Queue was used instead of a Map.
+
 ```java
 ```
 
