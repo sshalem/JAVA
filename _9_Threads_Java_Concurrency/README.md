@@ -323,8 +323,12 @@ The read-modify-write pattern means, that two or more threads first read a given
 ```
 
 2. **[Check-then-act](#-)**</br>
-The check-then-act pattern means, that two or more threads check a given condition, for instance if a Map contains a given value, and then go on to act based on that information, e.g. taking the value from the Map. The problem may occur if two threads check the Map for a given value at the same time - see that the value is present - and then both threads try to take (remove) that value. However, only one of the threads can actually take the value. The other thread will get a null value back. This could also happen if a Queue was used instead of a Map.
+The **check-then-act** pattern means, that two or more threads check a given condition, for instance if a Map contains a given value, and then go on to act based on that information, e.g. taking the value from the Map.</br>
+The problem may occur if **two or more threads** check the Map for a given value at the same time - see that the value is present - and then both threads try to take (remove) that value.</br>
+However, only one of the threads can actually take the value. </br>
+The other thread will get a null value back. This could also happen if a Queue was used instead of a Map.
 
+[Solution : use **synchronized** medthod (see section 6)](#-)
 
 ```java
 public class BuyBook implements Runnable {
