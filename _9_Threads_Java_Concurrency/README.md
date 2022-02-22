@@ -318,10 +318,69 @@ Race conditions can occur when two or more threads read and write the same varia
 1. **[Read-modify-write](#-)**</br>
 The read-modify-write pattern means, that two or more threads first read a given variable, then modify its value and write it back to the variable. For this to cause a problem, the new value must depend one way or another on the previous value. The problem that can occur is, if two threads read the value (into CPU registers) then modify the value (in the CPU registers) and then write the values back. This situation is explained in more detail later.
 
+```java
+
+```
+
 2. **[Check-then-act](#-)**</br>
 The check-then-act pattern means, that two or more threads check a given condition, for instance if a Map contains a given value, and then go on to act based on that information, e.g. taking the value from the Map. The problem may occur if two threads check the Map for a given value at the same time - see that the value is present - and then both threads try to take (remove) that value. However, only one of the threads can actually take the value. The other thread will get a null value back. This could also happen if a Queue was used instead of a Map.
 
+
 ```java
+public class BuyBook implements Runnable {
+
+	private Map<String, Integer> products = new HashMap<>();
+
+	public BuyBook() {
+		products.put("BOOK", new Integer(1));
+	}
+
+	public String buyProduct(String key) {
+		if (products.containsKey(key)) {
+			Integer quantity = products.get(key);
+			if (!quantity.equals(new Integer(0))) {
+				quantity--;
+				products.put(key, quantity);
+				return "Processing Succsessful. " + Thread.currentThread().getName();
+			}
+		}
+		return "Oops!! out of stock" + Thread.currentThread().getName();
+	}
+
+	@Override
+	public void run() {
+		System.out.println("Buy Book --> " + buyProduct("BOOK"));
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		BuyBook buyBook = new BuyBook();
+
+		Thread student1 = new Thread(buyBook, "Student-1");
+		Thread student2 = new Thread(buyBook, "Student-2");
+		Thread student3 = new Thread(buyBook, "Student-3");
+
+		student1.start();
+		student2.start();
+		student3.start();
+	}
+}
+```
+
+### Console output shows : 
+
+```java
+Buy Book --> Processing Succsessful. Student-1
+Buy Book --> Processing Succsessful. Student-2
+Buy Book --> Processing Succsessful. Student-3
+
+or
+
+Buy Book --> Processing Succsessful. Student-1
+Buy Book --> Oops!! out of stockStudent-3
+Buy Book --> Processing Succsessful. Student-2
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
