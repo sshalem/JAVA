@@ -330,6 +330,8 @@ The other thread will get a null value back. This could also happen if a Queue w
 
 [Solution : use **synchronized** medthod (see section 6)](#-)
 
+Code example of **Check-On-Act** (method not synchronized)
+
 ```java
 public class BuyBook implements Runnable {
 
