@@ -315,7 +315,7 @@ and their operation interleaves on each other.
 
 Race conditions can occur when two or more threads read and write the same variable according to one of these two patterns:
 
-[Race Condition link](https://knpcode.com/java/multi-threading/race-condition-in-java/)
+[Race Condition link](#-) : https://knpcode.com/java/multi-threading/race-condition-in-java/
 
 1. **[Read-modify-write](#-)**</br>
 The read-modify-write pattern means, that two or more threads first read a given variable, then modify its value and write it back to the variable. For this to cause a problem, the new value must depend one way or another on the previous value. The problem that can occur is, if two threads read the value (into CPU registers) then modify the value (in the CPU registers) and then write the values back. This situation is explained in more detail later.
