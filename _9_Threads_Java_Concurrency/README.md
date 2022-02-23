@@ -319,7 +319,7 @@ This simple task of incrementing a counter is actually comprised of three steps
 3. Store the value of counter variable.
 If there are two threads sharing this variable then the following scenario may happen-
 
-```
+```java
 	int counter = 0;
 	counter = counter + 1; // Thread 1
 	counter = counter + 1; // Thread 2 started before thread 1 could save the new 
