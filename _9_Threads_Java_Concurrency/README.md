@@ -497,15 +497,75 @@ Each object/class is associated with a Monitor (beacuse it is with synchronized 
 	* **[notifyAll()](#-)** : The notifyAll() method wakes up all threads that are waiting on that object’s **Monitor**. A thread waits on an object’s **Monitor** by calling one of the wait() method. These methods can throw **_IllegalMonitorStateException_** if the current thread is not the owner of the object’s **Monitor**.
 
 ```java
- thread-1:0 ,  thread-1:1 ,  thread-1:2 ,  thread-1:3 ,  thread-1:4 ,  thread-1:5 ,  thread-1:6 ,  thread-1:7 ,  thread-1:8 ,  thread-1:9 , 
+public class PrintIndexLoop implements Runnable {
 
- thread-3:0 ,  thread-3:1 ,  thread-3:2 ,  thread-3:3 ,  thread-3:4 ,  thread-3:5 ,  thread-3:6 ,  thread-3:7 ,  thread-3:8 ,  thread-3:9 , 
+	public void printIndex() {
+		for (int i = 0; i < 5; i++) {
+			System.out.print(Thread.currentThread().getName() + ":" + i + " ,");
+		}
+		System.out.println();
+	}
 
- thread-2:0 ,  thread-2:1 ,  thread-2:2 ,  thread-2:3 ,  thread-2:4 ,  thread-2:5 ,  thread-2:6 ,  thread-2:7 ,  thread-2:8 ,  thread-2:9 , 
+	@Override
+	public void run() {
+		printIndex();
+	}
+}
 
- thread-5:0 ,  thread-5:1 ,  thread-5:2 ,  thread-5:3 ,  thread-5:4 ,  thread-5:5 ,  thread-5:6 ,  thread-5:7 ,  thread-5:8 ,  thread-5:9 , 
+public class Main {
 
- thread-4:0 ,  thread-4:1 ,  thread-4:2 ,  thread-4:3 ,  thread-4:4 ,  thread-4:5 ,  thread-4:6 ,  thread-4:7 ,  thread-4:8 ,  thread-4:9 , 
+	public static void main(String[] args) {
+
+		PrintIndexLoop printIndexLoop = new PrintIndexLoop();
+
+		for (int i = 1; i <= 5; i++) {
+			Thread thread = new Thread(printIndexLoop, "[th-" + i + "]");
+			thread.start();
+		}
+	}
+}
+```
+
+### Console output shows a mess: 
+### a thread after executing few steps may be preempted by another thread
+### Thats why wee see a mess
+
+```java
+[th-1]:0 ,[th-1]:1 ,[th-1]:2 ,[th-1]:3 ,[th-1]:4 ,
+[th-2]:0 ,[th-3]:0 ,[th-3]:1 ,[th-2]:1 ,[th-3]:2 ,[th-2]:2 ,[th-3]:3 ,[th-2]:3 ,[th-3]:4 ,
+[th-2]:4 ,
+[th-4]:0 ,[th-5]:0 ,[th-4]:1 ,[th-5]:1 ,[th-4]:2 ,[th-4]:3 ,[th-4]:4 ,
+[th-5]:2 ,[th-5]:3 ,[th-5]:4 ,
+```
+
+Lets add the **synchronized** keyword a see if the a Thread holds a key, what console will show.
+
+```java
+public class PrintIndexLoop implements Runnable {
+
+	public synchronized void printIndex() {
+		for (int i = 0; i < 5; i++) {
+			System.out.print(Thread.currentThread().getName() + ":" + i + " ,");
+		}
+		System.out.println();
+	}
+
+	@Override
+	public void run() {
+		printIndex();
+	}
+}
+
+### Console output shows : 
+### Once a Thread starts execution, it holds a Lock. 
+### The Thread doesn't release the Lock till it finishes running
+
+```java
+[th-1]:0 ,[th-1]:1 ,[th-1]:2 ,[th-1]:3 ,[th-1]:4 ,
+[th-3]:0 ,[th-3]:1 ,[th-3]:2 ,[th-3]:3 ,[th-3]:4 ,
+[th-2]:0 ,[th-2]:1 ,[th-2]:2 ,[th-2]:3 ,[th-2]:4 ,
+[th-4]:0 ,[th-4]:1 ,[th-4]:2 ,[th-4]:3 ,[th-4]:4 ,
+[th-5]:0 ,[th-5]:1 ,[th-5]:2 ,[th-5]:3 ,[th-5]:4 ,
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
