@@ -14,7 +14,7 @@
 |  7  |[wait, notify, notify all](#7)  | 
 |  8  |[DeadLock ,Yield](#8)   | 
 |  9  |[Semaphore](#9)   | 
-|  10  |[CountDownLatch](#10)   | 
+|  10 |[CountDownLatch](#10)   | 
 |  11 |[ReadWriteLock](#11)   | 
 |  12 |[Volatile](#12)   | 
 |  13 |[AtomicInteger](#13)   | 
@@ -505,12 +505,8 @@ Each object/class is associated with a Monitor (beacuse it is with synchronized 
 
 ###### 7
 
-<img src="https://img.shields.io/badge/-7. DeadLock ,Yield %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-7. wait, notify, notify all%20-blue" height=40px>
 
-https://www.javatpoint.com/deadlock-in-java
-
-1. What is deadlock and when it can occur?
-2. What is Yield?
 
 ```java
 ```
@@ -521,7 +517,12 @@ https://www.javatpoint.com/deadlock-in-java
 
 ###### 8
 
-<img src="https://img.shields.io/badge/-8. Semaphore %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-8. DeadLock ,Yield %20-blue" height=40px>
+
+https://www.javatpoint.com/deadlock-in-java
+
+1. What is deadlock and when it can occur?
+2. What is Yield?
 
 ```java
 ```
@@ -654,6 +655,28 @@ https://www.javatpoint.com/deadlock-in-java
 ###### 20
 
 <img src="https://img.shields.io/badge/-20 %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 21
+
+<img src="https://img.shields.io/badge/-21 %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 22
+
+<img src="https://img.shields.io/badge/-22 %20-blue" height=40px>
 
 ```java
 ```
