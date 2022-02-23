@@ -320,9 +320,72 @@ Race conditions can occur when two or more threads read and write the same varia
 1. **[Read-modify-write](#-)**</br>
 The read-modify-write pattern means, that two or more threads first read a given variable, then modify its value and write it back to the variable. For this to cause a problem, the new value must depend one way or another on the previous value. The problem that can occur is, if two threads read the value (into CPU registers) then modify the value (in the CPU registers) and then write the values back. This situation is explained in more detail later.
 
-```java
+It's possible to have a scenario where
 
 ```
+	int counter = 0;
+	counter = counter + 1; // Thread 1
+	counter = counter + 1; // Thread 2 started before thread 1 could save the new 
+        	              //value of counter, so Thread 2 also got the initial value of counter as 0.
+	store counter value // Thread 1
+	store counter value // Thread 2
+```
+
+```java
+public class RaceConditionCounter implements Runnable {
+
+	public int counter = 0;
+
+	public void incrementCounter() {
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		counter++;
+	}
+
+	public int getCounter() {
+		return counter;
+	}
+
+	@Override
+	public void run() {
+		incrementCounter();
+		System.out.println(Thread.currentThread().getName() + " - " + getCounter());
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		RaceConditionCounter rcc = new RaceConditionCounter();
+
+		for (int i = 0; i < 10; i++) {
+			Thread thread = new Thread(rcc, "state-" + i);
+			thread.start();
+		}
+	}
+}
+```
+
+### Console output shows : 
+
+```java
+state-2 - 3
+state-1 - 3
+state-3 - 4
+state-4 - 5
+state-0 - 4
+state-5 - 6
+state-7 - 8
+state-6 - 7
+state-8 - 9
+state-9 - 10
+```
+
+
 
 2. **[Check-then-act](#-)**</br>
 The **check-then-act** pattern means, that two or more threads check a given condition, for instance if a Map contains a given value, and then go on to act based on that information, e.g. taking the value from the Map.</br>
