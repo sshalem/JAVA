@@ -555,6 +555,7 @@ public class PrintIndexLoop implements Runnable {
 		printIndex();
 	}
 }
+```
 
 ### Console output shows : 
 ### Once a Thread starts execution, it holds a Lock. 
