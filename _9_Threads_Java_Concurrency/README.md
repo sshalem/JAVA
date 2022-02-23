@@ -311,16 +311,13 @@ Thread <first> Execution is finished
 **_Race conditions_** occur when two threads operate on the **_same object_** without proper synchronization </br>
 and their operation interleaves on each other.
 
-### [Two Types of Race Conditions](#-) </br>
+In a multi-threaded environment, a thread after executing few steps may be preempted by another thread. That may leave the shared data in an inconsistent state. For example take the simple task of incrementing a counter– **counter++**  </br>
+This simple task of incrementing a counter is actually comprised of three steps
 
-Race conditions can occur when two or more threads read and write the same variable according to one of these two patterns:
-
-[Race Condition link](#-) : https://knpcode.com/java/multi-threading/race-condition-in-java/
-
-1. **[Read-modify-write](#-)**</br>
-The read-modify-write pattern means, that two or more threads first read a given variable, then modify its value and write it back to the variable. For this to cause a problem, the new value must depend one way or another on the previous value. The problem that can occur is, if two threads read the value (into CPU registers) then modify the value (in the CPU registers) and then write the values back. This situation is explained in more detail later.
-
-It's possible to have a scenario where
+1. Read the value of counter variable.
+2. Increment the value by 1.
+3. Store the value of counter variable.
+If there are two threads sharing this variable then the following scenario may happen-
 
 ```
 	int counter = 0;
@@ -330,6 +327,18 @@ It's possible to have a scenario where
 	store counter value // Thread 1
 	store counter value // Thread 2
 ```
+
+So you end up with the counter value as 1 rather than the correct value 2 because of the interleaving threads. </br>
+That’s what race condition can do to a shared object in a multi-threaded environment.
+
+### [Two Types of Race Conditions](#-) </br>
+
+Race conditions can occur when two or more threads read and write the same variable according to one of these two patterns:
+
+[Race Condition link](#-) : https://knpcode.com/java/multi-threading/race-condition-in-java/
+
+1. **[Read-modify-write](#-)**</br>
+The read-modify-write pattern means, that two or more threads first read a given variable, then modify its value and write it back to the variable. For this to cause a problem, the new value must depend one way or another on the previous value. The problem that can occur is, if two threads read the value (into CPU registers) then modify the value (in the CPU registers) and then write the values back. This situation is explained in more detail later.
 
 ```java
 public class RaceConditionCounter implements Runnable {
@@ -370,22 +379,21 @@ public class Main {
 }
 ```
 
-### Console output shows : 
+### Console output shows : </br>
+#### As we can see Thread 7, 9, 6 ,8 have got the same value 4, Thread 3 ,4 got the same value 7.
 
 ```java
-state-2 - 3
-state-1 - 3
-state-3 - 4
-state-4 - 5
-state-0 - 4
-state-5 - 6
-state-7 - 8
-state-6 - 7
-state-8 - 9
-state-9 - 10
+Thread-7 - 4
+Thread-5 - 5
+Thread-9 - 4
+Thread-4 - 7
+Thread-6 - 4
+Thread-8 - 4
+Thread-1 - 9
+Thread-2 - 8
+Thread-3 - 7
+Thread-0 - 10
 ```
-
-
 
 2. **[Check-then-act](#-)**</br>
 The **check-then-act** pattern means, that two or more threads check a given condition, for instance if a Map contains a given value, and then go on to act based on that information, e.g. taking the value from the Map.</br>
