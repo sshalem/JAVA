@@ -558,8 +558,8 @@ public class PrintIndexLoop implements Runnable {
 ```
 
 ### Console output shows : 
-### Once a Thread starts execution, it holds a Lock. 
-### The Thread doesn't release the Lock till it finishes running
+#### Once a Thread starts execution, it holds a Lock. 
+#### The Thread doesn't release the Lock till it finishes running, then Next THread holds the Lock, and realeases the Lock flag only it finishes , etc...
 
 ```java
 [th-1]:0 ,[th-1]:1 ,[th-1]:2 ,[th-1]:3 ,[th-1]:4 ,
