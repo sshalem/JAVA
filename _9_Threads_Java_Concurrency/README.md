@@ -469,7 +469,7 @@ Buy Book --> Processing Succsessful. Student-2
 
 ###### 6
 
-<img src="https://img.shields.io/badge/-6. synchronize, Lock, wait, notify, notify all %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-6. synchronize, Lock%20-blue" height=40px>
 
 ### [synchronized](#-)
 
