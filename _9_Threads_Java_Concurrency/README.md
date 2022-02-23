@@ -311,7 +311,7 @@ Thread <first> Execution is finished
 **_Race conditions_** occur when two threads operate on the **_same object_** without proper synchronization </br>
 and their operation interleaves on each other.
 
-**[Two Types of Race Conditions](#-)** </br>
+#### [Two Types of Race Conditions](#-) </br>
 
 Race conditions can occur when two or more threads read and write the same variable according to one of these two patterns:
 
