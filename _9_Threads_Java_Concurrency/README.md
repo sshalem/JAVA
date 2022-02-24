@@ -579,6 +579,100 @@ public class PrintIndexLoop implements Runnable {
 
 
 ```java
+import java.util.ArrayDeque;
+import java.util.Queue;
+import java.util.Random;
+
+public class HospitalRunnable implements Runnable {
+
+	public int nextInLine = 1;
+
+	private Queue<Integer> numberInLine;
+
+	public HospitalRunnable() {
+		this.numberInLine = new ArrayDeque<Integer>();
+		for (int i = 1; i <= 10; i++) {
+			this.numberInLine.add(i);
+		}
+	}
+
+	private synchronized void doDoctortest(int currentClientInline, String patientNumber) throws InterruptedException {
+		while (currentClientInline != nextInLine) {
+			wait();
+		}
+		System.out.println(Thread.currentThread().getName() + " at Doctor : " + patientNumber);
+		nextInLine++;
+		notifyAll();
+	}
+
+	private void bloodCheck() throws InterruptedException {
+
+		Integer patientNumber = numberInLine.remove();
+		Random random = new Random();
+
+		int sleepTime = random.nextInt(3000);
+		Thread.sleep(sleepTime);
+
+		System.out.println(Thread.currentThread().getName() + " Arrived : " + patientNumber + ". doing Blood Checked ");
+
+		doDoctortest(patientNumber, "I am with patient number : " + patientNumber);
+
+	}
+
+	@Override
+	public void run() {
+		try {
+			bloodCheck();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		HospitalRunnable hospitalRunnable = new HospitalRunnable();
+
+		Thread t1 = new Thread(hospitalRunnable, "th-1");
+		Thread t2 = new Thread(hospitalRunnable, "th-2");
+		Thread t3 = new Thread(hospitalRunnable, "th-3");
+		Thread t4 = new Thread(hospitalRunnable, "th-4");
+		Thread t5 = new Thread(hospitalRunnable, "th-5");
+		Thread t6 = new Thread(hospitalRunnable, "th-6");
+		Thread t7 = new Thread(hospitalRunnable, "th-7");
+		Thread t8 = new Thread(hospitalRunnable, "th-8");
+
+		t1.start();
+		t2.start();
+		t3.start();
+		t4.start();
+		t5.start();
+		t6.start();
+		t7.start();
+		t8.start();
+	}
+}
+```
+
+```java
+th-2 Arrived : 2. doing Blood Checked 
+th-6 Arrived : 5. doing Blood Checked 
+th-5 Arrived : 6. doing Blood Checked 
+th-4 Arrived : 4. doing Blood Checked 
+th-8 Arrived : 7. doing Blood Checked 
+th-1 Arrived : 1. doing Blood Checked 
+th-1 at Doctor : I am with patient number : 1
+th-2 at Doctor : I am with patient number : 2
+th-3 Arrived : 3. doing Blood Checked 
+th-3 at Doctor : I am with patient number : 3
+th-4 at Doctor : I am with patient number : 4
+th-6 at Doctor : I am with patient number : 5
+th-5 at Doctor : I am with patient number : 6
+th-8 at Doctor : I am with patient number : 7
+th-7 Arrived : 8. doing Blood Checked 
+th-7 at Doctor : I am with patient number : 8
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
