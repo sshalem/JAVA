@@ -656,6 +656,9 @@ public class Main {
 }
 ```
 
+### Console output shows : 
+#### (note that the output may vary each time we run the code)
+
 ```java
 th-2 Arrived : 2. doing Blood Checked 
 th-6 Arrived : 5. doing Blood Checked 
