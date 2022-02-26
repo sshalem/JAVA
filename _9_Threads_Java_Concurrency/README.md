@@ -591,16 +591,17 @@ public class HospitalRunnable implements Runnable {
 
 	public HospitalRunnable() {
 		this.numberInLine = new ArrayDeque<Integer>();
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 30; i++) {
 			this.numberInLine.add(i);
 		}
 	}
 
 	private synchronized void doDoctortest(int currentClientInline, String patientNumber) throws InterruptedException {
 		while (currentClientInline != nextInLine) {
+			System.out.println(Thread.currentThread().getName() + " at Doctor : " + patientNumber + "--> waiting");
 			wait();
 		}
-		System.out.println(Thread.currentThread().getName() + " at Doctor : " + patientNumber);
+		System.out.println(Thread.currentThread().getName() + " at Doctor : " + patientNumber + ", finished ");
 		nextInLine++;
 		notifyAll();
 	}
@@ -608,12 +609,14 @@ public class HospitalRunnable implements Runnable {
 	private void bloodCheck() throws InterruptedException {
 
 		Integer patientNumber = numberInLine.remove();
+		System.out.println(Thread.currentThread().getName() + " at blood Check : " + patientNumber);
+		
 		Random random = new Random();
-
 		int sleepTime = random.nextInt(3000);
+		
 		Thread.sleep(sleepTime);
-
-		System.out.println(Thread.currentThread().getName() + " Arrived : " + patientNumber + ". doing Blood Checked ");
+		
+		System.out.println(Thread.currentThread().getName() + " Arrived : " + patientNumber + ". Finished Blood Checked ");
 
 		doDoctortest(patientNumber, "I am with patient number : " + patientNumber);
 
@@ -630,28 +633,14 @@ public class HospitalRunnable implements Runnable {
 }
 
 public class Main {
-
 	public static void main(String[] args) {
 
 		HospitalRunnable hospitalRunnable = new HospitalRunnable();
 
-		Thread t1 = new Thread(hospitalRunnable, "th-1");
-		Thread t2 = new Thread(hospitalRunnable, "th-2");
-		Thread t3 = new Thread(hospitalRunnable, "th-3");
-		Thread t4 = new Thread(hospitalRunnable, "th-4");
-		Thread t5 = new Thread(hospitalRunnable, "th-5");
-		Thread t6 = new Thread(hospitalRunnable, "th-6");
-		Thread t7 = new Thread(hospitalRunnable, "th-7");
-		Thread t8 = new Thread(hospitalRunnable, "th-8");
-
-		t1.start();
-		t2.start();
-		t3.start();
-		t4.start();
-		t5.start();
-		t6.start();
-		t7.start();
-		t8.start();
+		for (int i = 1; i <= 5; i++) {
+			Thread thread = new Thread(hospitalRunnable, "thread-" + i);
+			thread.start();
+		}
 	}
 }
 ```
@@ -660,22 +649,25 @@ public class Main {
 #### (note that the output may vary each time we run the code)
 
 ```java
-th-2 Arrived : 2. doing Blood Checked 
-th-6 Arrived : 5. doing Blood Checked 
-th-5 Arrived : 6. doing Blood Checked 
-th-4 Arrived : 4. doing Blood Checked 
-th-8 Arrived : 7. doing Blood Checked 
-th-1 Arrived : 1. doing Blood Checked 
-th-1 at Doctor : I am with patient number : 1
-th-2 at Doctor : I am with patient number : 2
-th-3 Arrived : 3. doing Blood Checked 
-th-3 at Doctor : I am with patient number : 3
-th-4 at Doctor : I am with patient number : 4
-th-6 at Doctor : I am with patient number : 5
-th-5 at Doctor : I am with patient number : 6
-th-8 at Doctor : I am with patient number : 7
-th-7 Arrived : 8. doing Blood Checked 
-th-7 at Doctor : I am with patient number : 8
+thread-1 at blood Check : 1
+thread-5 at blood Check : 5
+thread-4 at blood Check : 4
+thread-3 at blood Check : 3
+thread-2 at blood Check : 2
+thread-2 Arrived : 2. Finished Blood Checked 
+thread-2 at Doctor : I am with patient number : 2--> waiting
+thread-5 Arrived : 5. Finished Blood Checked 
+thread-5 at Doctor : I am with patient number : 5--> waiting
+thread-4 Arrived : 4. Finished Blood Checked 
+thread-4 at Doctor : I am with patient number : 4--> waiting
+thread-3 Arrived : 3. Finished Blood Checked 
+thread-3 at Doctor : I am with patient number : 3--> waiting
+thread-1 Arrived : 1. Finished Blood Checked 
+thread-1 at Doctor : I am with patient number : 1, finished 
+thread-2 at Doctor : I am with patient number : 2, finished 
+thread-3 at Doctor : I am with patient number : 3, finished 
+thread-4 at Doctor : I am with patient number : 4, finished 
+thread-5 at Doctor : I am with patient number : 5, finished 
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
