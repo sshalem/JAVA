@@ -649,25 +649,26 @@ public class Main {
 #### (note that the output may vary each time we run the code)
 
 ```java
+thread-2 at blood Check : 2
+thread-4 at blood Check : 4
 thread-1 at blood Check : 1
 thread-5 at blood Check : 5
-thread-4 at blood Check : 4
 thread-3 at blood Check : 3
-thread-2 at blood Check : 2
-thread-2 Arrived : 2. Finished Blood Checked 
-thread-2 at Doctor : I am with patient number : 2--> waiting
 thread-5 Arrived : 5. Finished Blood Checked 
-thread-5 at Doctor : I am with patient number : 5--> waiting
+thread-5 at Doctor : patient number : 5--> waiting
 thread-4 Arrived : 4. Finished Blood Checked 
-thread-4 at Doctor : I am with patient number : 4--> waiting
+thread-4 at Doctor : patient number : 4--> waiting
 thread-3 Arrived : 3. Finished Blood Checked 
-thread-3 at Doctor : I am with patient number : 3--> waiting
+thread-3 at Doctor : patient number : 3--> waiting
+thread-2 Arrived : 2. Finished Blood Checked 
+thread-2 at Doctor : patient number : 2--> waiting
 thread-1 Arrived : 1. Finished Blood Checked 
-thread-1 at Doctor : I am with patient number : 1, finished 
-thread-2 at Doctor : I am with patient number : 2, finished 
-thread-3 at Doctor : I am with patient number : 3, finished 
-thread-4 at Doctor : I am with patient number : 4, finished 
-thread-5 at Doctor : I am with patient number : 5, finished 
+thread-1 at Doctor : patient number : 1, finished 
+thread-5 at Doctor : patient number : 5--> waiting
+thread-2 at Doctor : patient number : 2, finished 
+thread-3 at Doctor : patient number : 3, finished 
+thread-4 at Doctor : patient number : 4, finished 
+thread-5 at Doctor : patient number : 5, finished
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
