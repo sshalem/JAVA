@@ -868,12 +868,20 @@ synchronized (obj2) {
 * A Semaphore in Java is a Thread Synchronization construct that controls access to the shared resource with the help of counters.
 * A semaphore also sends the signals between the threads so that the missed signals are not avoided. 
 * A semaphore is a kind of variable that manages the concurrent processes and synchronizes them.
-* We can use a semaphore to avoid race conditions. A semaphore can restrict the number of threads to access a shared resource.
+* We can use a semaphore to avoid race conditions. 
+* A semaphore can restrict the number of threads to access a shared resource.
 
+https://www.youtube.com/watch?v=w92-evgmKxU
 
-* Used to grant access to a shared resource to desired thread concurrently.
-* Ensures that the shared resource (or code) is accessed by only the desired threads at the same time.
+* Semaphore used to grant access to a shared resource to desired thread concurrently.
+* Semaphore ensures that the shared resource (or code) is accessed by only the desired threads at the same time.
+* Permit maximum number of threads that the semaphore will allow to access to the shared resource.
+* Semaphore is JAVA class from **_java.util.concurrent_** package
 
+https://www.youtube.com/watch?v=w92-evgmKxU
+
+* [Synchronized](#-) could be used , when only 1 thread exclusively wants to execute a code at the same time.
+* If number of concurrent threads executing the same piece of code is >1 , then [Semaphore](#-) is the only choice.
 
 ```java
 ```
