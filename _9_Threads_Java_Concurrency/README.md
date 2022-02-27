@@ -861,7 +861,7 @@ synchronized (obj2) {
 
 ###### 9
 
-<img src="https://img.shields.io/badge/-9 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-9.Semaphore %20-blue" height=40px>
 
 ```java
 ```
