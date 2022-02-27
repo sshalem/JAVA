@@ -608,6 +608,19 @@ These methods can throw **_IllegalMonitorStateException_** if the current thread
 
 ### [Example using wait() & notifyAll()](#-)
 
+In the following code I use the wait() and notifyAll() methods.
+I created a class of **_HospitalRunnable_** .
+In the class constructor , I initialize a Queue with number from 1 till 30.
+In main() method I create 5 Threads of **_HospitalRunnable_**.
+Once code runs, each Thread comes to **_bloodCheck()_** method.
+
+* Gets anumber from the Queue
+* Sleeps for a random time (Max sleep time 3000 ms)
+* then gets a test with Doctor.
+
+At the Doctor, each patient will be get diagnose according to the number he got from the queue.
+See the result of Console with explanation.
+
 ```java
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -621,17 +634,17 @@ public class HospitalRunnable implements Runnable {
 
 	public HospitalRunnable() {
 		this.numberInLine = new ArrayDeque<Integer>();
-		for (int i = 1; i <= 30; i++) {
+		for (int i = 1; i <= 100; i++) {
 			this.numberInLine.add(i);
 		}
 	}
 
-	private synchronized void doDoctortest(int currentClientInline, String patientNumber) throws InterruptedException {
-		while (currentClientInline != nextInLine) {
-			print(Thread.currentThread(), " at Doctor : " + patientNumber + "--> waiting");
+	private synchronized void doDoctortest(int currentPatientNumber, String patientNumber) throws InterruptedException {
+		while (currentPatientNumber != nextInLine) {
+			print(" at Doctor : " + patientNumber + "--> waiting");
 			wait();
 		}
-		print(Thread.currentThread(), " at Doctor : " + patientNumber + ", finished ");
+		print(" at Doctor : " + patientNumber + ", finished ");
 		nextInLine++;
 		notifyAll();
 	}
@@ -639,21 +652,21 @@ public class HospitalRunnable implements Runnable {
 	private void bloodCheck() throws InterruptedException {
 
 		Integer patientNumber = numberInLine.remove();
-		print(Thread.currentThread(), " at blood Check : " + patientNumber);
+		print("at blood Check patient: " + patientNumber);
 
 		Random random = new Random();
 		int sleepTime = random.nextInt(3000);
 
 		Thread.sleep(sleepTime);
 
-		print(Thread.currentThread(), " Arrived : " + patientNumber + ". Finished Blood Checked ");
+		print("Finished Blood Checked, patient :" + patientNumber);
 
-		doDoctortest(patientNumber, "I am with patient number : " + patientNumber);
+		doDoctortest(patientNumber, "patient number : " + patientNumber);
 
 	}
 
-	private void print(Thread currentThread, String message) {
-		System.out.println(currentThread + message);
+	private void print(String message) {
+		System.out.println(message);
 	}
 
 	@Override
@@ -672,7 +685,7 @@ public class Main {
 		HospitalRunnable hospitalRunnable = new HospitalRunnable();
 
 		for (int i = 1; i <= 5; i++) {
-			Thread thread = new Thread(hospitalRunnable, "thread-" + i);
+			Thread thread = new Thread(hospitalRunnable);
 			thread.start();
 		}
 	}
@@ -682,27 +695,39 @@ public class Main {
 ### Console output shows : 
 #### (note that the output may vary each time we run the code)
 
+Once the program runs ,each Thread starts: 
+* Once each Thread gets to the bloodCheck() method, The Current Thread takes a number from the queue
+* Sleeps for a random time (Each Thread sleeps for a Different Time)
+* Console shows all Threads arrived and got anumber from the Queue
+* (No always arrive in the same order)
+* It doesnn't matter who finishes the bloodCheck() first
+* What matters is who is the next In Line
+* SO , to implement it , I use wait() method
+* Each patient that the comes to the Doctor , will wait() till he is next in line (The Monitor releases the Lock)
+* Once he is done, the code will notifyAll threads , and the next Thread will acuire the LOck if he is NextInLine </br>
+  If not , he will wait() and release the Lock
+* Once a patient is finished with the doctor , the next Patient In line will be with the doctor
+
 ```java
-thread-2 at blood Check : 2
-thread-4 at blood Check : 4
-thread-1 at blood Check : 1
-thread-5 at blood Check : 5
-thread-3 at blood Check : 3
-thread-5 Arrived : 5. Finished Blood Checked 
-thread-5 at Doctor : patient number : 5--> waiting
-thread-4 Arrived : 4. Finished Blood Checked 
-thread-4 at Doctor : patient number : 4--> waiting
-thread-3 Arrived : 3. Finished Blood Checked 
-thread-3 at Doctor : patient number : 3--> waiting
-thread-2 Arrived : 2. Finished Blood Checked 
-thread-2 at Doctor : patient number : 2--> waiting
-thread-1 Arrived : 1. Finished Blood Checked 
-thread-1 at Doctor : patient number : 1, finished 
-thread-5 at Doctor : patient number : 5--> waiting
-thread-2 at Doctor : patient number : 2, finished 
-thread-3 at Doctor : patient number : 3, finished 
-thread-4 at Doctor : patient number : 4, finished 
-thread-5 at Doctor : patient number : 5, finished
+at blood Check patient: 1
+at blood Check patient: 3
+at blood Check patient: 2
+at blood Check patient: 4
+at blood Check patient: 5
+Finished Blood Checked, patient :5
+ at Doctor : patient number : 5--> waiting
+Finished Blood Checked, patient :3
+ at Doctor : patient number : 3--> waiting
+Finished Blood Checked, patient :2
+ at Doctor : patient number : 2--> waiting
+Finished Blood Checked, patient :1
+ at Doctor : patient number : 1, finished 
+ at Doctor : patient number : 2, finished 
+ at Doctor : patient number : 3, finished 
+ at Doctor : patient number : 5--> waiting
+Finished Blood Checked, patient :4
+ at Doctor : patient number : 4, finished 
+ at Doctor : patient number : 5, finished 
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
