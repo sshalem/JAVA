@@ -626,10 +626,10 @@ public class HospitalRunnable implements Runnable {
 
 	private synchronized void doDoctortest(int currentClientInline, String patientNumber) throws InterruptedException {
 		while (currentClientInline != nextInLine) {
-			System.out.println(Thread.currentThread().getName() + " at Doctor : " + patientNumber + "--> waiting");
+			print(Thread.currentThread(), " at Doctor : " + patientNumber + "--> waiting");
 			wait();
 		}
-		System.out.println(Thread.currentThread().getName() + " at Doctor : " + patientNumber + ", finished ");
+		print(Thread.currentThread(), " at Doctor : " + patientNumber + ", finished ");
 		nextInLine++;
 		notifyAll();
 	}
@@ -637,17 +637,21 @@ public class HospitalRunnable implements Runnable {
 	private void bloodCheck() throws InterruptedException {
 
 		Integer patientNumber = numberInLine.remove();
-		System.out.println(Thread.currentThread().getName() + " at blood Check : " + patientNumber);
-		
+		print(Thread.currentThread(), " at blood Check : " + patientNumber);
+
 		Random random = new Random();
 		int sleepTime = random.nextInt(3000);
-		
+
 		Thread.sleep(sleepTime);
-		
-		System.out.println(Thread.currentThread().getName() + " Arrived : " + patientNumber + ". Finished Blood Checked ");
+
+		print(Thread.currentThread(), " Arrived : " + patientNumber + ". Finished Blood Checked ");
 
 		doDoctortest(patientNumber, "I am with patient number : " + patientNumber);
 
+	}
+
+	private void print(Thread currentThread, String message) {
+		System.out.println(currentThread + message);
 	}
 
 	@Override
