@@ -835,11 +835,12 @@ Aquire lock on obj 2, waiting for obj 1
 ```
 
 If we take a look ad the code of both Synchronized block we wiil see the DeadLock .</br>
-In the class of [**_ThreadDemo1_**](#-) synchronized (obj1) locks the Object of **obj1**, and then tries to lock the Object of **obj2** , but it can't because obj2 is alredy locked in class of **_ThreadDemo2_**. 
+In the class of [**_ThreadDemo1_**](#-), **_synchronized (obj1)_** locks the Object of **obj1**, and then tries to lock the Object of **obj2** , but it can't because **obj2** is already locked in class of [**_ThreadDemo2_**](#-). 
 
-In the class of **_ThreadDemo2_** synchronized (obj2) locks the Object of **obj2**, and then tries to lock the Object of **obj1** , but it can't because obj1 is alredy locked in class of **_ThreadDemo1_**. 
+In the class of [**_ThreadDemo2_**](#-), **_synchronized (obj2)_** locks the Object of **obj2**, and then tries to lock the Object of **obj1** , but it can't because **obj1** is alreday locked in class of [**_ThreadDemo1_**](#-). 
 
-This is a circular situation of acquireing the lock, whrere none of the Threads release the lock , this is why we get a Dead Lock
+This is a circular situation of acquireing the lock, whrere none of the Threads release the lock , this is why we get a [**_DeadLock_**](#-)
+
 ```java
 synchronized (obj1) {
 	synchronized (obj2) {
