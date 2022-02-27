@@ -870,6 +870,11 @@ synchronized (obj2) {
 * A semaphore is a kind of variable that manages the concurrent processes and synchronizes them.
 * We can use a semaphore to avoid race conditions. A semaphore can restrict the number of threads to access a shared resource.
 
+
+* Used to grant access to a shared resource to desired thread concurrently.
+* Ensures that the shared resource (or code) is accessed by only the desired threads at the same time.
+
+
 ```java
 ```
 
