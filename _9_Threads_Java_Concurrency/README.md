@@ -834,8 +834,8 @@ Aquire lock on obj 1, waiting for obj 2
 Aquire lock on obj 2, waiting for obj 1
 ```
 
-If we take a look ad the code of both Synchronized block we wiil see the DeadLock .
-In the class of **_ThreadDemo1_** synchronized (obj1) locks the Object of **obj1**, and then tries to lock the Object of **obj2** , but it can't because obj2 is alredy locked in class of **_ThreadDemo2_**. 
+If we take a look ad the code of both Synchronized block we wiil see the DeadLock .</br>
+In the class of [**_ThreadDemo1_**](#-) synchronized (obj1) locks the Object of **obj1**, and then tries to lock the Object of **obj2** , but it can't because obj2 is alredy locked in class of **_ThreadDemo2_**. 
 
 In the class of **_ThreadDemo2_** synchronized (obj2) locks the Object of **obj2**, and then tries to lock the Object of **obj1** , but it can't because obj1 is alredy locked in class of **_ThreadDemo1_**. 
 
