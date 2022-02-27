@@ -752,11 +752,86 @@ https://www.javatpoint.com/deadlock-in-java
 * Acquire the locks in the same order.
 * Release the locks after a tiomeout period
 
-### [Let's Implement](#-)
-
+### [Let's see Implement example](#-)
 
 
 ```java
+public class ThreadDemo1 implements Runnable {
+
+	private Object obj1;
+	private Object obj2;
+
+	public ThreadDemo1(Object obj1, Object obj2) {
+		this.obj1 = obj1;
+		this.obj2 = obj2;
+	}
+
+	@Override
+	public void run() {
+		synchronized (obj1) {
+			try {
+				System.out.println("Aquire lock on obj 1, waiting for obj 2");
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+			synchronized (obj2) {
+				System.out.println("Aquire lock on obj 1 & obj2");
+			}
+		}
+	}
+}
+
+public class ThreadDemo2 implements Runnable {
+
+	private Object obj1;
+	private Object obj2;
+
+	public ThreadDemo2(Object obj1, Object obj2) {
+		this.obj1 = obj1;
+		this.obj2 = obj2;
+	}
+
+	@Override
+	public void run() {
+		synchronized (obj2) {
+			try {
+				System.out.println("Aquire lock on obj 2, waiting for obj 1");
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+			synchronized (obj1) {
+				System.out.println("Aquire lock on obj 1 & obj2");
+			}
+		}
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		Object obj1 = new Object();
+		Object obj2 = new Object();
+
+		ThreadDemo1 threadDemo1 = new ThreadDemo1(obj1, obj2);
+		Thread demo1 = new Thread(threadDemo1);
+		demo1.start();
+
+		ThreadDemo2 threadDemo2 = new ThreadDemo2(obj1, obj2);
+		Thread demo2 = new Thread(threadDemo2);
+		demo2.start();
+	}
+}
+```
+
+### Console output shows : 
+
+```java
+Aquire lock on obj 1, waiting for obj 2
+Aquire lock on obj 2, waiting for obj 1
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
