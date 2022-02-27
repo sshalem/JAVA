@@ -91,3 +91,6 @@ public synchronized void push(int num) {
  
 לסיכום, כדי שתישמר שלמותו של אובייקט אשר נגיש ל-threads שונים, יש לוודא כי כל גישה אליו נעשית מתוך  synchronized block או מתוך synchronized method. כמו כן, אותו מידע חייב להיות מוחזק במשתנים עם הרשאת הגישה private. אם המידע יוחזק במשתנים שהגישה אליהם אפשרית ממחלקות אחרות אז כלל לא בטוח שהשימוש ב-synchronized אכן ישיג את מטרתו. הגישה ממחלקות אחרות אל אותם משתנים תתאפשר באופן ישיר, ובכך לא תובטח שלימותם של הנתונים.  
 
+
+![Sync_Method_to_Sync_Block](https://user-images.githubusercontent.com/36256986/155880298-85503c32-e699-4988-896f-5eca2addd9bf.PNG)
+
