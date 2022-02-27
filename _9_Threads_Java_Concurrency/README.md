@@ -594,17 +594,17 @@ So, if a notifier calls **_notify()_** on a resource but the notifier still need
 the thread that had been waiting will need to wait at least another additional 10 seconds for the notifier to release the lock on the object, even though notify() had been called.
 
 3. [notifyAll()](#-) </br>
-It wakes up all the threads that called wait() on the same object. 
+It wakes up **_all the threads_** that called **_wait()_** on the same object. 
 The highest priority thread will run first in most of the situation, though not guaranteed. 
 Other things are same as notify() method above.
 
-The threads can communicate with each other through wait(), notify() and notifyAll() methods in Java. 
-These are final methods defined in the Object class and can be called only from within a synchronized context. 
-The wait() method causes the current thread to wait until another thread invokes the notify() or notifyAll() methods for that object. 
-The notify() method wakes up a single thread that is waiting on that object’s monitor. 
-The notifyAll() method wakes up all threads that are waiting on that object’s monitor. 
-A thread waits on an object’s monitor by calling one of the wait() method. 
-These methods can throw IllegalMonitorStateException if the current thread is not the owner of the object’s monitor.
+The threads can communicate with each other through wait(), notify() and notifyAll() methods in Java. </br>
+These are final methods defined in the Object class and can be called only from within a synchronized context. </br>
+The wait() method causes the current thread to wait until another thread invokes the notify() or notifyAll() methods for that object. </br>
+The notify() method wakes up a single thread that is waiting on that object’s monitor. </br>
+The notifyAll() method wakes up all threads that are waiting on that object’s monitor. </br>
+A thread waits on an object’s monitor by calling one of the wait() method. </br>
+These methods can throw **_IllegalMonitorStateException_** if the current thread is not the owner of the object’s monitor.</br>
 
 ```java
 import java.util.ArrayDeque;
