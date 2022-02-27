@@ -580,19 +580,18 @@ public class PrintIndexLoop implements Runnable {
 The Object class in Java has three final methods that allow threads to communicate about the locked status of a resource.
 
 1. [wait()](#-) </br>
-It tells the calling thread to give up the lock and go to sleep until some other thread enters the same monitor and calls notify(). 
-The wait() method releases the lock prior to waiting and reacquires the lock prior to returning from the wait() method. 
-The wait() method is actually tightly integrated with the synchronization lock, using a feature not available directly from the synchronization mechanism.
+It tells the calling thread to give up the **_lock_** and go to sleep until some other thread enters the same monitor and calls **_notify()_**. 
+The **_wait()_** method releases the **_lock_** prior to waiting and reacquires the **_lock_** prior to returning from the **_wait()_** method. 
+The **_wait()_** method is actually tightly integrated with the **_synchronization lock_**, using a feature not available directly from the **_synchronization mechanism_**.
 
 
 2. [notify()](#-) </br>
-It wakes up one single thread that called wait() on the same object. 
-It should be noted that calling notify() does not actually give up a lock on a resource. 
+It wakes up one **_single thread_** that called **_wait()_** on the same object. 
+It should be noted that calling **_notify()_** does not actually give up a **_lock_** on a resource. 
 It tells a waiting thread that that thread can wake up. 
-However, the lock is not actually given up until the notifier’s synchronized block has completed.
-So, if a notifier calls notify() on a resource but the notifier still needs to perform 10 seconds of actions on the resource within its synchronized block, 
-the thread that had been waiting will need to wait at least another additional 10 seconds for the notifier to release the lock on the object, 
-even though notify() had been called.
+However, the **_lock_** is not actually given up until the **_notifier’s synchronized block has completed_**.</br>
+So, if a notifier calls **_notify()_** on a resource but the notifier still needs to perform 10 seconds of actions on the resource within its **_synchronized block_**, 
+the thread that had been waiting will need to wait at least another additional 10 seconds for the notifier to release the lock on the object, even though notify() had been called.
 
 3. [notifyAll()](#-) </br>
 It wakes up all the threads that called wait() on the same object. 
