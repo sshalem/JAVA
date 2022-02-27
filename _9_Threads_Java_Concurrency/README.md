@@ -606,6 +606,8 @@ The notifyAll() method wakes up all threads that are waiting on that object’s 
 A thread waits on an object’s monitor by calling one of the wait() method. </br>
 These methods can throw **_IllegalMonitorStateException_** if the current thread is not the owner of the object’s monitor.</br>
 
+### [Example using wait() & notifyAll()](#-)
+
 ```java
 import java.util.ArrayDeque;
 import java.util.Queue;
