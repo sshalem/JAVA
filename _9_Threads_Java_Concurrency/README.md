@@ -741,12 +741,12 @@ Finished Blood Checked, patient :4
 https://www.javatpoint.com/deadlock-in-java
 
 
-1. What is deadlock and when it can occur?
+[1. What is deadlock and when it can occur?](#-)
 
 * DeadLock describes a situation where 2 or more threads are blocked forever , waiting for each other. (Since the depend on each other , it's called circular Dependency) (Example like "No, you hang up first" situation)
 * DeadLocks can occur in java when the synchronized keyword causes the executing htread to block while waiting to get the lock , associated with specified object.
 
-2. How to prevent DeadLocks?
+[2. How to prevent DeadLocks?](#-)
 
 * Don't use locks.
 * Acquire the locks in the same order.
