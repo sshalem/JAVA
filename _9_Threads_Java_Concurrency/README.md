@@ -15,19 +15,20 @@
 |  8  |[DeadLock ,Yield](#8)   | 
 |  9  |[Semaphore](#9)   | 
 |  10 |[join(), interrupt()](#10)   | 
-|  11 |[CountDownLatch](#11)   | 
-|  12 |[ReadWriteLock](#12)   | 
-|  13 |[Volatile](#13)   | 
-|  14 |[AtomicInteger](#14)   | 
-|  15 |[AtomicLong](#15)   | 
-|  16 |[Priority of Threads](#16)   | 
-|  17 |[ThreadPoolExecutor](#17)   | 
-|  18 |[Executer Interface, ExecutorService Interface, Executers Class](#18)   | 
+|  11 |[interrupt()](#11)   | 
+|  12 |[CountDownLatch](#12)   | 
+|  13 |[ReadWriteLock](#13)   | 
+|  14 |[Volatile](#14)   | 
+|  15 |[AtomicInteger](#15)   | 
+|  16 |[AtomicLong](#16)   | 
+|  17 |[Priority of Threads](#17)   | 
+|  18 |[ThreadPoolExecutor](#18)   | 
 |  19 |[Executer Interface, ExecutorService Interface, Executers Class](#19)   | 
-|  20 |[Future , CompletableFuture](#20)   | 
-|  21 |[BlockingQueue](#21)   | 
-|  22 |[ThreadPoolExecutor](#22)   | 
-|  23 |[ConcurrentMap](#23)   | 
+|  20 |[Executer Interface, ExecutorService Interface, Executers Class](#20)   | 
+|  21 |[Future , CompletableFuture](#21)   | 
+|  22 |[BlockingQueue](#22)   | 
+|  23 |[ThreadPoolExecutor](#23)   | 
+|  24 |[ConcurrentMap](#24)   | 
 
 
 --------------------------------------------------------------------------------------------------
@@ -893,7 +894,7 @@ https://www.youtube.com/watch?v=w92-evgmKxU
 
 ###### 10
 
-<img src="https://img.shields.io/badge/-10. join(), interrupt()%20-blue" height=40px>
+<img src="https://img.shields.io/badge/-10. join() %20-blue" height=40px>
 
 **java.lang.Thread** class provides the **join()** method which allows one thread to wait until another thread completes its execution.</br>
 * [**join():**](#-) It will put the current thread on wait until the thread on which it is called is dead. If thread is interrupted then it will throw InterruptedException.
@@ -1058,7 +1059,7 @@ Calculate-thread Finished Running
 
 ###### 11
 
-<img src="https://img.shields.io/badge/-11 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-11. interrupt() %20-blue" height=40px>
 
 ```java
 ```
