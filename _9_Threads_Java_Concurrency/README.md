@@ -1067,7 +1067,7 @@ Calculate-thread Finished Running
 	2. [waiting](#-) state (i.e. sleep() or wait() is invoked) 
 * then using the [interrupt()](#-) method, we can interrupt the thread execution by throwing [InterruptedException](#-).
 
-#### [Interrupting a thread that doesn't stop working](#-)
+### [1. Interrupting a thread that doesn't stop working](#-)
 
 ```java
 public class MyThread implements Runnable {
@@ -1107,7 +1107,7 @@ public class Main {
 
 ### Console output shows : 
 
-In this example, after interrupting the thread, we handle the exception in the catch clause, so it will break out from the sleeping state but it will [continue to work](#-).
+In this example, after interrupting the thread, we handle the exception in the catch clause, so it will break out from the sleeping state but it will [continue to run](#-).
 
 ```java
 MyThread is running
@@ -1121,6 +1121,57 @@ MyThread 2
 MyThread 3
 MyThread 4
 MyThread Finished running
+```
+
+### [2. Interrupting a thread that stops working](#-)
+
+```java
+public class MyThread implements Runnable {
+
+	@Override
+	public void run() {
+
+		System.out.println(Thread.currentThread().getName() + " is running");
+		for (int i = 0; i < 5; i++) {
+			try {
+				System.out.println(Thread.currentThread().getName() + " " + i);
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				throw new RuntimeException(e.getMessage());
+			}
+		}
+		System.out.println(Thread.currentThread().getName() + " Finished running");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyThread myThread = new MyThread();
+		Thread thread = new Thread(myThread, "MyThread");
+		thread.start();
+
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		thread.interrupt();
+	}
+}
+```
+
+### Console output shows : 
+
+In this example, after interrupting the thread, we handle the exception in the catch clause, **But** we throw **RuntimeException** in the catch clause will [NOT continue to run](#-).
+
+```java
+MyThread is running
+MyThread 0
+MyThread 1
+Exception in thread "MyThread" java.lang.RuntimeException: sleep interrupted
+	at demo.MyThread.run(MyThread.java:14)
+	at java.lang.Thread.run(Thread.java:748)
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
