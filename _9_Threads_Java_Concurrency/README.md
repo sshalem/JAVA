@@ -901,6 +901,52 @@ https://www.youtube.com/watch?v=w92-evgmKxU
 * [**join(long millis, int nanos):**](#-) It will put the current thread on wait until the thread on which it is called is dead or wait for specified time (milliseconds + nanos).
 
 ```java
+public class MyThread implements Runnable {
+
+	@Override
+	public void run() {
+
+		System.out.println(Thread.currentThread().getName() + " is running");
+		for (int i = 0; i < 5; i++) {
+			try {
+				System.out.println(Thread.currentThread().getName() + " " + i);
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class MyCalculate implements Runnable {
+
+	MyThread myThread = new MyThread();
+
+	private void printMessage(String msg) {
+		System.out.println(Thread.currentThread().getName() + msg);
+	}
+
+	@Override
+	public void run() {
+		printMessage(" is running");
+
+		Thread t1 = new Thread(myThread, "MyThread-run");
+		t1.start();
+
+		printMessage(" invoked MyThread");
+		printMessage(" Finished Running");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyCalculate myCalc = new MyCalculate();
+		Thread tCalc = new Thread(myCalc, "Calculate-thread");
+
+		tCalc.start();
+	}
+}
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
