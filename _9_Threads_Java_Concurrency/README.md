@@ -975,6 +975,8 @@ MyThread-run 2
 MyThread-run Finished running
 ```
 
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
 ### [Implement join() method](#-)
 
 In the following example I have 2 classes that Implement the Runnable interface.</br>
@@ -1068,7 +1070,8 @@ Calculate-thread Finished Running
 then using the [interrupt()](#-) method, we can interrupt the thread execution by throwing [InterruptedException](#-).
 
 * ### [**interrupt()**](#-) method only works on Thread that is in [sleep()](#-) or [wait()](#-)
- 
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 ### [1. Interrupting a thread that doesn't stop working](#-)
 
@@ -1125,6 +1128,8 @@ MyThread 3
 MyThread 4
 MyThread Finished running
 ```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 ### [2. Interrupting a thread that stops working](#-)
 
