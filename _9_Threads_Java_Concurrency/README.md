@@ -978,7 +978,7 @@ MyThread-run Finished running
 
 In the following example I have 2 classes that Implement the Runnable interface.</br>
 I invoke the MyThread thread from the run() method of MyCalculate class.</br>
-I invoke **thread.join()** method from **MyCalculate class run() method** </br> 
+I invoke **thread.join()** method from **MyCalculate class run() method** . I put it in a try/catch block since it throws **InterruptedException**</br> 
 From main method I invoke MyCalculation Thread.</br>
 Scroll down to see the console out
 
