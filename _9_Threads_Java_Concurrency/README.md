@@ -1105,6 +1105,23 @@ public class Main {
 }
 ```
 
+### Console output shows : 
+
+```java
+MyThread is running
+MyThread 0
+MyThread 1
+java.lang.InterruptedException: sleep interrupted
+MyThread 2
+	at java.lang.Thread.sleep(Native Method)
+	at demo.MyThread.run(MyThread.java:12)
+	at java.lang.Thread.run(Thread.java:748)
+MyThread interaupted
+MyThread 3
+MyThread 4
+MyThread Finished running
+```
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
