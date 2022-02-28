@@ -1064,8 +1064,8 @@ Calculate-thread Finished Running
 * The [interrupt()](#-) method of thread class is used to interrupt the thread. 
 * If any thread is in :
 	1. [sleeping](#-) or 
-	2. [waiting](#-) state (i.e. sleep() or wait() is invoked) 
-* then using the [interrupt()](#-) method, we can interrupt the thread execution by throwing [InterruptedException](#-).
+	2. [waiting](#-) state (i.e. sleep() or wait() is invoked) </br>
+then using the [interrupt()](#-) method, we can interrupt the thread execution by throwing [InterruptedException](#-).
 
 * [**interrupt()**](#-) method only works on Thread that is in [sleep()](#-) or [wait()](#-)
 * 
