@@ -1067,7 +1067,7 @@ Calculate-thread Finished Running
 	2. [waiting](#-) state (i.e. sleep() or wait() is invoked) 
 * then using the [interrupt()](#-) method, we can interrupt the thread execution by throwing [InterruptedException](#-).
 
-* Let's look in the following example , where I interrupt **MyThread** from **main** Thread.
+#### [Interrupting a thread that doesn't stop working](#-)
 
 ```java
 public class MyThread implements Runnable {
