@@ -1017,11 +1017,11 @@ public class Main {
 
 ### Console output shows : 
 
-Since we define semaphore(3) , hence we have always will have 3 Threads at the Same time.
-3 Threads have permitition so they started to run : Thread-1, Thread-4, Thread-3.
+Since we define semaphore(3) , hence we have always will have 3 Threads at the Same time.</br>
+3 Threads have permitition so they started to run : Thread-1, Thread-4, Thread-3. </br>
 Once they run they hold a lock. </br>
-If another Thread tries 
-
+If another Thread tries to get permmit, it is blocked, because we need to wait till realse() is invoked.</br>
+We can see , once Thread-1 finished, now we have 2 Threads running, thus another Thread can aquire() permit , which is Thread-2.
 
 ```java
 Thread-1 is running
