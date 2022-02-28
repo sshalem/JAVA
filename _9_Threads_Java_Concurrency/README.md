@@ -893,7 +893,10 @@ https://www.youtube.com/watch?v=w92-evgmKxU
 
 ###### 10
 
-<img src="https://img.shields.io/badge/-10 join(), interrupt()%20-blue" height=40px>
+<img src="https://img.shields.io/badge/-10. join(), interrupt()%20-blue" height=40px>
+
+**java.lang.Thread** class provides the **join()** method which allows one thread to wait until another thread completes its execution.</br>
+[**join():**](#-) It will put the current thread on wait until the thread on which it is called is dead. If thread is interrupted then it will throw InterruptedException.
 
 ```java
 ```
