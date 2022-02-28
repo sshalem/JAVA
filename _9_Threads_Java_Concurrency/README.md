@@ -872,11 +872,12 @@ synchronized (obj2) {
 
 * Semaphore is JAVA class from **_java.util.concurrent_** package
 * With Semaphore we can define number of Threads that can run at the same time. 
-* For example : if we have **MyThread** and we create 5 times of [thread.start()](#-). but we want to allow only 3 threads at the same time.</br>
-		with Semaphore we can define it as Semaphore(3) , and only 3 Threads of the MyThread will run at the same time. (see example 2)
+* For example :
+	* if we have [**MyThread**](#-) and we create 5 times of [thread.start()](#-). but we want to allow only 3 threads at the same time.
+	with Semaphore we can define it as Semaphore(3) , and only 3 Threads of the MyThread will run at the same time. (see example 2).
 
-* Semaphore ensures that the shared resource (or code) is accessed by only the desired threads at the same time.
-* Permit maximum number of threads that the semaphore will allow to access to the shared resource.
+Semaphore ensures that the shared resource (or code) is accessed by only the desired threads at the same time.</br>
+Permit maximum number of threads that the semaphore will allow to access to the shared resource.
 
 
 https://www.youtube.com/watch?v=w92-evgmKxU
@@ -962,10 +963,10 @@ Thread-3 Finished running
 
 ### [2. Example semaphore(3)](#-)
 
-In this example I dedfine **Semaphore(3)** , which means only 3 Threds can run at the same time.
-I also add a random delay time betwee 0-2000[ms].
-I create 5 Threads for of MyThread.
-Check console output with explaination.
+In this example I dedfine **Semaphore(3)** , which means only 3 Threds can run at the same time. </br>
+I also add a random delay time betwee 0-2000[ms]. </br>
+I create 5 Threads for of MyThread. </br>
+Check console output with explaination. </br>
 
 ```java
 import java.util.concurrent.Semaphore;
