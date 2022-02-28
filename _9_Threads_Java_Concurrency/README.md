@@ -900,6 +900,13 @@ https://www.youtube.com/watch?v=w92-evgmKxU
 * [**join(long millis) :**](#-) It will put the current thread on wait until the thread on which it is called is dead or wait for specified time (milliseconds).
 * [**join(long millis, int nanos):**](#-) It will put the current thread on wait until the thread on which it is called is dead or wait for specified time (milliseconds + nanos).
 
+### [Example w/o join() method](#-)
+
+In the following example I have 2 classes that Implement the Runnable interface.</br>
+I invoke the MyThread thread from the run() method of MyCalculate class.</br>
+From main method I invoke MyCalculation Thread.</br>
+Scroll down to see the console out
+
 ```java
 public class MyThread implements Runnable {
 
@@ -907,7 +914,7 @@ public class MyThread implements Runnable {
 	public void run() {
 
 		System.out.println(Thread.currentThread().getName() + " is running");
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 3; i++) {
 			try {
 				System.out.println(Thread.currentThread().getName() + " " + i);
 				Thread.sleep(1000);
@@ -915,6 +922,7 @@ public class MyThread implements Runnable {
 				e.printStackTrace();
 			}
 		}
+		System.out.println(Thread.currentThread().getName() + " Finished running");
 	}
 }
 
@@ -930,8 +938,8 @@ public class MyCalculate implements Runnable {
 	public void run() {
 		printMessage(" is running");
 
-		Thread t1 = new Thread(myThread, "MyThread-run");
-		t1.start();
+		Thread myThread = new Thread(myThread, "MyThread-run");
+		thread.start();
 
 		printMessage(" invoked MyThread");
 		printMessage(" Finished Running");
@@ -947,6 +955,101 @@ public class Main {
 		tCalc.start();
 	}
 }
+```
+
+### Console output shows : 
+
+* **Calculate-thread** started to run, Invoked MyThread thread, Finished running , while **MyThread** still running.
+* This is where the **join()** method comes to the picture.
+* with **join()** method , I can tell the running thread , to wait till it will be termninted , then continue with the processing of the code.
+
+```java
+Calculate-thread is running
+Calculate-thread invoked MyThread
+Calculate-thread Finished Running
+MyThread-run is running
+MyThread-run 0
+MyThread-run 1
+MyThread-run 2
+MyThread-run Finished running
+```
+
+### [Implement join() method](#-)
+
+In the following example I have 2 classes that Implement the Runnable interface.</br>
+I invoke the MyThread thread from the run() method of MyCalculate class.</br>
+I invoke **thread.join()** method from **MyCalculate class run() method** </br> 
+From main method I invoke MyCalculation Thread.</br>
+Scroll down to see the console out
+
+```java
+public class MyThread implements Runnable {
+
+	@Override
+	public void run() {
+
+		System.out.println(Thread.currentThread().getName() + " is running");
+		for (int i = 0; i < 3; i++) {
+			try {
+				System.out.println(Thread.currentThread().getName() + " " + i);
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println(Thread.currentThread().getName() + " Finished running");
+	}
+}
+
+public class MyCalculate implements Runnable {
+
+	MyThread myThread = new MyThread();
+
+	private void printMessage(String msg) {
+		System.out.println(Thread.currentThread().getName() + msg);
+	}
+
+	@Override
+	public void run() {
+		printMessage(" is running");
+		try {
+			Thread thread = new Thread(myThread, "MyThread-run");
+			thread.start();
+			printMessage(" invoked MyThread");
+			thread.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		printMessage(" Finished Running");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyCalculate myCalc = new MyCalculate();
+		Thread tCalc = new Thread(myCalc, "Calculate-thread");
+
+		tCalc.start();
+	}
+}
+```
+
+### Console output shows : 
+
+* **Calculate-thread** started to run, Invoked MyThread thread, Finished running , while **MyThread** still running.
+* This is where the **join()** method comes to the picture.
+* with **join()** method , I can tell the running thread , to wait till it will be termninted , then continue with the processing of the code.
+
+```java
+Calculate-thread is running
+Calculate-thread invoked MyThread
+MyThread-run is running
+MyThread-run 0
+MyThread-run 1
+MyThread-run 2
+MyThread-run Finished running
+Calculate-thread Finished Running
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
