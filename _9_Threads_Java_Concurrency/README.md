@@ -1068,7 +1068,7 @@ Calculate-thread Finished Running
 then using the [interrupt()](#-) method, we can interrupt the thread execution by throwing [InterruptedException](#-).
 
 * [**interrupt()**](#-) method only works on Thread that is in [sleep()](#-) or [wait()](#-)
-* 
+ 
 
 ### [1. Interrupting a thread that doesn't stop working](#-)
 
