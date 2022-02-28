@@ -1037,9 +1037,9 @@ public class Main {
 
 ### Console output shows : 
 
-* **Calculate-thread** started to run, Invoked MyThread thread, Finished running , while **MyThread** still running.
-* This is where the **join()** method comes to the picture.
-* with **join()** method , I can tell the running thread , to wait till it will be termninted , then continue with the processing of the code.
+* **Calculate-thread** started to run, Invoked MyThread thread , did not continue with it's execution , becuase we invoke the **join()** method
+* **MyThread** started running, and finished it's execution.
+* after **MyThread** terminated , **Calculate-thread** continue to run and finished it's execution .
 
 ```java
 Calculate-thread is running
