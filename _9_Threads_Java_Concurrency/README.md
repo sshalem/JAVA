@@ -868,29 +868,187 @@ synchronized (obj2) {
 ### [Semaphore in Java](#-)
 
 * A Semaphore in Java is a Thread Synchronization construct that controls access to the shared resource with the help of counters.
-* A semaphore also sends the signals between the threads so that the missed signals are not avoided. 
-* A semaphore is a kind of variable that manages the concurrent processes and synchronizes them.
-* We can use a semaphore to avoid race conditions. 
-* A semaphore can restrict the number of threads to access a shared resource.
+* We can use a semaphore to avoid race conditions (when semaphore(1) its like  Synchronized keyword). 
 
-https://www.youtube.com/watch?v=w92-evgmKxU
+* Semaphore is JAVA class from **_java.util.concurrent_** package
+* With Semaphore we can define number of Threads that can run at the same time. 
+* For example : if we have **MyThread** and we create 5 times of [thread.start()](#-). but we want to allow only 3 threads at the same time.</br>
+		with Semaphore we can define it as Semaphore(3) , and only 3 Threads of the MyThread will run at the same time. (see example 2)
 
-* Semaphore used to grant access to a shared resource to desired thread concurrently.
 * Semaphore ensures that the shared resource (or code) is accessed by only the desired threads at the same time.
 * Permit maximum number of threads that the semaphore will allow to access to the shared resource.
-* Semaphore is JAVA class from **_java.util.concurrent_** package
+
 
 https://www.youtube.com/watch?v=w92-evgmKxU
 
-* when we define [Semaphore(1)](#-)
+1. when we define [Semaphore(1)](#-)
 ```java
 Semaphore semaphore = new Semaphore(1)
 ```
 then [Synchronized](#-) could be used , because only 1 thread exclusively wants to execute a code at the same time.
 
-* If number of concurrent threads executing the same piece of code is >1 , then [Semaphore](#-) is the only choice.
+2. If number of concurrent threads executing the same piece of code is >1 , then [Semaphore](#-) is the only choice.
+
+
+### [1. Example semaphore(1)](#-)
+
+With **semaphore(1)** there is only 1 lock. thus it's like synchronized keyword. </br>
+In order to acquire the lock , we use the [acquire()](#-) method from [Semaphore](#-) Class.</br>
+In order to release the lock, we use the [release()](#-) method from [Semaphore](#-) Class.</br>
+
 
 ```java
+public class MyThread implements Runnable {
+
+	Semaphore semaphore = new Semaphore(1);
+
+	@Override
+	public void run() {
+
+		try {
+			semaphore.acquire();
+			System.out.println(Thread.currentThread().getName() + " is running");
+			for (int i = 0; i < 3; i++) {
+				System.out.println(Thread.currentThread().getName() + " " + i);
+				Thread.sleep(1000);
+			}
+			System.out.println(Thread.currentThread().getName() + " Finished running");
+			semaphore.release();
+		} catch (InterruptedException e) {
+			e.getMessage();
+		}
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyThread myThread = new MyThread();
+
+		Thread thread1 = new Thread(myThread, "Thread-1");
+		Thread thread2 = new Thread(myThread, "Thread-2");
+		Thread thread3 = new Thread(myThread, "Thread-3");
+
+		thread1.start();
+		thread2.start();
+		thread3.start();
+	}
+}
+```
+
+### Console output shows : 
+
+each Thread runs at a time , just like we add synchronized keyword. (Semaphore(1) = synchronized keyword )
+
+```java
+Thread-1 is running
+Thread-1 0
+Thread-1 1
+Thread-1 2
+Thread-1 Finished running
+Thread-2 is running
+Thread-2 0
+Thread-2 1
+Thread-2 2
+Thread-2 Finished running
+Thread-3 is running
+Thread-3 0
+Thread-3 1
+Thread-3 2
+Thread-3 Finished running
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+### [2. Example semaphore(3)](#-)
+
+In this example I dedfine **Semaphore(3)** , which means only 3 Threds can run at the same time.
+I also add a random delay time betwee 0-2000[ms].
+I create 5 Threads for of MyThread.
+Check console output with explaination.
+
+```java
+import java.util.concurrent.Semaphore;
+
+public class MyThread implements Runnable {
+
+	Semaphore semaphore = new Semaphore(3);
+	Random random = new Random();
+
+	@Override
+	public void run() {
+
+		try {
+			semaphore.acquire();
+			System.out.println(Thread.currentThread().getName() + " is running");
+			for (int i = 0; i < 3; i++) {
+				System.out.println(Thread.currentThread().getName() + ": i = " + i);
+				int sleepTime = random.nextInt(2000);
+				Thread.sleep(sleepTime);
+			}
+			System.out.println(Thread.currentThread().getName() + " Finished running");
+			semaphore.release();
+		} catch (InterruptedException e) {
+			e.getMessage();
+		}
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyThread myThread = new MyThread();
+
+		Thread thread1 = new Thread(myThread, "Thread-1");
+		Thread thread2 = new Thread(myThread, "Thread-2");
+		Thread thread3 = new Thread(myThread, "Thread-3");
+		Thread thread4 = new Thread(myThread, "Thread-4");
+		Thread thread5 = new Thread(myThread, "Thread-5");
+
+		thread1.start();
+		thread2.start();
+		thread3.start();
+		thread4.start();
+		thread5.start();
+	}
+}
+```
+
+### Console output shows : 
+
+Since we define semaphore(3) , hence we have always will have 3 Threads at the Same time.
+3 Threads have permitition so they started to run : Thread-1, Thread-4, Thread-3.
+Once they run they hold a lock. </br>
+If another Thread tries 
+
+
+```java
+Thread-1 is running
+Thread-4 is running
+Thread-3 is running
+Thread-4: i = 0
+Thread-1: i = 0
+Thread-3: i = 0
+Thread-1: i = 1
+Thread-4: i = 1
+Thread-1: i = 2
+Thread-4: i = 2
+Thread-1 Finished running
+Thread-2 is running
+Thread-2: i = 0
+Thread-3: i = 1
+Thread-3: i = 2
+Thread-4 Finished running
+Thread-5 is running
+Thread-5: i = 0
+Thread-3 Finished running
+Thread-2: i = 1
+Thread-2: i = 2
+Thread-5: i = 1
+Thread-5: i = 2
+Thread-2 Finished running
+Thread-5 Finished running
+
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
