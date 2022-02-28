@@ -1080,7 +1080,6 @@ public class MyThread implements Runnable {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
-				System.err.println(Thread.currentThread().getName() + " interaupted");
 			}
 		}
 		System.out.println(Thread.currentThread().getName() + " Finished running");
@@ -1099,7 +1098,6 @@ public class Main {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-
 		thread.interrupt();
 	}
 }
@@ -1107,16 +1105,17 @@ public class Main {
 
 ### Console output shows : 
 
+In this example, after interrupting the thread, we handle the exception in the catch clause, so it will break out from the sleeping state but it will [continue to work](#-).
+
 ```java
 MyThread is running
 MyThread 0
 MyThread 1
 java.lang.InterruptedException: sleep interrupted
-MyThread 2
 	at java.lang.Thread.sleep(Native Method)
 	at demo.MyThread.run(MyThread.java:12)
 	at java.lang.Thread.run(Thread.java:748)
-MyThread interaupted
+MyThread 2
 MyThread 3
 MyThread 4
 MyThread Finished running
