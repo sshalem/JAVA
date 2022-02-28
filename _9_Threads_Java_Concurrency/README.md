@@ -882,7 +882,12 @@ https://www.youtube.com/watch?v=w92-evgmKxU
 
 https://www.youtube.com/watch?v=w92-evgmKxU
 
-* when ```Semaphore semaphore = new Semaphore(1)``` then [Synchronized](#-) could be used , because only 1 thread exclusively wants to execute a code at the same time.
+* when we define [Semaphore(1)](#-)
+```java
+Semaphore semaphore = new Semaphore(1)
+```
+then [Synchronized](#-) could be used , because only 1 thread exclusively wants to execute a code at the same time.
+
 * If number of concurrent threads executing the same piece of code is >1 , then [Semaphore](#-) is the only choice.
 
 ```java
