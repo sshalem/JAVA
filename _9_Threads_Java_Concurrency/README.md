@@ -12,10 +12,10 @@
 |  5  |[Race Condition](#5)   | 
 |  6  |[synchronize, Lock](#6)  | 
 |  7  |[wait, notify, notify all](#7)  | 
-|  8  |[DeadLock ,Yield](#8)   | 
-|  9  |[Semaphore](#9)   | 
-|  10 |[join()](#10)   | 
-|  11 |[interrupt()](#11)   | 
+|  8  |[join()](#10)   | 
+|  9  |[interrupt()](#11)   | 
+|  10 |[DeadLock ,Yield](#8)   | 
+|  11 |[Semaphore](#9)   | 
 |  12 |[CountDownLatch](#12)   | 
 |  13 |[ReadWriteLock](#13)   | 
 |  14 |[Volatile](#14)   | 
@@ -738,7 +738,301 @@ Finished Blood Checked, patient :4
 
 ###### 8
 
-<img src="https://img.shields.io/badge/-8. DeadLock ,Yield %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-8. join() %20-blue" height=40px>
+
+**java.lang.Thread** class provides the **join()** method which allows one thread to wait until another thread completes its execution.</br>
+* [**join():**](#-) It will put the current thread on wait until the thread on which it is called is dead. If thread is interrupted then it will throw InterruptedException.
+* [**join(long millis) :**](#-) It will put the current thread on wait until the thread on which it is called is dead or wait for specified time (milliseconds).
+* [**join(long millis, int nanos):**](#-) It will put the current thread on wait until the thread on which it is called is dead or wait for specified time (milliseconds + nanos).
+
+### [Example w/o join() method](#-)
+
+In the following example I have 2 classes that Implement the Runnable interface.</br>
+I invoke the MyThread thread from the run() method of MyCalculate class.</br>
+From main method I invoke MyCalculation Thread.</br>
+Scroll down to see the console out
+
+```java
+public class MyThread implements Runnable {
+
+	@Override
+	public void run() {
+
+		System.out.println(Thread.currentThread().getName() + " is running");
+		for (int i = 0; i < 3; i++) {
+			try {
+				System.out.println(Thread.currentThread().getName() + " " + i);
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println(Thread.currentThread().getName() + " Finished running");
+	}
+}
+
+public class MyCalculate implements Runnable {
+
+	MyThread myThread = new MyThread();
+
+	private void printMessage(String msg) {
+		System.out.println(Thread.currentThread().getName() + msg);
+	}
+
+	@Override
+	public void run() {
+		printMessage(" is running");
+
+		Thread myThread = new Thread(myThread, "MyThread-run");
+		thread.start();
+
+		printMessage(" invoked MyThread");
+		printMessage(" Finished Running");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyCalculate myCalc = new MyCalculate();
+		Thread tCalc = new Thread(myCalc, "Calculate-thread");
+
+		tCalc.start();
+	}
+}
+```
+
+### Console output shows : 
+
+* **Calculate-thread** started to run, Invoked MyThread thread, Finished running , while **MyThread** still running.
+* This is where the **join()** method comes to the picture.
+* with **join()** method , I can tell the running thread , to wait till it will be termninted , then continue with the processing of the code.
+
+```java
+Calculate-thread is running
+Calculate-thread invoked MyThread
+Calculate-thread Finished Running
+MyThread-run is running
+MyThread-run 0
+MyThread-run 1
+MyThread-run 2
+MyThread-run Finished running
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+### [Implement join() method](#-)
+
+In the following example I have 2 classes that Implement the Runnable interface.</br>
+I invoke the MyThread thread from the run() method of MyCalculate class.</br>
+I invoke **thread.join()** method from **MyCalculate class run() method** . I put it in a try/catch block since it throws **InterruptedException**</br> 
+From main method I invoke MyCalculation Thread.</br>
+Scroll down to see the console out
+
+```java
+public class MyThread implements Runnable {
+
+	@Override
+	public void run() {
+
+		System.out.println(Thread.currentThread().getName() + " is running");
+		for (int i = 0; i < 3; i++) {
+			try {
+				System.out.println(Thread.currentThread().getName() + " " + i);
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println(Thread.currentThread().getName() + " Finished running");
+	}
+}
+
+public class MyCalculate implements Runnable {
+
+	MyThread myThread = new MyThread();
+
+	private void printMessage(String msg) {
+		System.out.println(Thread.currentThread().getName() + msg);
+	}
+
+	@Override
+	public void run() {
+		printMessage(" is running");
+		try {
+			Thread thread = new Thread(myThread, "MyThread-run");
+			thread.start();
+			printMessage(" invoked MyThread");
+			thread.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		printMessage(" Finished Running");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyCalculate myCalc = new MyCalculate();
+		Thread tCalc = new Thread(myCalc, "Calculate-thread");
+
+		tCalc.start();
+	}
+}
+```
+
+### Console output shows : 
+
+* **Calculate-thread** started to run, Invoked MyThread thread , did not continue with it's execution , becuase we invoke the **join()** method
+* **MyThread** started running, and finished it's execution.
+* after **MyThread** terminated , **Calculate-thread** continue to run and finished it's execution .
+
+```java
+Calculate-thread is running
+Calculate-thread invoked MyThread
+MyThread-run is running
+MyThread-run 0
+MyThread-run 1
+MyThread-run 2
+MyThread-run Finished running
+Calculate-thread Finished Running
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 9
+
+<img src="https://img.shields.io/badge/-9. interrupt() %20-blue" height=40px>
+
+* The [interrupt()](#-) method of thread class is used to interrupt the thread. 
+* If any thread is in :
+	1. [sleeping](#-) or 
+	2. [waiting](#-) state (i.e. sleep() or wait() is invoked) </br>
+then using the [interrupt()](#-) method, we can interrupt the thread execution by throwing [InterruptedException](#-).
+
+* ### [**interrupt()**](#-) method only works on Thread that is in [sleep()](#-) or [wait()](#-)
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+### [1. Interrupting a thread that doesn't stop working](#-)
+
+```java
+public class MyThread implements Runnable {
+
+	@Override
+	public void run() {
+
+		System.out.println(Thread.currentThread().getName() + " is running");
+		for (int i = 0; i < 5; i++) {
+			try {
+				System.out.println(Thread.currentThread().getName() + " " + i);
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println(Thread.currentThread().getName() + " Finished running");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyThread myThread = new MyThread();
+		Thread thread = new Thread(myThread, "MyThread");
+		thread.start();
+
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		thread.interrupt();
+	}
+}
+```
+
+### Console output shows : 
+
+In this example, after interrupting the thread, we handle the exception in the catch clause, so it will break out from the sleeping state but it will [continue to run](#-).
+
+```java
+MyThread is running
+MyThread 0
+MyThread 1
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at demo.MyThread.run(MyThread.java:12)
+	at java.lang.Thread.run(Thread.java:748)
+MyThread 2
+MyThread 3
+MyThread 4
+MyThread Finished running
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+### [2. Interrupting a thread that stops working](#-)
+
+```java
+public class MyThread implements Runnable {
+
+	@Override
+	public void run() {
+
+		System.out.println(Thread.currentThread().getName() + " is running");
+		for (int i = 0; i < 5; i++) {
+			try {
+				System.out.println(Thread.currentThread().getName() + " " + i);
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				throw new RuntimeException(e.getMessage());
+			}
+		}
+		System.out.println(Thread.currentThread().getName() + " Finished running");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		MyThread myThread = new MyThread();
+		Thread thread = new Thread(myThread, "MyThread");
+		thread.start();
+
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		thread.interrupt();
+	}
+}
+```
+
+### Console output shows : 
+
+In this example, after interrupting the thread, we handle the exception in the catch clause, **But** we throw **RuntimeException** in the catch clause will [NOT continue to run](#-).
+
+```java
+MyThread is running
+MyThread 0
+MyThread 1
+Exception in thread "MyThread" java.lang.RuntimeException: sleep interrupted
+	at demo.MyThread.run(MyThread.java:14)
+	at java.lang.Thread.run(Thread.java:748)
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 10
+
+<img src="https://img.shields.io/badge/-10. DeadLock ,Yield %20-blue" height=40px>
 
 https://www.javatpoint.com/deadlock-in-java
 
@@ -861,9 +1155,9 @@ synchronized (obj2) {
 
 --------------------------------------------------------------------------------------------------
 
-###### 9
+###### 11
 
-<img src="https://img.shields.io/badge/-9.Semaphore %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-11.Semaphore %20-blue" height=40px>
 
 ### [Semaphore in Java](#-)
 
@@ -1050,300 +1344,6 @@ Thread-5: i = 2
 Thread-2 Finished running
 Thread-5 Finished running
 
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 10
-
-<img src="https://img.shields.io/badge/-10. join() %20-blue" height=40px>
-
-**java.lang.Thread** class provides the **join()** method which allows one thread to wait until another thread completes its execution.</br>
-* [**join():**](#-) It will put the current thread on wait until the thread on which it is called is dead. If thread is interrupted then it will throw InterruptedException.
-* [**join(long millis) :**](#-) It will put the current thread on wait until the thread on which it is called is dead or wait for specified time (milliseconds).
-* [**join(long millis, int nanos):**](#-) It will put the current thread on wait until the thread on which it is called is dead or wait for specified time (milliseconds + nanos).
-
-### [Example w/o join() method](#-)
-
-In the following example I have 2 classes that Implement the Runnable interface.</br>
-I invoke the MyThread thread from the run() method of MyCalculate class.</br>
-From main method I invoke MyCalculation Thread.</br>
-Scroll down to see the console out
-
-```java
-public class MyThread implements Runnable {
-
-	@Override
-	public void run() {
-
-		System.out.println(Thread.currentThread().getName() + " is running");
-		for (int i = 0; i < 3; i++) {
-			try {
-				System.out.println(Thread.currentThread().getName() + " " + i);
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		System.out.println(Thread.currentThread().getName() + " Finished running");
-	}
-}
-
-public class MyCalculate implements Runnable {
-
-	MyThread myThread = new MyThread();
-
-	private void printMessage(String msg) {
-		System.out.println(Thread.currentThread().getName() + msg);
-	}
-
-	@Override
-	public void run() {
-		printMessage(" is running");
-
-		Thread myThread = new Thread(myThread, "MyThread-run");
-		thread.start();
-
-		printMessage(" invoked MyThread");
-		printMessage(" Finished Running");
-	}
-}
-
-public class Main {
-	public static void main(String[] args) {
-
-		MyCalculate myCalc = new MyCalculate();
-		Thread tCalc = new Thread(myCalc, "Calculate-thread");
-
-		tCalc.start();
-	}
-}
-```
-
-### Console output shows : 
-
-* **Calculate-thread** started to run, Invoked MyThread thread, Finished running , while **MyThread** still running.
-* This is where the **join()** method comes to the picture.
-* with **join()** method , I can tell the running thread , to wait till it will be termninted , then continue with the processing of the code.
-
-```java
-Calculate-thread is running
-Calculate-thread invoked MyThread
-Calculate-thread Finished Running
-MyThread-run is running
-MyThread-run 0
-MyThread-run 1
-MyThread-run 2
-MyThread-run Finished running
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
-### [Implement join() method](#-)
-
-In the following example I have 2 classes that Implement the Runnable interface.</br>
-I invoke the MyThread thread from the run() method of MyCalculate class.</br>
-I invoke **thread.join()** method from **MyCalculate class run() method** . I put it in a try/catch block since it throws **InterruptedException**</br> 
-From main method I invoke MyCalculation Thread.</br>
-Scroll down to see the console out
-
-```java
-public class MyThread implements Runnable {
-
-	@Override
-	public void run() {
-
-		System.out.println(Thread.currentThread().getName() + " is running");
-		for (int i = 0; i < 3; i++) {
-			try {
-				System.out.println(Thread.currentThread().getName() + " " + i);
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		System.out.println(Thread.currentThread().getName() + " Finished running");
-	}
-}
-
-public class MyCalculate implements Runnable {
-
-	MyThread myThread = new MyThread();
-
-	private void printMessage(String msg) {
-		System.out.println(Thread.currentThread().getName() + msg);
-	}
-
-	@Override
-	public void run() {
-		printMessage(" is running");
-		try {
-			Thread thread = new Thread(myThread, "MyThread-run");
-			thread.start();
-			printMessage(" invoked MyThread");
-			thread.join();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		printMessage(" Finished Running");
-	}
-}
-
-public class Main {
-	public static void main(String[] args) {
-
-		MyCalculate myCalc = new MyCalculate();
-		Thread tCalc = new Thread(myCalc, "Calculate-thread");
-
-		tCalc.start();
-	}
-}
-```
-
-### Console output shows : 
-
-* **Calculate-thread** started to run, Invoked MyThread thread , did not continue with it's execution , becuase we invoke the **join()** method
-* **MyThread** started running, and finished it's execution.
-* after **MyThread** terminated , **Calculate-thread** continue to run and finished it's execution .
-
-```java
-Calculate-thread is running
-Calculate-thread invoked MyThread
-MyThread-run is running
-MyThread-run 0
-MyThread-run 1
-MyThread-run 2
-MyThread-run Finished running
-Calculate-thread Finished Running
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 11
-
-<img src="https://img.shields.io/badge/-11. interrupt() %20-blue" height=40px>
-
-* The [interrupt()](#-) method of thread class is used to interrupt the thread. 
-* If any thread is in :
-	1. [sleeping](#-) or 
-	2. [waiting](#-) state (i.e. sleep() or wait() is invoked) </br>
-then using the [interrupt()](#-) method, we can interrupt the thread execution by throwing [InterruptedException](#-).
-
-* ### [**interrupt()**](#-) method only works on Thread that is in [sleep()](#-) or [wait()](#-)
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
-### [1. Interrupting a thread that doesn't stop working](#-)
-
-```java
-public class MyThread implements Runnable {
-
-	@Override
-	public void run() {
-
-		System.out.println(Thread.currentThread().getName() + " is running");
-		for (int i = 0; i < 5; i++) {
-			try {
-				System.out.println(Thread.currentThread().getName() + " " + i);
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		System.out.println(Thread.currentThread().getName() + " Finished running");
-	}
-}
-
-public class Main {
-	public static void main(String[] args) {
-
-		MyThread myThread = new MyThread();
-		Thread thread = new Thread(myThread, "MyThread");
-		thread.start();
-
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		thread.interrupt();
-	}
-}
-```
-
-### Console output shows : 
-
-In this example, after interrupting the thread, we handle the exception in the catch clause, so it will break out from the sleeping state but it will [continue to run](#-).
-
-```java
-MyThread is running
-MyThread 0
-MyThread 1
-java.lang.InterruptedException: sleep interrupted
-	at java.lang.Thread.sleep(Native Method)
-	at demo.MyThread.run(MyThread.java:12)
-	at java.lang.Thread.run(Thread.java:748)
-MyThread 2
-MyThread 3
-MyThread 4
-MyThread Finished running
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
-### [2. Interrupting a thread that stops working](#-)
-
-```java
-public class MyThread implements Runnable {
-
-	@Override
-	public void run() {
-
-		System.out.println(Thread.currentThread().getName() + " is running");
-		for (int i = 0; i < 5; i++) {
-			try {
-				System.out.println(Thread.currentThread().getName() + " " + i);
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				throw new RuntimeException(e.getMessage());
-			}
-		}
-		System.out.println(Thread.currentThread().getName() + " Finished running");
-	}
-}
-
-public class Main {
-	public static void main(String[] args) {
-
-		MyThread myThread = new MyThread();
-		Thread thread = new Thread(myThread, "MyThread");
-		thread.start();
-
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		thread.interrupt();
-	}
-}
-```
-
-### Console output shows : 
-
-In this example, after interrupting the thread, we handle the exception in the catch clause, **But** we throw **RuntimeException** in the catch clause will [NOT continue to run](#-).
-
-```java
-MyThread is running
-MyThread 0
-MyThread 1
-Exception in thread "MyThread" java.lang.RuntimeException: sleep interrupted
-	at demo.MyThread.run(MyThread.java:14)
-	at java.lang.Thread.run(Thread.java:748)
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
