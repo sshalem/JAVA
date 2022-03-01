@@ -1223,7 +1223,7 @@ Thread-5 Finished running
 
 <img src="https://img.shields.io/badge/-11. ReentrantLock %20-blue" height=40px>
 
-[Lock , ReentrantLock](#-) link --> https://www.youtube.com/watch?v=ahBC69_iyk4&ab_channel=DefogTech
+[Lock Interface, ReentrantLock Class,  you tube link , well explained](https://www.youtube.com/watch?v=ahBC69_iyk4&ab_channel=DefogTech)
 
 [Lock](#-) - Lock is an Interface</br>
 [ReentrantLock](#-) - Java Class that Implemenets Lock interface</br>
