@@ -1051,7 +1051,7 @@ If another Thread that comes will try to [**aquire() a lock**](#-) , he will be 
 
 https://www.youtube.com/watch?v=w92-evgmKxU
 
-1. When we define [Semaphore(1)](#-) ```Semaphore semaphore = new Semaphore(1)``` then [Synchronized](#-) could be used , because only 1 thread exclusively wants to execute a code at the same time.
+1. When we define [Semaphore(1)](#-) ```Semaphore semaphore = new Semaphore(1)``` , its like we use the [Synchronized](#-) keyword , because only 1 thread exclusively wants to execute a code at the same time.
 2. If number of concurrent threads executing the same piece of code is >1 , then [Semaphore](#-) is the only choice.
 
 
