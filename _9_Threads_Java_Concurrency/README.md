@@ -1235,7 +1235,7 @@ With ReentrantLocks - the Locks are provided in Java to provide synchronization 
 
 We need to make sure that we are wrapping the [lock()](#-) and the [unlock()](#-) calls in the try-finally block to avoid the [deadlock](#-) situations.
 
-### [Need to make the code example more clear 01-03-2022](#-)
+### [Need to make the code example more clear , last update 01-03-2022](#-)
 
 ```java
 import java.util.concurrent.locks.ReentrantLock;
