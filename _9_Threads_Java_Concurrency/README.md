@@ -15,7 +15,7 @@
 |  8  |[join()](#8)   | 
 |  9  |[interrupt()](#9)   | 
 |  10 |[Semaphore](#10)   | 
-|  11 |[ReentrantLock](#11)   | 
+|  11 |[Lock , ReentrantLock](#11)   | 
 |  12 |[ReadWriteLock](#12)   | 
 |  13 |[DeadLock ,Yield](#13)   | 
 |  14 |[CountDownLatch](#14)   | 
@@ -1223,7 +1223,16 @@ Thread-5 Finished running
 
 <img src="https://img.shields.io/badge/-11. ReentrantLock %20-blue" height=40px>
 
-[ReentrantLock](#-) link --> https://www.youtube.com/watch?v=ahBC69_iyk4&ab_channel=DefogTech
+[Lock , ReentrantLock](#-) link --> https://www.youtube.com/watch?v=ahBC69_iyk4&ab_channel=DefogTech
+
+[Lock](#-) - Lock is an Interface</br>
+[ReentrantLock](#-) - Java Class that Implemenets Lock interface</br>
+
+
+We know that when we use synchronization on a block/method it hollds a lock.</br>
+With ReentrantLocks - the Locks are provided in Java to provide synchronization with greater flexibility. </br>
+The **ReentrantLock class** implements the **Lock interface** and provides synchronization to methods while accessing shared resources. The code which manipulates the shared resource is surrounded by calls to lock and unlock method.</br>
+
 
 
 
