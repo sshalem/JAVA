@@ -1228,12 +1228,66 @@ Thread-5 Finished running
 [Lock](#-) - Lock is an Interface</br>
 [ReentrantLock](#-) - Java Class that Implemenets Lock interface</br>
 
+[ReentrantLock](#-) class implements the [Lock](#-) interface. It offers the same concurrency and memory semantics, as the implicit monitor lock accessed using synchronized methods and statements, with [extended capabilities](#-).
 
-We know that when we use synchronization on a block/method it hollds a lock.</br>
+We know that when we use synchronization on a block/method it holds a lock.</br>
 With ReentrantLocks - the Locks are provided in Java to provide synchronization with greater flexibility. </br>
-The **ReentrantLock class** implements the **Lock interface** and provides synchronization to methods while accessing shared resources. The code which manipulates the shared resource is surrounded by calls to lock and unlock method.</br>
 
+We need to make sure that we are wrapping the [lock()](#-) and the [unlock()](#-) calls in the try-finally block to avoid the [deadlock](#-) situations.
 
+### [Need to make the code example more clear 01-03-2022](#-)
+
+```java
+import java.util.concurrent.locks.ReentrantLock;
+
+public class SharedObject implements Runnable {
+
+	ReentrantLock reentrantLock = new ReentrantLock();
+
+	int counter = 0;
+
+	public void perform() {
+		reentrantLock.lock();
+		printMessage(": lock aquired");
+
+		try {
+			counter++;
+		} finally {
+			reentrantLock.unlock();
+			printMessage(": lock relesed");
+		}
+	}
+
+	private void printMessage(String message) {
+		System.out.println(Thread.currentThread().getName() + message);
+	}
+
+	@Override
+	public void run() {
+		perform();
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		SharedObject sharedObject = new SharedObject();
+
+		Thread thread1 = new Thread(sharedObject, "Thread-1");
+		Thread thread2 = new Thread(sharedObject, "Thread-2");
+		Thread thread3 = new Thread(sharedObject, "Thread-3");
+		Thread thread4 = new Thread(sharedObject, "Thread-4");
+
+		thread1.start();
+		thread2.start();
+		thread3.start();
+		thread4.start();
+	}
+}
+```
+
+### Console output shows : 
 
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
