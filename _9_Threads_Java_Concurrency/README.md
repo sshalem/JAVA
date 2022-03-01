@@ -1046,8 +1046,8 @@ Exception in thread "MyThread" java.lang.RuntimeException: sleep interrupted
 	* if we have [**MyThread**](#-) class that Implement runnable. We create 5 Threads  of MyThread and run all 5 of them [thread.start()](#-). </br>
 but we want to allow only 3 threads at the same time.</br>
 with Semaphore we can define it as Semaphore(3) , and only 3 Threads of the MyThread will run at the same time. (see example 2).</br>
-This means, the first 3 Threads will **aquire() a lock**. </br>
-If another Thread that comes will try to **aquire()** a lock , he will be at **wait()** state, till one of the 3 Threads will **relase() the lock**.</br>
+This means, the first 3 Threads will [**aquire() a Lock**](#-). </br>
+If another Thread that comes will try to [**aquire() a lock**](#-) , he will be at [**wait()**](#-) state, till one of the 3 Threads will [**relase() the lock**](#-) .</br>
 
 https://www.youtube.com/watch?v=w92-evgmKxU
 
