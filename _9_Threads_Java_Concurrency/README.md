@@ -1221,7 +1221,11 @@ Thread-5 Finished running
 
 ###### 11
 
-<img src="https://img.shields.io/badge/-11 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-11. ReentrantLock %20-blue" height=40px>
+
+[ReentrantLock](#-) link --> https://www.youtube.com/watch?v=ahBC69_iyk4&ab_channel=DefogTech
+
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
