@@ -1443,7 +1443,9 @@ synchronized (obj2) {
 
 ###### 15
 
-<img src="https://img.shields.io/badge/-15 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-15. volatile %20-blue" height=40px>
+
+link to Volatile https://www.youtube.com/watch?v=V2hC-g6FoGc
 
 ```java
 ```
