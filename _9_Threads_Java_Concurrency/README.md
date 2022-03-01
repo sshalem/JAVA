@@ -15,9 +15,9 @@
 |  8  |[join()](#8)   | 
 |  9  |[interrupt()](#9)   | 
 |  10 |[Semaphore](#10)   | 
-|  11 |[DeadLock ,Yield](#11)   | 
-|  12 |[ReentrantLock](#12)   | 
-|  13 |[ReadWriteLock](#13)   | 
+|  11 |[ReentrantLock](#11)   | 
+|  12 |[ReadWriteLock](#12)   | 
+|  13 |[DeadLock ,Yield](#13)   | 
 |  14 |[CountDownLatch](#14)   | 
 |  15 |[Volatile](#15)   | 
 |  16 |[AtomicInteger](#16)   | 
@@ -1221,7 +1221,26 @@ Thread-5 Finished running
 
 ###### 11
 
-<img src="https://img.shields.io/badge/-11. DeadLock ,Yield %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-11 %20-blue" height=40px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 12
+
+<img src="https://img.shields.io/badge/-12 %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 13
+
+<img src="https://img.shields.io/badge/-13. DeadLock ,Yield %20-blue" height=40px>
 
 https://www.javatpoint.com/deadlock-in-java
 
@@ -1338,28 +1357,6 @@ synchronized (obj2) {
 			...
 	}
 }
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 12
-
-<img src="https://img.shields.io/badge/-12 %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 13
-
-<img src="https://img.shields.io/badge/-13 %20-blue" height=40px>
-
-```java
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
