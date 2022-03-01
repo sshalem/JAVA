@@ -1039,9 +1039,8 @@ Exception in thread "MyThread" java.lang.RuntimeException: sleep interrupted
 
 * A Semaphore in Java is a Thread Synchronization construct that controls access to the shared resource with the help of counters.
 * We can use a semaphore to avoid race conditions (when semaphore(1) its like  Synchronized keyword). 
-
 * Semaphore is JAVA class from **_java.util.concurrent_** package
-* With Semaphore we can define number of Threads that can run at the same time. 
+* With Semaphore we can define number of Threads (permits) that can run at the same time. 
 * For example :
 	* if we have [**MyThread**](#-) class that Implement runnable. We create 5 Threads  of MyThread and run all 5 of them [thread.start()](#-). </br>
 but we want to allow only 3 threads at the same time.</br>
