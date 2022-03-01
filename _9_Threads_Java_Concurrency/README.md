@@ -1043,17 +1043,15 @@ Exception in thread "MyThread" java.lang.RuntimeException: sleep interrupted
 * Semaphore is JAVA class from **_java.util.concurrent_** package
 * With Semaphore we can define number of Threads that can run at the same time. 
 * For example :
-	* if we have [**MyThread**](#-) class that Implement runnable. We create 5 Threads  of MyThread and run all 5 of them [thread.start()](#-). but we want to allow only 3 threads at the same time.
-	with Semaphore we can define it as Semaphore(3) , and only 3 Threads of the MyThread will run at the same time. (see example 2).
-	This means, the first 3 Threads will **aquire() a lock**. If another Thread that comes will try to **aquire()** a lock , he will be at **wait()** state, till one of the 3 Threads will **relase() the lock**.
-
-Semaphore ensures that the shared resource (or code) is accessed by only the desired threads at the same time.</br>
-Permit maximum number of threads that the semaphore will allow to access to the shared resource.
-
+	* if we have [**MyThread**](#-) class that Implement runnable. We create 5 Threads  of MyThread and run all 5 of them [thread.start()](#-). </br>
+but we want to allow only 3 threads at the same time.</br>
+with Semaphore we can define it as Semaphore(3) , and only 3 Threads of the MyThread will run at the same time. (see example 2).</br>
+This means, the first 3 Threads will **aquire() a lock**. </br>
+If another Thread that comes will try to **aquire()** a lock , he will be at **wait()** state, till one of the 3 Threads will **relase() the lock**.</br>
 
 https://www.youtube.com/watch?v=w92-evgmKxU
 
-1. when we define [Semaphore(1)](#-)
+1. When we define [Semaphore(1)](#-)
 ```java
 Semaphore semaphore = new Semaphore(1)
 ```
