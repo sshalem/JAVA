@@ -14,8 +14,8 @@
 |  7  |[wait, notify, notify all](#7)  | 
 |  8  |[join()](#8)   | 
 |  9  |[interrupt()](#9)   | 
-|  10 |[DeadLock ,Yield](#10)   | 
-|  11 |[Semaphore](#11)   | 
+|  10 |[Semaphore](#10)   | 
+|  11 |[DeadLock ,Yield](#11)   | 
 |  12 |[ReentrantLock](#12)   | 
 |  13 |[ReadWriteLock](#13)   | 
 |  14 |[CountDownLatch](#14)   | 
@@ -1033,132 +1033,7 @@ Exception in thread "MyThread" java.lang.RuntimeException: sleep interrupted
 
 ###### 10
 
-<img src="https://img.shields.io/badge/-10. DeadLock ,Yield %20-blue" height=40px>
-
-https://www.javatpoint.com/deadlock-in-java
-
-
-[1. What is deadlock and when it can occur?](#-)
-
-* DeadLock describes a situation where 2 or more threads are blocked forever , waiting for each other. (Since the depend on each other , it's called circular Dependency) (Example like "No, you hang up first" situation)
-* DeadLocks can occur in java when the synchronized keyword causes the executing htread to block while waiting to get the lock , associated with specified object.
-
-[2. How to prevent DeadLocks?](#-)
-
-* Don't use locks.
-* Acquire the locks in the same order.
-* Release the locks after a tiomeout period
-
-### [Let's see Implemented example of a DeadLock](#-)
-
-
-```java
-public class ThreadDemo1 implements Runnable {
-
-	private Object obj1;
-	private Object obj2;
-
-	public ThreadDemo1(Object obj1, Object obj2) {
-		this.obj1 = obj1;
-		this.obj2 = obj2;
-	}
-
-	@Override
-	public void run() {
-		synchronized (obj1) {
-			try {
-				System.out.println("Aquire lock on obj 1, waiting for obj 2");
-				Thread.sleep(10);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-
-			synchronized (obj2) {
-				System.out.println("Aquire lock on obj 1 & obj2");
-			}
-		}
-	}
-}
-
-public class ThreadDemo2 implements Runnable {
-
-	private Object obj1;
-	private Object obj2;
-
-	public ThreadDemo2(Object obj1, Object obj2) {
-		this.obj1 = obj1;
-		this.obj2 = obj2;
-	}
-
-	@Override
-	public void run() {
-		synchronized (obj2) {
-			try {
-				System.out.println("Aquire lock on obj 2, waiting for obj 1");
-				Thread.sleep(10);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-
-			synchronized (obj1) {
-				System.out.println("Aquire lock on obj 1 & obj2");
-			}
-		}
-	}
-}
-
-public class Main {
-	public static void main(String[] args) {
-
-		Object obj1 = new Object();
-		Object obj2 = new Object();
-
-		ThreadDemo1 threadDemo1 = new ThreadDemo1(obj1, obj2);
-		Thread demo1 = new Thread(threadDemo1);
-		demo1.start();
-
-		ThreadDemo2 threadDemo2 = new ThreadDemo2(obj1, obj2);
-		Thread demo2 = new Thread(threadDemo2);
-		demo2.start();
-	}
-}
-```
-
-### Console output shows : 
-
-```java
-Aquire lock on obj 1, waiting for obj 2
-Aquire lock on obj 2, waiting for obj 1
-```
-
-If we take a look ad the code of both Synchronized block we wiil see the DeadLock .</br>
-In the class of [**_ThreadDemo1_**](#-), **_synchronized (obj1)_** locks the Object of **obj1**, and then tries to lock the Object of **obj2** , but it can't because **obj2** is already locked in class of [**_ThreadDemo2_**](#-). 
-
-In the class of [**_ThreadDemo2_**](#-), **_synchronized (obj2)_** locks the Object of **obj2**, and then tries to lock the Object of **obj1** , but it can't because **obj1** is alreday locked in class of [**_ThreadDemo1_**](#-). 
-
-This is a circular situation of acquiring the lock, whrere none of the Threads release the lock , this is why we get a [**_DeadLock_**](#-)
-
-```java
-synchronized (obj1) {
-	synchronized (obj2) {
-			...
-	}
-}
-
-synchronized (obj2) {
-	synchronized (obj1) {
-			...
-	}
-}
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 11
-
-<img src="https://img.shields.io/badge/-11.Semaphore %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-10.Semaphore %20-blue" height=40px>
 
 ### [Semaphore in Java](#-)
 
@@ -1345,6 +1220,131 @@ Thread-5: i = 2
 Thread-2 Finished running
 Thread-5 Finished running
 
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 11
+
+<img src="https://img.shields.io/badge/-11. DeadLock ,Yield %20-blue" height=40px>
+
+https://www.javatpoint.com/deadlock-in-java
+
+
+[1. What is deadlock and when it can occur?](#-)
+
+* DeadLock describes a situation where 2 or more threads are blocked forever , waiting for each other. (Since the depend on each other , it's called circular Dependency) (Example like "No, you hang up first" situation)
+* DeadLocks can occur in java when the synchronized keyword causes the executing htread to block while waiting to get the lock , associated with specified object.
+
+[2. How to prevent DeadLocks?](#-)
+
+* Don't use locks.
+* Acquire the locks in the same order.
+* Release the locks after a tiomeout period
+
+### [Let's see Implemented example of a DeadLock](#-)
+
+
+```java
+public class ThreadDemo1 implements Runnable {
+
+	private Object obj1;
+	private Object obj2;
+
+	public ThreadDemo1(Object obj1, Object obj2) {
+		this.obj1 = obj1;
+		this.obj2 = obj2;
+	}
+
+	@Override
+	public void run() {
+		synchronized (obj1) {
+			try {
+				System.out.println("Aquire lock on obj 1, waiting for obj 2");
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+			synchronized (obj2) {
+				System.out.println("Aquire lock on obj 1 & obj2");
+			}
+		}
+	}
+}
+
+public class ThreadDemo2 implements Runnable {
+
+	private Object obj1;
+	private Object obj2;
+
+	public ThreadDemo2(Object obj1, Object obj2) {
+		this.obj1 = obj1;
+		this.obj2 = obj2;
+	}
+
+	@Override
+	public void run() {
+		synchronized (obj2) {
+			try {
+				System.out.println("Aquire lock on obj 2, waiting for obj 1");
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+			synchronized (obj1) {
+				System.out.println("Aquire lock on obj 1 & obj2");
+			}
+		}
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		Object obj1 = new Object();
+		Object obj2 = new Object();
+
+		ThreadDemo1 threadDemo1 = new ThreadDemo1(obj1, obj2);
+		Thread demo1 = new Thread(threadDemo1);
+		demo1.start();
+
+		ThreadDemo2 threadDemo2 = new ThreadDemo2(obj1, obj2);
+		Thread demo2 = new Thread(threadDemo2);
+		demo2.start();
+	}
+}
+```
+
+### Console output shows : 
+
+```java
+Aquire lock on obj 1, waiting for obj 2
+Aquire lock on obj 2, waiting for obj 1
+```
+
+If we take a look ad the code of both Synchronized block we wiil see the DeadLock .</br>
+In the class of [**_ThreadDemo1_**](#-), **_synchronized (obj1)_** locks the Object of **obj1**, and then tries to lock the Object of **obj2** , but it can't because **obj2** is already locked in class of [**_ThreadDemo2_**](#-). 
+
+In the class of [**_ThreadDemo2_**](#-), **_synchronized (obj2)_** locks the Object of **obj2**, and then tries to lock the Object of **obj1** , but it can't because **obj1** is alreday locked in class of [**_ThreadDemo1_**](#-). 
+
+This is a circular situation of acquiring the lock, whrere none of the Threads release the lock , this is why we get a [**_DeadLock_**](#-)
+
+```java
+synchronized (obj1) {
+	synchronized (obj2) {
+			...
+	}
+}
+
+synchronized (obj2) {
+	synchronized (obj1) {
+			...
+	}
+}
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
