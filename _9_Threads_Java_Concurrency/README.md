@@ -12,10 +12,10 @@
 |  5  |[Race Condition](#5)   | 
 |  6  |[synchronize, Lock](#6)  | 
 |  7  |[wait, notify, notify all](#7)  | 
-|  8  |[join()](#10)   | 
-|  9  |[interrupt()](#11)   | 
-|  10 |[DeadLock ,Yield](#8)   | 
-|  11 |[Semaphore](#9)   | 
+|  8  |[join()](#8)   | 
+|  9  |[interrupt()](#9)   | 
+|  10 |[DeadLock ,Yield](#10)   | 
+|  11 |[Semaphore](#11)   | 
 |  12 |[CountDownLatch](#12)   | 
 |  13 |[ReadWriteLock](#13)   | 
 |  14 |[Volatile](#14)   | 
