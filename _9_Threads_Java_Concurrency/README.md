@@ -16,7 +16,7 @@
 |  9  |[interrupt()](#9)   | 
 |  10 |[Semaphore](#10)   | 
 |  11 |[Lock , ReentrantLock](#11)   | 
-|  12 |[ReadWriteLock](#12)   | 
+|  12 |[Lock , ReadWriteLock](#12)   | 
 |  13 |[DeadLock ,Yield](#13)   | 
 |  14 |[CountDownLatch](#14)   | 
 |  15 |[Volatile](#15)   | 
