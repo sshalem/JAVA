@@ -1450,7 +1450,7 @@ link to Volatile https://www.youtube.com/watch?v=V2hC-g6FoGc
 1. What is a volatile variable in Java?
 2. when to use the volatile variable in Java?
 
-The [volatile](#-) keyword in Java is used as an indicator to Java compiler and Thread that do not [cache](#-) the value of this variable and always read it from the [main memory](#-).
+The [**_volatile_**](#-) keyword in Java is used as an indicator to Java compiler and Thread that do not [cache](#-) the value of this variable and always read it from the [**_main memory_**](#-).
 
 Read more: https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html#ixzz7MSgmFpEl
 
