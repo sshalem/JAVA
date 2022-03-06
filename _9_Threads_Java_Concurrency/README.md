@@ -1445,7 +1445,9 @@ synchronized (obj2) {
 
 <img src="https://img.shields.io/badge/-15. volatile %20-blue" height=40px>
 
-link to Volatile https://www.youtube.com/watch?v=V2hC-g6FoGc
+links to Volatile : </br>
+https://www.youtube.com/watch?v=V2hC-g6FoGc  </br>
+https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </br>
 
 1. What is a volatile variable in Java?
 2. when to use the volatile variable in Java?
