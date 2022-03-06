@@ -25,11 +25,10 @@
 |  18 |[Priority of Threads](#18)   | 
 |  19 |[ThreadPoolExecutor](#19)   | 
 |  20 |[Executer Interface, ExecutorService Interface, Executers Class](#20)   | 
-|  21 |[Executer Interface, ExecutorService Interface, Executers Class](#21)   | 
-|  22 |[Future , CompletableFuture](#22)   | 
-|  23 |[BlockingQueue](#23)   | 
-|  24 |[ThreadPoolExecutor](#24)   | 
-|  25 |[ConcurrentMap](#25)   | 
+|  21 |[Future , CompletableFuture](#21)   | 
+|  22 |[BlockingQueue](#22)   | 
+|  23 |[ThreadPoolExecutor](#23)   | 
+|  24 |[ConcurrentMap](#24)   | 
 
 
 --------------------------------------------------------------------------------------------------
@@ -1511,7 +1510,9 @@ Read more: https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-exam
 
 ###### 20
 
-<img src="https://img.shields.io/badge/-20 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-20.Executer Interface, ExecutorService Interface, Executers Class %20-blue" height=40px>
+
+https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
 
 ```java
 ```
