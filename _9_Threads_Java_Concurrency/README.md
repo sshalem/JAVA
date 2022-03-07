@@ -1458,6 +1458,138 @@ Read more: https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-exam
 Read more: https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html#ixzz7MSXFb15U
 
 ```java
+public class Main {
+
+	private static volatile int counter = 0;
+
+	public static void main(String[] args) {
+
+		Thread t1 = new Thread(() -> {
+
+			int local_counter = counter;
+
+			while (local_counter < 10) {
+				if (local_counter != counter) {
+					System.out.println("[T1] local counter is changed " + local_counter);
+					local_counter = counter;
+				}
+			}
+		});
+
+		Thread t2 = new Thread(() -> {
+			int local_counter = counter;
+
+			while (local_counter < 10) {
+				System.out.println("[T2] incremented counter to " + (local_counter + 1));
+				counter = ++local_counter;
+
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		});
+
+		t1.start();
+		t2.start();
+
+	}
+}
+```
+
+Code w/o static field
+
+``java
+public class Counter {
+
+	private volatile int count = 0;
+
+	public Counter() {
+		super();
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	public boolean increment() {
+		if (this.count == 10) {
+			return false;
+		}
+		this.count++;
+		return true;
+	}
+}
+
+public class IncrementThread implements Runnable {
+
+	private Counter counter;
+
+	public IncrementThread(Counter counter) {
+		super();
+		this.counter = counter;
+	}
+
+	@Override
+	public void run() {
+		int local_counter = counter.getCount();
+
+		while (local_counter < 10) {
+			System.out.println("[T2] incremented counter to " + (local_counter + 1));
+			counter.setCount(++local_counter);
+
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class CheckThread implements Runnable {
+
+	private Counter counter;
+
+	public CheckThread(Counter counter) {
+		super();
+		this.counter = counter;
+	}
+
+	@Override
+	public void run() {
+		int local_counter = counter.getCount();
+
+		while (local_counter < 10) {
+			if (local_counter != counter.getCount()) {
+				System.out.println("[T1] local counter is changed ");
+				local_counter = counter.getCount();
+			}
+		}
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		Counter counter = new Counter();
+
+		CheckThread checkThread = new CheckThread(counter);
+		Thread t1 = new Thread(checkThread);
+
+		IncrementThread incrementThread = new IncrementThread(counter);
+		Thread t2 = new Thread(incrementThread);
+
+		t1.start();
+		t2.start();
+	}
+}
+
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
