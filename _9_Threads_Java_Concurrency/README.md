@@ -1500,7 +1500,7 @@ public class Main {
 
 Code w/o static field
 
-``java
+```java
 public class Counter {
 
 	private volatile int count = 0;
