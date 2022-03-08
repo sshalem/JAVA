@@ -1431,19 +1431,27 @@ synchronized (obj2) {
 
 <img src="https://img.shields.io/badge/-14. volatile %20-blue" height=40px>
 
+![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
+
 In a multithreaded application where the threads operate on non-volatile variables, each thread may copy variables from main memory into a CPU cache while working on them, for performance reasons. If your computer contains more than one CPU, each thread may run on a different CPU. That means, that each thread may copy the variables into the CPU cache of different CPUs.
 
 The access time of the CPU to cahce memory is ~7ns 
 
 Lets look on the example where we have a Shared Variable which is stored in the main memory. We have 2 Threads that are trying to access this variable. If there are multiple read operations (Like while loop for example) from the CPU, then the CPU will try to optimize that operation by storing this shared variable in the cache. That way it will reduce the access time.
 
-![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
+![Read_Read_to_cache](https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG)
+
+
+On the other hand , if one Thread is trying to write data into that variable, the visibility of that write will be done only at the cache level, so if Thread 2 will want to modify the variable , the new value will be seen only by Thread 2, because it's stored n the Cache level of CPU2. This change will be propagate to the Main Memory at some time (Or might never , if it's in a while loop that continuosly reads from cache) 
 
 ![Read_Write_to_cache](https://user-images.githubusercontent.com/36256986/157331694-119956ed-05e2-43f4-a0af-784b9da74069.PNG)
 
+
+
+
 ![Read_Write_Volatile](https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG)
 
-![Read_Read_to_cache](https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG)
+
 
 
 links to Volatile : </br>
