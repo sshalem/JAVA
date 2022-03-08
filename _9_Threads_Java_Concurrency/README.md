@@ -1431,7 +1431,9 @@ synchronized (obj2) {
 
 <img src="https://img.shields.io/badge/-14. volatile %20-blue" height=40px>
 
-![Memory_Cache](https://user-images.githubusercontent.com/36256986/157328244-1d41a633-affc-4ef1-a1ac-56af32c14d39.PNG)
+In a multithreaded application where the threads operate on non-volatile variables, each thread may copy variables from main memory into a CPU cache while working on them, for performance reasons. If your computer contains more than one CPU, each thread may run on a different CPU. That means, that each thread may copy the variables into the CPU cache of different CPUs.
+
+![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
 
 
 links to Volatile : </br>
@@ -1442,8 +1444,8 @@ https://www.youtube.com/watch?v=y8_jrkHEZpg&ab_channel=ZarigaTongy </br>
 https://www.youtube.com/watch?v=SC2jXxOPe5E&ab_channel=AndreasHaufler </br>
 
 [Questions:](#-) </br>
-1. What is a volatile variable in Java?
-2. when to use the volatile variable in Java?
+1. What is a volatile keyword in Java?
+2. when to use the volatile keyword on a variable in Java?
 
 [Answers:](#-) </br>
 1. The [**_volatile_**](#-) keyword in Java is used as an indicator to Java compiler and Thread that do not [cache](#-) (L1, L2, L3) the value of this variable and always read it from the [**_main memory_**](#-) (RAM memory). </br>
