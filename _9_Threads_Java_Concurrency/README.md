@@ -1435,6 +1435,7 @@ links to Volatile : </br>
 https://www.youtube.com/watch?v=V2hC-g6FoGc  </br>
 https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </br>
 https://www.youtube.com/watch?v=WH5UvQJizH0&ab_channel=DefogTech </br>
+https://www.youtube.com/watch?v=y8_jrkHEZpg&ab_channel=ZarigaTongy </br>
 
 [Questions:](#-) </br>
 1. What is a volatile variable in Java?
