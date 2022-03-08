@@ -1429,7 +1429,10 @@ synchronized (obj2) {
 
 ###### 14
 
-<img src="https://img.shields.io/badge/-15. volatile %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-14. volatile %20-blue" height=40px>
+
+![Memory_Cache](https://user-images.githubusercontent.com/36256986/157328244-1d41a633-affc-4ef1-a1ac-56af32c14d39.PNG)
+
 
 links to Volatile : </br>
 https://www.youtube.com/watch?v=V2hC-g6FoGc  </br>
