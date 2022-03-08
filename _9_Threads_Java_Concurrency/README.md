@@ -1443,6 +1443,7 @@ Lets look on the example where we have a Shared Variable which is stored in the 
 
 ![Read_Write_Volatile](https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG)
 
+![Read_Read_to_cache](https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG)
 
 
 links to Volatile : </br>
