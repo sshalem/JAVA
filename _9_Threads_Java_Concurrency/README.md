@@ -1447,17 +1447,18 @@ synchronized (obj2) {
 links to Volatile : </br>
 https://www.youtube.com/watch?v=V2hC-g6FoGc  </br>
 https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </br>
+https://www.youtube.com/watch?v=WH5UvQJizH0&ab_channel=DefogTech </br>
 
 [Questions:](#-) </br>
 1. What is a volatile variable in Java?
 2. when to use the volatile variable in Java?
 
 [Answers::](#-) </br>
-1. 
-2. Volatile used to solve visibilty problems
+1. The [**_volatile_**](#-) keyword in Java is used as an indicator to Java compiler and Thread that do not [cache](#-) (L1, L2, L3) the value of this variable and always read it from the [**_main memory_**](#-) (RAM memory). </br>
+2. Volatile used to solve visibilty problems </br>
 
 
-The [**_volatile_**](#-) keyword in Java is used as an indicator to Java compiler and Thread that do not [cache](#-) (L1, L2, L3) the value of this variable and always read it from the [**_main memory_**](#-) (RAM memory). 
+
 
 Read more: https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html#ixzz7MSgmFpEl
 
