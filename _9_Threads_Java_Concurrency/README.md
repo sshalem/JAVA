@@ -1452,6 +1452,8 @@ https://www.youtube.com/watch?v=y8_jrkHEZpg&ab_channel=ZarigaTongy </br>
 
 Read more: https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html#ixzz7MSgmFpEl
 
+Read more: https://stackoverflow.com/questions/20552945/thread-caching-and-java-memory-model#:~:text=In%20Java%2C%20threads%20doesn%27t,an%20instance%20of%20an%20object.
+
 Read more: https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html#ixzz7MSXFb15U
 
 ```java
