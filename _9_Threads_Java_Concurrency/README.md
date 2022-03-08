@@ -18,17 +18,15 @@
 |  11 |[Lock , ReentrantLock](#11)   | 
 |  12 |[Lock , ReadWriteLock](#12)   | 
 |  13 |[DeadLock ,Yield](#13)   | 
-|  14 |[CountDownLatch](#14)   | 
-|  15 |[Volatile](#15)   | 
-|  16 |[AtomicInteger](#16)   | 
-|  17 |[AtomicLong](#17)   | 
-|  18 |[Priority of Threads](#18)   | 
-|  19 |[ThreadPoolExecutor](#19)   | 
-|  20 |[Executer Interface, ExecutorService Interface, Executers Class](#20)   | 
-|  21 |[Future , CompletableFuture](#21)   | 
-|  22 |[BlockingQueue](#22)   | 
-|  23 |[ThreadPoolExecutor](#23)   | 
-|  24 |[ConcurrentMap](#24)   | 
+|  14 |[Volatile](#14)   | 
+|  15 |[Atomic (Integer , Long, Boolean, Reference)](#15)   | 
+|  16 |[Priority of Threads](#16)   | 
+|  17 |[ThreadPoolExecutor](#17)   | 
+|  18 |[Executer Interface, ExecutorService Interface, Executers Class](#18)   | 
+|  19 |[Future , CompletableFuture](#19)   | 
+|  20 |[BlockingQueue](#20)   | 
+|  21 |[ThreadPoolExecutor](#21)   | 
+|  22 |[ConcurrentMap](#22)   | 
 
 
 --------------------------------------------------------------------------------------------------
@@ -1431,17 +1429,6 @@ synchronized (obj2) {
 
 ###### 14
 
-<img src="https://img.shields.io/badge/-14 %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 15
-
 <img src="https://img.shields.io/badge/-15. volatile %20-blue" height=40px>
 
 links to Volatile : </br>
@@ -1603,6 +1590,17 @@ public class Main {
 
 --------------------------------------------------------------------------------------------------
 
+###### 15
+
+<img src="https://img.shields.io/badge/-15 %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
 ###### 16
 
 <img src="https://img.shields.io/badge/-16 %20-blue" height=40px>
@@ -1627,7 +1625,9 @@ public class Main {
 
 ###### 18
 
-<img src="https://img.shields.io/badge/-18 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-18.Executer Interface, ExecutorService Interface, Executers Class %20-blue" height=40px>
+
+https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
 
 ```java
 ```
@@ -1649,9 +1649,8 @@ public class Main {
 
 ###### 20
 
-<img src="https://img.shields.io/badge/-20.Executer Interface, ExecutorService Interface, Executers Class %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-20 %20-blue" height=40px>
 
-https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
 
 ```java
 ```
