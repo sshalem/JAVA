@@ -1452,6 +1452,52 @@ On the other hand , if one Thread is trying to write data into that variable, th
 ![Read_Write_Volatile](https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG)
 
 
+Let's say we have 2 Threads that execute concurrently.
+In terms of memory, they have thier own Stack Area, and if they have to access some shared variables , 
+the CPU needs to access the Main Memory (RAM Memory).
+
+RAM memory is located on a seperate chip on the Mother Board, so CPU takes some time to access the shared variables.
+Usually, that access time is around ~100ns.
+
+This is long time in terms of UI level for example.
+
+In order to reduce this time (and Improving the performance) , CHIP Designeres add extra memory layer 
+between the CPU and the RAM , with a smaller size , but with very small access time.
+This is the CACHE Memory.
+
+Cache Memory is embedded in the CPU Chip, it has multiple layers (L1, L2 ,L3) 
+The access time of CPU to cache memory is around ~7ns.
+
+****
+
+Let's say we have a shared variable that is Stored in the RAM (int, string).
+and both Threads are trying to read that variable.
+If they are doing the read in a very extensive way (like while(true) loop) of read operations , 
+invoked on a CPU level, the CPU will try to optimze that operation by storing that shared variable in the cache memory of the CPU.
+That way it will reduce the acess time.
+
+On the other hand, if one Thread is trying to write data into that variable, the visibility of that write for a specific amount of time,
+will be done ony on the cache level , so if THread 2 wants to read / modify that variable ,
+the new value will be seen only by the Thread 2 because it will be stored in the cache level.
+This change will be propagated to the RAM at some point, BUT this doesn't happen immediatly.
+There is a dely between the CACHE and the memory update.
+
+If thread 1 is continuously trying to read that variable in a hot loop, it will not see the updated value for that variable.
+Thats the main problem around the change visibility across Threads, 
+
+So , Thread 1 cannot see the updated value for that shared variable , because it continusly reads it's own 
+value from the Cache in which it's run.
+
+So for that reason , the VOLATILE keyword has been introduced.
+
+So when U have a variable that is marked with the volatile 
+
+continue from 04:02 
+
+https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience
+
+
+
 
 
 links to Volatile : </br>
@@ -1474,11 +1520,6 @@ https://www.youtube.com/watch?v=SC2jXxOPe5E&ab_channel=AndreasHaufler </br>
 2. Synchronization - where a int number is shared and used as a counter (Read-Modify-Write operation)
 
 
-Read more: https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html#ixzz7MSgmFpEl
-
-Read more: https://stackoverflow.com/questions/20552945/thread-caching-and-java-memory-model#:~:text=In%20Java%2C%20threads%20doesn%27t,an%20instance%20of%20an%20object.
-
-Read more: https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html#ixzz7MSXFb15U
 
 ```java
 public class Main {
