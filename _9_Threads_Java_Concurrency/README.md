@@ -1444,7 +1444,7 @@ https://www.youtube.com/watch?v=WH5UvQJizH0&ab_channel=DefogTech </br>
 1. The [**_volatile_**](#-) keyword in Java is used as an indicator to Java compiler and Thread that do not [cache](#-) (L1, L2, L3) the value of this variable and always read it from the [**_main memory_**](#-) (RAM memory). </br>
 2. Volatile used to solve visibilty problems </br>
 
-Let's take a llok in 2 situations: </br>
+[Let's take a look in 2 situations:](#-) </br>
 1. Visibility - where the value that is shared is a boolean 
 2. Synchronization - where a int number is shared and used as a counter (Read-Modify-Write operation)
 
