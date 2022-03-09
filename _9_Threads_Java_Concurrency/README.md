@@ -1431,6 +1431,9 @@ synchronized (obj2) {
 
 <img src="https://img.shields.io/badge/-14. volatile %20-blue" height=40px>
 
+<img src="https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG" height=400px width=500px)
+
+
 ![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
 
 In a multithreaded application where the threads operate on non-volatile variables, each thread may copy variables from main memory into a CPU cache while working on them, for performance reasons. If your computer contains more than one CPU, each thread may run on a different CPU. That means, that each thread may copy the variables into the CPU cache of different CPUs.
