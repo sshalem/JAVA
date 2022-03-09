@@ -1454,7 +1454,7 @@ If there are multiple read operations (extensive way ,like : ```while(true)``` l
 
 <img src="https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG" height=350px width=700px>
 
-On the other hand , if one Thread is trying to [write](#-) data into that variable, the [visibility](#-) of that [write](#-) will be done only at the [cache](#-) level, so if Thread 2 will want to modify the variable , the new value will be seen only by Thread 2, because it's stored n the Cache level of CPU2. </br>
+On the other hand , if one Thread is trying to [write](#-) data into that variable, the [visibility](#-) of that [write](#-) will be done only at the [cache](#-) level, so if Thread 2 will want to modify the variable , the new value will be seen only by Thread 2, because it's stored in the Cache level of CPU2. </br>
 This change will be propagate to the Main Memory at some time (Or might never , if it's in a while loop that continuosly reads from cache) .
 
 <img src="https://user-images.githubusercontent.com/36256986/157331694-119956ed-05e2-43f4-a0af-784b9da74069.PNG" height=350px width=700px>
@@ -1473,10 +1473,10 @@ If they are doing the read in a very extensive way (like [while(true)](#-) loop)
 That way it will reduce the acess time.
 
 On the other hand, if one Thread is trying to write data into that variable, the visibility of that write for a specific amount of time,
-will be done ony on the cache level , so if THread 2 wants to read / modify that variable ,
+will be done ony on the cache level , so if Thread 2 wants to read / modify that variable ,
 the new value will be seen only by the Thread 2 because it will be stored in the cache level.
-This change will be propagated to the RAM at some point, BUT this doesn't happen immediatly.
-There is a dely between the CACHE and the memory update.
+This change will be propagated to the RAM at some point, BUT this doesn't happen immidiatly.
+There is a delay between the CACHE and the memory update.
 
 If thread 1 is continuously trying to read that variable in a hot loop, it will not see the updated value for that variable.
 Thats the main problem around the change visibility across Threads, 
@@ -1494,6 +1494,8 @@ In this way we have a predictable output of our program and we don't risk having
 This doesn't come without a cost.
 If we get consistency we loose on performance, because if we decalre all our shared variables as volatile, 
 the perfromance of our application will suffer.
+
+****
 
 https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </br>
 
