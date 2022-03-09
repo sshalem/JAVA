@@ -1505,7 +1505,9 @@ the perfromance of our application will suffer. </br>
 
 https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </br>
 
-
+- I will show 2 scenarios for :
+1. Shared variable is a boolean (with and w/o volatile)	
+2. Shared variable is int number inside while for loop (with and w/o volatile)
 
 
 
