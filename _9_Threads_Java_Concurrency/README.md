@@ -1468,28 +1468,35 @@ In terms of memory, they have their own Stack Area, and if they have to access s
 
 ****
 
-In this example we have a [shared variable](#-) that is Stored in the RAM (int, string), and both Threads are trying to read that variable. </br>
-If they are doing the read in a very extensive way (like [while(true)](#-) loop) of read operations , that is invoked on a CPU level, the [CPU will try to optimze that operation by storing that shared variable in the **CACHE Memory** of the CPU](#-). </br>
+In this example we have a [shared variable](#-) that is Stored in the RAM (int, string), and both Threads are trying to Read that variable. </br>
+If they are doing multiple Read operations in a very extensive way (like [while(true)](#-) loop) of read operations , that is invoked on a CPU level, the [CPU will try to **optimze** that operation by storing that shared variable in the **CACHE Memory** of the CPU](#-). </br>
 That way it will reduce the acess time.
 
-On the other hand, if one Thread is trying to write data into that variable, the visibility of that write for a specific amount of time,
-will be done ony on the cache level , so if Thread 2 wants to read / modify that variable ,
-the new value will be seen only by the Thread 2 because it will be stored in the cache level.
-This change will be propagated to the RAM at some point, BUT this doesn't happen immidiatly.
-There is a delay between the CACHE and the memory update.
+<img src="https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG" height=350px width=700px>
 
-If thread 1 is continuously trying to read that variable in a hot loop, it will not see the updated value for that variable.
-Thats the main problem around the change visibility across Threads, 
 
-So , Thread 1 cannot see the updated value for that shared variable , because it continusly reads it's own 
-value from the Cache in which it's run.
+On the other hand, if one Thread is trying to [Write](#-) data into that variable, the visibility of that [Write](#-) for a specific amount of time,
+will be done only on the [CACHE](#-) level. </br>
+So if Thread 2 wants to [Read/Modify](#-) that variable ,the new value will be seen only by the Thread 2 because it will be stored in the [CACHE](#-) level.</br>
+This change will be propagated to the [RAM](#-) at some point, BUT this doesn't happen immidiatly.</br>
+There is a delay between the [CACHE](#-) and the [Memory](#-) update.
 
-So for that reason , the VOLATILE keyword has been introduced.
+<img src="https://user-images.githubusercontent.com/36256986/157331694-119956ed-05e2-43f4-a0af-784b9da74069.PNG" height=350px width=700px>
 
-So when U have a variable that is marked with the volatile keyword and you want to read data from it, the read will be done directly from the main memory.
-The cache will not this read operation at all.
-and also if you wwant to write data into the variable , the write will be stored directly in the RAM .
-In this way we have a predictable output of our program and we don't risk having this cache level inconsistency.
+If thread 1 is continuously trying to read that variable in a hot loop, it will not see the updated value for that variable, 
+hence , Thread 1 continuously reads it's own value from the [Cache](#-), and the shared variable is not [VISIBLE](#-). 
+Thats the main problem , [**VISIBILITY**](#-) across Threads. </br>
+So , Thread 1 cannot see the updated value for that shared variable , because it continuously reads it's own value from the Cache in which it's run.
+
+For that reason , the [**VOLATILE**](#-) keyword has been introduced.
+
+If we have a variable that is marked with the [**volatile**](#-) keyword and you want to Read data from it, </br>
+the Read will be done directly from the [RAM](#-) (main memory).
+The [CACHE](#-) will not impact this read operation at all.
+and also if you want to [write](#-) data into the variable , the [write](#-) will be [stored directly in the RAM](#-) .
+In this way, we have a predictable output of our program and we don't risk having this cache level inconsistency.
+
+<img src="https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG" height=350px width=700px>
 
 This doesn't come without a cost.
 If we get consistency we loose on performance, because if we decalre all our shared variables as volatile, 
