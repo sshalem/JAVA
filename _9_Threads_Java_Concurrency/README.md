@@ -1490,12 +1490,14 @@ value from the Cache in which it's run.
 
 So for that reason , the VOLATILE keyword has been introduced.
 
-So when U have a variable that is marked with the volatile 
+So when U have a variable that is marked with the volatile keyword and you want to read data from it, the read will be done directly from the main memory.
+The cache will not this read operation at all.
+and also if you wwant to write data into the variable , the write will be stored directly in the RAM .
+In this way we have a predictable output of our program and we don't risk having this cache level inconsistency.
 
-continue from 04:02 
-
-https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience
-
+This doesn't come without a cost.
+If we get consistency we loose on performance, because if we decalre all our shared variables as volatile, 
+the perfromance of our application will suffer.
 
 
 
