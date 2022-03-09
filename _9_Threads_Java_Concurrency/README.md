@@ -1431,7 +1431,7 @@ synchronized (obj2) {
 
 <img src="https://img.shields.io/badge/-14. volatile %20-blue" height=40px>
 
-<img src="https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG")
+<img src="https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG" height=400px width=400px>
 
 
 ![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
@@ -1502,15 +1502,7 @@ This doesn't come without a cost.
 If we get consistency we loose on performance, because if we decalre all our shared variables as volatile, 
 the perfromance of our application will suffer.
 
-
-
-
-links to Volatile : </br>
-https://www.youtube.com/watch?v=V2hC-g6FoGc  </br>
 https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </br>
-https://www.youtube.com/watch?v=WH5UvQJizH0&ab_channel=DefogTech </br>
-https://www.youtube.com/watch?v=y8_jrkHEZpg&ab_channel=ZarigaTongy </br>
-https://www.youtube.com/watch?v=SC2jXxOPe5E&ab_channel=AndreasHaufler </br>
 
 [Questions:](#-) </br>
 1. What is a volatile keyword in Java?
