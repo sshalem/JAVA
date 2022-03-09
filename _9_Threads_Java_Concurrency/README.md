@@ -1446,10 +1446,13 @@ Lets look on the example where we have a Shared Variable which is stored in the 
 
 On the other hand , if one Thread is trying to write data into that variable, the visibility of that write will be done only at the cache level, so if Thread 2 will want to modify the variable , the new value will be seen only by Thread 2, because it's stored n the Cache level of CPU2. This change will be propagate to the Main Memory at some time (Or might never , if it's in a while loop that continuosly reads from cache) 
 
+<img src="https://user-images.githubusercontent.com/36256986/157331694-119956ed-05e2-43f4-a0af-784b9da74069.PNG" height=350px width=700px>
+
 ![Read_Write_to_cache](https://user-images.githubusercontent.com/36256986/157331694-119956ed-05e2-43f4-a0af-784b9da74069.PNG)
 
 
 
+<img src="https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG" height=350px width=700px>
 
 ![Read_Write_Volatile](https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG)
 
