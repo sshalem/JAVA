@@ -1430,7 +1430,21 @@ synchronized (obj2) {
 ###### 14
 
 <img src="https://img.shields.io/badge/-14. volatile %20-blue" height=40px>
- 
+
+[Questions:](#-) </br>
+1. What is a volatile keyword in Java?
+2. when to use the volatile keyword on a variable in Java?
+
+[Answers:](#-) </br>
+1. The [**_volatile_**](#-) keyword in Java is used as an indicator to Java compiler and Thread that do not [cache](#-) (L1, L2, L3) the value of this variable and always read it from the [**_main memory_**](#-) (RAM memory). </br>
+2. Volatile used to solve visibilty problems </br>
+
+[Let's take a look in 2 situations:](#-) </br>
+1. Visibility - where the value that is shared is a boolean 
+2. Synchronization - where a int number is shared and used as a counter (Read-Modify-Write operation)
+
+### Background for RAM (Main Memory) and CACHE Memory
+
 In a multi-threaded application where the threads operate on _**non-volatile**_ variables, each thread may copy variables from </br>
 [**Main Memory (RAM)**](#-) into a [**CPU CACHE Memory**](#-) while working on them, for performance reasons. </br>
 If your computer contains more than one CPU, each thread may run on a different CPU. </br>
@@ -1491,17 +1505,7 @@ the perfromance of our application will suffer. </br>
 
 https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </br>
 
-[Questions:](#-) </br>
-1. What is a volatile keyword in Java?
-2. when to use the volatile keyword on a variable in Java?
 
-[Answers:](#-) </br>
-1. The [**_volatile_**](#-) keyword in Java is used as an indicator to Java compiler and Thread that do not [cache](#-) (L1, L2, L3) the value of this variable and always read it from the [**_main memory_**](#-) (RAM memory). </br>
-2. Volatile used to solve visibilty problems </br>
-
-[Let's take a look in 2 situations:](#-) </br>
-1. Visibility - where the value that is shared is a boolean 
-2. Synchronization - where a int number is shared and used as a counter (Read-Modify-Write operation)
 
 
 
