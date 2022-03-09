@@ -1430,11 +1430,7 @@ synchronized (obj2) {
 ###### 14
 
 <img src="https://img.shields.io/badge/-14. volatile %20-blue" height=40px>
-
-![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
-
-<img src ="https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG" height=350px width=250px>
-     
+ 
 In a multi-threaded application where the threads operate on non-volatile variables, each thread may copy variables from </br>
 [**Main Memory (RAM)**](#-) into a [**CPU CACHE Memory**](#-) while working on them, for performance reasons. </br>
 If your computer contains more than one CPU, each thread may run on a different CPU. </br>
@@ -1443,11 +1439,14 @@ That means, that each thread may copy the variables into the CPU CACHE of **_dif
 RAM memory is located on a seperate chip on the Mother Board, so CPU takes some time to access the shared variables. </br>
 In order to reduce this time (and Improving the performance , CHIP Designeres add extra memory layer between the CPU and the RAM , with a smaller size , but with very small access time. This is the [**CACHE Memory**](#-).
 
+![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
+
 [**CACHE Memory**](#-) is embedded in the CPU Chip, it has multiple layers (L1, L2 ,L3) 
 
 ### [Compared access time of RAM and Cache:](#-) </br>
 1. RAM   : Usually, the access time of CPU is around ~100ns
 2. CACHE : Usually, The access time of CPU is around ~7ns 
+
 
 Lets look on the example where we have a Shared Variable which is stored in the main memory. </br>
 We have 2 Threads that are trying to access this variable. </br>
