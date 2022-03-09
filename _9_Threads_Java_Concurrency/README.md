@@ -1431,7 +1431,7 @@ synchronized (obj2) {
 
 <img src="https://img.shields.io/badge/-14. volatile %20-blue" height=40px>
  
-In a multi-threaded application where the threads operate on non-volatile variables, each thread may copy variables from </br>
+In a multi-threaded application where the threads operate on _**non-volatile**_ variables, each thread may copy variables from </br>
 [**Main Memory (RAM)**](#-) into a [**CPU CACHE Memory**](#-) while working on them, for performance reasons. </br>
 If your computer contains more than one CPU, each thread may run on a different CPU. </br>
 That means, that each thread may copy the variables into the CPU CACHE of **_different_** CPUs.
