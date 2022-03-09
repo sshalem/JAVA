@@ -1433,11 +1433,21 @@ synchronized (obj2) {
 
 ![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
 
+<img src ="https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG" height=350px width=250px>
+     
 In a multi-threaded application where the threads operate on non-volatile variables, each thread may copy variables from </br>
 [**Main Memory (RAM)**](#-) into a [**CPU CACHE Memory**](#-) while working on them, for performance reasons. </br>
 If your computer contains more than one CPU, each thread may run on a different CPU. </br>
 That means, that each thread may copy the variables into the CPU CACHE of **_different_** CPUs.
 
+RAM memory is located on a seperate chip on the Mother Board, so CPU takes some time to access the shared variables. </br>
+In order to reduce this time (and Improving the performance , CHIP Designeres add extra memory layer between the CPU and the RAM , with a smaller size , but with very small access time. This is the [**CACHE Memory**](#-).
+
+[**CACHE Memory**](#-) is embedded in the CPU Chip, it has multiple layers (L1, L2 ,L3) 
+
+### [Compared access time of RAM and Cache:](#-) </br>
+1. RAM   : Usually, the access time of CPU is around ~100ns
+2. CACHE : Usually, The access time of CPU is around ~7ns 
 
 Lets look on the example where we have a Shared Variable which is stored in the main memory. </br>
 We have 2 Threads that are trying to access this variable. </br>
@@ -1455,14 +1465,7 @@ This change will be propagate to the Main Memory at some time (Or might never , 
 In the example ,we have 2 Threads that execute concurrently. </br>
 In terms of memory, they have their own Stack Area, and if they have to access some shared variables , the CPU needs to access the [**Main Memory (RAM Memory)**](#-).
 
-RAM memory is located on a seperate chip on the Mother Board, so CPU takes some time to access the shared variables. </br>
-In order to reduce this time (and Improving the performance , CHIP Designeres add extra memory layer between the CPU and the RAM , with a smaller size , but with very small access time. This is the [**CACHE Memory**](#-).
 
-[**CACHE Memory**](#-) is embedded in the CPU Chip, it has multiple layers (L1, L2 ,L3) 
-
-### [Compared access time of RAM and Cache:](#-) </br>
-RAM   : Usually, the access time of CPU is around ~100ns.
-CACHE : Usually, The access time of CPU is around ~7ns 
 
 ****
 
