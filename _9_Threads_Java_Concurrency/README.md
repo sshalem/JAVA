@@ -1466,10 +1466,12 @@ There is a delay between the [CACHE](#-) and the [Memory](#-) update.
 
 <img src="https://user-images.githubusercontent.com/36256986/157331694-119956ed-05e2-43f4-a0af-784b9da74069.PNG" height=350px width=700px>
 
-If thread 1 is continuously trying to read that variable in a hot loop, it will not see the updated value for that variable, 
-hence , Thread 1 continuously reads it's own value from the [Cache](#-), and the shared variable is not [VISIBLE](#-). 
+If thread 1 is continuously trying to read that variable in a hot loop, it will not see the updated value for that variable, </br>
+hence , Thread 1 continuously reads it's own value from the [Cache](#-), and the shared variable is not [VISIBLE](#-). </br>
 Thats the main problem , [**VISIBILITY**](#-) across Threads. </br>
-So , Thread 1 cannot see the updated value for that shared variable , because it continuously reads it's own value from the Cache in which it's run.
+So , Thread 1 cannot see the updated value for that shared variable , because it continuously reads it's own value from the Cache in which it's run. </br>
+
+### [**VOLATILE**](#-)
 
 For that reason , the [**VOLATILE**](#-) keyword has been introduced.
 
