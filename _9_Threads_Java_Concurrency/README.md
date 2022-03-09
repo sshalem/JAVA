@@ -1448,34 +1448,17 @@ In order to reduce this time (and Improving the performance , CHIP Designeres ad
 2. CACHE : Usually, The access time of CPU is around ~7ns 
 
 
-Lets look on the example where we have a Shared Variable which is stored in the main memory. </br>
-We have 2 Threads that are trying to access this variable. </br>
-If there are multiple read operations (extensive way ,like : ```while(true)``` loop)) from the CPU, then the CPU will try to [optimize](#-) that operation by storing this shared variable in the cache. That way it will reduce the access time.
-
-<img src="https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG" height=350px width=700px>
-
-On the other hand , if one Thread is trying to [write](#-) data into that variable, the [visibility](#-) of that [write](#-) will be done only at the [cache](#-) level, so if Thread 2 will want to modify the variable , the new value will be seen only by Thread 2, because it's stored in the Cache level of CPU2. </br>
-This change will be propagate to the Main Memory at some time (Or might never , if it's in a while loop that continuosly reads from cache) .
-
-<img src="https://user-images.githubusercontent.com/36256986/157331694-119956ed-05e2-43f4-a0af-784b9da74069.PNG" height=350px width=700px>
-
-<img src="https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG" height=350px width=700px>
-
-In the example ,we have 2 Threads that execute concurrently. </br>
-In terms of memory, they have their own Stack Area, and if they have to access some shared variables , the CPU needs to access the [**Main Memory (RAM Memory)**](#-).
-
-
-
 ****
 
 In this example we have a [shared variable](#-) that is Stored in the RAM (int, string), and both Threads are trying to Read that variable. </br>
-If they are doing multiple Read operations in a very extensive way (like [while(true)](#-) loop) of read operations , that is invoked on a CPU level, the [CPU will try to **optimze** that operation by storing that shared variable in the **CACHE Memory** of the CPU](#-). </br>
+If they are doing multiple Read operations in a very extensive way (like [while(true)](#-) loop) of read operations , </br>
+that is invoked on a CPU level, the [CPU will try to **optimze** that operation by storing that shared variable in the **CACHE Memory** of the CPU](#-). </br>
 That way it will reduce the acess time.
 
 <img src="https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG" height=350px width=700px>
 
 
-On the other hand, if one Thread is trying to [Write](#-) data into that variable, the visibility of that [Write](#-) for a specific amount of time,
+On the other hand, if one Thread is trying to [Write](#-) data into that variable, the visibility of that [Write](#-) for a specific amount of time, </br>
 will be done only on the [CACHE](#-) level. </br>
 So if Thread 2 wants to [Read/Modify](#-) that variable ,the new value will be seen only by the Thread 2 because it will be stored in the [CACHE](#-) level.</br>
 This change will be propagated to the [RAM](#-) at some point, BUT this doesn't happen immidiatly.</br>
@@ -1491,16 +1474,16 @@ So , Thread 1 cannot see the updated value for that shared variable , because it
 For that reason , the [**VOLATILE**](#-) keyword has been introduced.
 
 If we have a variable that is marked with the [**volatile**](#-) keyword and you want to Read data from it, </br>
-the Read will be done directly from the [RAM](#-) (main memory).
-The [CACHE](#-) will not impact this read operation at all.
-and also if you want to [write](#-) data into the variable , the [write](#-) will be [stored directly in the RAM](#-) .
-In this way, we have a predictable output of our program and we don't risk having this cache level inconsistency.
+the Read will be done directly from the [RAM](#-) (main memory). </br>
+The [CACHE](#-) will not impact this read operation at all. </br>
+and also if you want to [write](#-) data into the variable , the [write](#-) will be [stored directly in the RAM](#-) . </br>
+In this way, we have a predictable output of our program and we don't risk having this cache level inconsistency. </br>
 
 <img src="https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG" height=350px width=700px>
 
-This doesn't come without a cost.
-If we get consistency we loose on performance, because if we decalre all our shared variables as volatile, 
-the perfromance of our application will suffer.
+This doesn't come without a cost. </br>
+If we get consistency we loose on performance, because if we decalre all our shared variables as volatile,  </br>
+the perfromance of our application will suffer. </br>
 
 ****
 
