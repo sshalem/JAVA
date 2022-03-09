@@ -1433,52 +1433,39 @@ synchronized (obj2) {
 
 ![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
 
-In a multithreaded application where the threads operate on non-volatile variables, each thread may copy variables from main memory into a CPU cache while working on them, for performance reasons. If your computer contains more than one CPU, each thread may run on a different CPU. That means, that each thread may copy the variables into the CPU cache of different CPUs.
-
-The access time of the CPU to cahce memory is ~7ns 
-
-Lets look on the example where we have a Shared Variable which is stored in the main memory. We have 2 Threads that are trying to access this variable. If there are multiple read operations (Like while loop for example) from the CPU, then the CPU will try to optimize that operation by storing this shared variable in the cache. That way it will reduce the access time.
-
-<img src="https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG" height=400px width=700px>
-
-![Read_Read_to_cache](https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG)
+In a multi-threaded application where the threads operate on non-volatile variables, each thread may copy variables from [**Main Memory (RAM)**](#-) into a CPU cache while working on them, for performance reasons. If your computer contains more than one CPU, each thread may run on a different CPU. </br>
+That means, that each thread may copy the variables into the CPU cache of different CPUs.
 
 
-On the other hand , if one Thread is trying to write data into that variable, the visibility of that write will be done only at the cache level, so if Thread 2 will want to modify the variable , the new value will be seen only by Thread 2, because it's stored n the Cache level of CPU2. This change will be propagate to the Main Memory at some time (Or might never , if it's in a while loop that continuosly reads from cache) 
+Lets look on the example where we have a Shared Variable which is stored in the main memory. </br>
+We have 2 Threads that are trying to access this variable. </br>
+If there are multiple read operations (extensive way ,like : ```while(true)``` loop)) from the CPU, then the CPU will try to [optimize](#-) that operation by storing this shared variable in the cache. That way it will reduce the access time.
+
+<img src="https://user-images.githubusercontent.com/36256986/157331981-0287662a-1f82-495b-9306-bd7e9249a7d8.PNG" height=350px width=700px>
+
+On the other hand , if one Thread is trying to [write](#-) data into that variable, the [visibility](#-) of that [write](#-) will be done only at the [cache](#-) level, so if Thread 2 will want to modify the variable , the new value will be seen only by Thread 2, because it's stored n the Cache level of CPU2. </br>
+This change will be propagate to the Main Memory at some time (Or might never , if it's in a while loop that continuosly reads from cache) .
 
 <img src="https://user-images.githubusercontent.com/36256986/157331694-119956ed-05e2-43f4-a0af-784b9da74069.PNG" height=350px width=700px>
 
-![Read_Write_to_cache](https://user-images.githubusercontent.com/36256986/157331694-119956ed-05e2-43f4-a0af-784b9da74069.PNG)
-
-
-
 <img src="https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG" height=350px width=700px>
 
-![Read_Write_Volatile](https://user-images.githubusercontent.com/36256986/157331730-440c3d6a-e317-4612-8669-cf227c19e9f6.PNG)
+In the example ,we have 2 Threads that execute concurrently. </br>
+In terms of memory, they have their own Stack Area, and if they have to access some shared variables , the CPU needs to access the [**Main Memory (RAM Memory)**](#-).
 
+RAM memory is located on a seperate chip on the Mother Board, so CPU takes some time to access the shared variables. </br>
+In order to reduce this time (and Improving the performance , CHIP Designeres add extra memory layer between the CPU and the RAM , with a smaller size , but with very small access time. This is the [**CACHE Memory**](#-).
 
-Let's say we have 2 Threads that execute concurrently.
-In terms of memory, they have thier own Stack Area, and if they have to access some shared variables , 
-the CPU needs to access the Main Memory (RAM Memory).
+[**CACHE Memory**](#-) is embedded in the CPU Chip, it has multiple layers (L1, L2 ,L3) 
 
-RAM memory is located on a seperate chip on the Mother Board, so CPU takes some time to access the shared variables.
-Usually, that access time is around ~100ns.
-
-This is long time in terms of UI level for example.
-
-In order to reduce this time (and Improving the performance) , CHIP Designeres add extra memory layer 
-between the CPU and the RAM , with a smaller size , but with very small access time.
-This is the CACHE Memory.
-
-Cache Memory is embedded in the CPU Chip, it has multiple layers (L1, L2 ,L3) 
-The access time of CPU to cache memory is around ~7ns.
+### [Compared access time of RAM and Cache:](#-) </br>
+RAM   : Usually, the access time of CPU is around ~100ns.
+CACHE : Usually, The access time of CPU is around ~7ns 
 
 ****
 
-Let's say we have a shared variable that is Stored in the RAM (int, string).
-and both Threads are trying to read that variable.
-If they are doing the read in a very extensive way (like while(true) loop) of read operations , 
-invoked on a CPU level, the CPU will try to optimze that operation by storing that shared variable in the cache memory of the CPU.
+In this example we have a [shared variable](#-) that is Stored in the RAM (int, string), and both Threads are trying to read that variable. </br>
+If they are doing the read in a very extensive way (like [while(true)](#-) loop) of read operations , that is invoked on a CPU level, the [CPU will try to optimze that operation by storing that shared variable in the **CACHE Memory** of the CPU](#-). </br>
 That way it will reduce the acess time.
 
 On the other hand, if one Thread is trying to write data into that variable, the visibility of that write for a specific amount of time,
