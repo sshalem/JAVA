@@ -1433,8 +1433,10 @@ synchronized (obj2) {
 
 ![Memory_Cache](https://user-images.githubusercontent.com/36256986/157329141-b3459c9f-edb9-497f-b6b9-afce374b99b8.PNG)
 
-In a multi-threaded application where the threads operate on non-volatile variables, each thread may copy variables from [**Main Memory (RAM)**](#-) into a CPU cache while working on them, for performance reasons. If your computer contains more than one CPU, each thread may run on a different CPU. </br>
-That means, that each thread may copy the variables into the CPU cache of different CPUs.
+In a multi-threaded application where the threads operate on non-volatile variables, each thread may copy variables from </br>
+[**Main Memory (RAM)**](#-) into a [**CPU CACHE Memory**](#-) while working on them, for performance reasons. </br>
+If your computer contains more than one CPU, each thread may run on a different CPU. </br>
+That means, that each thread may copy the variables into the CPU CACHE of **_different_** CPUs.
 
 
 Lets look on the example where we have a Shared Variable which is stored in the main memory. </br>
