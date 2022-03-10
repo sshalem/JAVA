@@ -1505,6 +1505,195 @@ https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </b
 1. Shared variable is a boolean (**with** and **w/o** volatile)	
 2. Shared variable is int number inside while for loop (**with** and **w/o** volatile). Synchronization - where a int number is shared and used as a counter (Read-Modify-Write operation)
 
+### Shared variable as boolean
+
+```java
+public class SharedResource {
+
+	public static volatile boolean running = false;
+}
+
+public class BooleanThreadOne implements Runnable {
+
+	@Override
+	public void run() {
+		try {
+			execute();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void execute() throws InterruptedException {
+
+		print(" running = false, waiting");
+
+		while (!SharedResource.running) {
+		}
+
+		print(" : started");
+
+		Thread.sleep(randomSleepTime());
+
+		while (SharedResource.running) {
+		}
+
+		print(" : stopped");
+
+	}
+
+	private int randomSleepTime() {
+		Random random = new Random();
+		int sleepTime = 2000 + random.nextInt(3000);
+		return sleepTime;
+	}
+
+	private void print(String message) {
+		System.out.println(LocalTime.now() + " : " + Thread.currentThread().getName() + message);
+	}
+
+}
+
+
+public class BooleanThreadTwo implements Runnable {
+
+	@Override
+	public void run() {
+		try {
+			execute();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void execute() throws InterruptedException {
+
+		print(" running = false, waiting");
+
+		while (!SharedResource.running) {
+		}
+
+		print(" : started");
+
+		Thread.sleep(randomSleepTime());
+
+		while (SharedResource.running) {
+		}
+
+		print(" : stopped");
+
+	}
+
+	private int randomSleepTime() {
+		Random random = new Random();
+		int sleepTime = 2000 + random.nextInt(3000);
+		return sleepTime;
+	}
+
+	private void print(String message) {
+		System.out.println(LocalTime.now() + " : " + Thread.currentThread().getName() + message);
+	}
+}
+
+public class MainVolatileBoolean {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		BooleanThreadOne booleanThreadOne = new BooleanThreadOne();
+		BooleanThreadTwo booleanThreadTwo = new BooleanThreadTwo();
+
+		Thread t1 = new Thread(booleanThreadOne, "[T1]");
+		Thread t2 = new Thread(booleanThreadTwo, "[T2]");
+
+		t1.start();
+		t2.start();
+
+		print(" : running = " + SharedResource.running);
+
+		Thread.sleep(randomSleepTime());
+
+		print(" : Started");
+		print(" : set running = true");
+
+		SharedResource.running = true;
+
+		Thread.sleep(randomSleepTime());
+
+		if (SharedResource.running) {
+			SharedResource.running = false;
+			print(" : set running = false");
+		}
+
+		print(" : stopped");
+
+	}
+
+	private static int randomSleepTime() {
+		Random random = new Random();
+		int sleepTime = 2000 + random.nextInt(3000);
+		return sleepTime;
+	}
+
+	private static void print(String message) {
+		System.out.println(LocalTime.now() + " : " + Thread.currentThread().getName() + message);
+	}
+}
+
+
+import java.time.LocalTime;
+import java.util.Random;
+
+public class MainVolatileBoolean {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		BooleanThreadOne booleanThreadOne = new BooleanThreadOne();
+		BooleanThreadTwo booleanThreadTwo = new BooleanThreadTwo();
+
+		Thread t1 = new Thread(booleanThreadOne, "[T1]");
+		Thread t2 = new Thread(booleanThreadTwo, "[T2]");
+
+		t1.start();
+		t2.start();
+
+		print(" : running = " + SharedResource.running);
+
+		Thread.sleep(randomSleepTime());
+
+		print(" : Started");
+		print(" : set running = true");
+
+		SharedResource.running = true;
+
+		Thread.sleep(randomSleepTime());
+
+		if (SharedResource.running) {
+			SharedResource.running = false;
+			print(" : set running = false");
+		}
+
+		print(" : stopped");
+
+	}
+
+	private static int randomSleepTime() {
+		Random random = new Random();
+		int sleepTime = 2000 + random.nextInt(3000);
+		return sleepTime;
+	}
+
+	private static void print(String message) {
+		System.out.println(LocalTime.now() + " : " + Thread.currentThread().getName() + message);
+	}
+
+}
+
+
+
+```
+
+### Shared variable as int number
+
 ```java
 public class Main {
 
@@ -1637,6 +1826,8 @@ public class Main {
 		t2.start();
 	}
 }
+
+
 
 ```
 
