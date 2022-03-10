@@ -1431,17 +1431,13 @@ synchronized (obj2) {
 
 <img src="https://img.shields.io/badge/-14. volatile %20-blue" height=40px>
 
-[Questions:](#-) </br>
+### [Questions:](#-) </br>
 1. What is a volatile keyword in Java?
 2. when to use the volatile keyword on a variable in Java?
 
-[Answers:](#-) </br>
+### [Answers:](#-) </br>
 1. The [**_volatile_**](#-) keyword in Java is used as an indicator to Java compiler and Thread that do not [cache](#-) (L1, L2, L3) the value of this variable and always read it from the [**_main memory_**](#-) (RAM memory). </br>
-2. Volatile used to solve visibilty problems </br>
-
-[Let's take a look in 2 situations:](#-) </br>
-1. Visibility - where the value that is shared is a boolean 
-2. Synchronization - where a int number is shared and used as a counter (Read-Modify-Write operation)
+2. Volatile used to solve [**VISIBILITY**](#-) problems </br>
 
 ### Background for RAM (Main Memory) and CACHE Memory
 
@@ -1505,11 +1501,9 @@ the perfromance of our application will suffer. </br>
 
 https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </br>
 
-- I will show 2 scenarios for :
-1. Shared variable is a boolean (with and w/o volatile)	
-2. Shared variable is int number inside while for loop (with and w/o volatile)
-
-
+### [I will show 2 situations:](#-) </br>
+1. Shared variable is a boolean (**with** and **w/o** volatile)	
+2. Shared variable is int number inside while for loop (**with** and **w/o** volatile). Synchronization - where a int number is shared and used as a counter (Read-Modify-Write operation)
 
 ```java
 public class Main {
