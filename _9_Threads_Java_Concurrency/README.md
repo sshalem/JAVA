@@ -1786,7 +1786,11 @@ public class Main {
 
 ###### 15
 
-<img src="https://img.shields.io/badge/-15 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-15. Atomic %20-blue" height=40px>
+
+https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html  </br>
+https://stackoverflow.com/questions/15054086/what-does-atomic-mean-in-programming </br>
+https://www.baeldung.com/java-atomic-variables </br>
 
 ```java
 ```
