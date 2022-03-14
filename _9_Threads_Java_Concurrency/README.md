@@ -1690,7 +1690,7 @@ public class MainVolatileBoolean {
 
 ```
 
-[SharedResourece running is **NOT volatile**](#-)
+### SharedResourece running is [**NOT volatile**](#-)
 
 ```java
 public class SharedResource {
@@ -1711,7 +1711,7 @@ public class SharedResource {
 10:44:59.802543900 : main : stopped
 ```
 
-[the SharedResourece running is **volatile**](#-)
+### the SharedResourece running is [**volatile**](#-)
 
 ```java
 public class SharedResource {
