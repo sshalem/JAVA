@@ -19,7 +19,7 @@
 |  12 |[Lock , ReadWriteLock](#12)   | 
 |  13 |[DeadLock ,Yield](#13)   | 
 |  14 |[Volatile](#14)   | 
-|  15 |[Atomic (Integer , Long, Boolean, Reference)](#15)   | 
+|  15 |[Atomic (Integer, Long, Double, Boolean, Reference)](#15)   | 
 |  16 |[Priority of Threads](#16)   | 
 |  17 |[ThreadPoolExecutor](#17)   | 
 |  18 |[Executer Interface, ExecutorService Interface, Executers Class](#18)   | 
@@ -1786,7 +1786,7 @@ public class Main {
 
 ###### 15
 
-<img src="https://img.shields.io/badge/-15. Atomic %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-15. Atomic (Integer, Long, Double, Boolean, Reference) %20-blue" height=40px>
 
 https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html  </br>
 https://stackoverflow.com/questions/15054086/what-does-atomic-mean-in-programming </br>
