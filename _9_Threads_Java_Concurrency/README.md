@@ -1699,6 +1699,18 @@ public class SharedResource {
 }
 ```
 
+### Console output shows : 
+
+```java
+10:44:54.470020 : [T2] : running = false, waiting
+10:44:54.470020 : [T1] : running = false, waiting
+10:44:54.469022300 : main : running = false
+10:44:56.484864500 : main : Started
+10:44:56.484864500 : main : set running = true
+10:44:59.802543900 : main : set running = false
+10:44:59.802543900 : main : stopped
+```
+
 [the SharedResourece running is **volatile**](#-)
 
 ```java
@@ -1706,6 +1718,22 @@ public class SharedResource {
 
 	public static volatile boolean running = false;
 }
+```
+
+### Console output shows : 
+
+```java
+11:41:32.659859100 : [T1] : running = false, waiting
+11:41:32.659859100 : [T2] : running = false, waiting
+11:41:32.659859100 : main : running = false
+11:41:35.122331700 : main : Started
+11:41:35.122331700 : main : set running = true
+11:41:35.122331700 : [T2] : started
+11:41:35.122331700 : [T1] : started
+11:41:39.478382500 : main : set running = false
+11:41:39.478382500 : main : stopped
+11:41:39.478382500 : [T1] : stopped
+11:41:39.478382500 : [T2] : stopped
 ```
 
 ### [Shared variable as int number](#-)
