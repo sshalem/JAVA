@@ -1507,12 +1507,12 @@ https://www.youtube.com/watch?v=V2hC-g6FoGc&ab_channel=VisualComputerScience </b
 
 ### [Shared variable as boolean](#-)
 
+see at the bottom of the section the output of the code when:
+1. boolean is not volatile
+2. boolean is volatile
+
+
 ```java
-public class SharedResource {
-
-	public static volatile boolean running = false;
-}
-
 public class BooleanThreadOne implements Runnable {
 
 	@Override
@@ -1688,8 +1688,24 @@ public class MainVolatileBoolean {
 
 }
 
+```
 
+[SharedResourece running is **NOT volatile**](#-)
 
+```java
+public class SharedResource {
+
+	public static boolean running = false;
+}
+```
+
+[the SharedResourece running is **volatile**](#-)
+
+```java
+public class SharedResource {
+
+	public static volatile boolean running = false;
+}
 ```
 
 ### [Shared variable as int number](#-)
