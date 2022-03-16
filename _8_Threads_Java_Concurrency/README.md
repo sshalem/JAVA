@@ -1791,8 +1791,11 @@ public class Main {
 * [Question:](#-)</br>
 	* What is Atomic?
 
-[Answer:](#-)</br>
-
+* [Answer:](#-)</br>
+	* In programming, an **_Atomic_** action is one that effectively happens all at once</br>
+	An atomic action cannot stop in the middle:
+		* it either happens completely,
+		*  or it doesn't happen at all
 
 https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html  </br>
 https://stackoverflow.com/questions/15054086/what-does-atomic-mean-in-programming </br>
