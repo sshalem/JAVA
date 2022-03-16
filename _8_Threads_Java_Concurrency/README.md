@@ -1798,8 +1798,7 @@ public class Main {
 		* or it doesn't happen at all
 
 
-https://stackoverflow.com/questions/15054086/what-does-atomic-mean-in-programming </br>
-from [www.baeldung.com](https://www.baeldung.com/java-atomic-variables), Let's have a look at the class:
+Let's have a look at the class (example from [www.baeldung.com](https://www.baeldung.com/java-atomic-variables) ):
 
 ```java
 public class Counter {
@@ -1813,7 +1812,8 @@ public class Counter {
 
 * In the case of a single-threaded environment, this works perfectly. </br>
 However, as soon as we allow more than one thread to write, we start getting inconsistent results.
-* This is because of the simple increment operation [**(counter++)**](#-) , which may look like an [**atomic**](#-) operation, but in fact is a combination of three operations:</br> 
+* This is because of the simple increment operation [**(counter++)**](#-). It's [**NOT ATOMIC**](#-) operation (It may look like an [**atomic**](#-) operation) </br>
+It is a combination of three operations:
 	1. obtaining the value, 
 	2. incrementing, 
 	3. and writing the updated value back.
