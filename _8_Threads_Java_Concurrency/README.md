@@ -19,7 +19,7 @@
 |  12 |[Lock , ReadWriteLock](#12)   | 
 |  13 |[DeadLock ,Yield](#13)   | 
 |  14 |[Volatile](#14)   | 
-|  15 |[Atomic (Integer, Long, Double, Boolean, Reference)](#15)   | 
+|  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
 |  16 |[Priority of Threads](#16)   | 
 |  17 |[ThreadPoolExecutor](#17)   | 
 |  18 |[Executer Interface, ExecutorService Interface, Executers Class](#18)   | 
@@ -1786,7 +1786,7 @@ public class Main {
 
 ###### 15
 
-<img src="https://img.shields.io/badge/-15. Atomic (Integer, Long, Double, Boolean, Reference) %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-15. Atomic (Integer, Long, Boolean, Reference) %20-blue" height=40px>
 
 * [Question:](#-)</br>
 	* What is Atomic?
@@ -1814,10 +1814,16 @@ public class Counter {
 However, as soon as we allow more than one thread to write, we start getting inconsistent results.
 * This is because the simple increment operation [**(counter++)**](#-), is [**NOT ATOMIC**](#-) operation (even if it may look like an [**atomic**](#-) operation) </br>
 * It is a combination of three operations:
-1. obtaining the value, 
-2. incrementing, 
-3. and writing the updated value back.
+	1. obtaining the value, 
+	2. incrementing, 
+	3. and writing the updated value back.
 
+**_If two threads try to get and update the value at the same time, it may result in lost updates._**
+
+1. One of the ways to manage access to an object is to use :
+	* make the [synchronized](#-) method
+	* and make the counter variable as [volatile](#-)
+2. Seconed way is to use Atomic variables like AtomicInteger, AtomicLong, AtomicBoolean 
 
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
