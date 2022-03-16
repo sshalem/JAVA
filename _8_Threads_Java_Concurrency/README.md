@@ -1823,7 +1823,7 @@ However, as soon as we allow more than one thread to write, we start getting inc
 1. One of the ways to manage access to an object is to use :
 	* make the [synchronized](#-) method
 	* and make the counter variable as [volatile](#-)
-2. Seconed way is to use Atomic variables like AtomicInteger, AtomicLong, AtomicBoolean 
+2. Seconed way is to use Atomic variables like [AtomicInteger](#-), [AtomicLong](#-), [AtomicBoolean](#-) 
 
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
