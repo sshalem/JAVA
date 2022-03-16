@@ -1799,10 +1799,26 @@ public class Main {
 
 
 https://stackoverflow.com/questions/15054086/what-does-atomic-mean-in-programming </br>
-https://www.baeldung.com/java-atomic-variables </br>
+from [www.baeldung.com](https://www.baeldung.com/java-atomic-variables), Let's have a look at the class:
 
 ```java
+public class Counter {
+    int counter; 
+ 
+    public void increment() {
+        counter++;
+    }
+}
 ```
+
+* In the case of a single-threaded environment, this works perfectly. </br>
+However, as soon as we allow more than one thread to write, we start getting inconsistent results.
+* This is because of the simple increment operation [**(counter++)**](#-) , which may look like an [**atomic**](#-) operation, but in fact is a combination of three operations:</br> 
+1. obtaining the value, 
+2. incrementing, 
+3. and writing the updated value back.
+
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
