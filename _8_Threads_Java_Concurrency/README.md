@@ -1789,7 +1789,7 @@ public class Main {
 <img src="https://img.shields.io/badge/-15. Atomic (Integer, Long, Double, Boolean, Reference) %20-blue" height=40px>
 
 [Question:](#-)</br>
-What is Atomic?
+	* What is Atomic?
 
 [Answer:](#-)</br>
 
