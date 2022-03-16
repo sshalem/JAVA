@@ -1814,9 +1814,9 @@ public class Counter {
 * In the case of a single-threaded environment, this works perfectly. </br>
 However, as soon as we allow more than one thread to write, we start getting inconsistent results.
 * This is because of the simple increment operation [**(counter++)**](#-) , which may look like an [**atomic**](#-) operation, but in fact is a combination of three operations:</br> 
-1. obtaining the value, 
-2. incrementing, 
-3. and writing the updated value back.
+	1. obtaining the value, 
+	2. incrementing, 
+	3. and writing the updated value back.
 
 
 
