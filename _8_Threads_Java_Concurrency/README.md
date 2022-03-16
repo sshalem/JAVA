@@ -1812,11 +1812,11 @@ public class Counter {
 
 * In the case of a single-threaded environment, this works perfectly. </br>
 However, as soon as we allow more than one thread to write, we start getting inconsistent results.
-* This is because of the simple increment operation [**(counter++)**](#-). It's [**NOT ATOMIC**](#-) operation (It may look like an [**atomic**](#-) operation) </br>
-It is a combination of three operations:
-	1. obtaining the value, 
-	2. incrementing, 
-	3. and writing the updated value back.
+* This is because the simple increment operation [**(counter++)**](#-), is [**NOT ATOMIC**](#-) operation (even if it may look like an [**atomic**](#-) operation) </br>
+* It is a combination of three operations:
+1. obtaining the value, 
+2. incrementing, 
+3. and writing the updated value back.
 
 
 
