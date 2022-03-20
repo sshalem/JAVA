@@ -22,7 +22,7 @@
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
 |  16 |[Thread Scheduler & Priority of Threads](#16)   | 
 |  17 |[ThreadPoolExecutor](#17)   | 
-|  18 |[Executer Interface, ExecutorService Interface, Executers Class](#18)   | 
+|  18 |[ExecutorService , Executers Class](#18)   | 
 |  19 |[Future , CompletableFuture](#19)   | 
 |  20 |[Fork/Join framework](#20)   | 
 |  21 |[BlockingQueue](#21)   | 
