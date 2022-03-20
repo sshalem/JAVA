@@ -1968,10 +1968,10 @@ public static int NORM_PRIORITY
 public static int MAX_PRIORITY
 ```
 
-Default priority of a thread is 5 ([NORM_PRIORITY](#-)). The value of [MIN_PRIORITY](#-) is 1 and the value of [MAX_PRIORITY](#-) is 10. </br>
-The default priority for the main thread is always 5, it can be changed later. </br>
-The default priority for all other threads depends on the priority of the parent thread </br>
-
+* Default priority of a thread is 5 ([NORM_PRIORITY](#-)). The value of [MIN_PRIORITY](#-) is 1 and the value of [MAX_PRIORITY](#-) is 10. </br>
+* The default priority for the main thread is always 5, it can be changed later. </br>
+* The default priority for all other threads depends on the priority of the parent thread </br>
+ * If two threads have the same priority then we can’t expect which thread will execute first. It depends on the thread scheduler’s algorithm(Round-Robin, First Come First Serve, etc)
 
 ```java
 ```
