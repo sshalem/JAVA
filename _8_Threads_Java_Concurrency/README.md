@@ -1968,7 +1968,8 @@ public static int NORM_PRIORITY
 public static int MAX_PRIORITY
 ```
 
-Default priority of a thread is 5 ([NORM_PRIORITY](#-)). The value of [MIN_PRIORITY](#-) is 1 and the value of [MAX_PRIORITY](#-) is 10.
+Default priority of a thread is 5 ([NORM_PRIORITY](#-)). The value of [MIN_PRIORITY](#-) is 1 and the value of [MAX_PRIORITY](#-) is 10. </br>
+Child Threads inherit from main Thread the priority number (which is 5). </br>
 
 ```java
 ```
