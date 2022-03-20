@@ -1938,7 +1938,8 @@ public class Main {
 	* What is a [Thread Scheduler](#-)?
 
 * Answer :
-	* A scheduler is implementation of scheduling algorithm that manages access of processes and Threads to some limited resource like the processor or some I/O channel. </br>
+	* [Thread Scheduler](#-) is part of the processor which executes Multiple-Threads on a single processor, randomly. </br>
+A scheduler is implementation of scheduling algorithm that manages access of processes and Threads to some limited resource like the processor or some I/O channel. </br>
 The goal of most scheduling algorithms is to provide some kind of load balancing for the available processes/threads that guarantees that each process/thread gets an appropriate time frame to access the requested resource exclusively.
 
 
