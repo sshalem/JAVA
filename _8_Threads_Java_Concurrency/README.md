@@ -1814,8 +1814,8 @@ public class Counter {
 However, as soon as we allow more than one thread to write, we start getting inconsistent results.
 * This is because the simple increment operation [**(counter++)**](#-), is [**NOT ATOMIC**](#-) operation (even if it may look like an [**atomic**](#-) operation) </br>
 * It is a combination of three operations:
-	1. obtaining the value, 
-	2. incrementing, 
+	1. obtaining (reading) the value, 
+	2. incrementing (Modifing), 
 	3. and writing the updated value back.
 
 **_If two threads try to get and update the value at the same time, it may result in lost updates._**
@@ -1825,6 +1825,7 @@ However, as soon as we allow more than one thread to write, we start getting inc
 	* and make the counter variable as [volatile](#-)
 2. Seconed way is to use Atomic variables like [AtomicInteger](#-), [AtomicLong](#-), [AtomicBoolean](#-) 
 
+[Atomic classes](#-) allow us to perform atomic operations, which are [thread-safe](#-), [**without using synchronization**](#-). An atomic operation is executed in one single machine level operation.
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
