@@ -1827,6 +1827,103 @@ However, as soon as we allow more than one thread to write, we start getting inc
 
 ### [**Atomic classes**](#-) allow us to perform atomic operations, which are [**_thread-safe_**](#-), [**_without_**](#-) using [**synchronization**](#-). </br>
 
+In this example , I use Synchronized , and the outcome </br>
+
+```java
+import java.util.concurrent.atomic.AtomicInteger;
+
+class Counter extends Thread {
+
+	int count = 0;
+
+	public synchronized void run() {
+
+		int max = 1_000_000;
+
+		for (int i = 0; i < max; i++) {
+			count.addAndGet(1);
+		}
+	}
+
+}
+
+public class Main {
+	public static void main(String[] args) throws InterruptedException {
+
+		Counter c = new Counter();
+
+		Thread first = new Thread(c, "First");
+		Thread second = new Thread(c, "Second");
+
+		first.start();
+		second.start();
+
+		first.join();
+		second.join();
+
+		System.out.println(c.count);
+	}
+}
+```
+
+### Console output shows : 
+
+we can see we got 2000000 , meaning each Thread hold th lock till his finished.</br>
+**first** Thread waits till his finished then other thread starts to 
+
+
+```java
+2000000
+```
+
+In this example , I use AtomicInteger , and the outcome is same as in previous example where I used [synchronized](#-)</br>
+
+```java
+import java.util.concurrent.atomic.AtomicInteger;
+
+class Counter extends Thread {
+
+	AtomicInteger count;
+
+	public Counter() {
+		count = new AtomicInteger();
+	}
+
+	public void run() {
+
+		int max = 1_000_000;
+
+		for (int i = 0; i < max; i++) {
+			count.addAndGet(1);
+		}
+	}
+
+}
+
+public class Main {
+	public static void main(String[] args) throws InterruptedException {
+
+		Counter c = new Counter();
+
+		Thread first = new Thread(c, "First");
+		Thread second = new Thread(c, "Second");
+
+		first.start();
+		second.start();
+
+		first.join();
+		second.join();
+
+		System.out.println(c.count);
+	}
+}
+
+```java
+2000000
+```
+
+### Console output shows : 
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
