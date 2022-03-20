@@ -1918,13 +1918,13 @@ public class Main {
 		System.out.println(c.count);
 	}
 }
-
-```java
-2000000
 ```
 
 ### Console output shows : 
 
+```java
+2000000
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
