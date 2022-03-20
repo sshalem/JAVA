@@ -2010,9 +2010,7 @@ public class Main {
 	}
 }
 ```
-### Console output shows : 
-
-results are not as expected
+### Console output shows  [results are not as expected](#-)
 
 ```java
 [T2] Inside the run() , priority :5
