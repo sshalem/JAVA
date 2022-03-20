@@ -1934,6 +1934,8 @@ public class Main {
 
 <img src="https://img.shields.io/badge/-16. Thread Scheduler & Priority of Threads %20-blue" height=40px>
 
+[JavaPoint explaination for Thread-Scheduler](https://www.javatpoint.com/thread-scheduler-in-java)
+
 * Question:
 	* What is a [Thread Scheduler](#-)?
 
@@ -1942,21 +1944,19 @@ public class Main {
 	* [Thread Scheduler](#-) is part of the processor which executes Multiple-Threads on a single processor, randomly.
 	* thread is only chosen by a [Thread Scheduler](#-) if it is in the [Runnable state](#-).
 	* If there is more than one thread in the [Runnable state](#-), it is up to the [Thread Scheduler](#-) to pick one of the threads and ignore the other ones.
-	* There are two factors for scheduling a thread i.e. Priority and Time of arrival.
-		* Priority: Priority of each thread lies between 1 to 10. If a thread has a higher priority, it means that thread has got a better chance of getting picked up by the thread scheduler.
-		* Time of Arrival: Suppose two threads of the same priority enter the runnable state, then priority cannot be the factor to pick a thread from these two threads. In such a case, arrival time of thread is considered by the thread scheduler. A thread that arrived first gets the preference over the other threads.
+	* There are two factors for scheduling a thread i.e. [Priority](#-) and [Time of Arrival](#-).
+		* [Priority](#-): Priority of each thread lies between 1 to 10. If a thread has a higher priority, it means that thread has got a better chance of getting picked up by the thread scheduler.
+		* [Time of Arrival](#-): Suppose two threads of the same priority enter the runnable state, then priority cannot be the factor to pick a thread from these two threads. In such a case, arrival time of thread is considered by the thread scheduler. A thread that arrived first gets the preference over the other threads.
 
 A scheduler is implementation of scheduling algorithm that manages access of processes and Threads to some limited resource like the processor or some I/O channel. </br>
-The goal of most scheduling algorithms is to provide some kind of load balancing for the available processes/threads that guarantees that each process/thread gets an appropriate time frame to access the requested resource exclusively.
 
+[JavaPoint explaination for Thread-Priority](https://www.javatpoint.com/priority-of-a-thread-in-java)
 
+* Question:
+	* What is a [Priority Of Threads](#-)?
 
-
-
-
-* Execution of Multiple Threads in a single CPU or Multiple CPU's, 
-* Whenever we create a Thread it has a default priority number. (Inherited from Main Thread)
-
+* Answer :
+	* 
 
 ```java
 ```
