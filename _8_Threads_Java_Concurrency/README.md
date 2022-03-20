@@ -1934,7 +1934,7 @@ public class Main {
 
 <img src="https://img.shields.io/badge/-16. Thread Scheduler & Priority of Threads %20-blue" height=40px>
 
-[JavaPoint explaination for Thread-Scheduler](https://www.javatpoint.com/thread-scheduler-in-java)
+### [JavaPoint explaination for Thread-Scheduler](https://www.javatpoint.com/thread-scheduler-in-java)
 
 * Question:
 	* What is a [Thread Scheduler](#-)?
@@ -1950,7 +1950,7 @@ public class Main {
 
 A scheduler is implementation of scheduling algorithm that manages access of processes and Threads to some limited resource like the processor or some I/O channel. </br>
 
-[JavaPoint explaination for Thread-Priority](https://www.javatpoint.com/priority-of-a-thread-in-java)
+### [JavaPoint explaination for Thread-Priority](https://www.javatpoint.com/priority-of-a-thread-in-java)
 
 * Question:
 	* What is a [Priority Of Threads](#-)?
