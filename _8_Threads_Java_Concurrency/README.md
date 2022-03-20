@@ -1825,7 +1825,8 @@ However, as soon as we allow more than one thread to write, we start getting inc
 	* and make the counter variable as [volatile](#-)
 2. Seconed way is to use Atomic variables like [AtomicInteger](#-), [AtomicLong](#-), [AtomicBoolean](#-) 
 
-[**Atomic classes**](#-) allow us to perform atomic operations, which are [**_thread-safe_**](#-), [**without using synchronization**](#-). An atomic operation is executed in one single machine level operation.
+[**Atomic classes**](#-) allow us to perform atomic operations, which are [**_thread-safe_**](#-), [**_without_**](#-) using [**synchronization**](#-). </br>
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
