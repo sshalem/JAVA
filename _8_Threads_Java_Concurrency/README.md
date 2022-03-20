@@ -1938,7 +1938,14 @@ public class Main {
 	* What is a [Thread Scheduler](#-)?
 
 * Answer :
-	* [Thread Scheduler](#-) is part of the processor which executes Multiple-Threads on a single processor, randomly. </br>
+	* [Thread Scheduler](#-) in Java is A component of Java that decides which thread to run or execute and which thread to wait 
+	* [Thread Scheduler](#-) is part of the processor which executes Multiple-Threads on a single processor, randomly.
+	* thread is only chosen by a [Thread Scheduler](#-) if it is in the [Runnable state](#-).
+	* If there is more than one thread in the [Runnable state](#-), it is up to the [Thread Scheduler](#-) to pick one of the threads and ignore the other ones.
+	* There are two factors for scheduling a thread i.e. Priority and Time of arrival.
+		* Priority: Priority of each thread lies between 1 to 10. If a thread has a higher priority, it means that thread has got a better chance of getting picked up by the thread scheduler.
+		* Time of Arrival: Suppose two threads of the same priority enter the runnable state, then priority cannot be the factor to pick a thread from these two threads. In such a case, arrival time of thread is considered by the thread scheduler. A thread that arrived first gets the preference over the other threads.
+
 A scheduler is implementation of scheduling algorithm that manages access of processes and Threads to some limited resource like the processor or some I/O channel. </br>
 The goal of most scheduling algorithms is to provide some kind of load balancing for the available processes/threads that guarantees that each process/thread gets an appropriate time frame to access the requested resource exclusively.
 
