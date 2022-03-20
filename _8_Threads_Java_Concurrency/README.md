@@ -1936,10 +1936,10 @@ public class Main {
 
 ### [JavaPoint explaination for Thread-Scheduler](https://www.javatpoint.com/thread-scheduler-in-java)
 
-* Question:
+* [Question](#-):
 	* What is a [Thread Scheduler](#-)?
 
-* Answer :
+* [Answer](#-) :
 	* [Thread Scheduler](#-) in Java is A component of Java that decides which thread to run or execute and which thread to wait 
 	* [Thread Scheduler](#-) is part of the processor which executes Multiple-Threads on a single processor, randomly.
 	* thread is only chosen by a [Thread Scheduler](#-) if it is in the [Runnable state](#-).
@@ -1976,6 +1976,13 @@ It depends on the thread scheduler’s algorithm([Round-Robin](#-), [First Come 
 
 ```java
 ```
+
+* [Question](#-)
+	* Why Priority in JAVA not working as expected?
+
+* [Answer](#-) :
+	* Thread priority is only a hint to OS task scheduler. Task scheduler will only try to allocate more resources to a thread with higher priority, however there are no explicit guarantees.
+A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/questions/27142551/thread-priority-does-not-work-as-expected) for answer)
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
