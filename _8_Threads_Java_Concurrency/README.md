@@ -1827,7 +1827,9 @@ However, as soon as we allow more than one thread to write, we start getting inc
 
 ### [**Atomic classes**](#-) allow us to perform atomic operations, which are [**_thread-safe_**](#-), [**_without_**](#-) using [**synchronization**](#-). </br>
 
-In this example , I use Synchronized , and the outcome </br>
+### [Example with sunchronize (w/o AtomicInteger) ](#-)</br>
+
+In this example , I use Synchronized , next example I will use only AtomicInteger , to show that it is Thread-safe as well (Even if we don't use synchronized) </br>
 
 ```java
 import java.util.concurrent.atomic.AtomicInteger;
@@ -1838,9 +1840,7 @@ class Counter extends Thread {
 
 	public synchronized void run() {
 
-		int max = 1_000_000;
-
-		for (int i = 0; i < max; i++) {
+		for (int i = 0; i < 1_000_000; i++) {
 			count.addAndGet(1);
 		}
 	}
@@ -1876,6 +1876,9 @@ we can see we got 2000000 , meaning each Thread hold th lock till his finished.<
 2000000
 ```
 
+
+### [Example AtomicInteger ](#-)</br>
+
 In this example , I use AtomicInteger , and the outcome is same as in previous example where I used [synchronized](#-)</br>
 
 ```java
@@ -1891,9 +1894,7 @@ class Counter extends Thread {
 
 	public void run() {
 
-		int max = 1_000_000;
-
-		for (int i = 0; i < max; i++) {
+		for (int i = 0; i < 1_000_000; i++) {
 			count.addAndGet(1);
 		}
 	}
