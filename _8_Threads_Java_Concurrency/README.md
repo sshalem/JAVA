@@ -1994,7 +1994,7 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 
 ###### 18
 
-<img src="https://img.shields.io/badge/-18.Executer Interface, ExecutorService Interface, Executers Class %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-18.ExecutorService , Executers Class %20-blue" height=40px>
 
 https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
 
