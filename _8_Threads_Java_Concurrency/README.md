@@ -20,7 +20,7 @@
 |  13 |[DeadLock ,Yield](#13)   | 
 |  14 |[Volatile](#14)   | 
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
-|  16 |[Priority of Threads](#16)   | 
+|  16 |[Thread Scheduler & Priority of Threads](#16)   | 
 |  17 |[ThreadPoolExecutor](#17)   | 
 |  18 |[Executer Interface, ExecutorService Interface, Executers Class](#18)   | 
 |  19 |[Future , CompletableFuture](#19)   | 
@@ -1932,7 +1932,23 @@ public class Main {
 
 ###### 16
 
-<img src="https://img.shields.io/badge/-16 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-16. Thread Scheduler & Priority of Threads %20-blue" height=40px>
+
+* Question:
+	* What is a [Thread Scheduler](#-)?
+
+* Answer :
+	* A scheduler is implementation of scheduling algorithm that manages access of processes and Threads to some limited resource like the processor or some I/O channel. </br>
+The goal of most scheduling algorithms is to provide some kind of load balancing for the available processes/threads that guarantees that each process/thread gets an appropriate time frame to access the requested resource exclusively.
+
+
+
+
+
+
+* Execution of Multiple Threads in a single CPU or Multiple CPU's, 
+* Whenever we create a Thread it has a default priority number. (Inherited from Main Thread)
+
 
 ```java
 ```
