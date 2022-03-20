@@ -1638,56 +1638,6 @@ public class MainVolatileBoolean {
 		System.out.println(LocalTime.now() + " : " + Thread.currentThread().getName() + message);
 	}
 }
-
-
-import java.time.LocalTime;
-import java.util.Random;
-
-public class MainVolatileBoolean {
-
-	public static void main(String[] args) throws InterruptedException {
-
-		BooleanThreadOne booleanThreadOne = new BooleanThreadOne();
-		BooleanThreadTwo booleanThreadTwo = new BooleanThreadTwo();
-
-		Thread t1 = new Thread(booleanThreadOne, "[T1]");
-		Thread t2 = new Thread(booleanThreadTwo, "[T2]");
-
-		t1.start();
-		t2.start();
-
-		print(" : running = " + SharedResource.running);
-
-		Thread.sleep(randomSleepTime());
-
-		print(" : Started");
-		print(" : set running = true");
-
-		SharedResource.running = true;
-
-		Thread.sleep(randomSleepTime());
-
-		if (SharedResource.running) {
-			SharedResource.running = false;
-			print(" : set running = false");
-		}
-
-		print(" : stopped");
-
-	}
-
-	private static int randomSleepTime() {
-		Random random = new Random();
-		int sleepTime = 2000 + random.nextInt(3000);
-		return sleepTime;
-	}
-
-	private static void print(String message) {
-		System.out.println(LocalTime.now() + " : " + Thread.currentThread().getName() + message);
-	}
-
-}
-
 ```
 
 ### SharedResourece running is [**NOT volatile**](#-)
