@@ -1960,7 +1960,7 @@ A scheduler is implementation of scheduling algorithm that manages access of pro
 	* Priorities are represented by a number between 1 and 10. In most cases, the [Thread Scheduler](#-) schedules the threads according to their priority (known as preemptive scheduling). But it is not guaranteed because it depends on JVM specification that which scheduling it chooses. 
 	* Note that not only JVM decides that, But also a Java programmer can also assign the priorities of a thread explicitly in a Java program.
 
-3 constants defined in Thread class:
+<img src="https://img.shields.io/badge/-3 constants defined in Thread class:p%20-brown" height=30px>
 
 ```java
 public static int MIN_PRIORITY
