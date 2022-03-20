@@ -24,8 +24,8 @@
 |  17 |[ThreadPoolExecutor](#17)   | 
 |  18 |[Executer Interface, ExecutorService Interface, Executers Class](#18)   | 
 |  19 |[Future , CompletableFuture](#19)   | 
-|  20 |[BlockingQueue](#20)   | 
-|  21 |[ThreadPoolExecutor](#21)   | 
+|  20 |[Fork/Join framework](#20)   | 
+|  21 |[BlockingQueue](#21)   | 
 |  22 |[ConcurrentMap](#22)   | 
 
 
