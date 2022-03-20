@@ -22,11 +22,13 @@
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
 |  16 |[Thread Scheduler & Priority of Threads](#16)   | 
 |  17 |[ThreadPoolExecutor](#17)   | 
-|  18 |[ExecutorService , Executers Class](#18)   | 
+|  18 |[Executor framework](#18)   | 
 |  19 |[Future , CompletableFuture](#19)   | 
-|  20 |[Fork/Join framework](#20)   | 
-|  21 |[BlockingQueue](#21)   | 
-|  22 |[ConcurrentMap](#22)   | 
+|  20 |[Callable/Runnable](#20)   | 
+|  21 |[Fork/Join framework](#21)   | 
+|  22 |[BlockingQueue](#22)   | 
+|  23 |[ConcurrentMap](#23)   | 
+
 
 
 --------------------------------------------------------------------------------------------------
@@ -1994,9 +1996,15 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 
 ###### 18
 
-<img src="https://img.shields.io/badge/-18.ExecutorService , Executers Class %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-18.Executor framework %20-blue" height=40px>
 
 https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
+
+Java provides the Executor framework which is centered around the :
+1. [Executor interface](#-)
+2. its sub-interface – [ExecutorService](#-)
+3. and the class-ThreadPoolExecutor , which implements both of these interfaces.
+4. or Executors Class
 
 ```java
 ```
