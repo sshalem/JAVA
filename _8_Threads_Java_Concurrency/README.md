@@ -1975,6 +1975,51 @@ public static int MAX_PRIORITY
 It depends on the thread scheduler’s algorithm([Round-Robin](#-), [First Come First Serve](#-), etc)
 
 ```java
+class MyThread implements Runnable {
+
+	public void run() {
+		System.out.println(Thread.currentThread().getName() + " Inside the run() , priority :"
+				+ Thread.currentThread().getPriority());
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		MyThread myThread = new MyThread();
+
+		Thread t1 = new Thread(myThread, "[T1]");
+		Thread t2 = new Thread(myThread, "[T2]");
+		Thread t3 = new Thread(myThread, "[T3]");
+		Thread t4 = new Thread(myThread, "[T4]");
+
+		Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
+		t1.setPriority(7);
+		t2.setPriority(Thread.NORM_PRIORITY);
+		t3.setPriority(Thread.MAX_PRIORITY);
+		t4.setPriority(6);
+
+		t1.start();
+		t2.start();
+		t3.start();
+		t4.start();
+
+		System.out.println(
+				Thread.currentThread().getName() + " is finished , priority :" + Thread.currentThread().getPriority());
+	}
+}
+```
+### Console output shows : 
+
+results are not as expected
+
+```java
+[T2] Inside the run() , priority :5
+[T4] Inside the run() , priority :6
+main is finished , priority :1
+[T3] Inside the run() , priority :10
+[T1] Inside the run() , priority :7
 ```
 
 * [Question](#-)
