@@ -2026,14 +2026,14 @@ Java provides the Executor framework which is centered around the :
 * or Executors Class
 
 Defog Tech links: </br>
-[Defog Tech 1](https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech)
-[Defog Tech 2](https://www.youtube.com/watch?v=sIkG0X4fqs4&ab_channel=DefogTech)
-[Defog Tech 3](https://www.youtube.com/watch?v=Dma_NmOrp1c&ab_channel=DefogTech)
-[Defog Tech 4](https://www.youtube.com/watch?v=NEZ2ASoP_nY&ab_channel=DefogTech)
+[Defog Tech 1](https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech) </br>
+[Defog Tech 2](https://www.youtube.com/watch?v=sIkG0X4fqs4&ab_channel=DefogTech) </br>
+[Defog Tech 3](https://www.youtube.com/watch?v=Dma_NmOrp1c&ab_channel=DefogTech) </br>
+[Defog Tech 4](https://www.youtube.com/watch?v=NEZ2ASoP_nY&ab_channel=DefogTech) </br>
 
 Jacob Jenkov links: </br>
-[Jacob Jenkov part1](https://www.youtube.com/watch?v=ZcKt5FYd3bU&ab_channel=JakobJenkov)
-[Jacob Jenkov part2](https://www.youtube.com/watch?v=MB_qCXBSgK0&list=RDCMUCkiRZdcuNF7aiT4sQ9MJt-Q&start_radio=1&ab_channel=JakobJenkov)
+[Jacob Jenkov part1](https://www.youtube.com/watch?v=ZcKt5FYd3bU&ab_channel=JakobJenkov) </br>
+[Jacob Jenkov part2](https://www.youtube.com/watch?v=MB_qCXBSgK0&list=RDCMUCkiRZdcuNF7aiT4sQ9MJt-Q&start_radio=1&ab_channel=JakobJenkov) </br>
 
 ```java
 ```
