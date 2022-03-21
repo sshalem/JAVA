@@ -2017,13 +2017,11 @@ link to [Thread Pool Executor work in Java](#-)
 
 <img src="https://img.shields.io/badge/-19.Executor framework %20-blue" height=40px>
 
-https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
-
 Java provides the Executor framework which is centered around the :
 * [Executor interface](#-)
-* its sub-interface – [ExecutorService](#-)
-* and the class-ThreadPoolExecutor , which implements both of these interfaces.
-* or Executors Class
+* its sub-interface – [ExecutorService interface](#-)
+* and the class-[ThreadPoolExecutor](#-) , which implements both of these interfaces.
+* or [Executors Class](#-) with factory methods
 
 Defog Tech links: </br>
 [Defog Tech 1](https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech) </br>
