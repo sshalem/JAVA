@@ -20,13 +20,13 @@
 |  13 |[DeadLock ,Yield](#13)   | 
 |  14 |[Volatile](#14)   | 
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
-|  16 |[Thread Scheduler & Priority of Threads](#16)   | 
-|  17 |[ThreadPoolExecutor](#17)   | 
-|  18 |[Executor framework](#18)   | 
-|  19 |[Future , CompletableFuture](#19)   | 
-|  20 |[Callable/Runnable](#20)   | 
-|  21 |[Fork/Join framework](#21)   | 
-|  22 |[BlockingQueue](#22)   | 
+|  16 |[Callable/Runnable](#16)   | 
+|  17 |[Thread Scheduler & Priority of Threads](#17)   | 
+|  18 |[ThreadPoolExecutor](#18)   | 
+|  19 |[Executor framework](#19)   | 
+|  20 |[Future , CompletableFuture](#20)   | 
+|  21 |[BlockingQueue](#21)   | 
+|  22 |[Fork/Join framework](#22)   | 
 |  23 |[ConcurrentMap](#23)   | 
 
 
@@ -1884,7 +1884,18 @@ public class Main {
 
 ###### 16
 
-<img src="https://img.shields.io/badge/-16. Thread Scheduler & Priority of Threads %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-16. Callable/Runnable %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 17
+
+<img src="https://img.shields.io/badge/-17. Thread Scheduler & Priority of Threads %20-blue" height=40px>
 
 ### [JavaPoint explaination for Thread-Scheduler](https://www.javatpoint.com/thread-scheduler-in-java)
 
@@ -1983,9 +1994,9 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 
 --------------------------------------------------------------------------------------------------
 
-###### 17
+###### 18
 
-<img src="https://img.shields.io/badge/-17 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-18 %20-blue" height=40px>
 
 link to [Thread Pool Executor work in Java](#-)
 
@@ -2002,9 +2013,9 @@ link to [Thread Pool Executor work in Java](#-)
 
 --------------------------------------------------------------------------------------------------
 
-###### 18
+###### 19
 
-<img src="https://img.shields.io/badge/-18.Executor framework %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-19.Executor framework %20-blue" height=40px>
 
 https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
 
@@ -2028,21 +2039,9 @@ Java provides the Executor framework which is centered around the :
 
 --------------------------------------------------------------------------------------------------
 
-###### 19
-
-<img src="https://img.shields.io/badge/-19 %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
 ###### 20
 
 <img src="https://img.shields.io/badge/-20 %20-blue" height=40px>
-
 
 ```java
 ```
@@ -2054,6 +2053,7 @@ Java provides the Executor framework which is centered around the :
 ###### 21
 
 <img src="https://img.shields.io/badge/-21 %20-blue" height=40px>
+
 
 ```java
 ```
@@ -2076,6 +2076,17 @@ Java provides the Executor framework which is centered around the :
 ###### 23
 
 <img src="https://img.shields.io/badge/-23 %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 16
+
+<img src="https://img.shields.io/badge/-16. Callable/Runnable %20-blue" height=40px>
 
 ```java
 ```
