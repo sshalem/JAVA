@@ -1987,6 +1987,14 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 
 <img src="https://img.shields.io/badge/-17 %20-blue" height=40px>
 
+link to [Thread Pool Executor work in Java](#-)
+
+1. https://www.youtube.com/watch?v=-hs5rWz6T6k&ab_channel=AlmightyJava
+2. https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
+3. https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie  (CompleteableFuture JavaTechie)
+4. https://www.youtube.com/watch?v=ZcKt5FYd3bU&ab_channel=JakobJenkov  (Jacob Jenkov)
+5. 
+
 ```java
 ```
 
@@ -2005,6 +2013,13 @@ Java provides the Executor framework which is centered around the :
 2. its sub-interface – [ExecutorService](#-)
 3. and the class-ThreadPoolExecutor , which implements both of these interfaces.
 4. or Executors Class
+
+
+1. https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
+2. https://www.youtube.com/watch?v=sIkG0X4fqs4&ab_channel=DefogTech
+3. https://www.youtube.com/watch?v=Dma_NmOrp1c&ab_channel=DefogTech
+4. https://www.youtube.com/watch?v=NEZ2ASoP_nY&ab_channel=DefogTech
+
 
 ```java
 ```
