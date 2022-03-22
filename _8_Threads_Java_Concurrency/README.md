@@ -1900,7 +1900,7 @@ public interface Runnable {
 }
 ```
 ### [Questions:](#-) </br>
-1. What is [Callable](#-) interafece?
+1. What is [Callable](#-) interface?
 2. What is it used for?
 3. What are the differences between Runabble and Callable?
 
