@@ -1901,11 +1901,38 @@ public interface Runnable {
 ```
 ### [Questions:](#-) </br>
 1. What is [Callable](#-) interface?
-2. What is it used for?
+2. How it's used?
 3. What are the differences between Runabble and Callable?
 
+### [Answers:](#-) </br>
 
+1. [Callable](#-) is a Functional Interface that :
+	a. return a value
+	b. throws exception
 
+```java
+@FunctionalInterface
+public interface Callable<V> {
+    V call() throws Exception;
+}
+```
+
+2.  To use [Callable](#-) , a utility method in [Executors](#-) class must be used in order to convert The [Callable](#-) into [Runnable](#-). </br>
+following methods in [Executors](#-) class make this happen
+
+```java
+public static <T> Callable<T> callable(Runnable task, T result) {
+    if (task == null)
+        throw new NullPointerException();
+    return new RunnableAdapter<T>(task, result);
+}
+
+public static Callable<Object> callable(Runnable task) {
+    if (task == null)
+        throw new NullPointerException();
+    return new RunnableAdapter<Object>(task, null);
+}
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
