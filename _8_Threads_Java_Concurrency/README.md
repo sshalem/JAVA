@@ -1918,7 +1918,9 @@ public interface Callable<V> {
 ```
 
 2.  To use [Callable](#-) , a utility method in [Executors](#-) class must be used in order to convert The [Callable](#-) into [Runnable](#-). </br>
-following methods in [Executors](#-) class make this happen
+following methods in [Executors](#-) class make this happen.
+It must be executed from [Executors](#-) class and not from [Thread](#-) class.
+We must return a Future Object (Or completableFuture)
 
 ```java
 public static <T> Callable<T> callable(Runnable task, T result) {
@@ -1933,6 +1935,10 @@ public static Callable<Object> callable(Runnable task) {
     return new RunnableAdapter<Object>(task, null);
 }
 ```
+
+### Let's take a look in the following example:
+
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
