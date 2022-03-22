@@ -1886,8 +1886,26 @@ public class Main {
 
 <img src="https://img.shields.io/badge/-16. Callable/Runnable %20-blue" height=40px>
 
+As we know Runnable is a Functional Interface , and we use it to implemet a code for atask to be execute.
+Then we pass the Class to a Thread object that will invoke the run method of Runnable.
+
+1. as we can see the run() method doesn't return any value.
+2. once thread.start() method is called, the Thread starts to run , and Interanlly  will invoke the run() method of Runnable Interface.
+3. run() method doesn't return any value.
+
 ```java
+@FunctionalInterface
+public interface Runnable {
+    public abstract void run();
+}
 ```
+### [Questions:](#-) </br>
+1. What is [Callable](#-) interafece?
+2. What is it used for?
+3. What are the differences between Runabble and Callable?
+
+
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
