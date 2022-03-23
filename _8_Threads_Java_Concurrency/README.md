@@ -1987,6 +1987,12 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 
 <img src="https://img.shields.io/badge/-17 %20-blue" height=40px>
 
+Thread Pool
+
+![image](https://user-images.githubusercontent.com/36256986/159743899-8a964e19-214d-49a2-a434-1bb0055a6aad.png)
+
+
+
 link to [Thread Pool Executor work in Java](#-)
 
 1. https://www.youtube.com/watch?v=pYO3OEpvWFI&ab_channel=EasyLearning
