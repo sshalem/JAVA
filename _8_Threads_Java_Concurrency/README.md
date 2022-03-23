@@ -1991,7 +1991,13 @@ Thread Pool
 
 ![image](https://user-images.githubusercontent.com/36256986/159743899-8a964e19-214d-49a2-a434-1bb0055a6aad.png)
 
+* [Question:](#-) 
+	* What is the Ideal number for a thread pool?
 
+* [Answer:](#-) 
+	* there are 2 factors to answer this question:
+		* Number of CPU (Cores)
+		* The type of the Tasks (CPU/IO)
 
 link to [Thread Pool Executor work in Java](#-)
 
