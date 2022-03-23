@@ -1998,6 +1998,13 @@ Thread Pool
 	* there are 2 factors to answer this question:
 		* Number of CPU (Cores)
 		* The type of the Tasks (CPU/IO)
+	* Othe factors:
+		* Are there other applications running on CPU?
+		* Are there other executer services or threads running in same JVM/Application?
+		* Threads are heavy weight (1-2MB). cannot create thousands of them. Even if a task's IO operation allows space for thousand threads.
+		* Too many threads will also have added complexity/time -taken for thread switching.
+		* Too many threads also affect data locality (i.e. L1/L2 etc need to be flushed during thread switch).
+
 
 link to [Thread Pool Executor work in Java](#-)
 
