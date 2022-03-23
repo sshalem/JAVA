@@ -20,7 +20,7 @@
 |  13 |[DeadLock ,Yield](#13)   | 
 |  14 |[Volatile](#14)   | 
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
-|  16 |[Thread Scheduler & Priority of Threads](#16)   | 
+|  16 |[Thread Scheduler](#16)   | 
 |  17 |[ThreadPoolExecutor & Executor framework](#17)   | 
 |  18 |[Executor framework](#18)   | 
 |  19 |[Future , CompletableFuture](#19)   | 
