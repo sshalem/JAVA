@@ -2104,12 +2104,12 @@ public class ThreadPoolDemo {
 ### Console output shows  
 
 we can see that 2 threads are executed in the same time.
-thread-2 runs message 20, thread-1 runs message 10
-Once they are ENDED , the executer utilizes the Threads to perform other task.
-Now, thread-2 runs message 30, thread-1 runs message 40
-Once they are ENDED , the executer utilizes again the Thread to perform the next task.
-Last task is message 50.
-Then we need to shutdown the execution by calling method shutdown() to gracefully terminate the ExecutorService.
+thread-2 runs message 20, thread-1 runs message 10 </br>
+Once they are ENDED , the executer utilizes the Threads to perform other task. </br>
+Now, thread-2 runs message 30, thread-1 runs message 40 </br>
+Once they are ENDED , the executer utilizes again the Thread to perform the next task. </br>
+Last task is message 50. </br>
+Then we need to shutdown the execution by calling method shutdown() to gracefully terminate the ExecutorService. </br>
 
 ```java
 18:32:30.561 pool-1-thread-2 [STARTED] Message = 20
