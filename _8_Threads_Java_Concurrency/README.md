@@ -2023,6 +2023,91 @@ link to [Thread Pool Executor work in Java](#-)
 
 
 ```java
+import java.time.LocalTime;
+
+public class MessageProcessor implements Runnable {
+
+	private int message;
+
+	public MessageProcessor(int message) {
+		this.message = message;
+	}
+
+	@Override
+	public void run() {
+		String thread = Thread.currentThread().getName();
+		System.out.println(LocalTime.now() + " " + thread + " [STARTED] Message = " + message);
+		respondToMessage();
+		System.out.println(LocalTime.now() + " " + thread + " [ENDED] processing message = " + message);
+	}
+
+	private void respondToMessage() {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {			
+			System.out.println(LocalTime.now() + " " + "Unable to process the message" + message);
+		}
+	}
+}
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ThreadPoolDemo {
+
+	public static void main(String[] args) {
+
+		ExecutorService executor = Executors.newFixedThreadPool(2);
+		
+		/**
+		 * The following 2 lines :
+		 * Thread thread = new Thread(processor); 
+		 * thread.start();
+		 * 
+		 * is been replaced by 1 line of 
+		 * executor.execute(processor);
+		 */
+
+		/**
+		 * When we set Executors.newFixedThreadPool(2) , 
+		 * we will have 2 threads executing the tasks
+		 * at the same time
+		 */
+		
+		Runnable processor1 = new MessageProcessor(10);
+		executor.execute(processor1);
+		
+		Runnable processor2 = new MessageProcessor(20);
+		executor.execute(processor2);
+		
+		Runnable processor3 = new MessageProcessor(30);
+		executor.execute(processor3);
+		
+		Runnable processor4 = new MessageProcessor(40);
+		executor.execute(processor4);
+		
+		Runnable processor5 = new MessageProcessor(50);
+		executor.execute(processor5);
+				
+		executor.shutdown();
+		
+	}
+}
+```
+
+### Console output shows  
+
+```java
+18:32:30.561 pool-1-thread-2 [STARTED] Message = 20
+18:32:30.561 pool-1-thread-1 [STARTED] Message = 10
+18:32:33.580 pool-1-thread-2 [ENDED] processing message = 20
+18:32:33.580 pool-1-thread-1 [ENDED] processing message = 10
+18:32:33.581 pool-1-thread-2 [STARTED] Message = 30
+18:32:33.581 pool-1-thread-1 [STARTED] Message = 40
+18:32:36.593 pool-1-thread-2 [ENDED] processing message = 30
+18:32:36.593 pool-1-thread-1 [ENDED] processing message = 40
+18:32:36.594 pool-1-thread-2 [STARTED] Message = 50
+18:32:39.595 pool-1-thread-2 [ENDED] processing message = 50
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
