@@ -22,9 +22,9 @@
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
 |  16 |[Thread Scheduler](#16)   | 
 |  17 |[ThreadPoolExecutor & Executor framework](#17)   | 
-|  18 |[Future , CompletableFuture](#18)   | 
-|  19 |[BlockingQueue](#19)   | 
-|  20 |[Callable/Runnable](#20)   | 
+|  18 |[Callable/Runnable](#18)   | 
+|  19 |[Future , CompletableFuture](#19)   | 
+|  20 |[BlockingQueue](#20)   | 
 |  21 |[Fork/Join framework](#21)   | 
 |  22 |[ConcurrentMap](#22)   | 
 
@@ -2028,6 +2028,18 @@ link to [Thread Pool Executor work in Java](#-)
 3. https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
 4. https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie  (CompleteableFuture JavaTechie)
 
+
+Defog Tech links: </br>
+[Defog Tech 1](https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech) </br>
+[Defog Tech 2](https://www.youtube.com/watch?v=sIkG0X4fqs4&ab_channel=DefogTech) </br>
+[Defog Tech 3](https://www.youtube.com/watch?v=Dma_NmOrp1c&ab_channel=DefogTech) </br>
+[Defog Tech 4](https://www.youtube.com/watch?v=NEZ2ASoP_nY&ab_channel=DefogTech) </br>
+
+Jacob Jenkov links: </br>
+[Jacob Jenkov part1](https://www.youtube.com/watch?v=ZcKt5FYd3bU&ab_channel=JakobJenkov) </br>
+[Jacob Jenkov part2](https://www.youtube.com/watch?v=MB_qCXBSgK0&list=RDCMUCkiRZdcuNF7aiT4sQ9MJt-Q&start_radio=1&ab_channel=JakobJenkov) </br>
+
+
 ### Example using [**_newFixedThreadPool_**](#-)
 
 ```java
@@ -2227,45 +2239,7 @@ pool-1-thread-1 00:13:10.325735700 : task [FIRST] is running
 
 ###### 18
 
-<img src="https://img.shields.io/badge/-18.Executor framework %20-blue" height=40px>
-
-Java provides the Executor framework which is centered around the :
-* [Executor interface](#-)
-* its sub-interface – [ExecutorService interface](#-)
-* and the class-[ThreadPoolExecutor](#-) , which implements both of these interfaces.
-* or [Executors Class](#-) with factory methods
-
-Defog Tech links: </br>
-[Defog Tech 1](https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech) </br>
-[Defog Tech 2](https://www.youtube.com/watch?v=sIkG0X4fqs4&ab_channel=DefogTech) </br>
-[Defog Tech 3](https://www.youtube.com/watch?v=Dma_NmOrp1c&ab_channel=DefogTech) </br>
-[Defog Tech 4](https://www.youtube.com/watch?v=NEZ2ASoP_nY&ab_channel=DefogTech) </br>
-
-Jacob Jenkov links: </br>
-[Jacob Jenkov part1](https://www.youtube.com/watch?v=ZcKt5FYd3bU&ab_channel=JakobJenkov) </br>
-[Jacob Jenkov part2](https://www.youtube.com/watch?v=MB_qCXBSgK0&list=RDCMUCkiRZdcuNF7aiT4sQ9MJt-Q&start_radio=1&ab_channel=JakobJenkov) </br>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 19
-
-<img src="https://img.shields.io/badge/-19 %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 20
-
-<img src="https://img.shields.io/badge/-20. Callable/Runnable %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-18. Callable/Runnable %20-blue" height=40px>
 
 As we know Runnable is a Functional Interface , and we use it to implemet a code for atask to be execute.
 Then we pass the Class to a Thread object that will invoke the run method of Runnable.
@@ -2319,7 +2293,38 @@ public static Callable<Object> callable(Runnable task) {
 
 ### Let's take a look in the following example:
 
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
+--------------------------------------------------------------------------------------------------
+
+###### 19
+
+<img src="https://img.shields.io/badge/-19.Future , CompletableFuture %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 20
+
+<img src="https://img.shields.io/badge/-20. BlockingQueue %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 21
+
+<img src="https://img.shields.io/badge/-21. Fork/Join framework %20-blue" height=40px>
+
+```java
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
@@ -2327,33 +2332,12 @@ public static Callable<Object> callable(Runnable task) {
 
 ###### 22
 
-<img src="https://img.shields.io/badge/-22 %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-22. ConcurrentMap %20-blue" height=40px>
 
 ```java
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
---------------------------------------------------------------------------------------------------
 
-###### 23
 
-<img src="https://img.shields.io/badge/-23 %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
-###### 16
-
-<img src="https://img.shields.io/badge/-16. Callable/Runnable %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
