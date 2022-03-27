@@ -2021,6 +2021,7 @@ link to [Thread Pool Executor work in Java](#-)
 3. https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
 4. https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie  (CompleteableFuture JavaTechie)
 
+### [Example using **_newFixedThreadPool_**](#-)
 
 ```java
 import java.time.LocalTime;
@@ -2123,6 +2124,94 @@ Then we need to shutdown the execution by calling method shutdown() to gracefull
 18:32:36.594 pool-1-thread-2 [STARTED] Message = 50
 18:32:39.595 pool-1-thread-2 [ENDED] processing message = 50
 submitted all tasks
+```
+
+### [Example using **_newScheduledThreadPool_**](#-)
+
+```java
+import java.time.LocalTime;
+
+public class MyRunnable implements Runnable {
+
+	private String name;
+
+	public MyRunnable(String name) {
+		super();
+		this.name = name;
+	}
+
+	@Override
+	public void run() {
+		String thread = Thread.currentThread().getName();
+		System.out.println(thread + " " + LocalTime.now() + " : task " + name + " is running");
+	}
+}
+
+import java.time.LocalTime;
+
+public class MyTestRunnable implements Runnable {
+
+	private String name;
+
+	public MyTestRunnable(String name) {
+		super();
+		this.name = name;
+	}
+
+	@Override
+	public void run() {
+		String thread = Thread.currentThread().getName();
+		System.out.println(thread + " " + LocalTime.now() + " task " + name + "is running");
+	}
+}
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+public class MainScheduledThreadPool {
+
+	public static void main(String[] args) {
+
+		ScheduledExecutorService executor = Executors.newScheduledThreadPool(2);
+
+		Runnable myTestRunnable = new MyTestRunnable("[MyTestRunnable]");
+		executor.scheduleAtFixedRate(myTestRunnable, 2, 4, TimeUnit.SECONDS);
+
+		Runnable runnable1 = new MyRunnable("[FIRST]");
+		executor.scheduleAtFixedRate(runnable1, 1, 5, TimeUnit.SECONDS);
+
+		Runnable runnable2 = new MyRunnable("[SECOND]");
+		executor.scheduleAtFixedRate(runnable2, 3, 5, TimeUnit.SECONDS);
+
+		Runnable runnable3 = new MyRunnable("[THIRD]");
+		executor.scheduleAtFixedRate(runnable3, 2, 5, TimeUnit.SECONDS);
+	}
+}
+```
+
+### Console output shows  
+
+Since it is schduled , then it will run at scheduleAtFixedRate 
+
+```java
+pool-1-thread-1 00:13:00.356549900 : task [FIRST] is running
+pool-1-thread-1 00:13:01.329912200 : task [THIRD] is running
+pool-1-thread-2 00:13:01.329912200 task [MyTestRunnable]is running
+pool-1-thread-1 00:13:02.329678100 : task [SECOND] is running
+pool-1-thread-2 00:13:05.332095100 task [MyTestRunnable]is running
+pool-1-thread-1 00:13:05.332095100 : task [FIRST] is running
+pool-1-thread-2 00:13:06.335057300 : task [THIRD] is running
+pool-1-thread-1 00:13:07.336885400 : task [SECOND] is running
+pool-1-thread-2 00:13:09.338450200 task [MyTestRunnable]is running
+pool-1-thread-1 00:13:10.325735700 : task [FIRST] is running
+.
+.
+.
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
