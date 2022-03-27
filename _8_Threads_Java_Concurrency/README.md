@@ -1997,6 +1997,14 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 		* or [Executors Class](#-) with factory methods , which is more common to use.
 
 
+### [Types of Thread Pool](#-) </br>
+1. [**newFixedThreadPool**](#-)
+2. [**newScheduledThreadPool**](#-)
+3. [**newSingleThreadExecutor**](#-)
+4. [**newSingleThreadScheduledExecutor**](#-)
+5. [**newCachedThreadPool**](#-)
+
+
 ![image](https://user-images.githubusercontent.com/36256986/159743899-8a964e19-214d-49a2-a434-1bb0055a6aad.png)
 
 * [Question:](#-) 
