@@ -2091,6 +2091,12 @@ public class ThreadPoolDemo {
 				
 		executor.shutdown();
 		
+		while(!executor.isTerminated()) {
+			// this will make the main thread to wait till all tasks are finished
+			// Then it will continue with next line
+		}
+		
+		System.out.println("submitted all tasks");		
 	}
 }
 ```
@@ -2116,6 +2122,7 @@ Then we need to shutdown the execution by calling method shutdown() to gracefull
 18:32:36.593 pool-1-thread-1 [ENDED] processing message = 40
 18:32:36.594 pool-1-thread-2 [STARTED] Message = 50
 18:32:39.595 pool-1-thread-2 [ENDED] processing message = 50
+submitted all tasks
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
