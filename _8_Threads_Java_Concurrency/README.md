@@ -2275,7 +2275,7 @@ public interface Callable<V> {
 2.  To use [Callable](#-) , a utility method in [Executors](#-) class must be used in order to convert The [Callable](#-) into [Runnable](#-). </br>
 following methods in [Executors](#-) class make this happen. </br>
 It must be executed from [Executors](#-) class and not from [Thread](#-) class. </br>
-We must return a Future Object (Or completableFuture) </br>
+We must return a [Future](#-) Object (or [CompletableFuture](#-)) </br>
 
 ```java
 public static <T> Callable<T> callable(Runnable task, T result) {
