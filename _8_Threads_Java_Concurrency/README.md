@@ -2021,7 +2021,7 @@ link to [Thread Pool Executor work in Java](#-)
 3. https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
 4. https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie  (CompleteableFuture JavaTechie)
 
-### [Example using **_newFixedThreadPool_**](#-)
+### Example using [**_newFixedThreadPool_**](#-)
 
 ```java
 import java.time.LocalTime;
@@ -2126,7 +2126,7 @@ Then we need to shutdown the execution by calling method shutdown() to gracefull
 submitted all tasks
 ```
 
-### [Example using **_newScheduledThreadPool_**](#-)
+### Example using [**_newScheduledThreadPool_**](#-)
 
 ```java
 import java.time.LocalTime;
