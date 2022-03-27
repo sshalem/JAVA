@@ -22,12 +22,11 @@
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
 |  16 |[Thread Scheduler](#16)   | 
 |  17 |[ThreadPoolExecutor & Executor framework](#17)   | 
-|  18 |[Executor framework](#18)   | 
-|  19 |[Future , CompletableFuture](#19)   | 
-|  20 |[BlockingQueue](#20)   | 
-|  21 |[Callable/Runnable](#21)   | 
-|  22 |[Fork/Join framework](#22)   | 
-|  23 |[ConcurrentMap](#23)   | 
+|  18 |[Future , CompletableFuture](#18)   | 
+|  19 |[BlockingQueue](#19)   | 
+|  20 |[Callable/Runnable](#20)   | 
+|  21 |[Fork/Join framework](#21)   | 
+|  22 |[ConcurrentMap](#22)   | 
 
 
 
