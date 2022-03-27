@@ -2241,8 +2241,8 @@ pool-1-thread-1 00:13:10.325735700 : task [FIRST] is running
 
 <img src="https://img.shields.io/badge/-18. Callable/Runnable %20-blue" height=40px>
 
-As we know Runnable is a Functional Interface , and we use it to implemet a code for atask to be execute.
-Then we pass the Class to a Thread object that will invoke the run method of Runnable.
+As we know Runnable is a Functional Interface , and we use it to implemet a code for atask to be execute. </br>
+Then we pass the Class to a Thread object that will invoke the run method of Runnable.</br>
 
 1. as we can see the run() method doesn't return any value.
 2. once thread.start() method is called, the Thread starts to run , and Interanlly  will invoke the run() method of Runnable Interface.
@@ -2261,9 +2261,9 @@ public interface Runnable {
 
 ### [Answers:](#-) </br>
 
-1. [Callable](#-) is a Functional Interface that :
-	a. return a value
-	b. throws exception
+1. [Callable](#-) is a Functional Interface that : </br>
+	a. return a value </br>
+	b. throws exception </br>
 
 ```java
 @FunctionalInterface
@@ -2273,9 +2273,9 @@ public interface Callable<V> {
 ```
 
 2.  To use [Callable](#-) , a utility method in [Executors](#-) class must be used in order to convert The [Callable](#-) into [Runnable](#-). </br>
-following methods in [Executors](#-) class make this happen.
-It must be executed from [Executors](#-) class and not from [Thread](#-) class.
-We must return a Future Object (Or completableFuture)
+following methods in [Executors](#-) class make this happen. </br>
+It must be executed from [Executors](#-) class and not from [Thread](#-) class. </br>
+We must return a Future Object (Or completableFuture) </br>
 
 ```java
 public static <T> Callable<T> callable(Runnable task, T result) {
