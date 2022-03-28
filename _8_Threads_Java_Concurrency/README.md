@@ -2036,6 +2036,7 @@ Defog Tech links: </br>
 [Defog Tech 4](https://www.youtube.com/watch?v=NEZ2ASoP_nY&ab_channel=DefogTech) </br>
 
 Jacob Jenkov links: </br>
+[Jacob Jenkov](https://www.youtube.com/watch?v=mTGdtC9f4EU&list=PLL8woMHwr36EDxjUoCzboZjedsnhLP1j4&ab_channel=JakobJenkov) </br>
 [Jacob Jenkov - ThreadPoolExecutor](https://www.youtube.com/watch?v=ZcKt5FYd3bU&ab_channel=JakobJenkov) </br>
 [Jacob Jenkov part1 - ExecuterService](https://www.youtube.com/watch?v=Nb85yJ1fPXM&list=RDCMUCkiRZdcuNF7aiT4sQ9MJt-Q&index=3&ab_channel=JakobJenkov) </br>
 [Jacob Jenkov part2 - ExecuterService](https://www.youtube.com/watch?v=MB_qCXBSgK0&list=RDCMUCkiRZdcuNF7aiT4sQ9MJt-Q&start_radio=1&ab_channel=JakobJenkov) </br>
