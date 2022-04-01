@@ -21,7 +21,7 @@
 |  14 |[Volatile](#14)   | 
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
 |  16 |[Thread Scheduler](#16)   | 
-|  17 |[ThreadPoolExecutor & Executor framework](#17)   | 
+|  17 |[ThreadPoolExecutor/Executor framework](#17)   | 
 |  18 |[Callable/Runnable](#18)   | 
 |  19 |[Future , CompletableFuture](#19)   | 
 |  20 |[BlockingQueue](#20)   | 
@@ -1984,7 +1984,7 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 
 ###### 17
 
-<img src="https://img.shields.io/badge/-17. ThreadPoolExecutor & Executor framework %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-17. ThreadPoolExecutor/Executor framework %20-blue" height=40px>
 
 * [ThreadPoolExecutor](#-) 
 	* creates Thread pool </br>
