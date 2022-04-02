@@ -21,10 +21,10 @@
 |  14 |[Volatile](#14)   | 
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
 |  16 |[Thread Scheduler](#16)   | 
-|  17 |[ThreadPoolExecutor/Executor framework](#17)   | 
-|  18 |[Callable/Runnable](#18)   | 
-|  19 |[Future , CompletableFuture](#19)   | 
-|  20 |[BlockingQueue](#20)   | 
+|  17 |[BlockingQueue](#17)   | 
+|  18 |[ThreadPoolExecutor/Executor framework](#18)   | 
+|  19 |[Callable/Runnable](#19)   | 
+|  20 |[Future , CompletableFuture](#20)   | 
 |  21 |[Fork/Join framework](#21)   | 
 |  22 |[ConcurrentMap](#22)   | 
 
@@ -1984,7 +1984,18 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 
 ###### 17
 
-<img src="https://img.shields.io/badge/-17. ThreadPoolExecutor/Executor framework %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-17. BlockingQueue %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 18
+
+<img src="https://img.shields.io/badge/-18. ThreadPoolExecutor/Executor framework %20-blue" height=40px>
 
 * [ThreadPoolExecutor](#-) 
 	* creates Thread pool </br>
@@ -2239,9 +2250,9 @@ pool-1-thread-1 00:13:10.325735700 : task [FIRST] is running
 
 --------------------------------------------------------------------------------------------------
 
-###### 18
+###### 19
 
-<img src="https://img.shields.io/badge/-18. Callable/Runnable %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-19. Callable/Runnable %20-blue" height=40px>
 
 As we know Runnable is a Functional Interface , and we use it to implemet a code for atask to be execute. </br>
 Then we pass the Class to a Thread object that will invoke the run method of Runnable.</br>
@@ -2299,20 +2310,9 @@ public static Callable<Object> callable(Runnable task) {
 
 --------------------------------------------------------------------------------------------------
 
-###### 19
-
-<img src="https://img.shields.io/badge/-19.Future , CompletableFuture %20-blue" height=40px>
-
-```java
-```
-
-[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
-
---------------------------------------------------------------------------------------------------
-
 ###### 20
 
-<img src="https://img.shields.io/badge/-20. BlockingQueue %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-20.Future , CompletableFuture %20-blue" height=40px>
 
 ```java
 ```
