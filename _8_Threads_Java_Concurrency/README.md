@@ -1986,6 +1986,35 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 
 <img src="https://img.shields.io/badge/-17. BlockingQueue %20-blue" height=40px>
 
+### [http://tutorials.jenkov.com/java-util-concurrent/blockingqueue.html](#-)
+
+The Java BlockingQueue interface, represents a queue which is [thread safe](#-) to put elements into, and take elements out of from. In other words, multiple threads can be inserting and taking elements concurrently from a Java BlockingQueue, without any concurrency issues arising.
+
+The term blocking queue comes from the fact that the Java BlockingQueue is capable of **_blocking_** the threads that try to insert or take elements from the queue. For instance, if a thread tries to take an element and there are none left in the queue, the thread can be blocked until there is an element to take. Whether or not the calling thread is blocked depends on what methods you call on the BlockingQueue.
+
+#### [BlockingQueue Implementations](#-) </br>
+Since BlockingQueue is an interface, you need to use one of its implementations to use it. </br>
+
+following implementations of the BlockingQueue interface:
+
+1. ArrayBlockingQueue
+2. DelayQueue
+3. LinkedBlockingQueue
+4. LinkedBlockingDeque
+5. LinkedTransferQueue
+6. PriorityBlockingQueue
+7. SynchronousQueue
+
+[**BlockingQueue Usage**](#-) - A BlockingQueue is typically used to have one thread produce objects, which another thread consumes. Here is a diagram that illustrates this principle. </br>
+A BlockingQueue with one thread putting into it, and another thread taking from it.
+
+![BlockingQueue](https://user-images.githubusercontent.com/36256986/161400566-980ef765-da69-4c92-8bb2-0c29fcd198fd.PNG)
+
+The producing thread will keep producing new objects and insert them into the BlockingQueue, until the queue reaches some upper bound on what it can contain. It's limit, in other words. If the blocking queue reaches its upper limit, the producing thread is blocked while trying to insert the new object. It remains blocked until a consuming thread takes an object out of the queue.
+
+The consuming thread keeps taking objects out of the BlockingQueue to processes them. If the consuming thread tries to take an object out of an empty queue, the consuming thread is blocked until a producing thread puts an object into the queue.
+
+
 ```java
 ```
 
