@@ -2696,6 +2696,8 @@ public static Callable<Object> callable(Runnable task) {
 
 https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie  (CompleteableFuture JavaTechie)
 
+we will se that [**callable**](#-) is in combination with [**Future**](#-) . </br>
+Since [**callable**](#-) returns a value, the [**Future**](#-) will wait for that value at a certain time in the FUTURE. </br>
 
 ```java
 import java.util.Random;
