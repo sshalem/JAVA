@@ -2299,9 +2299,15 @@ Thread-2: Task 3
 
 ### 2. use [**_ThreadPoolExecutor_**](#-) class
 
-![image](https://user-images.githubusercontent.com/36256986/161448972-247ea07d-d152-47b4-930d-5d532e71860a.png)
+Parameter	Type	Meaning
+corePoolSize	int	Minimum/Base size of the pool
+maxPoolSize	int	Maximum size of the pool
+keepALiveTime + unit	long	Time to keep an idle thread alive (after which it is killed)
+workQueue	BlockingQueue	Queue to store the tasks from which threads fetch them
+threadFactory	ThreadFactory	The factory to use to create new threads
+handler	RejectedExecutionHandler	Callback to use when tasks submitted are rejected
 
-![image](https://user-images.githubusercontent.com/36256986/161449034-fa8d0e94-9bb0-404b-8297-11cfe8b2f298.png)
+![image](https://user-images.githubusercontent.com/36256986/161449225-ea35d6be-e2a3-4381-8de6-7c7c7eaf0af1.png)
 
 
 ```java
