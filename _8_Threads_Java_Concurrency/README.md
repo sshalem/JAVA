@@ -2159,7 +2159,7 @@ Jacob Jenkov links: </br>
 
 
 I will show exapmles of the following:
-1. write a code for my own Thread Pool
+1. write a code for Thread Pool
 2. use **_ThreadPoolExecutor_** class
 3. Use **_Executor_** interface and **_Executors_** Class with 
 	1. [newFixedThreadPool(x)](#-)  -->  **_ExecutorService executor = Executors.newFixedThreadPool(2)_**
@@ -2167,7 +2167,134 @@ I will show exapmles of the following:
 	1. [newScheduledThreadPool(x)](#-) --> **_ScheduledExecutorService executor = Executors.newScheduledThreadPool(2)_**
 
 
-### Example using [**_newFixedThreadPool_**](#-)
+### 1. write a code for Thread Pool
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+public class ThreadPool {
+
+	private BlockingQueue<Runnable> taskQueue = null;
+	private List<PoolThreadRunnable> runnables = new ArrayList<>();
+	private boolean isStopped = false;
+
+	public ThreadPool(int noOfThreads, int maxNoOfTasks) {
+
+		taskQueue = new ArrayBlockingQueue<Runnable>(maxNoOfTasks);
+
+		for (int i = 0; i < noOfThreads; i++) {
+			PoolThreadRunnable poolThreadRunnable = new PoolThreadRunnable(taskQueue);
+			runnables.add(poolThreadRunnable);
+		}
+		for (PoolThreadRunnable runnable : runnables) {
+			new Thread(runnable).start();
+		}
+	}
+
+	public synchronized void execute(Runnable task) throws Exception {
+		if (this.isStopped)
+			throw new IllegalStateException("ThreadPool is stopped");
+
+		this.taskQueue.offer(task);
+	}
+
+	public synchronized void stop() {
+		this.isStopped = true;
+		for (PoolThreadRunnable runnable : runnables) {
+			runnable.doStop();
+		}
+	}
+
+	public synchronized void waitUntilAllTasksFinished() {
+		while (this.taskQueue.size() > 0) {
+			try {
+				Thread.sleep(1);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class PoolThreadRunnable implements Runnable {
+
+	private Thread thread = null;
+	private BlockingQueue<Runnable> taskQueue = null;
+	private boolean isStopped = false;
+
+	public PoolThreadRunnable(BlockingQueue<Runnable> queue) {
+		taskQueue = queue;
+	}
+
+	public void run() {
+
+		this.thread = Thread.currentThread();
+
+		while (!isStopped()) {
+			try {
+				Runnable runnable = (Runnable) taskQueue.take();
+				runnable.run();
+			} catch (Exception e) {
+				// log or otherwise report exception,
+				// but keep pool thread alive.
+			}
+		}
+	}
+
+	public synchronized void doStop() {
+		isStopped = true;
+		// break pool thread out of dequeue() call.
+		this.thread.interrupt();
+	}
+
+	public synchronized boolean isStopped() {
+		return isStopped;
+	}
+}
+
+public class TaskRunnable implements Runnable {
+
+	private int taskNo;
+
+	public TaskRunnable(int i) {
+		this.taskNo = i;
+	}
+
+	@Override
+	public void run() {
+		String message = Thread.currentThread().getName() + ": Task " + taskNo;
+		System.out.println(message);
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+
+		// I pass noOfThreads and maxNoOfTasks
+		ThreadPool threadPool = new ThreadPool(3, 10);
+
+		for (int i = 0; i < 10; i++) {
+			Runnable taskRunnable = new TaskRunnable(i);
+			threadPool.execute(taskRunnable);
+		}
+
+		threadPool.waitUntilAllTasksFinished();
+		threadPool.stop();
+	}
+}
+```
+
+### 2. use **_ThreadPoolExecutor_** class
+
+```java
+```
+
+
+### 3. Use [**_Executors.newFixedThreadPool(2)_**](#-)
 
 ```java
 import java.time.LocalTime;
@@ -2272,7 +2399,7 @@ Then we need to shutdown the execution by calling method shutdown() to gracefull
 submitted all tasks
 ```
 
-### Example using [**_newScheduledThreadPool_**](#-)
+### 4. Use [**_Executors.newScheduledThreadPool(2)_**](#-)
 
 ```java
 import java.time.LocalTime;
