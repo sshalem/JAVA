@@ -2158,6 +2158,15 @@ Jacob Jenkov links: </br>
 [Jacob Jenkov part2 - ExecuterService](https://www.youtube.com/watch?v=MB_qCXBSgK0&list=RDCMUCkiRZdcuNF7aiT4sQ9MJt-Q&start_radio=1&ab_channel=JakobJenkov) </br>
 
 
+I will show exapmles of the following:
+1. write a code for my own Thread Pool
+2. use ThreadPoolExecutor class
+3. Use Executor interface and Executors Class with 
+	1. newFixedThreadPool(x)  -->  ExecutorService executor = Executors.newFixedThreadPool(2)
+4. Use ScheduledExecutorService interface Executors Class with
+	1. newScheduledThreadPool(x) --> ScheduledExecutorService executor = Executors.newScheduledThreadPool(2)
+
+
 ### Example using [**_newFixedThreadPool_**](#-)
 
 ```java
@@ -2333,7 +2342,7 @@ public class MainScheduledThreadPool {
 
 ### Console output shows  
 
-Since it is schduled , then it will run at scheduleAtFixedRate 
+Since it is scheduled , then it will run at scheduleAtFixedRate 
 
 ```java
 pool-1-thread-1 00:13:00.356549900 : task [FIRST] is running
