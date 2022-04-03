@@ -2162,9 +2162,9 @@ I will show exapmles of the following:
 1. write a code for my own Thread Pool
 2. use ThreadPoolExecutor class
 3. Use Executor interface and Executors Class with 
-	1. [newFixedThreadPool(x)](#-)  -->  ExecutorService executor = Executors.newFixedThreadPool(2)
+	1. [newFixedThreadPool(x)](#-)  -->  **_ExecutorService executor = Executors.newFixedThreadPool(2)_**
 4. Use ScheduledExecutorService interface Executors Class with
-	1. [newScheduledThreadPool(x)](#-) --> ScheduledExecutorService executor = Executors.newScheduledThreadPool(2)
+	1. [newScheduledThreadPool(x)](#-) --> **_ScheduledExecutorService executor = Executors.newScheduledThreadPool(2)_**
 
 
 ### Example using [**_newFixedThreadPool_**](#-)
