@@ -2739,18 +2739,74 @@ public class MainFuture {
 }
 ```
 
-### Console output shows : return random value after a delayed time
+#### Console output shows : return random value after a delayed time
 
 ```java
 684313888
 ```
 
-Let's see another example with a List<Future>
+### Let's see another example with a List<Future>
 	
 ```java
+import java.util.Random;
+import java.util.concurrent.Callable;
+
+public class TaskCallable implements Callable<Integer> {
+
+	@Override
+	public Integer call() throws Exception {
+		Thread.sleep(2000);
+		return new Random().nextInt();
+	}
+}
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+public class MainFuture {
+
+	public static void main(String[] args) throws InterruptedException, ExecutionException {
+
+		ExecutorService executor = Executors.newFixedThreadPool(10);
+
+		List<Future<Integer>> futureList = new ArrayList<>();
+
+		for (int i = 0; i < 10; i++) {
+			Callable<Integer> callable = new TaskCallable();
+			Future<Integer> future = executor.submit(callable);
+			futureList.add(future);
+		}
+
+		for (Future<Integer> future : futureList) {
+			Integer result = future.get();
+			System.out.println(result);
+		}
+
+		executor.shutdown();
+	}
+}
 ```
-	
-	
+
+#### Console output shows : return random value after a delayed time	
+
+```java
+1408390107
+789322731
+220696880
+159765549
+-669818430
+1693243855
+1137387210
+1088773547
+275204021
+-1226892934
+```
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
