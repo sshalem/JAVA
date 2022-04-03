@@ -2167,7 +2167,7 @@ I will show exapmles of the following:
 	1. [newScheduledThreadPool(x)](#-) --> **_ScheduledExecutorService executor = Executors.newScheduledThreadPool(2)_**
 
 
-### 1. write a code for Thread Pool
+### 1. write my own code for Thread Pool
 
 ```java
 import java.util.ArrayList;
@@ -2288,11 +2288,130 @@ public class Main {
 }
 ```
 
-### 2. use **_ThreadPoolExecutor_** class
+### Console output shows (#-)
 
 ```java
+Thread-2: Task 0
+Thread-1: Task 2
+Thread-1: Task 4
+Thread-0: Task 1
+Thread-0: Task 6
+Thread-0: Task 7
+Thread-0: Task 8
+Thread-0: Task 9
+Thread-1: Task 5
+Thread-2: Task 3
 ```
 
+### 2. use [**_ThreadPoolExecutor_**](#-) class
+
+```java
+public class Worker implements Runnable {
+
+	private Integer count;
+
+	public Worker(Integer count) {
+		this.count = count;
+	}
+
+	@Override
+	public void run() {
+		System.out.println(Thread.currentThread().getName() + " start : " + count);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println(Thread.currentThread().getName() + " end : " + count);
+	}
+
+	@Override
+	public String toString() {
+		return count.toString();
+	}
+}
+
+import java.util.concurrent.RejectedExecutionHandler;
+import java.util.concurrent.ThreadPoolExecutor;
+
+public class RejectionHandler implements RejectedExecutionHandler {
+
+	@Override
+	public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+		System.out.println(Thread.currentThread().getName() + " " + r.toString() + " is rejected");
+	}
+}
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.Executors;
+import java.util.concurrent.RejectedExecutionHandler;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+public class MainThreadPoolDemo {
+
+	public static void main(String[] args) {
+
+		int corePoolSize = 2;
+		int maximumPoolSize = 5;
+		long keepAliveTime = 10;
+		int queueSize = 3;
+		BlockingQueue<Runnable> workQueue = new ArrayBlockingQueue<Runnable>(queueSize);
+		ThreadFactory threadFactory = Executors.defaultThreadFactory();
+		RejectedExecutionHandler handler = new RejectionHandler();
+
+		ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(
+				corePoolSize, 
+				maximumPoolSize, 
+				keepAliveTime,
+				TimeUnit.SECONDS,
+				workQueue,
+				threadFactory,
+				handler);
+
+		for (int i = 1; i <= 10; i++) {
+			Runnable worker = new Worker(i);
+			poolExecutor.execute(worker);
+		}
+		
+		poolExecutor.shutdown();
+	}
+}
+```
+
+### Console output shows (#-)
+
+question : why we have 2 rejects
+answer: change the **queueSize** to 3 scenarios below and examine the results, and see how it affects the program.
+also change the maximumPoolSize & corePoolSize and analyze the results. </br>
+also change the number of tasks of worker we run (From 10 to 20) and analyze the results.
+
+* **queueSize** > **maximumPoolSize**
+* **queueSize** < **maximumPoolSize**
+* **queueSize** = **maximumPoolSize**
+
+```java
+pool-1-thread-3 start : 6
+pool-1-thread-2 start : 2
+pool-1-thread-1 start : 1
+pool-1-thread-5 start : 8
+pool-1-thread-4 start : 7
+main 9 is rejected
+main 10 is rejected
+pool-1-thread-3 end : 6
+pool-1-thread-4 end : 7
+pool-1-thread-1 end : 1
+pool-1-thread-2 end : 2
+pool-1-thread-5 end : 8
+pool-1-thread-1 start : 5
+pool-1-thread-3 start : 3
+pool-1-thread-4 start : 4
+pool-1-thread-1 end : 5
+pool-1-thread-3 end : 3
+pool-1-thread-4 end : 4
+```
 
 ### 3. Use [**_Executors.newFixedThreadPool(2)_**](#-)
 
@@ -2453,6 +2572,12 @@ public class MainScheduledThreadPool {
 		ScheduledExecutorService executor = Executors.newScheduledThreadPool(2);
 
 		Runnable myTestRunnable = new MyTestRunnable("[MyTestRunnable]");
+		
+		/** Runnable command - myTestRunnable
+		  * long initialDelay
+		  * long period
+		  * TimeUnit unit
+		  */                                                  
 		executor.scheduleAtFixedRate(myTestRunnable, 2, 4, TimeUnit.SECONDS);
 
 		Runnable runnable1 = new MyRunnable("[FIRST]");
@@ -2469,7 +2594,13 @@ public class MainScheduledThreadPool {
 
 ### Console output shows  
 
-Since it is scheduled , then it will run at scheduleAtFixedRate 
+Since it is scheduled , then it will run at scheduleAtFixedRate <br>
+
+[MyTestRunnable](#-) after initial delay of 2 sec will run at fix rate of every 4 seconds  </br>
+[FIRST](#-) after initial delay of 1 sec will run at fix rate of every 5 seconds </br>
+[SECOND](#-) after initial delay of 3 sec will run at fix rate of every 5 seconds  </br>
+[THIRD](#-) after initial delay of 2 sec will run at fix rate of every 5 seconds  </br>
+
 
 ```java
 pool-1-thread-1 00:13:00.356549900 : task [FIRST] is running
@@ -2482,6 +2613,8 @@ pool-1-thread-2 00:13:06.335057300 : task [THIRD] is running
 pool-1-thread-1 00:13:07.336885400 : task [SECOND] is running
 pool-1-thread-2 00:13:09.338450200 task [MyTestRunnable]is running
 pool-1-thread-1 00:13:10.325735700 : task [FIRST] is running
+.
+.
 .
 .
 .
