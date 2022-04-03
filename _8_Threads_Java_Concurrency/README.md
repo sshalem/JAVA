@@ -2016,6 +2016,69 @@ The consuming thread keeps taking objects out of the BlockingQueue to processes 
 
 
 ```java
+import java.util.concurrent.BlockingQueue;
+
+public class Producer implements Runnable {
+
+	protected BlockingQueue<String> queue = null;
+
+	public Producer(BlockingQueue<String> queue) {
+		this.queue = queue;
+	}
+
+	public void run() {
+		try {
+			queue.put("1");
+			System.out.println("add to queue 1");
+			Thread.sleep(1000);
+			queue.put("2");
+			System.out.println("add to queue 2");
+			Thread.sleep(1000);
+			queue.put("3");
+			System.out.println("add to queue 3");
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+public class Consumer implements Runnable {
+
+	protected BlockingQueue<String> queue = null;
+
+	public Consumer(BlockingQueue<String> queue) {
+		this.queue = queue;
+	}
+
+	public void run() {
+		try {
+			System.out.println("take from queue " + queue.take());
+			System.out.println("take from queue " + queue.take());
+			System.out.println("take from queue " + queue.take());
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+public class MainBlockingQueue {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		BlockingQueue<String> queue = new ArrayBlockingQueue<>(1024);
+
+		Producer producer = new Producer(queue);
+		Consumer consumer = new Consumer(queue);
+
+		new Thread(producer).start();
+		new Thread(consumer).start();
+
+		Thread.sleep(4000);
+	}
+}
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
