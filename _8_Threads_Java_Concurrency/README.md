@@ -2383,7 +2383,7 @@ public class MainThreadPoolDemo {
 ### Console output shows (#-)
 
 [question:](#-) : why we have 2 rejects </br>
-[answer:](#-) It is because we used a ArrayBlockingQueue (Which is bounded). If we were using a LinkedBlockingQueue (Unbounded) we wouldn't got rejects</br>
+[answer:](#-) It is because we used a [**ArrayBlockingQueue**](#-) (Which is **bounded**). If we were using a [**LinkedBlockingQueue**](#-) (Unbounded) we wouldn't got rejects</br>
 also , if using ArrayBlockingQueue , change the **queueSize** to 3 scenarios below and examine the results, and see how it affects the program.
 also change the maximumPoolSize & corePoolSize and analyze the results. </br>
 also change the number of tasks of worker we run (From 10 to 20) and analyze the results.
