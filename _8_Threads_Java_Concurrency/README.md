@@ -2081,6 +2081,19 @@ public class MainBlockingQueue {
 }
 ```
 
+### Console output shows (#-)
+
+The moment a Producer add task to a queue , the consumer takes it from the Q.
+
+```java
+add to queue 1
+take from queue 1
+add to queue 2
+take from queue 2
+add to queue 3
+take from queue 3
+```
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
