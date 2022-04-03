@@ -2119,8 +2119,7 @@ take from queue 3
 4. [**newSingleThreadScheduledExecutor**](#-)
 5. [**newCachedThreadPool**](#-)
 
-
-![image](https://user-images.githubusercontent.com/36256986/159743899-8a964e19-214d-49a2-a434-1bb0055a6aad.png)
+![image](https://user-images.githubusercontent.com/36256986/161449547-a4185b46-534a-4e38-9dde-e8c2084dbc04.png)
 
 * [Question:](#-) 
 	* What is the Ideal number for a thread pool?
