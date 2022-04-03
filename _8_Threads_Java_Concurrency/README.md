@@ -2357,6 +2357,7 @@ public class MainThreadPoolDemo {
 		long keepAliveTime = 10;
 		int queueSize = 3;
 		BlockingQueue<Runnable> workQueue = new ArrayBlockingQueue<Runnable>(queueSize);
+		// BlockingQueue<Runnable> workQueue = new LinkedBlockingQueue<Runnable>();
 		ThreadFactory threadFactory = Executors.defaultThreadFactory();
 		RejectedExecutionHandler handler = new RejectionHandler();
 
@@ -2381,8 +2382,9 @@ public class MainThreadPoolDemo {
 
 ### Console output shows (#-)
 
-question : why we have 2 rejects
-answer: change the **queueSize** to 3 scenarios below and examine the results, and see how it affects the program.
+[question:](#-) : why we have 2 rejects </br>
+[answer:](#-) It is because we used a ArrayBlockingQueue (Which is bounded). If we were using a LinkedBlockingQueue (Unbounded) we wouldn't got rejects</br>
+also , if using ArrayBlockingQueue , change the **queueSize** to 3 scenarios below and examine the results, and see how it affects the program.
 also change the maximumPoolSize & corePoolSize and analyze the results. </br>
 also change the number of tasks of worker we run (From 10 to 20) and analyze the results.
 
