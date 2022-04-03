@@ -2299,6 +2299,8 @@ Thread-2: Task 3
 
 ### 2. use [**_ThreadPoolExecutor_**](#-) class
 
+[video link well explained](https://www.youtube.com/watch?v=Dma_NmOrp1c&ab_channel=DefogTech)
+
 ![image](https://user-images.githubusercontent.com/36256986/161449245-4ac96258-88aa-4b1b-bed2-d8a0e99f3bab.png)
 
 
