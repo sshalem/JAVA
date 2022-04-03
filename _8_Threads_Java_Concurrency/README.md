@@ -2699,6 +2699,8 @@ https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie  (Completeable
 we will se that [**callable**](#-) is in combination with [**Future**](#-) . </br>
 Since [**callable**](#-) returns a value, the [**Future**](#-) will wait for that value at a certain time in the FUTURE. </br>
 
+[Future](#-) is a place holder for a value that will arrive in some time in the FUTURE, based on how long the call() operations takes		
+		
 ```java
 import java.util.Random;
 import java.util.concurrent.Callable;
