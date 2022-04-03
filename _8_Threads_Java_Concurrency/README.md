@@ -2356,8 +2356,13 @@ public class MainThreadPoolDemo {
 		int maximumPoolSize = 5;
 		long keepAliveTime = 10;
 		int queueSize = 3;
+		
+		// ArrayBlockingQueue - Bounded Queue
 		BlockingQueue<Runnable> workQueue = new ArrayBlockingQueue<Runnable>(queueSize);
+		
+		// LinkedBlockingQueue - UnBounded Queue , no need to give an queueSize
 		// BlockingQueue<Runnable> workQueue = new LinkedBlockingQueue<Runnable>();
+		
 		ThreadFactory threadFactory = Executors.defaultThreadFactory();
 		RejectedExecutionHandler handler = new RejectionHandler();
 
