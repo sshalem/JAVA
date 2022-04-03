@@ -2299,6 +2299,9 @@ Thread-2: Task 3
 
 ### 2. use [**_ThreadPoolExecutor_**](#-) class
 
+![image](https://user-images.githubusercontent.com/36256986/161448972-247ea07d-d152-47b4-930d-5d532e71860a.png)
+
+
 ```java
 public class Worker implements Runnable {
 
