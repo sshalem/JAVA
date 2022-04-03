@@ -1986,7 +1986,7 @@ A lot depends on the OS and JVM. (see [StackOverflow](https://stackoverflow.com/
 
 <img src="https://img.shields.io/badge/-17. BlockingQueue %20-blue" height=40px>
 
-### [http://tutorials.jenkov.com/java-util-concurrent/blockingqueue.html](#-)
+http://tutorials.jenkov.com/java-util-concurrent/blockingqueue.html
 
 The Java BlockingQueue interface, represents a queue which is [thread safe](#-) to put elements into, and take elements out of from. In other words, multiple threads can be inserting and taking elements concurrently from a Java BlockingQueue, without any concurrency issues arising.
 
