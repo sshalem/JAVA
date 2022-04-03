@@ -2139,12 +2139,6 @@ take from queue 3
 
 link to [Thread Pool Executor work in Java](#-)
 
-1. https://www.youtube.com/watch?v=pYO3OEpvWFI&ab_channel=EasyLearning
-2. https://www.youtube.com/watch?v=-hs5rWz6T6k&ab_channel=AlmightyJava
-3. https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech
-4. https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie  (CompleteableFuture JavaTechie)
-
-
 Defog Tech links: </br>
 [Defog Tech 1](https://www.youtube.com/watch?v=6Oo-9Can3H8&ab_channel=DefogTech) </br>
 [Defog Tech 2](https://www.youtube.com/watch?v=sIkG0X4fqs4&ab_channel=DefogTech) </br>
@@ -2160,7 +2154,7 @@ Jacob Jenkov links: </br>
 
 I will show exapmles of the following:
 1. write a code for Thread Pool
-2. use **_ThreadPoolExecutor_** class
+2. use **_ThreadPoolExecutor_** class [link in youtube](https://www.youtube.com/watch?v=-hs5rWz6T6k&ab_channel=AlmightyJava)
 3. Use **_Executor_** interface and **_Executors_** Class with 
 	1. [newFixedThreadPool(x)](#-)  -->  **_ExecutorService executor = Executors.newFixedThreadPool(2)_**
 4. Use **_ScheduledExecutorService_** interface **_Executors_** Class with
@@ -2688,6 +2682,9 @@ public static Callable<Object> callable(Runnable task) {
 ###### 20
 
 <img src="https://img.shields.io/badge/-20.Future , CompletableFuture %20-blue" height=40px>
+
+https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie  (CompleteableFuture JavaTechie)
+
 
 ```java
 ```
