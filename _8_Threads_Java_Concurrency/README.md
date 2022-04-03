@@ -2698,8 +2698,59 @@ https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie  (Completeable
 
 
 ```java
+import java.util.Random;
+import java.util.concurrent.Callable;
+
+public class TaskCallable implements Callable<Integer> {
+
+	@Override
+	public Integer call() throws Exception {
+		Thread.sleep(2000);
+		return new Random().nextInt();
+	}
+}
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+public class MainFuture {
+
+	public static void main(String[] args) throws InterruptedException, ExecutionException {
+
+		ExecutorService executor = Executors.newFixedThreadPool(10);
+
+		Callable<Integer> callable = new TaskCallable();
+
+		// Future is a place holder for a value that will arrive
+		// in some time in the FUTURE, based on how long the call() operations takes
+		Future<Integer> future = executor.submit(callable);
+
+		// future.get() -> this line is a blocking operation because it makes the code
+		// to wait till it finishes its call() operation
+		Integer result = future.get();
+
+		System.out.println(result);
+
+		executor.shutdown();
+	}
+}
 ```
 
+### Console output shows : return random value after a delayed time
+
+```java
+684313888
+```
+
+Let's see another example with a List<Future>
+	
+```java
+```
+	
+	
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
