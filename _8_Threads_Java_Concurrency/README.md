@@ -2833,6 +2833,17 @@ public class MainFuture {
 	* using [**_Asynchronus_**](#-) programming , you can write **_Non-Blocking_**  code where concurrently you can run N num of task in seperate thread w/o blocking main thread.
 	* When the task is complete, it notifies to the main thread (whether the task was completed of failed)
 	
+
+* [Question:](#-)
+	* Why to use [**CompletableFuture**](#-)?
+* [Answer:](#-)
+	* There are different ways to implement [**_Asynchronus_**](#-) programming in JAVA using any of the below mechanisms for example , we can use Futures, ExecutorService, Callback interfaces , Thread pools, etc.
+
+	1. it cannot be manually completed.
+	2. Multiple Futures cannot be chained together.
+	3. We cannot combine multiple Futures together.
+	4. No prper Exception Handling Mechanism
+	
 	
 ```java
 ```
