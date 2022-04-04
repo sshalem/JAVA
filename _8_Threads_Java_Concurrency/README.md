@@ -2692,11 +2692,9 @@ public static Callable<Object> callable(Runnable task) {
 
 ###### 20
 
-<img src="https://img.shields.io/badge/-20.Future , CompletableFuture %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-20.Future  %20-blue" height=40px>
 
 [video link Future ](https://www.youtube.com/watch?v=NEZ2ASoP_nY&ab_channel=DefogTech) </br>
-[Video link CompletableFuture](https://www.youtube.com/watch?v=ImtZgX1nmr8&ab_channel=DefogTech) </br>
-[Video link CompletableFuture JavaTechie](https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie) </br>
 
 we will se that [**callable**](#-) is in combination with [**Future**](#-) . </br>
 Since [**callable**](#-) returns a value, the [**Future**](#-) will wait for that value at a certain time in the FUTURE. </br>
@@ -2819,8 +2817,25 @@ public class MainFuture {
 
 ###### 21
 
-<img src="https://img.shields.io/badge/-21. Fork/Join framework %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-21. CompletableFuture %20-blue" height=40px>
+	
+[Video link CompletableFuture JavaTechie](https://www.youtube.com/watch?v=GJ5Tx43q6KM)
+	
+[Video link CompletableFuture JavaTechie Spring](https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie) </br>
+	
+```java
+```
 
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+	
+###### 22
+
+<img src="https://img.shields.io/badge/-21. Fork/Join framework %20-blue" height=40px>
+	
+https://www.youtube.com/watch?v=GJ5Tx43q6KM
+	
 ```java
 ```
 
@@ -2828,9 +2843,9 @@ public class MainFuture {
 
 --------------------------------------------------------------------------------------------------
 
-###### 22
+###### 23
 
-<img src="https://img.shields.io/badge/-22. ConcurrentMap %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-23. ConcurrentMap %20-blue" height=40px>
 
 ```java
 ```
