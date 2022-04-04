@@ -24,9 +24,11 @@
 |  17 |[BlockingQueue](#17)   | 
 |  18 |[ThreadPoolExecutor/Executor framework](#18)   | 
 |  19 |[Callable/Runnable](#19)   | 
-|  20 |[Future , CompletableFuture](#20)   | 
-|  21 |[Fork/Join framework](#21)   | 
-|  22 |[ConcurrentMap](#22)   | 
+|  20 |[Future](#20)   | 
+|  21 |[CompletableFuture](#21)   | 
+|  22 |[Fork/Join framework](#22)   | 
+|  23 |[ConcurrentMap](#23)   | 
+
 
 
 
