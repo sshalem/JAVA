@@ -2825,11 +2825,14 @@ public class MainFuture {
 [CompletableFuture JavaTechie - part 2](https://www.youtube.com/watch?v=oFRtBuRviHM&ab_channel=JavaTechie) </br>
 [Video link CompletableFuture JavaTechie Spring](https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie) </br>
 
-* [Question:](#-):
+* [Question:](#-)
 	* what is [**CompletableFuture**](#-)?
 
-* [Answer:](#-):
-	* [**CompletableFuture**](#-) : a new era of [**_asynchronus_**](#-) programming
+* [Answer:](#-)
+	* [**CompletableFuture**](#-) : a new era of [**_Asynchronus_**](#-) programming
+	* using [**_Asynchronus_**](#-) programming , you can write **_Non-Blocking_**  code where concurrently you can run N num of task in seperate thread w/o blocking main thread.
+	* When the task is complete, it notifies to the main thread (whether the task was completed of failed)
+	
 	
 ```java
 ```
