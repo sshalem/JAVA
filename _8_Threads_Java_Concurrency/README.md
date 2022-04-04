@@ -2821,7 +2821,8 @@ public class MainFuture {
 
 <img src="https://img.shields.io/badge/-21. CompletableFuture %20-blue" height=40px>
 	
-[Video link CompletableFuture JavaTechie](https://www.youtube.com/watch?v=GJ5Tx43q6KM)
+[CompletableFuture JavaTechie - part 1](https://www.youtube.com/watch?v=GJ5Tx43q6KM)
+[CompletableFuture JavaTechie - part 2](https://www.youtube.com/watch?v=oFRtBuRviHM&ab_channel=JavaTechie)
 	
 [Video link CompletableFuture JavaTechie Spring](https://www.youtube.com/watch?v=3rJBLFA95Io&ab_channel=JavaTechie) </br>
 	
