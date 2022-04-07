@@ -3028,6 +3028,7 @@ value : hello from supllier
 
 <img src="https://img.shields.io/badge/-22. Callback CompletableFuture %20-blue" height=40px>
 	
+![image](https://user-images.githubusercontent.com/36256986/162240683-bf4a30bf-c900-4db2-9e81-cbf04e77c84b.png)
 
 	
 ```java
