@@ -2,33 +2,33 @@
 
 <img src="https://img.shields.io/badge/-Threads : Java Concurrency%20-blue" height=70px>
 
-|     |  Subject           |
-|:---:|:------------------------------| 
-|     |[Top 50 Java Thread Interview Questions](https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-interview-questions-answers.html?m=1#ixzz7JncfbQkM)   | 
-|  1  |[Thread Life Cycle](#1)   | 
-|  2  |[Thread vs Process vs Task](#2)   | 
-|  3  |[How to Create Thread](#3)   | 
-|  4  |[sleep](#4)   | 
-|  5  |[Race Condition](#5)   | 
-|  6  |[synchronize, Lock](#6)  | 
-|  7  |[wait, notify, notify all](#7)  | 
-|  8  |[join()](#8)   | 
-|  9  |[interrupt()](#9)   | 
-|  10 |[Semaphore](#10)   | 
-|  11 |[Lock , ReentrantLock](#11)   | 
-|  12 |[Lock , ReadWriteLock](#12)   | 
-|  13 |[DeadLock ,Yield](#13)   | 
-|  14 |[Volatile](#14)   | 
-|  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   | 
-|  16 |[Thread Scheduler](#16)   | 
-|  17 |[BlockingQueue](#17)   | 
-|  18 |[ThreadPoolExecutor/Executor framework](#18)   | 
-|  19 |[Callable/Runnable](#19)   | 
-|  20 |[Future](#20)   | 
-|  21 |[CompletableFuture](#21)   | 
-|  22 |[Callback CompletableFuture](#22)   | 
-|  22 |[Fork/Join framework](#22)   | 
-|  23 |[ConcurrentMap](#23)   | 
+|     |  Subject           |              |
+|:---:|:------------------------------|:-----| 
+|     |[Top 50 Java Thread Interview Questions](https://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-interview-questions-answers.html?m=1#ixzz7JncfbQkM)   |     |
+|  1  |[Thread Life Cycle](#1)   |     |
+|  2  |[Thread vs Process vs Task](#2)   |     |
+|  3  |[How to Create Thread](#3)   | 		|
+|  4  |[sleep](#4)   |  		|
+|  5  |[Race Condition](#5)   |  		|
+|  6  |[synchronize, Lock](#6)  |  		|
+|  7  |[wait, notify, notify all](#7)  |  		|
+|  8  |[join()](#8)   |  		|
+|  9  |[interrupt()](#9)   |  		|
+|  10 |[Semaphore](#10)   |  		|
+|  11 |[Lock , ReentrantLock](#11)   |  		|
+|  12 |[Lock , ReadWriteLock](#12)   |  		|
+|  13 |[DeadLock ,Yield](#13)   |  		|
+|  14 |[Volatile](#14)   |  		|
+|  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   |  		|
+|  16 |[Thread Scheduler](#16)   |  		|
+|  17 |[BlockingQueue](#17)   |  		|
+|  18 |[ThreadPoolExecutor/Executor framework](#18)   |  		|
+|  19 |[Callable/Runnable](#19)   |  		|
+|  20 |[Future](#20)   |  		|
+|  21 |[CompletableFuture](#21)   |  		|
+|  21.1  |			   |[Callback CompletableFuture](#211)	|
+|  22 |[Fork/Join framework](#22)   |  		|
+|  23 |[ConcurrentMap](#23)   |  		|
 
 
 
@@ -3024,9 +3024,9 @@ value : hello from supllier
 
 --------------------------------------------------------------------------------------------------
 
-###### 22
+###### 211
 
-<img src="https://img.shields.io/badge/-22. Callback CompletableFuture %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-21.1. Callback CompletableFuture %20-blue" height=40px>
 	
 ![image](https://user-images.githubusercontent.com/36256986/162241235-b9b6d238-48a3-485d-a5e5-6937f34a65d1.png)
 
@@ -3040,9 +3040,9 @@ value : hello from supllier
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
-###### 23
+###### 22
 
-<img src="https://img.shields.io/badge/-23. Fork/Join framework %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-22. Fork/Join framework %20-blue" height=40px>
 	
 https://www.youtube.com/watch?v=GJ5Tx43q6KM
 	
@@ -3053,7 +3053,7 @@ https://www.youtube.com/watch?v=GJ5Tx43q6KM
 
 --------------------------------------------------------------------------------------------------
 
-###### 24
+###### 23
 
 <img src="https://img.shields.io/badge/-24. ConcurrentMap %20-blue" height=40px>
 
