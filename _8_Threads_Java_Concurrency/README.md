@@ -26,7 +26,8 @@
 |  19 |[Callable/Runnable](#19)   |  		|
 |  20 |[Future](#20)   |  		|
 |  21 |[CompletableFuture](#21)   |  		|
-|  21.1  |			   |[Callback CompletableFuture](#211)	|
+|     |	21.1		   |[Callback CompletableFuture](#211)	|
+|     |	21.2		   |[Compose CompletableFuture](#212)	|
 |  22 |[Fork/Join framework](#22)   |  		|
 |  23 |[ConcurrentMap](#23)   |  		|
 
@@ -3040,6 +3041,19 @@ value : hello from supllier
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
+	
+###### 212
+
+<img src="https://img.shields.io/badge/-21.1. Compse CompletableFuture %20-blue" height=40px>
+	
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+	
 ###### 22
 
 <img src="https://img.shields.io/badge/-22. Fork/Join framework %20-blue" height=40px>
