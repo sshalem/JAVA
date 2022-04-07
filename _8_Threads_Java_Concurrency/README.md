@@ -3033,9 +3033,35 @@ value : hello from supllier
 
 ### Let's look in examples where we can use these methods
 
-
-	
 ```java
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+
+public class CallbackExample {
+
+	public static void main(String[] args) {
+
+		CompletableFuture<Void> completableFuture = CompletableFuture.supplyAsync(() -> {
+			delay(2);
+			return "Tech recipes";
+		}).thenApply(s -> {
+			return "Hello " + s;
+		}).thenAccept(s -> {
+			System.out.println(s);
+		});
+
+		completableFuture.join();
+	}
+
+	public static void delay(int seconds) {
+		try {
+			TimeUnit.SECONDS.sleep(seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
