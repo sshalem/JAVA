@@ -3030,6 +3030,8 @@ value : hello from supllier
 	
 ![image](https://user-images.githubusercontent.com/36256986/162241235-b9b6d238-48a3-485d-a5e5-6937f34a65d1.png)
 
+### Let's look in examples where we can use these methods
+
 
 	
 ```java
