@@ -3063,6 +3063,12 @@ public class CallbackExample {
 }
 
 ```
+	
+#### Console output shows :
+
+```java
+Hello Tech recipes
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
