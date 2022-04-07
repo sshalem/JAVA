@@ -2845,7 +2845,19 @@ With **Future** we hav the following **_DisAdvantages_**:
 3. We cannot combine multiple Futures together. (Like Future1 + Future2...)
 4. No prper Exception Handling Mechanism
 	
-Thus we need CompletableFuture
+Thus we need CompletableFuture.
+
+### [runAsync() Vs supplyAsync()](#-)
+
+* If we want to run some background task asynchronously and **_do not want to return_** anything from that task, the use **_CompletableFuture.runAsync()_** method. It takes [Runnable](#-) Object and returns [CompletableFuture<Void>](#-).
+1. CompletableFuture.runAsunc(Runnable)
+2. CompletableFuture.runAsunc(Runnable, Executor)
+
+* If we want to run some background task asynchronously and **_want to return_** anything from that task, we should use **_CompletableFuture.supplyAsync()_** method. It takes a [Supplier<T>](#-) Object and returns [CompletableFuture<T>](#-) where T is the type of the value obtained by calling the givewn supplier.
+1. CompletableFuture.supplyAsync(Supplier<T>)
+2. CompletableFuture.supplyAsync(Supplier<T>, Executor)
+
+
 
 ```java
 ```
