@@ -2818,8 +2818,11 @@ public class MainFuture {
 --------------------------------------------------------------------------------------------------
 
 ###### 21
-
+	
 <img src="https://img.shields.io/badge/-21. CompletableFuture %20-blue" height=40px>
+
+1. https://www.youtube.com/watch?v=217XaErWYJE&ab_channel=TechRecipes
+2. https://www.youtube.com/watch?v=2ddCC6R5u0E&ab_channel=TechRecipes
 	
 [CompletableFuture JavaTechie - part 1](https://www.youtube.com/watch?v=GJ5Tx43q6KM) </br>
 [CompletableFuture JavaTechie - part 2](https://www.youtube.com/watch?v=oFRtBuRviHM&ab_channel=JavaTechie) </br>
@@ -2857,6 +2860,7 @@ Thus we need CompletableFuture.
 1. CompletableFuture.supplyAsync(Supplier<T>)
 2. CompletableFuture.supplyAsync(Supplier<T>, Executor)
 
+	
 ```java
 ```
 
