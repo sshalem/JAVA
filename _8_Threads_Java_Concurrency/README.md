@@ -2857,8 +2857,8 @@ Thus we need CompletableFuture.
 2. CompletableFuture.runAsunc(Runnable, Executor)
 
 * If we want to run some background task asynchronously and **_want to return_** anything from that task, we should use **_CompletableFuture.supplyAsync()_** method. It takes a **_Supplier<T>_** Object and returns **_CompletableFuture<T>_** where T is the type of the value obtained by calling the givewn supplier.
-1. CompletableFuture.supplyAsync(Supplier<T>)
-2. CompletableFuture.supplyAsync(Supplier<T>, Executor)
+3. CompletableFuture.supplyAsync(Supplier<T>)
+4. CompletableFuture.supplyAsync(Supplier<T>, Executor)
 
 
 ### 1. [CompletableFuture.runAsunc(Runnable)](#-)
@@ -2937,7 +2937,88 @@ I am in main Thread
 I am in Runnable - pool-1-thread-1
 ```
 
+### 3. [CompletableFuture.supplyAsync(Supplier<T>)](#-)
 	
+```java
+public class SupplyAsyncExample {
+
+	public static void main(String[] args) {
+
+		Supplier<String> supplier = () -> {
+			delay(1);
+			System.out.println("I am in Supplier - " + Thread.currentThread().getName());
+			return "hello from supllier";
+		};
+
+		CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(supplier);
+		System.out.println("I am in " + Thread.currentThread().getName() + " Thread");
+		String value = completableFuture.join();
+
+		System.out.println("value : " + value);
+	}
+
+	public static void delay(int seconds) {
+		try {
+			TimeUnit.SECONDS.sleep(seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+#### Console output shows :
+
+Runnable is been used by ExecutorService of **_ForkJoinPool.commonPool-worker-3_**
+	
+```java
+I am in main Thread
+I am in Supplier - ForkJoinPool.commonPool-worker-3
+value : hello from supllier
+```
+
+### 4. [CompletableFuture.supplyAsync(Supplier<T>, Executor)](#-)
+	
+```java
+public class SupplyAsyncExample {
+
+	public static void main(String[] args) {
+
+		ExecutorService executorService = Executors.newFixedThreadPool(5);
+
+		Supplier<String> supplier = () -> {
+			delay(1);
+			System.out.println("I am in Supplier - " + Thread.currentThread().getName());
+			return "hello from supllier";
+		};
+
+		CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(supplier, executorService);
+		System.out.println("I am in " + Thread.currentThread().getName() + " Thread");
+		String value = completableFuture.join();
+
+		System.out.println("value : " + value);
+	}
+
+	public static void delay(int seconds) {
+		try {
+			TimeUnit.SECONDS.sleep(seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+#### Console output shows :
+
+Runnable is been used by ExecutorService of **_pool-1-thread-1_**
+	
+```java
+I am in main Thread
+I am in Supplier - pool-1-thread-1
+value : hello from supllier
+```
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
