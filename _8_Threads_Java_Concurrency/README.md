@@ -2840,9 +2840,9 @@ public class MainFuture {
 	* There are different ways to implement [**_Asynchronus_**](#-) programming in JAVA using any of the below mechanisms for example , we can use Futures, ExecutorService, Callable interfaces , Thread pools, etc. </br>
 
 With **Future** we hav the following **_DisAdvantages_**:
-1. it cannot be manually completed.
-2. Multiple Futures cannot be chained together.
-3. We cannot combine multiple Futures together.
+1. it cannot be manually completed. (we have to wait till Future.get()  retruns a value)
+2. Multiple Futures cannot be chained together. (We cannot Pass Future.get() to another Thread for execution)
+3. We cannot combine multiple Futures together. (Like Future1 + Future2...)
 4. No prper Exception Handling Mechanism
 	
 Thus we need CompletableFuture
