@@ -2853,11 +2853,9 @@ Thus we need CompletableFuture.
 1. CompletableFuture.runAsunc(Runnable)
 2. CompletableFuture.runAsunc(Runnable, Executor)
 
-* If we want to run some background task asynchronously and **_want to return_** anything from that task, we should use **_CompletableFuture.supplyAsync()_** method. It takes a [Supplier<T>](#-) Object and returns [CompletableFuture<T>](#-) where T is the type of the value obtained by calling the givewn supplier.
+* If we want to run some background task asynchronously and **_want to return_** anything from that task, we should use **_CompletableFuture.supplyAsync()_** method. It takes a **_Supplier<T>_** Object and returns **_CompletableFuture<T>_** where T is the type of the value obtained by calling the givewn supplier.
 1. CompletableFuture.supplyAsync(Supplier<T>)
 2. CompletableFuture.supplyAsync(Supplier<T>, Executor)
-
-
 
 ```java
 ```
