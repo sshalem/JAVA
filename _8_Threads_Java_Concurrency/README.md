@@ -2860,10 +2860,84 @@ Thus we need CompletableFuture.
 1. CompletableFuture.supplyAsync(Supplier<T>)
 2. CompletableFuture.supplyAsync(Supplier<T>, Executor)
 
+
+### 1. [CompletableFuture.runAsunc(Runnable)](#-)
 	
 ```java
+public class AsyncExample {
+
+	public static void main(String[] args) {
+
+		Runnable runnable = () -> {
+			delay(1);
+			System.out.println("I am in Runnable - " + Thread.currentThread().getName());
+		};
+
+		CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(runnable);
+		System.out.println("I am in " + Thread.currentThread().getName() + " Thread");
+		completableFuture.join();
+	}
+
+	public static void delay(int seconds) {
+		try {
+			TimeUnit.SECONDS.sleep(seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
 ```
 
+#### Console output shows :
+
+Runnable is been used by framwork of **_ForkJoinPool.commonPool_**
+	
+```java
+I am in main Thread
+I am in Runnable - ForkJoinPool.commonPool-worker-3
+```
+
+### 2. [CompletableFuture.runAsunc(Runnable, Executor)](#-)
+	
+```java
+public class AsyncExample {
+
+	public static void main(String[] args) {
+
+		ExecutorService executorService = Executors.newFixedThreadPool(5);
+
+		Runnable runnable = () -> {
+			delay(1);
+			System.out.println("I am in Runnable - " + Thread.currentThread().getName());
+		};
+
+		CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(runnable, executorService);
+
+		System.out.println("I am in " + Thread.currentThread().getName() + " Thread");
+
+		completableFuture.join();
+	}
+
+	public static void delay(int seconds) {
+		try {
+			TimeUnit.SECONDS.sleep(seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+#### Console output shows :
+
+Runnable is been used by ExecutorService of **_pool-1-thread-1_**
+	
+```java
+I am in main Thread
+I am in Runnable - pool-1-thread-1
+```
+
+	
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 --------------------------------------------------------------------------------------------------
