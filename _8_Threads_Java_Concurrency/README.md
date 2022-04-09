@@ -3103,7 +3103,7 @@ public class CompseExample {
 		System.out.println(LocalTime.now() + " : start Operation");
 		
 		CompletableFuture<String> future = getUserDetails().
-				thenCompose(s -> getWishList(s));
+							thenCompose(s -> getWishList(s));
 		
 		System.out.println(LocalTime.now() + " : Doing something");
 		delay(4);
