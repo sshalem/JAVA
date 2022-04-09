@@ -26,8 +26,8 @@
 |  19 |[Callable/Runnable](#19)   |  		|
 |  20 |[Future](#20)   |  		|
 |  21 |[CompletableFuture](#21)   |  		|
-|     |	21.1		   |[Callback CompletableFuture](#21.1)	|
-|     |	21.2		   |[Compose CompletableFuture](#21.2)	|
+|     |	21.1		   |[Callback CompletableFuture](#21-1)	|
+|     |	21.2		   |[Compose CompletableFuture](#21-2)	|
 |  22 |[Fork/Join framework](#22)   |  		|
 |  23 |[ConcurrentMap](#23)   |  		|
 
@@ -3025,7 +3025,7 @@ value : hello from supllier
 
 --------------------------------------------------------------------------------------------------
 
-###### 21.1
+###### 21-1
 
 <img src="https://img.shields.io/badge/-21.1. Callback CompletableFuture %20-blue" height=40px>
 	
@@ -3074,7 +3074,7 @@ Hello Tech recipes
 
 --------------------------------------------------------------------------------------------------
 	
-###### 21.2
+###### 21-2
 
 <img src="https://img.shields.io/badge/-21.1. Compse CompletableFuture %20-blue" height=40px>
 	
