@@ -28,6 +28,7 @@
 |  21 |[CompletableFuture](#21)   |  		|
 |     |	21.1		   |[Callback CompletableFuture](#21-1)	|
 |     |	21.2		   |[Compose Dependent CompletableFuture](#21-2)	|
+|     |	21.3		   |[Combine Independent CompletableFuture](#21-3)	|
 |  22 |[Fork/Join framework](#22)   |  		|
 |  23 |[ConcurrentMap](#23)   |  		|
 
@@ -3153,6 +3154,21 @@ what we got is 5 sec for total time.
 00:53:31.891124100 : getWishList() ENDED UserDetails - ForkJoinPool.commonPool-worker-5
 00:53:30.871991300 : User WishList
 00:53:31.891124100 : end Operation
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 21-3
+
+<img src="https://img.shields.io/badge/-21.3. Combine Independent CompletableFuture %20-blue" height=40px>
+
+
+![image](https://user-images.githubusercontent.com/36256986/162592976-1b59c75a-ffa7-4a0b-9791-0f7cde5029f2.png)
+
+
+```java
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
