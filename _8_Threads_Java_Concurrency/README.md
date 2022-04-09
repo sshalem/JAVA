@@ -27,7 +27,7 @@
 |  20 |[Future](#20)   |  		|
 |  21 |[CompletableFuture](#21)   |  		|
 |     |	21.1		   |[Callback CompletableFuture](#21-1)	|
-|     |	21.2		   |[Compose CompletableFuture](#21-2)	|
+|     |	21.2		   |[Compose Dependent CompletableFuture](#21-2)	|
 |  22 |[Fork/Join framework](#22)   |  		|
 |  23 |[ConcurrentMap](#23)   |  		|
 
@@ -3079,8 +3079,16 @@ Hello Tech recipes
 	
 ###### 21-2
 
-<img src="https://img.shields.io/badge/-21.1. Compse CompletableFuture %20-blue" height=40px>
-	
+<img src="https://img.shields.io/badge/-21.1. Compse Dependent CompletableFuture %20-blue" height=40px>
+
+Consider 2 Asynchronuos operations , where second operation is dependent on the output of the first operation. In this case both operations are dependent on each other. </br>
+* For example
+	* we need to get a wishList of a user, however, before we call a getWishList Async method, we need to get userDetails first. </br>
+[getWishList()](#-) depends upon [getUserDetails()](#-).</br>
+If we want make these calls Asynchronuosly on different Threads, what we can do with [CompletableFuture](#-) , is to use the [thenCompse()](#-) method.
+
+![image](https://user-images.githubusercontent.com/36256986/162592080-2afced91-35d6-4aab-8a12-cef600956b29.png)
+
 
 ```java
 ```
