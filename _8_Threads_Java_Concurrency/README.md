@@ -2852,9 +2852,12 @@ With **Future** we hav the following **_DisAdvantages_**:
 	
 Thus we need CompletableFuture.
 
-### [runAsync() Vs supplyAsync()](#-)
+## [runAsync() Vs supplyAsync()](#-)
 
-* If we want to run some background task asynchronously and **_do not want to return_** anything from that task, the use **_CompletableFuture.runAsync()_** method. It takes [Runnable](#-) Object and returns [CompletableFuture<Void>](#-).
+![image](https://user-images.githubusercontent.com/36256986/162591471-e7cef0ba-905e-4e84-b5d9-c4750426375e.png)
+
+* If we want to run some background task asynchronously and **_do not want to return_** anything from that task, the use **_CompletableFuture.runAsync()_** method.
+</br> It takes [Runnable](#-) Object and returns [CompletableFuture<Void>](#-).
 1. CompletableFuture.runAsunc(Runnable)
 2. CompletableFuture.runAsunc(Runnable, Executor)
 
