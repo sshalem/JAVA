@@ -3141,6 +3141,9 @@ public class CompseExample {
 
 #### Console output shows :
 
+According the code, we ahve  2 + 3 + 4 delay time  = 9sec </br>
+what we got is 5 sec for total time. 
+
 ```java
 00:53:26.854786900 : start Operation
 00:53:26.866756100 : getUserDetails() STARTED ForkJoinPool.commonPool-worker-3
