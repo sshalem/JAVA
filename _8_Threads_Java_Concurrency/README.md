@@ -3092,6 +3092,7 @@ It allows us to run them sequentially.
 ![image](https://user-images.githubusercontent.com/36256986/162592356-f9288faa-46c1-4d09-92a1-c26c7f04eb0e.png)
 
 ```java
+import java.time.LocalTime;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
@@ -3099,23 +3100,21 @@ public class CompseExample {
 
 	public static void main(String[] args) {
 
-		long startTime = System.currentTimeMillis();
+		System.out.println(LocalTime.now() + " : start Operation");
 		
 		CompletableFuture<String> future = getUserDetails().
 				thenCompose(s -> getWishList(s));
 		
-		System.out.println("Doing something");
+		System.out.println(LocalTime.now() + " : Doing something");
 		delay(4);
-		System.out.println(future.join());
-
-		long endTime = System.currentTimeMillis();
+		System.out.println(LocalTime.now() + " : " + future.join());
 		
-		System.out.println("Taken time = " + (endTime - startTime)/1000);
+		System.out.println(LocalTime.now() + " : end Operation");
 	}
 
 	public static CompletableFuture<String> getUserDetails() {
 		return CompletableFuture.supplyAsync(() -> {
-			System.out.println("getUserDetails() " + Thread.currentThread().getName());
+			System.out.println(LocalTime.now() + " : getUserDetails() " + Thread.currentThread().getName());
 			delay(2);
 			return "UserDetails";
 		});
@@ -3123,7 +3122,7 @@ public class CompseExample {
 
 	public static CompletableFuture<String> getWishList(String user) {
 		return CompletableFuture.supplyAsync(() -> {
-			System.out.println("getWishList() " + user + " - " + Thread.currentThread().getName());
+			System.out.println(LocalTime.now() + " : getWishList() " + user + " - " + Thread.currentThread().getName());
 			delay(3);
 			return "User WishList";
 		});
@@ -3142,11 +3141,12 @@ public class CompseExample {
 #### Console output shows :
 
 ```java
-getUserDetails() ForkJoinPool.commonPool-worker-3
-Doing something
-getWishList() UserDetails - ForkJoinPool.commonPool-worker-5
-User WishList
-Taken time = 5
+00:44:46.102753100 : start Operation
+00:44:46.113723300 : getUserDetails() ForkJoinPool.commonPool-worker-3
+00:44:46.113723300 : Doing something
+00:44:48.129915700 : getWishList() UserDetails - ForkJoinPool.commonPool-worker-5
+00:44:50.122631700 : User WishList
+00:44:51.144052700 : end Operation
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
