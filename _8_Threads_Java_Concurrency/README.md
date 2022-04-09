@@ -3113,18 +3113,18 @@ public class CompseExample {
 
 	public static CompletableFuture<String> getUserDetails() {
 		return CompletableFuture.supplyAsync(() -> {
-			System.out.println(LocalTime.now() + " : getUserDetails() started" + Thread.currentThread().getName());
+			System.out.println(LocalTime.now() + " : getUserDetails() STARTED " + Thread.currentThread().getName());
 			delay(2);
-			System.out.println(LocalTime.now() + " : getUserDetails() ended" + Thread.currentThread().getName());
+			System.out.println(LocalTime.now() + " : getUserDetails() ENDED " + Thread.currentThread().getName());
 			return "UserDetails";
 		});
 	}
 
 	public static CompletableFuture<String> getWishList(String user) {
 		return CompletableFuture.supplyAsync(() -> {
-			System.out.println(LocalTime.now() + " : getWishList() started" + user + " - " + Thread.currentThread().getName());
+			System.out.println(LocalTime.now() + " : getWishList() STARTED " + user + " - " + Thread.currentThread().getName());
 			delay(3);
-			System.out.println(LocalTime.now() + " : getWishList() ended" + user + " - " + Thread.currentThread().getName());
+			System.out.println(LocalTime.now() + " : getWishList() ENDED " + user + " - " + Thread.currentThread().getName());
 			return "User WishList";
 		});
 	}
@@ -3142,14 +3142,14 @@ public class CompseExample {
 #### Console output shows :
 
 ```java
-00:51:23.403729500 : start Operation
-00:51:23.414700500 : getUserDetails() startedForkJoinPool.commonPool-worker-3
-00:51:23.415697900 : Doing something
-00:51:25.416276100 : getUserDetails() endedForkJoinPool.commonPool-worker-3
-00:51:25.420019900 : getWishList() startedUserDetails - ForkJoinPool.commonPool-worker-5
-00:51:28.435371300 : getWishList() endedUserDetails - ForkJoinPool.commonPool-worker-5
-00:51:27.429158300 : User WishList
-00:51:28.435371300 : end Operation
+00:53:26.854786900 : start Operation
+00:53:26.866756100 : getUserDetails() STARTED ForkJoinPool.commonPool-worker-3
+00:53:26.866756100 : Doing something
+00:53:28.878508800 : getUserDetails() ENDED ForkJoinPool.commonPool-worker-3
+00:53:28.882117700 : getWishList() STARTED UserDetails - ForkJoinPool.commonPool-worker-5
+00:53:31.891124100 : getWishList() ENDED UserDetails - ForkJoinPool.commonPool-worker-5
+00:53:30.871991300 : User WishList
+00:53:31.891124100 : end Operation
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
