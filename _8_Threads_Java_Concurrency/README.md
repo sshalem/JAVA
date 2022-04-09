@@ -3085,12 +3085,68 @@ Consider 2 Asynchronuos operations , where second operation is dependent on the 
 * For example
 	* we need to get a wishList of a user, however, before we call a getWishList Async method, we need to get userDetails first. </br>
 [getWishList()](#-) depends upon [getUserDetails()](#-).</br>
-If we want make these calls Asynchronuosly on different Threads, what we can do with [CompletableFuture](#-) , is to use the [thenCompse()](#-) method.
+If we want make these calls Asynchronuosly on different Threads, what we can do with [CompletableFuture](#-) , is to use the [thenCompse()](#-) method.</br>
+[thenCompse()](#-) allows us to chain asynchronous operations (CompletableFutures). </br>
+It allows us to run them sequentially.
 
-![image](https://user-images.githubusercontent.com/36256986/162592080-2afced91-35d6-4aab-8a12-cef600956b29.png)
-
+![image](https://user-images.githubusercontent.com/36256986/162592356-f9288faa-46c1-4d09-92a1-c26c7f04eb0e.png)
 
 ```java
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+
+public class CompseExample {
+
+	public static void main(String[] args) {
+
+		long startTime = System.currentTimeMillis();
+		
+		CompletableFuture<String> future = getUserDetails().
+				thenCompose(s -> getWishList(s));
+		
+		System.out.println("Doing something");
+		delay(4);
+		System.out.println(future.join());
+
+		long endTime = System.currentTimeMillis();
+		
+		System.out.println("Taken time = " + (endTime - startTime)/1000);
+	}
+
+	public static CompletableFuture<String> getUserDetails() {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println("getUserDetails() " + Thread.currentThread().getName());
+			delay(2);
+			return "UserDetails";
+		});
+	}
+
+	public static CompletableFuture<String> getWishList(String user) {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println("getWishList() " + user + " - " + Thread.currentThread().getName());
+			delay(3);
+			return "User WishList";
+		});
+	}
+
+	public static void delay(int seconds) {
+		try {
+			TimeUnit.SECONDS.sleep(seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+#### Console output shows :
+
+```java
+getUserDetails() ForkJoinPool.commonPool-worker-3
+Doing something
+getWishList() UserDetails - ForkJoinPool.commonPool-worker-5
+User WishList
+Taken time = 5
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
