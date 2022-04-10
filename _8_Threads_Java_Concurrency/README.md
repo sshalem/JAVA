@@ -3216,6 +3216,9 @@ public class CombineExample {
 
 #### Console output shows :
 
+log shows both CompletableFuture's getWeatherReport() & getUserEmail() , started at the same time with differetn Thread.
+we thenCombine() the results of both Independent Threads , to a single response.
+
 ```java
 15:42:37.890689100 getWeatherReport() ForkJoinPool.commonPool-worker-5
 15:42:37.890689100 getUserEmail() ForkJoinPool.commonPool-worker-3
