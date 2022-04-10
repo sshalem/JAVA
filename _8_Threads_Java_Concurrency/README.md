@@ -3142,7 +3142,7 @@ public class CompseExample {
 
 #### Console output shows :
 
-According the code, we ahve  2 + 3 + 4 delay time  = 9sec </br>
+According the code, we have  2 + 3 + 4 delay time  = 9sec </br>
 what we got is 5 sec for total time. 
 
 ```java
@@ -3169,6 +3169,59 @@ what we got is 5 sec for total time.
 
 
 ```java
+import java.time.LocalTime;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+
+public class CombineExample {
+
+	public static void main(String[] args) {
+
+		CompletableFuture<String> future = getUserEmail().thenCombine(getWeatherReport(), (email, weather) -> {
+			System.out.println(LocalTime.now() + " " + "Sending email to " + email + " with report " + weather);
+			delay(1);
+			return email + weather;
+		});
+
+		System.out.println(LocalTime.now() + " Do Something " + Thread.currentThread().getName());
+		delay(3);
+		System.out.println(LocalTime.now() + " FUTURE : " + future.join());
+	}
+
+	public static CompletableFuture<String> getUserEmail() {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println(LocalTime.now() + " " + "getUserEmail() " + Thread.currentThread().getName());
+			delay(3);
+			return "shabtay.shalem@gmail.com ";
+		});
+	}
+
+	public static CompletableFuture<String> getWeatherReport() {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println(LocalTime.now() + " " + "getWeatherReport() " + Thread.currentThread().getName());
+			delay(3);
+			return " Weather report of the city is - Rainy";
+		});
+	}
+
+	public static void delay(int seconds) {
+		try {
+			TimeUnit.SECONDS.sleep(seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+#### Console output shows :
+
+```java
+15:42:37.890689100 getWeatherReport() ForkJoinPool.commonPool-worker-5
+15:42:37.890689100 getUserEmail() ForkJoinPool.commonPool-worker-3
+15:42:37.890689100 Do Something main
+15:42:40.899343100 Sending email to shabtay.shalem@gmail.com  with report  Weather report of the city is - Rainy
+15:42:40.899343100 FUTURE : shabtay.shalem@gmail.com  Weather report of the city is - Rainy
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
