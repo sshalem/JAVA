@@ -29,7 +29,7 @@
 |     |	21.1		   |[Callback CompletableFuture](#21-1)	|
 |     |	21.2		   |[Compose Dependent CompletableFuture](#21-2)	|
 |     |	21.3		   |[Combine Independent CompletableFuture](#21-3)	|
-|     |	21.4		   |[allOf() & anyOf() CompletableFuture](#21-3)	|
+|     |	21.4		   |[allOf() & anyOf() CompletableFuture](#21-4)	|
 |  22 |[Fork/Join framework](#22)   |  		|
 |  23 |[ConcurrentMap](#23)   |  		|
 
@@ -3371,7 +3371,8 @@ All Threads started at the same time (Including main Thread). </br>
 Each Thread finished at differetn time (Because of it's delay time). </br>
 [anyOf()](#-) returns the first Future that finishes (Which is Future-3). </br>
 	Question : why future-2 is not ENDED? </br>
-	Answer : Because of it's delay Time is 4 , and does not have enough time to finish. anyOfFuture.join() finish execution , but Future-2 doesn't END. if we change the Delay Time we of Future-2 , or the main Thread delay (make it 3 for example) , Future-2 will END as well.
+	Answer : Because of it's delay Time is 4 , and does not have enough time to finish. anyOfFuture.join() finish execution , but Future-2 doesn't END. </br>
+	if we change the Delay Time we of Future-2 , or the main Thread delay (make it 3 for example) , Future-2 will END as well.
 
 ```java
 17:15:04.459730500 Do Something main
