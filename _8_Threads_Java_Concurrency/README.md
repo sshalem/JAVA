@@ -29,6 +29,7 @@
 |     |	21.1		   |[Callback CompletableFuture](#21-1)	|
 |     |	21.2		   |[Compose Dependent CompletableFuture](#21-2)	|
 |     |	21.3		   |[Combine Independent CompletableFuture](#21-3)	|
+|     |	21.4		   |[allOf() & anyOf() CompletableFuture](#21-3)	|
 |  22 |[Fork/Join framework](#22)   |  		|
 |  23 |[ConcurrentMap](#23)   |  		|
 
@@ -3217,8 +3218,9 @@ public class CombineExample {
 
 #### Console output shows :
 
-log shows both CompletableFuture's getWeatherReport() & getUserEmail() , started at the same time with differetn Thread.
-we thenCombine() the results of both Independent Threads , to a single response.
+log shows both CompletableFuture's getWeatherReport() & getUserEmail() , started at the same time with differetn Thread. </br>
+we thenCombine() the results of both Independent Threads , to a single response. </br>
+check the time line difference.
 
 ```java
 15:42:37.890689100 getWeatherReport() ForkJoinPool.commonPool-worker-5
@@ -3226,6 +3228,72 @@ we thenCombine() the results of both Independent Threads , to a single response.
 15:42:37.890689100 Do Something main
 15:42:40.899343100 Sending email to shabtay.shalem@gmail.com  with report  Weather report of the city is - Rainy
 15:42:40.899343100 FUTURE : shabtay.shalem@gmail.com  Weather report of the city is - Rainy
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 21-4
+
+<img src="https://img.shields.io/badge/-21.4. allOf() & anyOf() CompletableFuture %20-blue" height=40px>
+
+![image](https://user-images.githubusercontent.com/36256986/162620994-2d5fbf71-37ac-46e7-a400-3aad8d43815b.png)
+
+
+## eaxmple using [ompletableFuture.allOf(x, x, x...)](#-)
+```java
+public class AnyAllOfExample {
+
+	public static void main(String[] args) {
+
+		CompletableFuture<Void> allOfFuture = CompletableFuture.allOf(future1(), future2(), future3());
+
+		System.out.println(LocalTime.now() + " Do Something " + Thread.currentThread().getName());
+
+		delay(3);
+
+		System.out.println(LocalTime.now() + " FUTURE : " + allOfFuture.join());
+	}
+
+	public static CompletableFuture<String> future1() {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println(LocalTime.now() + " future-1 " + Thread.currentThread().getName());
+			delay(2);
+			return "future-1";
+		});
+	}
+
+	public static CompletableFuture<String> future2() {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println(LocalTime.now() + " future-2 " + Thread.currentThread().getName());
+			delay(4);
+			return "future-2";
+		});
+	}
+
+	public static CompletableFuture<String> future3() {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println(LocalTime.now() + " future-3 " + Thread.currentThread().getName());
+			delay(1);
+			return "future-3";
+		});
+	}
+
+	public static void delay(int seconds) {
+		try {
+			TimeUnit.SECONDS.sleep(seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+#### Console output shows :
+
+```java
+
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
