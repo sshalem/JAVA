@@ -3241,7 +3241,8 @@ check the time line difference.
 ![image](https://user-images.githubusercontent.com/36256986/162620994-2d5fbf71-37ac-46e7-a400-3aad8d43815b.png)
 
 
-## eaxmple using [ompletableFuture.allOf(x, x, x...)](#-)
+## example using [CompletableFuture.allOf(x, x, x...)](#-)
+	
 ```java
 public class AnyAllOfExample {
 
@@ -3294,7 +3295,7 @@ public class AnyAllOfExample {
 
 All Threads started at the sametime (Including main Thread). </br>
 Each Thread finished at differetn time (Because of it's delay time). </br>
-anyOf() returns VOid , thus we get NULL.
+allOf() returns Void , thus we get NULL.
 	
 ```java
 16:57:06.816632200 Do Something main
@@ -3305,6 +3306,81 @@ anyOf() returns VOid , thus we get NULL.
 16:57:08.826339700 future-1 ENDED ForkJoinPool.commonPool-worker-3
 16:57:10.833705100 future-2 ENDED ForkJoinPool.commonPool-worker-5
 16:57:09.828411100 FUTURE : null
+```
+
+## example using [CompletableFuture.anyOf(x, x, x...)](#-)
+
+```java
+import java.time.LocalTime;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+
+public class AnyAllOfExample {
+
+	public static void main(String[] args) {
+
+		CompletableFuture<Object> anyOfFuture = CompletableFuture.anyOf(future1(), future2(), future3());
+
+		System.out.println(LocalTime.now() + " Do Something " + Thread.currentThread().getName());
+
+		delay(3);
+
+		System.out.println(LocalTime.now() + " FUTURE : " + anyOfFuture.join());
+	}
+
+	public static CompletableFuture<String> future1() {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println(LocalTime.now() + " future-1 STARTED " + Thread.currentThread().getName());
+			delay(2);
+			System.out.println(LocalTime.now() + " future-1 ENDED " + Thread.currentThread().getName());
+			return "future-1";
+		});
+	}
+
+	public static CompletableFuture<String> future2() {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println(LocalTime.now() + " future-2 STARTED " + Thread.currentThread().getName());
+			delay(4);
+			System.out.println(LocalTime.now() + " future-2 ENDED " + Thread.currentThread().getName());
+			return "future-2";
+		});
+	}
+
+	public static CompletableFuture<String> future3() {
+		return CompletableFuture.supplyAsync(() -> {
+			System.out.println(LocalTime.now() + " future-3 STARTED " + Thread.currentThread().getName());
+			delay(1);
+			System.out.println(LocalTime.now() + " future-3 ENDED " + Thread.currentThread().getName());
+			return "future-3";
+		});
+	}
+
+	public static void delay(int seconds) {
+		try {
+			TimeUnit.SECONDS.sleep(seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+#### Console output shows :
+
+All Threads started at the same time (Including main Thread). </br>
+Each Thread finished at differetn time (Because of it's delay time). </br>
+[anyOf()](#-) returns the first Future that finishes (Which is Future-3). </br>
+	Question : why future-2 is not ENDED? </br>
+	Answer : Because of it's delay Time is 4 , and does not have enough time to finish. anyOfFuture.join() finish execution , but Future-2 doesn't END. if we change the Delay Time we of Future-2 , or the main Thread delay (make it 3 for example) , Future-2 will END as well.
+
+```java
+17:15:04.459730500 Do Something main
+17:15:04.460728200 future-1 STARTED ForkJoinPool.commonPool-worker-3
+17:15:04.459730500 future-3 STARTED ForkJoinPool.commonPool-worker-7
+17:15:04.459730500 future-2 STARTED ForkJoinPool.commonPool-worker-5
+17:15:05.465097600 future-3 ENDED ForkJoinPool.commonPool-worker-7
+17:15:06.466269100 future-1 ENDED ForkJoinPool.commonPool-worker-3
+17:15:07.474717800 FUTURE : future-3
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
