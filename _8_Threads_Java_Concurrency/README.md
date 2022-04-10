@@ -3293,8 +3293,9 @@ public class AnyAllOfExample {
 #### Console output shows :
 
 All Threads started at the sametime (Including main Thread). </br>
-Each Thread finished at differetn time (Because of it's delay time).
-
+Each Thread finished at differetn time (Because of it's delay time). </br>
+anyOf() returns VOid , thus we get NULL.
+	
 ```java
 16:57:06.816632200 Do Something main
 16:57:06.816632200 future-1 STARTED ForkJoinPool.commonPool-worker-3
