@@ -3143,7 +3143,8 @@ public class CompseExample {
 #### Console output shows :
 
 According the code, we have  2 + 3 + 4 delay time  = 9sec </br>
-what we got is 5 sec for total time. 
+what we got is 5 sec for total time. </br>
+We can see that different Threads started to work Sequencilay (Not simultaniuosly), because they are dependent on each other </br>
 
 ```java
 00:53:26.854786900 : start Operation
