@@ -3292,8 +3292,18 @@ public class AnyAllOfExample {
 
 #### Console output shows :
 
-```java
+All Threads started at the sametime (Including main Thread). </br>
+Each Thread finished at differetn time (Because of it's delay time).
 
+```java
+16:57:06.816632200 Do Something main
+16:57:06.816632200 future-1 STARTED ForkJoinPool.commonPool-worker-3
+16:57:06.816632200 future-2 STARTED ForkJoinPool.commonPool-worker-5
+16:57:06.815634500 future-3 STARTED ForkJoinPool.commonPool-worker-7
+16:57:07.833576500 future-3 ENDED ForkJoinPool.commonPool-worker-7
+16:57:08.826339700 future-1 ENDED ForkJoinPool.commonPool-worker-3
+16:57:10.833705100 future-2 ENDED ForkJoinPool.commonPool-worker-5
+16:57:09.828411100 FUTURE : null
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
