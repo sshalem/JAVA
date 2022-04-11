@@ -11,6 +11,6 @@
 |  7  |[Data Structure](https://github.com/sshalem/JAVA/tree/master/_7_Data_Structure)  |   
 |  8  |[Threads (Concurrency)](https://github.com/sshalem/JAVA/tree/master/_8_Threads_Java_Concurrency) | 
 |  9  |[Design Patterns](https://github.com/sshalem/JAVA/tree/master/_9_Design_Patterns) |   
-|  10 |[Java 8 Interview Questions](https://javaconceptoftheday.com/java-8-interview-questions-and-answers/) | 
+|  10 |[Java 8](https://javaconceptoftheday.com/java-8-interview-questions-and-answers/) | 
 
 
