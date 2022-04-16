@@ -1,3 +1,5 @@
+###### _
+
 <img src="https://img.shields.io/badge/-JAVA 8 advance %20-blue" height=70px>
 
 |     |  Subject           |
@@ -7,3 +9,61 @@
 |  3  |[Functional Interfaces](#-)  |   
 |  4  |[temp](#-) |   
 |  5  |[Java 8 Interview Questions](https://javaconceptoftheday.com/java-8-interview-questions-and-answers/) | 
+
+
+--------------------------------------------------------------------------------------------------
+
+###### 1
+
+<img src="https://img.shields.io/badge/-1.  %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 2
+
+<img src="https://img.shields.io/badge/-2.  %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 3
+
+<img src="https://img.shields.io/badge/-3.  %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 4
+
+<img src="https://img.shields.io/badge/-4.  %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 5
+
+<img src="https://img.shields.io/badge/-5.  %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
