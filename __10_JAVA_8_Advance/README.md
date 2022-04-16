@@ -70,6 +70,8 @@ public interface BiConsumer<T, U> {
 
 @FunctionalInterface
 public interface Function<T, R> {
+	// T t - Function argument 
+	// R - result
 	R apply(T t);
 }
 
@@ -80,9 +82,8 @@ public interface BiFunction<T, U, R> {
 
 @FunctionalInterface
 public interface UnaryOperator<T> extends Function<T, T> {
-	static <T> UnaryOperator<T> identity() {
-		return t -> t;
-	}
+	// Same as Function , But , Argument and Result should be the same Type (T)
+	// UnLike in Function , That takes T as Argument and returns R 
 }
 ```
 
