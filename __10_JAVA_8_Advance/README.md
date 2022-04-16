@@ -43,6 +43,47 @@ Below is the list of new functional interfaces introduced in Java 8. </br>
 They have kept in **_java.util.function package_**
 
 ```java
+	@FunctionalInterface
+	public interface Predicate<T> {
+		boolean test(T t);
+	}
+
+	@FunctionalInterface
+	public interface BiPredicate<T, U> {
+		boolean test(T t, U u);
+	}
+
+	@FunctionalInterface
+	public interface Supplier<T> {
+		T get();
+	}
+
+	@FunctionalInterface
+	public interface Consumer<T> {
+		void accept(T t);
+	}
+
+	@FunctionalInterface
+	public interface BiConsumer<T, U> {
+		void accept(T t, U u);
+	}
+
+	@FunctionalInterface
+	public interface Function<T, R> {
+		R apply(T t);
+	}
+
+	@FunctionalInterface
+	public interface BiFunction<T, U, R> {
+		R apply(T t, U u);
+	}
+
+	@FunctionalInterface
+	public interface UnaryOperator<T> extends Function<T, T> {
+		static <T> UnaryOperator<T> identity() {
+			return t -> t;
+		}
+	}
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
