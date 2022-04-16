@@ -39,6 +39,9 @@
 
 <img src="https://img.shields.io/badge/-3. Functional Interfaces %20-blue" height=40px>
 
+Below is the list of new functional interfaces introduced in Java 8. </br>
+They have kept in **_java.util.function package_**
+
 ```java
 ```
 
