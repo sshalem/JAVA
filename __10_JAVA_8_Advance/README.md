@@ -6,7 +6,7 @@
 |:---:|:------------------------------| 
 |  1  |[Lambda](#-)   | 
 |  2  |[Method Reference](#-) |   
-|  3  |[Functional Interfaces](#-)  |   
+|  3  |[Functional Interfaces](#3)  |   
 |  4  |[temp](#-) |   
 |  5  |[Java 8 Interview Questions](https://javaconceptoftheday.com/java-8-interview-questions-and-answers/) | 
 
@@ -37,7 +37,7 @@
 
 ###### 3
 
-<img src="https://img.shields.io/badge/-3.  %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-3. Functional Interfaces %20-blue" height=40px>
 
 ```java
 ```
