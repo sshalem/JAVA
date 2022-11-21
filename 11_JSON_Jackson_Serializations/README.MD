@@ -32,7 +32,7 @@ What is JSON?
 [Answer:](#-)
 JSON - JavaScript Object Notation
 
-JSON object are key/value pairs : </br>
+#### JSON object are key/value pairs : </br>
 * key (or name) - on the left side ,is always in double quotes.
 * value - String value always in double quotes </br>
 		Number w/o quotes </br>
