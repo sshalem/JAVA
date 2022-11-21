@@ -1,4 +1,19 @@
-# [```JSON data binding```](#-)
+<img src="https://img.shields.io/badge/-JSON data binding (Serialization) %20-blue" height=60px>
+
+###### _
+
+|     | Subject                                              |
+| :-: | :--------------------------------------------------- |
+|     | [JSON data binding (JACKSON)](#JSON_data_binding)    |
+|  1  | [Convert JSON to POJO](#1_Convert_JSON_to_POJO)      |
+|  2  | [Convert POJO to JSON](#2_Convert_POJO_to_JSON)      |
+
+
+------------------------------------------------------------------------------------------------------
+
+###### JSON_data_binding
+
+<img src="https://img.shields.io/badge/- JSON data binding (JACKSON) %20-blue" height=40px>
 
 * Data Binding is the process of converting JSON data to a JAVA POJO
 * Also known as : mapping, Serialization/Deserialization , Marshalling/Unmarshalling
@@ -87,12 +102,20 @@ The following things are done automatically , behind the scene by Jackson projec
 * JSON data being passed to REST controller is converted to POJO
 * JAVA object being returned from REST controller is converted to JSON
 
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
-## [```Example Convert JSON to POJO```](#-)
+------------------------------------------------------------------------------------------------------
 
-In order to do so, I have made 2 JSON objects.
-1. Sample-lite.json
-2. Sample-full.json
+###### 1_Convert_JSON_to_POJO
+
+<img src="https://img.shields.io/badge/- 1. Convert_JSON_to_POJO %20-blue" height=40px>
+
+In order to do so:
+1. I created a new MAVEN project (Not Spring Boot WEB which has by default the JACKSON API).
+2. add the dependency of JACKSON binding from maven repository.
+3. I have made 2 JSON objects, which I will read from and convert it to POJO  : 
+	1. Sample-lite.json
+	2. Sample-full.json
 
 
 #### [Sample-lite.json](#-)
@@ -166,6 +189,50 @@ public class App {
 	}
 }
 ```
+
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------------------------------------------------------
+
+
+###### 2_Convert_POJO_to_JSON
+
+<img src="https://img.shields.io/badge/- 2. Convert_POJO_to_JSON %20-blue" height=40px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------------------------------------------------------
+
+
+
+
+## [```Example Convert JSON to POJO```](#-)
+
+
+------------------------------------------------------------------------------------------------------
+
+######
+
+<img src="https://img.shields.io/badge/- X %20-blue" height=40px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------------------------------------------------------
+
+######
+
+<img src="https://img.shields.io/badge/- X %20-blue" height=40px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------------------------------------------------------
+
+######
+
+<img src="https://img.shields.io/badge/- X %20-blue" height=40px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 ------------------------------------------------------------------------------------------------------
 
