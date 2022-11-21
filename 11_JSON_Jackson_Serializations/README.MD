@@ -164,7 +164,10 @@ public class Student {
 	// G/S/toString
 ```
 
-#### [Main App](#-)
+#### [Main App convert a `simple-object.json`](#-)
+
+- Let's Convert the JSON from the file `simple-object.json` a POJO and sysout the Object in console.
+- console shows as expected
 
 ```java
 import java.io.File;
@@ -191,6 +194,66 @@ public class App {
 }
 ```
 
+#### [Main App convert a `nested-object-array.json`](#-)
+
+- Let's Convert the JSON from the file `nested-object-array.json` a POJO and sysout the Object in console.
+
+
+```java
+import java.io.File;
+import java.io.IOException;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class App {
+
+	public static void main(String[] args) {
+		try {
+			// create ObjectMapper
+			ObjectMapper mapper = new ObjectMapper();
+
+			// 1. read JSON file 'data/simple-object.json'
+			// 2. Create new Student Instance
+			// 3. map/convert to Java POJO:
+			Student student = mapper.readValue(new File("data/simple-object.json"), Student.class);
+			System.out.println(student);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+- console shows as an error , because we need to specify the Entities at correspong to the fileds of the new JSON:
+
+![image](https://user-images.githubusercontent.com/36256986/203153234-72577bca-170d-45b6-a5f2-53a73780c967.png)
+
+Lets refactor our Entities classes as follows:
+
+```java
+public class Student {
+
+	private int id;
+	private String firstName;
+	private String lastName;
+	private boolean active;
+	private Address address;
+	private String[] languages;
+	
+	// G/S/toString
+```
+
+```java
+public class Address {
+
+	private String street;
+	private String city;
+	private String state;
+	private String zip;
+	private String country;
+```
+
+Now when we run the code console will show us the expecte result.
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
