@@ -26,10 +26,10 @@ JACKSON data Binding API:
 * By default JACKSON calls appropriate getter/setter methods
 
 
-#### Question:
+[Question:](#-)
 What is JSON?
 
-#### Answer:
+[Answer:](#-)
 JSON - JavaScript Object Notation
 
 JSON object are key/value pairs : </br>
@@ -39,7 +39,8 @@ JSON object are key/value pairs : </br>
 		null w/o quotes </br>
 		boolen true/false w/o quotes </br>
 
-- Simple JSON object
+
+- Example of a Simple JSON object: </br>
 
 ```json
 {
@@ -51,7 +52,8 @@ JSON object are key/value pairs : </br>
 }
 ```
 
-- Nested JSON object
+- Example of Nested JSON object : /br>
+
 ```json
 {
     "id" : 2058,
@@ -65,7 +67,7 @@ JSON object are key/value pairs : </br>
 }
 ```
 
-- Nested JSON Arrays
+- Example JON Arrays  : /br>
 
 ```json
 {
