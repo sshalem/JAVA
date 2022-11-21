@@ -115,8 +115,8 @@ In order to do so:
 1. I created a new MAVEN project (Not Spring Boot WEB which has by default the JACKSON API).
 2. add the dependency of JACKSON binding from maven repository.
 3. I have made 2 JSON objects, which I will read from and convert it to POJO  : 
-	1. Sample-lite.json
-	2. Sample-full.json
+	1. simple-object.json
+	2. nested-object-array.json
 
 
 #### [simple-object.json](#-)
