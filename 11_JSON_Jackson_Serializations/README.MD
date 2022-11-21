@@ -52,22 +52,22 @@ JSON object are key/value pairs : </br>
 
 - Nested JSON Arrays
 
+```json
 {
-    "id" : 2058,
-    "title" : "JAVA Title",
-    "description" : "Many to many",
-    "published": true
-    "courses" : [
-			{
-				"courseName" : "100 begin ",
-				"courseNumber" : "holon"
-			},
-			{
-				"courseName" : "200 begin ",
-				"courseNumber" : "holon"
-			}
-		]
+	"id": 14,
+	"firstName": "Mario",
+	"lastName": "Rossi",
+	"active": true,
+	"address": {
+		"street": "100 Main St",
+		"city": "Philadelphia",
+		"state": "Pennsylvania",
+		"zip": "19103",
+		"country": "USA"
+	},
+	"languages" : ["Java", "C#", "Python", "Javascript"]
 }
+```
 
 
 1. JSON to JAVA POJO:
