@@ -178,15 +178,23 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class App {
 
 	public static void main(String[] args) {
+		// create ObjectMapper
+		ObjectMapper mapper = new ObjectMapper();
+		
 		try {
-			// create ObjectMapper
-			ObjectMapper mapper = new ObjectMapper();
 
-			// 1. read JSON file 'data/simple-object.json'
+			// 1. open File 'data/simple-object.json'
 			// 2. Create new Student Instance
-			// 3. map/convert to Java POJO:
+			// 3. read from FIle and apply it on new Instance of Student using the setter methods
 			Student student = mapper.readValue(new File("data/simple-object.json"), Student.class);
-			System.out.println(student);
+			
+			//Convert object to JSON string and pretty print
+			String _student = mapper
+				.writerWithDefaultPrettyPrinter()
+				.writeValueAsString(student);			
+			
+			System.out.println(_student);
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -208,15 +216,24 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class App {
 
 	public static void main(String[] args) {
+	
+		// create ObjectMapper
+		ObjectMapper mapper = new ObjectMapper();
+		
 		try {
-			// create ObjectMapper
-			ObjectMapper mapper = new ObjectMapper();
 
-			// 1. read JSON file 'data/simple-object.json'
+			// 1. open File 'nested-objects-array.json'
 			// 2. Create new Student Instance
-			// 3. map/convert to Java POJO:
-			Student student = mapper.readValue(new File("data/simple-object.json"), Student.class);
-			System.out.println(student);
+			// 3. read from FIle and apply it on new Instance of Student using the setter methods
+			Student student = mapper.readValue(new File("data/nested-objects-array.json"), Student.class);
+			
+			//Convert object to JSON string and pretty print
+			String _student = mapper
+				.writerWithDefaultPrettyPrinter()
+				.writeValueAsString(student);			
+			
+			System.out.println(_student);
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
