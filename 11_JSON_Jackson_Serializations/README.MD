@@ -40,7 +40,7 @@ JSON - JavaScript Object Notation
 		boolen true/false w/o quotes </br>
 
 
-- Example of a Simple JSON object: </br>
+1. Example of a Simple JSON object: </br>
 
 ```json
 {
@@ -52,7 +52,7 @@ JSON - JavaScript Object Notation
 }
 ```
 
-- Example of Nested JSON object : /br>
+2. Example of Nested JSON object : </br>
 
 ```json
 {
@@ -67,7 +67,7 @@ JSON - JavaScript Object Notation
 }
 ```
 
-- Example JON Arrays  : /br>
+3. Example JON Arrays  : </br>
 
 ```json
 {
