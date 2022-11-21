@@ -255,6 +255,8 @@ public class Address {
 
 Now when we run the code console will show us the expecte result.
 
+![image](https://user-images.githubusercontent.com/36256986/203154890-42ec1126-b409-4a8a-9931-a1b7a6437cf9.png)
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 ------------------------------------------------------------------------------------------------------
