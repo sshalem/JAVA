@@ -15,6 +15,16 @@ public class Student {
 		super();
 	}
 
+	public Student(int id, String firstName, String lastName, boolean active, Address address, String[] languages) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.active = active;
+		this.address = address;
+		this.languages = languages;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -65,8 +75,8 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", active=" + active
-				+ ", address=" + address + ", languages=" + Arrays.toString(languages) + "]";
+		return "Student [id=" + id + ", \n	firstName=" + firstName + ", \n	lastName=" + lastName + ", \n	active="
+				+ active + ", \n	address=" + address + ", \n	languages=" + Arrays.toString(languages) + "]";
 	}
 
 }
