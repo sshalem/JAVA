@@ -26,13 +26,13 @@ JACKSON data Binding API:
 * By default JACKSON calls appropriate getter/setter methods
 
 
-[Question:](#-)
+[Question:](#-) </br>
 What is JSON?
 
-[Answer:](#-)
+[Answer:](#-) </br>
 JSON - JavaScript Object Notation
 
-#### JSON object are key/value pairs : </br>
+### [JSON object are key/value pairs :](#-) </br>
 * key (or name) - on the left side ,is always in double quotes.
 * value - String value always in double quotes </br>
 		Number w/o quotes </br>
