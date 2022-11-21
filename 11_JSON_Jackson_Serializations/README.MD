@@ -119,7 +119,7 @@ In order to do so:
 	2. Sample-full.json
 
 
-#### [Sample-lite.json](#-)
+#### [simple-object.json](#-)
 
 ```json
 {
@@ -130,7 +130,7 @@ In order to do so:
 }
 ```
 
-#### [Sample-full.json](#-)
+#### [nested-object-array.json](#-)
 
 ```json
 {
