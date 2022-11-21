@@ -272,7 +272,7 @@ public class Address {
 
 Now when we run the code console will show us the expecte result.
 
-![image](https://user-images.githubusercontent.com/36256986/203154890-42ec1126-b409-4a8a-9931-a1b7a6437cf9.png)
+![image](https://user-images.githubusercontent.com/36256986/203160997-4216737e-7850-4741-8987-d77ce98fb8fb.png)
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
@@ -282,6 +282,43 @@ Now when we run the code console will show us the expecte result.
 ###### 2_Convert_POJO_to_JSON
 
 <img src="https://img.shields.io/badge/- 2. Convert_POJO_to_JSON %20-blue" height=40px>
+
+```java
+
+import java.io.File;
+import java.io.IOException;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class App {
+	public static void main(String[] args) {
+		
+		/************************
+		 * Convert POJO to JSON
+		 ************************/
+		
+		// create ObjectMapper
+		ObjectMapper mapper = new ObjectMapper();
+		
+		// Create 
+		
+		String [] languages = {"hebrew" , "english", "spanish"};
+		
+		Student newStudent = new Student(101, "shabtay", "shalem", true, new Address(),  languages);
+		
+		//Convert POJO to JSON  
+		try {
+			mapper.writeValue(new File("data/create-object.json"), newStudent);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+If we check in the data folder we will see new file with name of 'create-object.json' and JSON inside is:
+
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
