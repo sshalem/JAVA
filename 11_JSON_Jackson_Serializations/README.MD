@@ -87,15 +87,14 @@ JSON - JavaScript Object Notation
 ```
 
 
-1. JSON to JAVA POJO:
+### [JSON to JAVA POJO:](#-)
 * Convert JSON to JAVA POJO 
 * Jackson project calls setter methods on POJO. 
 * It doesn't access internal private fields directly.
 
-2. JAVA POJO to JSON:
+### [JAVA POJO to JSON:](#-)
 * Convert JAVA POJO to JSON
 * Jackson project calls getter methods on POJO. 
-		
 
 ### Spring and Jackson Support
 
