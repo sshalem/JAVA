@@ -95,7 +95,7 @@ In order to do so, I have made 2 JSON objects.
 2. Sample-full.json
 
 
-#### Sample-lite.json
+#### [Sample-lite.json](#-)
 
 ```json
 {
@@ -106,7 +106,7 @@ In order to do so, I have made 2 JSON objects.
 }
 ```
 
-#### Sample-full.json
+#### [Sample-full.json](#-)
 
 ```json
 {
