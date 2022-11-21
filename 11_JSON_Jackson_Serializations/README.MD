@@ -11,20 +11,22 @@ JACKSON data Binding API:
 * By default JACKSON calls appropriate getter/setter methods
 
 
-Question:
+#### Question:
 What is JSON?
-Answer:
-JSON - JavaScript Object Notation </br>
 
-JSON object are key/value pairs
-key (or name) - on the left side ,is always in double quotes.
-value - String value always in double quotes
-		Number w/o quotes
-		null w/o quotes
-		boolen true/false w/o quotes
+#### Answer:
+JSON - JavaScript Object Notation
+
+JSON object are key/value pairs : </br>
+* key (or name) - on the left side ,is always in double quotes.
+* value - String value always in double quotes </br>
+		Number w/o quotes </br>
+		null w/o quotes </br>
+		boolen true/false w/o quotes </br>
 
 - Simple JSON object
 
+```json
 {
 	"id" : 2058,
     "title" : "JAVA Title",
@@ -32,21 +34,21 @@ value - String value always in double quotes
     "published": true
 	"courses" : null
 }
-
+```
 
 - Nested JSON object
-
+```json
 {
-	"id" : 2058,
+    "id" : 2058,
     "title" : "JAVA Title",
     "description" : "Many to many",
     "published": true
 	"address" : {
-					"street" : "100 begin ",
-					"city" : "holon"
-				}
+			"street" : "100 begin ",
+			"city" : "holon"
+		    }
 }
-
+```
 
 - Nested JSON Arrays
 
@@ -56,15 +58,15 @@ value - String value always in double quotes
     "description" : "Many to many",
     "published": true
 	"courses" : [
-					{
-						"courseName" : "100 begin ",
-						"courseNumber" : "holon"
-					},
-					{
-						"courseName" : "200 begin ",
-						"courseNumber" : "holon"
-					}					
-				]
+			{
+				"courseName" : "100 begin ",
+				"courseNumber" : "holon"
+			},
+			{
+				"courseName" : "200 begin ",
+				"courseNumber" : "holon"
+			}
+		]
 }
 
 
