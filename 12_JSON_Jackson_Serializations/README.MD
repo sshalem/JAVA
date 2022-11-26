@@ -308,7 +308,17 @@ public class App {
 		
 		//Convert POJO to JSON  
 		try {
+			// This will convert POJO to JSON and save it in the file `create-object.json`
 			mapper.writeValue(new File("data/create-object.json"), newStudent);
+			
+			// This Convert POJO to 
+			// 1. Pretty JSON format
+			// 2. write value as String
+			String _student = mapper
+				.writerWithDefaultPrettyPrinter()
+				.writeValueAsString(newStudent);			
+			
+			System.out.println(_student);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
