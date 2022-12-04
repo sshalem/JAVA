@@ -28,14 +28,25 @@ http://www.plantuml.com/plantuml/proxy
 |  4  |[Builder]()   | 
 |  5  |[Prototype]()   | 
 |     |[<img src="https://img.shields.io/badge/-Structural%20-blue" height=30px>](https://github.com/sshalem/JAVA/tree/master/_10_Design_Patterns/Behavioural)  |
-|  1  |[]()   | 
-|  1  |[]()   | 
-|  1  |[]()   | 
-|  1  |[]()   | 
-|  1  |[]()   | 
-|  1  |[]()   | 
-|  1  |[]()   | 
+|  1  |[Adapter]()   | 
+|  2  |[Composite]()   | 
+|  3  |[Proxy]()   | 
+|  4  |[Flyweight]()   | 
+|  5  |[Facade]()   | 
+|  6  |[Bridge]()   | 
+|  7  |[Decorator]()   | 
 |     |[<img src="https://img.shields.io/badge/-Behavioural%20-blue" height=30px>](https://github.com/sshalem/JAVA/tree/master/10_Design_Patterns/Behavioural)  |
 |  1  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural/Mamento)   | 
+|  2  |[]()   | 
+|  3  |[]()   | 
+|  4  |[]()   | 
+|  5  |[]()   | 
+|  6  |[]()   | 
+|  7  |[]()   | 
+|  8  |[]()   | 
+|  9  |[]()   | 
+|  10  |[]()   | 
+|  11  |[]()   | 
+|  12  |[]()   | 
 
 
