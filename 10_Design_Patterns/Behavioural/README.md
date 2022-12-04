@@ -3,11 +3,19 @@
 <img src="https://img.shields.io/badge/-Behavioural Patterns%20-blue" height=70px>
 
 
-|     |             |
+|     | Design Pattern             |
 |:---:|:------------------------------| 
-|  1  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural/Mamento)   | 
-
-
+|  1  |[Template Method]()   |
+|  2  |[Mediator]()   | 
+|  3  |[Chain of Responsibility]()   | 
+|  4  |[Observer]()   | 
+|  5  |[Strategy]()   | 
+|  6  |[Command]()   | 
+|  7  |[State]()   | 
+|  8  |[Visitor]()   | 
+|  9  |[Interpreter]()   | 
+|  10  |[Iterator]()   | 
+|  11  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural/Mamento)   | 
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ###### __
