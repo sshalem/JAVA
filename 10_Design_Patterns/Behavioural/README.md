@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/-Behavioural Patterns%20-blue" height=70px>
 
 
-|     | Design Pattern             |
+|     | ### Design Pattern             |
 |:---:|:------------------------------| 
 |  1  |[Template Method]()   |
 |  2  |[Mediator]()   | 
