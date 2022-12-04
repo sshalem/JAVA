@@ -21,10 +21,20 @@ http://www.plantuml.com/plantuml/proxy
 |     |             |
 |:---:|:------------------------------| 
 |     |[UML](https://github.com/sshalem/JAVA/blob/master/_8_Design_Patterns/UML/README.md)|
-|     |[Creational]()  |  
-|     |[Structural]()  | 
 |     |[<img src="https://img.shields.io/badge/-Creational%20-blue" height=30px>](https://github.com/sshalem/JAVA/tree/master/_10_Design_Patterns/Behavioural)  |
+|  1  |[Singleton]()   | 
+|  2  |[Factory]()   | 
+|  3  |[Abstract Factory]()   | 
+|  4  |[Builder]()   | 
+|  5  |[Prototype]()   | 
 |     |[<img src="https://img.shields.io/badge/-Structural%20-blue" height=30px>](https://github.com/sshalem/JAVA/tree/master/_10_Design_Patterns/Behavioural)  |
+|  1  |[]()   | 
+|  1  |[]()   | 
+|  1  |[]()   | 
+|  1  |[]()   | 
+|  1  |[]()   | 
+|  1  |[]()   | 
+|  1  |[]()   | 
 |     |[<img src="https://img.shields.io/badge/-Behavioural%20-blue" height=30px>](https://github.com/sshalem/JAVA/tree/master/10_Design_Patterns/Behavioural)  |
 |  1  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural/Mamento)   | 
 
