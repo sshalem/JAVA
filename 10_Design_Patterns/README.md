@@ -16,7 +16,7 @@ http://www.plantuml.com/plantuml/proxy
 [2. Create UML for JAVA](https://plantuml.com/class-diagram) </br>
 [2. Blog of UML with GitHub](https://blog.anoff.io/2018-07-31-diagrams-with-plantuml/) </br>
 [3. GitHub repo explained of GitHub usage with PlantUml](https://github.com/jonashackt/plantuml-markdown) </br>
-
+[4. Design Patterns from Digital Ocean](https://www.digitalocean.com/community/tutorials/java-design-patterns-example-tutorial) </br>
 
 |     |             |
 |:---:|:------------------------------| 
@@ -36,17 +36,17 @@ http://www.plantuml.com/plantuml/proxy
 |  6  |[Bridge]()   | 
 |  7  |[Decorator]()   | 
 |     |[<img src="https://img.shields.io/badge/-Behavioural%20-blue" height=30px>](https://github.com/sshalem/JAVA/tree/master/10_Design_Patterns/Behavioural)  |
-|  1  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural/Mamento)   | 
-|  2  |[]()   | 
-|  3  |[]()   | 
-|  4  |[]()   | 
-|  5  |[]()   | 
-|  6  |[]()   | 
-|  7  |[]()   | 
-|  8  |[]()   | 
-|  9  |[]()   | 
-|  10  |[]()   | 
-|  11  |[]()   | 
-|  12  |[]()   | 
+|  1  |[Template Method]()   |
+|  2  |[Mediator]()   | 
+|  3  |[Chain of Responsibility]()   | 
+|  4  |[Observer]()   | 
+|  5  |[Strategy]()   | 
+|  6  |[Command]()   | 
+|  7  |[State]()   | 
+|  8  |[Visitor]()   | 
+|  9  |[Interpreter]()   | 
+|  10  |[Iterator]()   | 
+|  11  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural/Mamento)   | 
+
 
 
