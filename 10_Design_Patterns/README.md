@@ -13,7 +13,7 @@ http://www.plantuml.com/plantuml/proxy
 
 
 [1. PlantUml Home Page](https://plantuml.com/) </br>
-[2. Creat UML for JAVA](https://plantuml.com/class-diagram) </br>
+[2. Create UML for JAVA](https://plantuml.com/class-diagram) </br>
 [2. Blog of UML with GitHub](https://blog.anoff.io/2018-07-31-diagrams-with-plantuml/) </br>
 [3. GitHub repo explained of GitHub usage with PlantUml](https://github.com/jonashackt/plantuml-markdown) </br>
 
