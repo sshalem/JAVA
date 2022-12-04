@@ -46,7 +46,7 @@ http://www.plantuml.com/plantuml/proxy
 |  8  |[Visitor]()   | 
 |  9  |[Interpreter]()   | 
 |  10  |[Iterator]()   | 
-|  11  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/_8_Design_Patterns/Behavioural/Mamento)   | 
+|  11  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/10_Design_Patterns/Behavioural/Mamento)   | 
 
 
 
