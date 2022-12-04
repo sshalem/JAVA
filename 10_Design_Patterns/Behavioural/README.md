@@ -15,7 +15,7 @@
 |  8  |[Visitor]()   | 
 |  9  |[Interpreter]()   | 
 |  10  |[Iterator]()   | 
-|  11  |[Mamento (used for undo mechanism)](#11_Mamento)   | 
+|  11  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/10_Design_Patterns/Behavioural/Mamento)   | 
 
 
 ------------------------------------------------------------------------------------------------------
