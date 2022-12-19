@@ -228,10 +228,14 @@ public class App {
 			Student student = mapper.readValue(new File("data/nested-objects-array.json"), Student.class);
 			
 			//Convert object to JSON string and pretty print
+			// Takes an POJO Object and then:
+			// .writerWithDefaultPrettyPrinter() - convert to a JSON pattern
+			// .writeValueAsString(student) - this will write the value as String
 			String _student = mapper
 				.writerWithDefaultPrettyPrinter()
 				.writeValueAsString(student);			
 			
+			// Here I sysout to console the POJO as JSON
 			System.out.println(_student);
 			
 		} catch (IOException e) {
