@@ -1,4 +1,4 @@
-# Table of contents
+###### _
 
 
 |     |  Subjects                     |
@@ -16,7 +16,7 @@
 
 ## 1_enum-basic
 
-[Back_to_top](#Table-of-contents)
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 ```java
 enum Color {
@@ -39,7 +39,8 @@ public class _1_EnumBasic {
 
 ## 2_Enum_methods
 
-[Back_to_top](#Table-of-contents)
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
 ```js
 enum Days {
 	SUNDAY, 
@@ -84,12 +85,14 @@ public class _2_Enum_methods {
 
 }
 ```
+
 ----------------------------------------------------------------------------------------------------------
 
 
 ## 3_Enum_constructor
 
-[Back_to_top](#Table-of-contents)
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
 ```js
 //Java program to demonstrate that enums can have constructor
 //and concrete methods.
@@ -135,7 +138,8 @@ public class _3_Enum_constructor {
 
 ## 4_Enum_Switch_Case
 
-[Back_to_top](#Table-of-contents)
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
 ```js
 
 //A Java program to demonstrate working on enum
@@ -204,7 +208,8 @@ public class _4_Enum_Switch_Case {
 
 ## 5_EnumPrivateFieldConstructorAndGetterSetter
 
-[Back_to_top](#Table-of-contents)
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
 ```js
 
 enum ErrorMessagesEnum {
@@ -271,7 +276,8 @@ public class _5_EnumPrivateFieldConstructorAndGetterSetter {
 
 ## 6_Enum_Sort_Using_Compartor_and_Comparable
 
-[Back_to_top](#Table-of-contents)
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
 ```js
 
 import java.util.ArrayList;
