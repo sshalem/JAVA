@@ -2,6 +2,7 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
+|     |[General concepts (JVM, Hash, Equals, Stack , Heap , reflection etc...](#General_Concepts)   | 
 |  1  |[Random](https://github.com/sshalem/JAVA/tree/master/_1_Random)   | 
 |  2  |[Array](https://github.com/sshalem/JAVA/tree/master/_2_Arrays)  |   
 |  3  |[ENUM](https://github.com/sshalem/JAVA/tree/master/_3_enum)  |   
