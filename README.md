@@ -7,10 +7,11 @@
 |     |[General concepts](#General_Concepts)   | 
 |     | 1. [JVM, JDK, JRE](#1_JVM_JDK_JRE)                   |
 |     | 2. [Hash, Equals](#2_Hash_Equals)                                       |
-|     | 3. [HEAP, STACK](#3_HEAP_Stack)                         |
-|     | 4. [Reflection](#4_reflection) |
-|     | 5. [Memory Analyzer](#5_memory_analyzer) |
-|     | 6. [Garbage Collector](#6_garbage_collector) |
+|     | 3. [class ,Inner class , Interface](#3_class)                         |
+|     | 4. [HEAP, STACK](#4_HEAP_Stack)                         |
+|     | 5. [Reflection](#5_reflection) |
+|     | 6. [Memory Analyzer](#6_memory_analyzer) |
+|     | 7. [Garbage Collector](#7_garbage_collector) |
 |  1  |[Random](https://github.com/sshalem/JAVA/tree/master/_1_Random)   | 
 |  2  |[Array](https://github.com/sshalem/JAVA/tree/master/_2_Arrays)  |   
 |  3  |[ENUM](https://github.com/sshalem/JAVA/tree/master/_3_enum)  |   
@@ -159,7 +160,44 @@ Thus we need to check if Objects are equal and that there hashcode is same </br>
 
 ------------------------------------------------------
 
-######
+###### 3_class
+
+<img src="https://img.shields.io/badge/- class ,Inner class, Annonymos class %20-blue" height=40px>
+
+### [Member class](#-)
+
+```java
+public class Outer { 
+	private int num; 
+	public Outer(int num) {
+		this.num = num;
+	} 
+	private int getNum() {
+		return num;
+	}
+	 
+	public class Inner { 
+		public void show() {
+			System.out.println("hello");
+			System.out.println(getNum());
+		} 
+	} 
+}
+ 
+
+public class Main { 
+	public static void main(String[] args) { 
+		Outer.Inner obj = new Outer(7).new Inner();
+		obj.show();
+	}
+}
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------
+
+###### 
 
 <img src="https://img.shields.io/badge/- X %20-blue" height=40px>
 
@@ -169,4 +207,40 @@ Thus we need to check if Objects are equal and that there hashcode is same </br>
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
----
+------------------------------------------------------
+
+###### 
+
+<img src="https://img.shields.io/badge/- X %20-blue" height=40px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+<img src="https://img.shields.io/badge/- X %20- green" height=30px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------
+
+###### 
+
+<img src="https://img.shields.io/badge/- X %20-blue" height=40px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+<img src="https://img.shields.io/badge/- X %20- green" height=30px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------
+
+###### 
+
+<img src="https://img.shields.io/badge/- X %20-blue" height=40px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+<img src="https://img.shields.io/badge/- X %20- green" height=30px>
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------
