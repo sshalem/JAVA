@@ -48,7 +48,7 @@ What is hashcode in Java? </br>
 * In Java, a hash code is an integer value that is linked with each object. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/36256986/211196584-b5359cbf-714d-40a2-ba9d-b8d020915416.png" />
+  <img src="https://user-images.githubusercontent.com/36256986/211196584-b5359cbf-714d-40a2-ba9d-b8d020915416.png" width="400px" height="150px"/>
 </p>
 
 
