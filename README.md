@@ -1,5 +1,7 @@
 <img src="https://img.shields.io/badge/-JAVA%20-brightgreen" height=70px>
 
+###### _
+
 |     |  Subject           |
 |:---:|:------------------------------| 
 |     |[General concepts](#General_Concepts)   | 
@@ -51,6 +53,17 @@ What is hashcode in Java? </br>
   <img src="https://user-images.githubusercontent.com/36256986/211196584-b5359cbf-714d-40a2-ba9d-b8d020915416.png" width="400px" height="150px"/>
 </p>
 
+### [The concept of hashCode in Java :](#-)
+
+If two objects are equal, then their hashcode will be identical. </br>
+However, the vice-versa is not always true. </br>
+If there are two different objects at two different locations memory locations, they will have starkly different hashcodes. </br>
+
+From <https://www.scaler.com/topics/hashcode-in-java/> 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/36256986/211196711-49aa202c-4757-4302-9fd6-1e9f96d0d047.png" width="400px" height="150px"/>
+</p>
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
