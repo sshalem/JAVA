@@ -67,12 +67,12 @@ From <https://www.scaler.com/topics/hashcode-in-java/>
 
 [1. Question:](#-) </br>
 What is hashcode in Java?</br>
-Answer: </br>
+[Answer](#-): </br>
 In Java, a hash code is an integer value that is linked with each object , it is a unique integer value. 
 
 [2. Question:](#-) </br>
 Why we need Hashcode?</br>
-Answer: </br>
+[Answer](#-): </br>
 By using the Hashcode's unique number (Which is a Integer number) , </br>
 We can uniquely identify an Object. </br>
 So each Object has a unique hashcode. </br>
@@ -81,6 +81,43 @@ So each Object has a unique hashcode. </br>
 ### [Note:](#-) </br>
 Sometimes [2 different Objects](#-) can have the [same hashcode number](#-), Thus, we always have to override and implement the hashcode method by our self (We can generate the hashcode vie the IDE) in order to be in the safe side , that we will have a unique hashcode number.
 
+
+[3. Question:](#-) </br>
+Is the hashcode is the memory address of the object? </br>
+[Answer](#-): </br>
+NO.  (Objects Created in HEAP) </br>
+But the hashCode algorithm uses the Objects memory address ,to generate the hashcode Integer number. </br>
+In Java , we can never see the Objects memory address. That is managed by JVM </br>
+
+
+[4. Question:](#-) </br>
+Who creates the hashcode? </br>
+[Answer](#-):  </br>
+By default, all classes in Java inherit from the Object class provided by Java. </br>
+Therefore, the Object class is the superclass to all other classes and it defines methods that all its subclasses share. </br>
+This is the method that creates hashing. </br>
+
+```java
+public native int hashCode();
+```
+
+		As we can see the hashCode() method has no body in the method, there is no implementation. 
+		How come it has no body in the method? Class Object is not an abstract class????
+		It's because it is a declared as native method.
+		
+		A native method is a Java method, whose implementation is also written in another programming language such as C/C++
+		Moreover, a method marked as native cannot have a body and should end with a semicolon.
+		
+		We can use them to:
+			• implement an interface with system calls or libraries written in other programming languages
+			• access system or hardware resources that are only reachable from the other language
+			• integrate already existing legacy code written in C/C++ into a Java application
+			• call a compiled dynamically loaded library with arbitrary code from Java
+		
+		(JNI - Java Native Interface )
+		
+		So where is the implementation of the hashCode() is?
+![image](https://user-images.githubusercontent.com/36256986/211197075-42cbb6a5-27f2-4efd-aaac-61a2fcd974a9.png)
 
 
 
