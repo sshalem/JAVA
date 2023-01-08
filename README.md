@@ -62,7 +62,7 @@ If there are two different objects at two different locations memory locations, 
 From <https://www.scaler.com/topics/hashcode-in-java/> 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/36256986/211196711-49aa202c-4757-4302-9fd6-1e9f96d0d047.png" width="400px" height="150px"/>
+  <img src="https://user-images.githubusercontent.com/36256986/211196711-49aa202c-4757-4302-9fd6-1e9f96d0d047.png" width="400px" height="220px"/>
 </p>
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
