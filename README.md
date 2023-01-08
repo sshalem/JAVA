@@ -7,7 +7,7 @@
 |     |[General concepts](#General_Concepts)   | 
 |     | 1. [JVM, JDK, JRE](#1_JVM_JDK_JRE)                   |
 |     | 2. [Hash, Equals](#2_Hash_Equals)                                       |
-|     | 3. [Heap Stack](#3_HEAP_Stack)                         |
+|     | 3. [HEAP, STACK](#3_HEAP_Stack)                         |
 |     | 4. [Reflection](#4_reflection) |
 |  1  |[Random](https://github.com/sshalem/JAVA/tree/master/_1_Random)   | 
 |  2  |[Array](https://github.com/sshalem/JAVA/tree/master/_2_Arrays)  |   
