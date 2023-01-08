@@ -193,6 +193,87 @@ public class Main { 
 }
 ```
 
+### [Inner static class](#-)
+
+```java
+public class Outer { 
+	public static int num; 
+	public static int getNum() {
+		return num;
+	} 
+	public static class Inner { 
+		public void show() {
+			System.out.println("hello");
+			System.out.println(getNum());
+		} 
+	} 
+}
+ 
+public class Main { 
+	public static void main(String[] args) { 
+		Outer.Inner obj = new Outer.Inner();        
+		obj.show(); 
+	}
+}
+```
+
+### [Inner static class](#-)
+
+Here is an implementation of anonymous class, But It is MOSTLY used with an interface and not a class </br>
+
+```java
+public class Outer { 
+	public void show() {
+		System.out.println("class");
+	} 
+}
+ 
+public class Main { 
+	public static void main(String[] args) { 
+		Outer obj = new Outer() {
+			public void show() {
+				System.out.println("override original class ");
+			}
+		}; 
+		obj.show();
+	}
+}
+```
+
+Implementing with an interface:
+
+```java
+public interface Outer { 
+	public void show(); 
+}
+
+public class Main { 
+	public static void main(String[] args) { 
+		Outer obj = new Outer() {
+			public void show() {
+				System.out.println("override original class ");
+			}
+		}; 
+		obj.show();
+	}
+}
+```
+
+After Implementing with an interface , now we can use lambda expression , We cannot use lambda expression with a class:
+
+```java
+public interface Outer { 
+	public void show(); 
+}
+
+public class Main { 
+	public static void main(String[] args) { 
+		Outer obj = () -> System.out.println("override original class ");
+		obj.show();
+	}
+}
+```
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 ------------------------------------------------------
