@@ -144,14 +144,13 @@ Why whenever we implement equals, we MUST also implement hashCode? </br>
 [Answer:](#-) </br>
 It is possible for 2 different Objects to share the same hashcode, like  “A“ and “µ” objects in the sketch below. </br>
 
-![image]()
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/36256986/211197250-f4bad281-9133-4322-86f3-6404f92d6a60.png" width="300px" height="200px"/>
 </p>
 
-
-
+We know that number of possible hash codes (2^32) =  4,294,967,296. </br>
+Also, the number of possible distinct objects is usually bigger than the number of possible hash codes </br>
+Thus we need to check if Objects are equal and that there hashcode is same </br>
 
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
