@@ -120,9 +120,15 @@ public native int hashCode();
 ![image](https://user-images.githubusercontent.com/36256986/211197075-42cbb6a5-27f2-4efd-aaac-61a2fcd974a9.png)
 
 
+[5. Question:](#-) </br>
+What value the hashCode() method returns? </br>
+Answer: </br>
+The hashCode() method return an Integer value, created by Hashing Algorithm. </br>
 
-
-
+[6. Question:](#-) </br>
+Where the hashcode is stored? </br>
+Answer: </br>
+It's not store anywhere , because each time we need the hashcode, the native method will calculate it. </br>
 
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
