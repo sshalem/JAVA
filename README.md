@@ -66,12 +66,12 @@ From <https://www.scaler.com/topics/hashcode-in-java/>
 </p>
 
 [1. Question:](#-) </br>
-What is hashcode in Java?
+What is hashcode in Java?</br>
 Answer: </br>
 In Java, a hash code is an integer value that is linked with each object , it is a unique integer value. 
 
 [2. Question:](#-) </br>
-Why we need Hashcode?
+Why we need Hashcode?</br>
 Answer: </br>
 By using the Hashcode's unique number (Which is a Integer number) , </br>
 We can uniquely identify an Object. </br>
