@@ -10,6 +10,7 @@
 |     | 3. [HEAP, STACK](#3_HEAP_Stack)                         |
 |     | 4. [Reflection](#4_reflection) |
 |     | 5. [Memory Analyzer](#5_memory_analyzer) |
+|     | 6. [Garbage Collector](#6_garbage_collector) |
 |  1  |[Random](https://github.com/sshalem/JAVA/tree/master/_1_Random)   | 
 |  2  |[Array](https://github.com/sshalem/JAVA/tree/master/_2_Arrays)  |   
 |  3  |[ENUM](https://github.com/sshalem/JAVA/tree/master/_3_enum)  |   
