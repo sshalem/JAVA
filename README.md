@@ -65,6 +65,24 @@ From <https://www.scaler.com/topics/hashcode-in-java/>
   <img src="https://user-images.githubusercontent.com/36256986/211196711-49aa202c-4757-4302-9fd6-1e9f96d0d047.png" width="400px" height="220px"/>
 </p>
 
+1. Question: </br>
+What is hashcode in Java?
+1. Answer: </br>
+In Java, a hash code is an integer value that is linked with each object , it is a unique integer value. 
+
+2. Question: </br>
+Why we need Hashcode?
+2. Answer: </br>
+By using the Hashcode's unique number (Which is a Integer number) , </br>
+We can uniquely identify an Object. </br>
+So each Object has a unique hashcode. </br>
+
+
+
+
+
+
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 ------------------------------------------------------
