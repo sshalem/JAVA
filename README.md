@@ -4,14 +4,14 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
-|     |[General concepts](#General_Concepts)   | 
-|     | 1. [JVM, JDK, JRE](#1_JVM_JDK_JRE)                   |
-|     | 2. [Hash, Equals](#2_Hash_Equals)                                       |
-|     | 3. [class ,Inner class , Interface](#3_class)                         |
-|     | 4. [HEAP, STACK](#4_HEAP_Stack)                         |
-|     | 5. [Reflection](#5_reflection) |
-|     | 6. [Memory Analyzer](#6_memory_analyzer) |
-|     | 7. [Garbage Collector](#7_garbage_collector) |
+| GC  |[General Concepts](#General_Concepts)   | 
+|     | GC.1. [JVM, JDK, JRE](#1_JVM_JDK_JRE)                   |
+|     | GC.2. [Hash, Equals](#2_Hash_Equals)                                       |
+|     | GC.3. [class ,Inner class , Interface](#3_class)                         |
+|     | GC.4. [Java Memory ,HEAP, STACK](#4_HEAP_Stack)                         |
+|     | GC.5. [Memory Analyzer](#6_memory_analyzer) |
+|     | GC.6. [Garbage Collector](#7_garbage_collector) |
+|     | GC.7. [Reflection](#5_reflection) |
 |  1  |[Random](https://github.com/sshalem/JAVA/tree/master/01_Random)   | 
 |  2  |[Array](https://github.com/sshalem/JAVA/tree/master/02_Arrays)  |   
 |  3  |[ENUM](https://github.com/sshalem/JAVA/tree/master/03_enum)  |   
