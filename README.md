@@ -117,7 +117,6 @@ public native int hashCode();
 		(JNI - Java Native Interface )
 		
 		So where is the implementation of the hashCode() is?
-![image](https://user-images.githubusercontent.com/36256986/211197075-42cbb6a5-27f2-4efd-aaac-61a2fcd974a9.png)
 
 
 [5. Question:](#-) </br>
@@ -129,6 +128,30 @@ The hashCode() method return an Integer value, created by Hashing Algorithm. </b
 Where the hashcode is stored? </br>
 Answer: </br>
 It's not store anywhere , because each time we need the hashcode, the native method will calculate it. </br>
+
+
+### [Hash-Based Collections](#-)
+
+An object’s hash code allows algorithms and data structures to put objects into compartments, just like letter types in a printer’s type case. </br>
+The printer puts all “A” types into the compartment for “A”, and he looks for an “A” only in this one compartment.</br>
+This simple system lets him find types much faster than searching in an unsorted drawer. </br>
+That’s also the idea of hash-based collections, such as HashMap and HashSet. </br>
+
+From <https://eclipsesource.com/blogs/2012/09/04/the-3-things-you-should-know-about-hashcode/> 
+
+[Question:](#-) </br>
+Why whenever we implement equals, we MUST also implement hashCode? </br>
+[Answer:](#-) </br>
+It is possible for 2 different Objects to share the same hashcode, like  “A“ and “µ” objects in the sketch below. </br>
+
+![image]()
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/36256986/211197250-f4bad281-9133-4322-86f3-6404f92d6a60.png" width="300px" height="200px"/>
+</p>
+
+
+
 
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
