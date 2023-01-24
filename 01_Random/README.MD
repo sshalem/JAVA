@@ -130,57 +130,10 @@ Code blocks are normally indented four spaces or one tab. When they’re in a li
           </head>
 		  
 
-```
-code fences
-```
 
-```sql
-codeFences.withLanguage()
-
-SELECT * 
-FROM customers 
-WHERE price > 2000;
-```
-
-```java
-codeFences.withLanguage()
-```
 
 # checkbox
 
 - [ ] Checkbox off
 - [x] Checkbox on
 
-# Add Inline HTML
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
-# Add Tables
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-# Add image from current repository
-Dependencies.JPG
-
-# Add Image as url
-![Image](https://images.unsplash.com/photo-1528132032628-89493baa1e29?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlYXR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80)
