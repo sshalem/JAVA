@@ -118,20 +118,6 @@ To create code blocks, indent every line of the block by at least four spaces or
       </head>
     </html>
 
-### Code Blocks
-Code blocks are normally indented four spaces or one tab. When they’re in a list, indent them eight spaces or two tabs.
-
-1.  Open the file.
-2.  Find the following code block on line 21:
-
-        <html>
-          <head>
-            <title>Test</title>
-          </head>
-		  
-
-
-
 # checkbox
 
 - [ ] Checkbox off
