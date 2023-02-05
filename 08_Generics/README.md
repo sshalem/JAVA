@@ -180,6 +180,49 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
+### [Another example](#-)
+
+```java
+class MathClass {
+
+	public <T extends Number> Number calcSum(T[] arr) {
+		Double sum = 0d;
+		for (int i = 0; i < arr.length; i++) {
+			sum = sum + arr[i].doubleValue();
+		}
+		return sum;
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Integer[] arrInt = { 1, 2, 3 };
+		Float[] arrFloat = { 1.1f, 1.7f, 1.9f, 2.9f };
+		Double[] arrDouble = { 1.4, 2.5, 3.6 };
+
+		MathClass mathClass = new MathClass();
+
+		Number calcSum = mathClass.calcSum(arrInt);
+		Number calcSum2 = mathClass.calcSum(arrFloat);
+		Number calcSum3 = mathClass.calcSum(arrDouble);
+		
+		System.out.println(calcSum + "," + calcSum2 + "," + calcSum3);		
+	}
+}
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+### [Another example](#-)
+
+```java
+```
+
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
 ###### 4_2_generic_interface
 
 <img src="https://img.shields.io/badge/- 4_2_generic_interface %20-green" height=35px>
