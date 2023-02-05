@@ -7,7 +7,12 @@
 |  1  |[Lambda](#-)   | 
 |  2  |[Method Reference](#-) |   
 |  3  |[Functional Interfaces](#3)  |   
-|  4  |[Stream](#-) |   
+|  4  |[Generic Method, Interface , Class](#4) |
+|     |[4.1. generic method](#4_1_generic_method) | 
+|     |[4.2. generic interface](#4_2_generic_interface) | 
+|     |[4.3. generic class](#4_3_generic_class) | 
+|  5  |[Generic with Wildcard](#5) |   
+|  6  |[Stream](#-) |   
 |     |[Java 8 Interview Questions](https://javaconceptoftheday.com/java-8-interview-questions-and-answers/) | 
 
 
@@ -103,6 +108,17 @@ public interface UnaryOperator<T> extends Function<T, T> {
 --------------------------------------------------------------------------------------------------
 
 ###### 5
+
+<img src="https://img.shields.io/badge/-5.  %20-blue" height=40px>
+
+```java
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+--------------------------------------------------------------------------------------------------
+
+###### 6
 
 <img src="https://img.shields.io/badge/-5.  %20-blue" height=40px>
 
