@@ -7,7 +7,7 @@
 |  1  |[Lambda](#-)   | 
 |  2  |[Method Reference](#-) |   
 |  3  |[Functional Interfaces](#3)  |   
-|  4  |[Generic Method, Interface , Class](#4) |
+|  4  |[Generic Method, Interface , Class](#4_Generics) |
 |     |[4.1. generic method](#4_1_generic_method) | 
 |     |[4.2. generic interface](#4_2_generic_interface) | 
 |     |[4.3. generic class](#4_3_generic_class) | 
@@ -96,12 +96,24 @@ public interface UnaryOperator<T> extends Function<T, T> {
 
 --------------------------------------------------------------------------------------------------
 
-###### 4
+###### 4_Generics
 
-<img src="https://img.shields.io/badge/-4.  %20-blue" height=40px>
+<img src="https://img.shields.io/badge/-4_Generics  %20-blue" height=40px>
 
-```java
-```
+<img src="https://img.shields.io/badge/-4_1_generic_method  %20-green" height=35px>
+
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+
+
+<img src="https://img.shields.io/badge/- 4_2_generic_interface %20-green" height=35px>
+
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+<img src="https://img.shields.io/badge/- 4_3_generic_class %20-green" height=35px>
+
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
