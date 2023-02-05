@@ -108,7 +108,30 @@ In order to be able to use generic function, the attributes  must be Object (lik
 * Generic can work with Object Integer[] arr_int = { 1, 2, 3 };
 * Generic can't work with reference primitive  Int [] arr_int = { 1, 2, 3 };
 
+### [Before Generics](#-)
+
 ```java
+class MathClass {
+
+	public void printArray(Integer[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+	public void printArray(Float[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+	public void printArray(Double[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -117,15 +140,40 @@ public class Main {
 		Float[] arrFloat = { 1.1f, 1.7f, 1.9f, 2.9f };
 		Double[] arrDouble = { 1.4, 2.5, 3.6 };
 
-		printArray(arrInt);
-		printArray(arrFloat);
-		printArray(arrDouble);
-	}
+		MathClass mathClass = new MathClass();
 
-	private static <T> void printArray(T[] arr) {
+		mathClass.printArray(arrInt);
+		mathClass.printArray(arrFloat);
+		mathClass.printArray(arrDouble);
+	}
+}
+```
+
+### [After Generics](#-)
+
+```java
+class MathClass {
+
+	public <T> void printArray(T[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);
 		}
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Integer[] arrInt = { 1, 2, 3 };
+		Float[] arrFloat = { 1.1f, 1.7f, 1.9f, 2.9f };
+		Double[] arrDouble = { 1.4, 2.5, 3.6 };
+
+		MathClass mathClass = new MathClass();
+
+		mathClass.printArray(arrInt);
+		mathClass.printArray(arrFloat);
+		mathClass.printArray(arrDouble);
 	}
 }
 ```
