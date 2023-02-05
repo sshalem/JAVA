@@ -100,20 +100,30 @@ public interface UnaryOperator<T> extends Function<T, T> {
 
 <img src="https://img.shields.io/badge/-4_Generics  %20-blue" height=40px>
 
+###### 4_1_generic_method
+
 <img src="https://img.shields.io/badge/-4_1_generic_method  %20-green" height=35px>
 
+```java
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
-
+###### 4_2_generic_interface
 
 <img src="https://img.shields.io/badge/- 4_2_generic_interface %20-green" height=35px>
 
+```java
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
+###### 4_3_generic_class
+
 <img src="https://img.shields.io/badge/- 4_3_generic_class %20-green" height=35px>
 
+```java
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
