@@ -104,7 +104,30 @@ public interface UnaryOperator<T> extends Function<T, T> {
 
 <img src="https://img.shields.io/badge/-4_1_generic_method  %20-green" height=35px>
 
+In order to be able to use generic function, the attributes  must be Object (like Integer ,Float …) and not primitive types , for example:
+* Generic can work with Object Integer[] arr_int = { 1, 2, 3 };
+* Generic can't work with reference primitive  Int [] arr_int = { 1, 2, 3 };
+
 ```java
+public class Main {
+
+	public static void main(String[] args) {
+
+		Integer[] arrInt = { 1, 2, 3 };
+		Float[] arrFloat = { 1.1f, 1.7f, 1.9f, 2.9f };
+		Double[] arrDouble = { 1.4, 2.5, 3.6 };
+
+		printArray(arrInt);
+		printArray(arrFloat);
+		printArray(arrDouble);
+	}
+
+	private static <T> void printArray(T[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
