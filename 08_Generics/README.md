@@ -182,6 +182,14 @@ public class Main {
 
 ### [Example 2 , with return](#-)
 
+
+In this Example I have a method:
+* that take array  of generic `T[]`.
+* I extend the generic `T` from `Number`
+* I return a `Number`
+
+
+
 ```java
 class MathClass {
 
@@ -192,6 +200,17 @@ class MathClass {
 		}
 		return sum;
 	}
+
+//   In this Implementation which does the same I return `T` with casting.
+//
+//	@SuppressWarnings("unchecked")
+//	public <T extends Number> T calcSum(T[] arr) {
+//		Double sum = 0d;
+//		for (int i = 0; i < arr.length; i++) {
+//			sum = sum + arr[i].doubleValue();
+//		}
+//		return (T) sum;
+//	}
 }
 
 public class Main {
