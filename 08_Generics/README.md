@@ -180,7 +180,7 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
-### [Another example](#-)
+### [Example 2 , with return](#-)
 
 ```java
 class MathClass {
@@ -215,11 +215,55 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
-### [Another example](#-)
+### [Example 3](#-)
 
 ```java
-```
+class Person {
+	private String name;
+	private String age;
 
+	Ctor/G/S/ToString
+}
+
+class Shape {
+	private String color;
+	private String shape;
+
+	Ctor/G/S/ToString
+}
+
+class TemplateClass {
+
+	public <T> Method[] checkInput(T t) {
+		Method[] declaredMethods = t.getClass().getDeclaredMethods();		
+		return declaredMethods;
+	}
+
+	public void displayMethods(Method[] methods) {
+		for (Method method : methods) {
+			System.out.println(method);
+		}
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Shape shape = new Shape("green", "trianle");
+		Person person = new Person("shabtay", "46");
+
+		TemplateClass templateClass = new TemplateClass();
+
+		Method[] checkInputShape = templateClass.checkInput(shape);
+		Method[] checkInputPerson = templateClass.checkInput(person);
+		
+		templateClass.displayMethods(checkInputShape);
+		templateClass.displayMethods(checkInputPerson);
+		
+	}
+}
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
