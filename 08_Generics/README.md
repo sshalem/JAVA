@@ -116,6 +116,8 @@ In order to be able to use generic function, the attributes  must be Object (lik
 * Generic can work with Object Integer[] arr_int = { 1, 2, 3 };
 * Generic can't work with reference primitive  Int [] arr_int = { 1, 2, 3 };
 
+###### Before_Generics
+
 ### [Before Generics](#Before_Generics)
 
 ```java
@@ -157,6 +159,8 @@ public class Main {
 }
 ```
 
+###### After_Generics
+
 ### [After Generics](#After_Generics)
 
 ```java
@@ -187,6 +191,8 @@ public class Main {
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+###### Example_2
 
 ### [Example 2](#Example_2)
 
@@ -242,6 +248,8 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
+###### Example_3
+
 ### [Example 3](#Example_3)
 
 ```java
@@ -294,6 +302,8 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
+###### Example_4
+
 ### [Example 4](#Example_4)
 
 In this Example I have a method:
@@ -326,6 +336,8 @@ public class Main {
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+###### Example_5
 
 ### [Example 5](#Example_5)
 
