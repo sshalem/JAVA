@@ -104,11 +104,19 @@ public interface UnaryOperator<T> extends Function<T, T> {
 
 <img src="https://img.shields.io/badge/-4_1_generic_method  %20-green" height=35px>
 
+In Generic method  show several examples:
+1. [Before Generics](#Before_Generics)
+2. [After Generics](#After_Generics)
+3. [Example_2](#Example_2)
+4. [Example_3](#Example_3)
+5. [Example_4](#Example_4)
+6. [Example_5](#Example_5)
+
 In order to be able to use generic function, the attributes  must be Object (like Integer ,Float …) and not primitive types , for example:
 * Generic can work with Object Integer[] arr_int = { 1, 2, 3 };
 * Generic can't work with reference primitive  Int [] arr_int = { 1, 2, 3 };
 
-### [Before Generics](#-)
+### [Before Generics](#Before_Generics)
 
 ```java
 class MathClass {
@@ -149,7 +157,7 @@ public class Main {
 }
 ```
 
-### [After Generics](#-)
+### [After Generics](#After_Generics)
 
 ```java
 class MathClass {
@@ -180,7 +188,7 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
-### [Example 2 , with return](#-)
+### [Example 2](#Example_2)
 
 
 In this Example I have a method:
@@ -234,7 +242,7 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
-### [Example 3](#-)
+### [Example 3](#Example_3)
 
 ```java
 class Person {
@@ -286,7 +294,7 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
-### [Example 4](#-)
+### [Example 4](#Example_4)
 
 In this Example I have a method:
 * that have 3 arguments as generic `T`.
@@ -319,7 +327,7 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
-### [Example 5](#-)
+### [Example 5](#Example_5)
 
 Same example as before but using a Static method. </br>
 Only for the example.
