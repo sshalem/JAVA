@@ -267,6 +267,64 @@ public class Main {
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
+### [Example 4](#-)
+
+In this Example I have a method:
+* that have 3 arguments as generic `T`.
+* I return a Generic `T`
+* I extend the generic `T` from `Comparable<T>`
+
+
+```java
+class TempClass {
+	public <T extends Comparable<T>> T max(T a, T b, T c) {		
+		T max = a;
+		if (b.compareTo(a) > 0)
+			max = b;
+		if (c.compareTo(max) > 0)
+			max = c;
+		return max;
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+
+		TempClass tempClass = new TempClass();
+
+		System.out.println(tempClass.max(23, 42, 1));
+		System.out.println(tempClass.max("apples", "kiwi", " chicken"));
+	}
+}
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+### [Example 5](#-)
+
+Same example as before but using a Static method. </br>
+Only for the example.
+
+```java
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(max(23, 42, 1));
+		System.out.println(max("apples", "kiwi", " chicken"));
+	}
+
+	public static <T extends Comparable<T>> T max(T a, T b, T c) {
+		T max = a;
+		if (b.compareTo(a) > 0)
+			max = b;
+		if (c.compareTo(max) > 0)
+			max = c;
+		return max;
+	}
+}
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
 ###### 4_2_generic_interface
 
 <img src="https://img.shields.io/badge/- 4_2_generic_interface %20-green" height=35px>
