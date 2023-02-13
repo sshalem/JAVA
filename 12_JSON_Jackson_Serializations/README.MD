@@ -5,8 +5,8 @@
 |     | Subject                                              |
 | :-: | :--------------------------------------------------- |
 |     | [JSON data binding (JACKSON)](#JSON_data_binding)    |
-|  1  | [Convert JSON to POJO](#1_Convert_JSON_to_POJO)      |
-|  2  | [Convert POJO to JSON](#2_Convert_POJO_to_JSON)      |
+|  1  | [Convert JSON to POJO (ObjectMapper)](#1_Convert_JSON_to_POJO)      |
+|  2  | [Convert POJO to JSON (ObjectMapper)](#2_Convert_POJO_to_JSON)      |
 
 
 ------------------------------------------------------------------------------------------------------
