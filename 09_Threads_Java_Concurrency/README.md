@@ -22,7 +22,7 @@
 |  15 |[Atomic (Integer, Long, Boolean, Reference)](#15)   |  		|
 |  16 |[Thread Scheduler](#16)   |  		|
 |  17 |[BlockingQueue](#17)   |  		|
-|  18 |[ThreadPoolExecutor/Executor framework](#18)   |  		|
+|  18 |[ThreadPoolExecutor - Executor framework](#18)   |  		|
 |  19 |[Callable/Runnable](#19)   |  		|
 |  20 |[Future](#20)   |  		|
 |  21 |[CompletableFuture](#21)   |  		|
