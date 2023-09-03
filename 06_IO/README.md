@@ -19,7 +19,7 @@
 |  9  |[Write_Read_Text_to_from_file](#9_Write_Read_Text_to_from_file) |
 |  10  |[Write_Read_Binary_to_from_file](#10_Write_Read_Binary_to_from_file) |
 |  11  |[Write_Read_Objects_to_from_file](#11_Write_Read_Objects_to_from_file) |
-|  12  |[Read file from resources Spring boot]([#11_Write_Read_Objects_to_from_file](https://howtodoinjava.com/spring-boot2/read-file-from-resources/)) |
+|  12  |[Read file from resources Spring boot](https://howtodoinjava.com/spring-boot2/read-file-from-resources/) |
 
 
 
