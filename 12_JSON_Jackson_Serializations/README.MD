@@ -7,6 +7,7 @@
 |     | [JSON data binding (JACKSON)](#JSON_data_binding)    |
 |  1  | [Convert JSON to POJO (ObjectMapper)](#1_Convert_JSON_to_POJO)      |
 |  2  | [Convert POJO to JSON (ObjectMapper)](#2_Convert_POJO_to_JSON)      |
+|  3  | [Spring Convert JSON to POJO (ObjectMapper)](#3_spring_convert_json_to_pojo)      |
 
 
 ------------------------------------------------------------------------------------------------------
@@ -346,9 +347,77 @@ If we check in the data folder we will see new file with name of 'create-object.
 
 ------------------------------------------------------------------------------------------------------
 
-######
+###### 3_spring_convert_json_to_pojo
 
-<img src="https://img.shields.io/badge/- X %20-blue" height=40px>
+<img src="https://img.shields.io/badge/- 3. spring_convert_json_to_pojo %20-blue" height=40px>
+
+https://stackabuse.com/converting-json-array-to-a-java-array-or-list/
+
+Lets see how to convert :
+- an array of objects inside a JSON file for example : `jsonData.json`  
+- to a JAVA POJO
+
+```js
+[
+  {
+    "id": "658883448115356f9a2cd83b",
+    "name": "Carol Marshall",
+    "salary": "$3,272.90"
+  },
+  {
+    "id": "658883442dafc9a09349fe0b",
+    "name": "Spencer Patel",
+    "salary": "$3,657.34"    
+  },
+  {
+    "id": "6588834453693a145d905100",
+    "name": "Holloway Bernard",
+    "salary": "$1,722.10"    
+  }  
+]
+```
+
+1. create a JAVA POJO with the fields of the JSON file
+2. I created a RestController to get the data 
+
+#### [Option 1 retrun as Array](#-)
+
+```java
+@GetMapping(path = "/getUsers")
+public ResponseEntity<?> getData() throws StreamReadException, DatabindException, IOException {
+
+	ObjectMapper objectMapper = new ObjectMapper();
+	File file = ResourceUtils.getFile("classpath:jsonData.json");		
+	User[] userList = objectMapper.readValue(file, User[].class);
+
+	for (int i = 0; i < userList.length; i++) {
+		System.out.println(userList[i]);
+	}		
+
+	return ResponseEntity.ok(userList);
+}	
+```
+
+#### [Option 2 return as List](#-)
+
+```java
+@GetMapping(path = "/getUsers")
+public ResponseEntity<?> getData() throws StreamReadException, DatabindException, IOException {
+	// (1) Using ObjectMappaer
+	ObjectMapper objectMapper = new ObjectMapper();
+
+	// (2) I place the file inside src/main/resources
+	// thus getting it from `classpath`
+	File file = ResourceUtils.getFile("classpath:jsonData.json");
+
+	// (3) 
+	List<User> userList = objectMapper.readValue(file, new TypeReference<List<User>>() {
+	});
+
+	userList.forEach(user -> System.out.println(user));	
+	return ResponseEntity.ok(userList);
+}
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
