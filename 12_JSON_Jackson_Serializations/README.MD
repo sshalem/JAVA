@@ -5,6 +5,7 @@
 |     | Subject                                              |
 | :-: | :--------------------------------------------------- |
 |     | [JSON data binding (JACKSON)](#JSON_data_binding)    |
+|     | [syso in console Java Object as JSON format](#syso_in_console_java_object_as_json_format)    |
 |  1  | [Convert JSON to POJO (ObjectMapper)](#1_Convert_JSON_to_POJO)      |
 |  2  | [Convert POJO to JSON (ObjectMapper)](#2_Convert_POJO_to_JSON)      |
 |  3  | [Spring Convert JSON to POJO (ObjectMapper)](#3_spring_convert_json_to_pojo)      |
@@ -107,6 +108,26 @@ The following things are done automatically , behind the scene by Jackson projec
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 ------------------------------------------------------------------------------------------------------
+
+
+###### syso_in_console_java_object_as_json_format
+
+<img src="https://img.shields.io/badge/- syso_in_console_java_object_as_json_format %20-blue" height=40px>
+
+In order to display in console JAVA POJO in JSON format we use the Jackson `ObjectMapper`. </br>
+
+```java
+ObjectMapper mapper = new ObjectMapper();
+String jsonFormatString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(POJO);
+System.out.println(data);
+```
+
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------------------------------------------------------
+
+
 
 ###### 1_Convert_JSON_to_POJO
 
