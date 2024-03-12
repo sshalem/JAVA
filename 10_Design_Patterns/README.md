@@ -157,6 +157,117 @@ public class Window {
 }
 ```
 
+### [Example 2](#-)
+
+- In this example , I will show that , that theier must be a sequence of methods.
+- I created 3 interfaces which each one returns the next Interface in chain.
+- I redefine the static method `builder` to return at first the `NameSetter` interface.
+- Each interface in chain , returns the next interface in the chain , till we add  the `builder()` .
+
+```java
+public class Car {
+
+	private String name;
+	private String type;
+	private int price;
+
+	public Car() {
+		super();
+	}
+
+	private Car(Builder builder) {
+		super();
+		this.name = builder.name;
+		this.type = builder.type;
+		this.price = builder.price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [name=" + name + ", type=" + type + ", price=" + price + "]";
+	}
+
+	// static method which returns a Builder instance
+	public static NameSetter builder() {
+		return new Builder();
+	}
+
+	public interface NameSetter {
+		TypeSetter setName(String name);
+	}
+
+	public interface TypeSetter {
+		PriceSetter setType(String type);
+	}
+
+	public interface PriceSetter {
+		Builder setPrice(int price);
+
+		Car build();
+	}
+
+	/**
+	 * static inner class Builder
+	 */
+	public static class Builder implements NameSetter, TypeSetter, PriceSetter {
+
+		private String name;
+		private String type;
+		private int price;
+
+		public Builder() {
+		}
+
+		@Override
+		public Builder setName(String name) {
+			this.name = name;
+			return this;
+		}
+
+		@Override
+		public Builder setType(String type) {
+			this.type = type;
+			return null;
+		}
+
+		@Override
+		public Builder setPrice(int price) {
+			this.price = price;
+			return this;
+		}
+
+		@Override
+		public Car build() {
+			return new Car(this);
+		}
+	}
+}
+```
+
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
 ------------------------------------------------------------------------------------------------------
