@@ -56,7 +56,7 @@ http://www.plantuml.com/plantuml/proxy
 <img src="https://img.shields.io/badge/- 4. builder %20-blue" height=40px>
 
 - Let's create a Builder for Window class. 
-- In Window class I have 2 fileds of name and type.
+- In Window class I have 3 fields of : name, type, price.
 - If I create an Instance of WIndow , then I need to set each field with data.
 - With `Builder` I can do that with 1 line of code, which I set the name and type of Window
 
@@ -76,6 +76,7 @@ public class Window {
 
 	private String name;
 	private String type;
+	private int price;
 
 	public Window() {
 		super();
@@ -85,6 +86,7 @@ public class Window {
 		super();
 		this.name = builder.name;
 		this.type = builder.type;
+		this.price = builder.price;
 	}
 
 	public String getName() {
@@ -101,6 +103,14 @@ public class Window {
 
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
 	}
 
 	// static method which returns a Builder instance
@@ -120,6 +130,7 @@ public class Window {
 
 		private String name;
 		private String type;
+		private int price;
 
 		public Builder() {
 		}
@@ -131,6 +142,11 @@ public class Window {
 
 		public Builder setType(String type) {
 			this.type = type;
+			return this;
+		}
+
+		public Builder setPrice(int price) {
+			this.price = price;
 			return this;
 		}
 
