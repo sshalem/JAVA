@@ -25,7 +25,7 @@ http://www.plantuml.com/plantuml/proxy
 |  1  |[Singleton]()   | 
 |  2  |[Factory]()   | 
 |  3  |[Abstract Factory]()   | 
-|  4  |[Builder]()   | 
+|  4  |[Builder](#4_builder)   | 
 |  5  |[Prototype]()   | 
 |     |[<img src="https://img.shields.io/badge/-Structural%20-blue" height=30px>](https://github.com/sshalem/JAVA/tree/master/_10_Design_Patterns/Behavioural)  |
 |  1  |[Adapter]()   | 
@@ -49,4 +49,99 @@ http://www.plantuml.com/plantuml/proxy
 |  11  |[Mamento (used for undo mechanism)](https://github.com/sshalem/JAVA/tree/master/10_Design_Patterns/Behavioural/Mamento)   | 
 
 
+------------------------------------------------------------------------------------------------------
+
+###### 4_builder
+
+<img src="https://img.shields.io/badge/- 4. builder %20-blue" height=40px>
+
+- Let's create a Builder for Window class. 
+- In Window class I have 2 fileds of name and type.
+- If I create an Instance of WIndow , then I need to set each field with data.
+- With `Builder` I can do that with 1 line of code, which I set the name and type of Window
+
+
+
+I do the the following:
+1. create private fields in Window 
+2. create 2 constructors , one public for creating a regular instance , second private constructor so I could use it in the `builder class` (must assign the private fileds with the Builder private fields).
+3. create  getters/setter in Window class
+4. create a inner class `public static class Builder` inside Window class , with private fields , same as in Window class
+5. define a static method In WIndow class to return a `Builder instance`
+6. generate set methods , whic returns the Builder Objcet (this)
+7. define a `build` method which return a constructed instance of Window.
+
+```java
+public class Window {
+
+	private String name;
+	private String type;
+
+	public Window() {
+		super();
+	}
+
+	private Window(Builder builder) {
+		super();
+		this.name = builder.name;
+		this.type = builder.type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	// static method which returns a Builder instance
+	public static Builder builder() {
+		return new Builder();
+	}
+
+	@Override
+	public String toString() {
+		return "Window [name=" + name + ", type=" + type + "]";
+	}
+
+	/**
+	 * static inner class Builder
+	 */
+	public static class Builder {
+
+		private String name;
+		private String type;
+
+		public Builder() {
+		}
+
+		public Builder setName(String name) {
+			this.name = name;
+			return this;
+		}
+
+		public Builder setType(String type) {
+			this.type = type;
+			return this;
+		}
+
+		public Window build() {
+			return new Window(this);
+		}
+	}
+}
+```
+
+[<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
+
+------------------------------------------------------------------------------------------------------
 
