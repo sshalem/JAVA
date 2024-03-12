@@ -55,6 +55,10 @@ http://www.plantuml.com/plantuml/proxy
 
 <img src="https://img.shields.io/badge/- 4. builder %20-blue" height=40px>
 
+- video :  https://www.youtube.com/watch?v=sZYfZrA-gA0&ab_channel=JackHodkinson
+- Git   :  https://github.com/jrhodkinson/youtube-190-builders/tree/main
+
+
 - Let's create a Builder for Window class. 
 - In Window class I have 3 fields of : name, type, price.
 - If I create an Instance of WIndow , then I need to set each field with data.
