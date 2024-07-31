@@ -17,6 +17,9 @@
 
 <img src="https://img.shields.io/badge/- 1. spring BeanUtils %20-blue" height=40px>
 
+```java
+BeanUtils.copyProperties(`Object Source`, `Object Target`);
+```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
 
