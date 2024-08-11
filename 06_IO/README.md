@@ -597,12 +597,13 @@ I use :
 
 ```java
     public void writeToFile() throws IOException {
-        List<String> questions = questionRepository.findAll();
+        List<String> str = questionRepository.findAll();
 
 	FileWriter fileWriter = new FileWriter(WRITE_PATH);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-	for (QuestionEntity question : questions) {
+	for (String s : str) {
+   	    // convert the string to sql statement format
             String sqlQuestion = "INSERT INTO QUESTION_TB (id ,subject ,question, answers, correct_answer) VALUES ("
                     + question.getId() + ","
                     + "'" + question.getSubject() + "',"
