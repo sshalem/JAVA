@@ -17,6 +17,7 @@
 |  7  |[SortAndDisplayFilesByName](#7_SortAndDisplayFilesByName) |
 |  8  |[SortAndDisplayDirectoryFirst](#8_SortAndDisplayDirectoryFirst) |
 |  9  |[Write_Read_Text_to_from_file](#9_Write_Read_Text_to_from_file) |
+|     |[9.1. BufferedWriter to write List of array to a file](#9_1_buffered_writer_to_write_list_of_data) |
 |  10  |[Write_Read_Binary_to_from_file](#10_Write_Read_Binary_to_from_file) |
 |  11  |[Write_Read_Objects_to_from_file](#11_Write_Read_Objects_to_from_file) |
 |  12  |[Read file from resources Spring boot](https://howtodoinjava.com/spring-boot2/read-file-from-resources/) |
@@ -573,6 +574,49 @@ public class _9_Write_Read_Text_to_from_file {
 }
 
 ```
+
+## 9_1_buffered_writer_to_write_list_of_data
+
+See example from link: 
+* https://www.digitalocean.com/community/tutorials/java-append-to-file
+
+When I write data List of data to txt file , it deletes the previous data. </br>
+Thus ,  In order to write to a file , w/o deleting the prev line
+* So that each insert will be in the next line,
+* We use `FileWriter` along with `BufferedWriter`.
+* `BufferedWriter` allows us to go to the next line
+
+Example I want to read the data from DB and copy it to an sql file. </br>
+I use :
+1. `FileWriter` to create a file
+2. I define `BufferedWriter` and pass as argument the `FileWriter`
+3. I iterate over the List
+4. On each iteration I `bufferedWriter.write(sqlQuestion)`
+5. And `bufferedWriter.newLine()` got to next line
+6. at the end of the iteration , I close the writer `bufferedWriter.close()`
+
+```java
+    public void writeToFile() throws IOException {
+        List<String> questions = questionRepository.findAll();
+
+	FileWriter fileWriter = new FileWriter(WRITE_PATH);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+	for (QuestionEntity question : questions) {
+            String sqlQuestion = "INSERT INTO QUESTION_TB (id ,subject ,question, answers, correct_answer) VALUES ("
+                    + question.getId() + ","
+                    + "'" + question.getSubject() + "',"
+                    + "'" + question.getQuestion() + "',"
+                    + "'" + question.getAnswers() + "',"
+                    + "'" + question.getCorrectAnswer() + ");";
+            bufferedWriter.write(sqlQuestion);
+            bufferedWriter.newLine();
+        }
+        bufferedWriter.close();
+    }
+```
+
+
 ----------------------------------------------------------------------------------------------------------
 
 ## 10_Write_Read_Binary_to_from_file
