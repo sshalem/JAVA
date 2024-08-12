@@ -17,9 +17,11 @@
 |  7  |[SortAndDisplayFilesByName](#7_SortAndDisplayFilesByName) |
 |  8  |[SortAndDisplayDirectoryFirst](#8_SortAndDisplayDirectoryFirst) |
 |  9  |[Write_Read_Text_to_from_file](#9_Write_Read_Text_to_from_file) |
-|     |[9.1. Write to a file](#9_1_write_to_file) |
-|     |[9.2. read from a file](#9_2_read_from_file) |
-|     |[9.x. BufferedWriter to write List of array to a file](#9_x_buffered_writer_to_write_list_of_data) |
+|     |[9.1. `FileWriter` write to a file](#9_1_filewriter_write_to_file) |
+|     |[9.2. `FileWriter` append to existing file](#9_2_filewriter_append_to_existing_file) |
+|     |[9.3. `FileReader` read from a file](#9_3_filereader_read_from_file) |
+|     |[9.4. example combining `FileReader` and `FileWriter`](#9_4_example_with_combined_filewriter_and_filereader) |
+|     |[9.5. BufferedWriter to write List of array to a file](#9_5_buffered_writer_to_write_list_of_data) |
 |  10  |[Write_Read_Binary_to_from_file](#10_Write_Read_Binary_to_from_file) |
 |  11  |[Write_Read_Objects_to_from_file](#11_Write_Read_Objects_to_from_file) |
 |  12  |[Read file from resources Spring boot](https://howtodoinjava.com/spring-boot2/read-file-from-resources/) |
@@ -498,18 +500,95 @@ For writing/reading from txt files we use FileReader/FileWriter
 
 [Back_to_top](#Table-of-contents)
 
-## 9_1_write_to_file
+## 9_1_filewriter_write_to_file
 
-To write to a file do following steps.
+see link form :
+* https://www.geeksforgeeks.org/filewriter-class-in-java/
+
+`FileWriter` is meant for writing streams of characters.</br>
+For writing streams of raw bytes (Like Objects) , consider using a `FileOutputStream`.
+
+![image](https://github.com/user-attachments/assets/0a775e5c-38cd-4189-bdff-00334c12fb93)
+
+There are several ways to instantiate `FileWriter` :
+1. `FileWriter fw = new FileWriter(File file)` - By pass a `File` object to it  
+2. `FileWriter fw = new FileWriter(String fileName)` - It constructs a FileWriter object given a file name
+3. `FileWriter fw = new FileWriter(String fileName, Boolean append)` - It constructs a FileWriter object given a file name with a Boolean indicating whether or not to append the data written.
+4. And more severl options (See the link from https://www.geeksforgeeks.org/filewriter-class-in-java/)
+
+Let's look on an example were I use the `FileWriter fw = new FileWriter(String fileName)`
+Code below will :
+* creates a file `output.txt`
+* Writes a string to it
+* close the writer stream
+
+Note: If I want to write another string to the file , it will delete the content and write the new String to it. Thus , in this case we need to append the new string , to the existing data. (see next section).
 
 ```java
+import java.io.FileWriter;
 
+public class Main {
+	public static void main(String[] args) {
+		String data = "writing to file to gfg";
+		try {
+			// [1] Creates a FileWriter , write to a file name "output.txt"
+			// [2] Writes the string to the file
+			// [3] Closes the writer
+			FileWriter output = new FileWriter("output.txt");
+			output.write(data);
+			output.close();
+		} catch (Exception e) {
+			e.getStackTrace();
+		}
+	}
+}
 ```
 
+[Back_to_top](#Table-of-contents)
+
+
+## 9_2_filewriter_append_to_existing_file
+
+Here I set the FileWriter with `true` which means, every time the code runs, it will add the string to the existing data in the output.txt file. </br>
+Run the code below 3 times Once I run the code below and open the . </br>
+
+this is the output of the file after running 3 times (output on the same line).
+To make it to be written in the next line , use `BufferedWriter` see section 9.
+
+```xml
+writing to data 1 - writing to data 1 - writing to data 1 - 
+```
+
+```java
+import java.io.FileWriter;
+
+public class Main {
+	public static void main(String[] args) {
+		String data1 = "writing to data 1 - ";		
+		try {
+			// [1] Creates a FileWriter , write to a file name "output.txt"
+			// [2] Writes the string to the file
+			// [3] Closes the writer
+			FileWriter output = new FileWriter("output.txt",true);
+			output.write(data1);		
+			output.close();
+		} catch (Exception e) {
+			e.getStackTrace();
+		}
+	}
+}
+```
 
 
 [Back_to_top](#Table-of-contents)
 
+## 9_3_filereader_read_from_file
+
+
+[Back_to_top](#Table-of-contents)
+
+
+## 9_4_example_with_combined_filewriter_and_filereader
 
 
 ```java
@@ -593,7 +672,7 @@ public class _9_Write_Read_Text_to_from_file {
 
 [Back_to_top](#Table-of-contents)
 
-## 9_x_buffered_writer_to_write_list_of_data
+## 9_5_buffered_writer_to_write_list_of_data
 
 See example from link: 
 * https://www.digitalocean.com/community/tutorials/java-append-to-file
