@@ -17,7 +17,9 @@
 |  7  |[SortAndDisplayFilesByName](#7_SortAndDisplayFilesByName) |
 |  8  |[SortAndDisplayDirectoryFirst](#8_SortAndDisplayDirectoryFirst) |
 |  9  |[Write_Read_Text_to_from_file](#9_Write_Read_Text_to_from_file) |
-|     |[9.1. BufferedWriter to write List of array to a file](#9_1_buffered_writer_to_write_list_of_data) |
+|     |[9.1. Write to a file](#9_1_write_to_file) |
+|     |[9.2. read from a file](#9_2_read_from_file) |
+|     |[9.x. BufferedWriter to write List of array to a file](#9_x_buffered_writer_to_write_list_of_data) |
 |  10  |[Write_Read_Binary_to_from_file](#10_Write_Read_Binary_to_from_file) |
 |  11  |[Write_Read_Objects_to_from_file](#11_Write_Read_Objects_to_from_file) |
 |  12  |[Read file from resources Spring boot](https://howtodoinjava.com/spring-boot2/read-file-from-resources/) |
@@ -495,6 +497,21 @@ public class _8_SortAndDisplayDirectoryFirst {
 For writing/reading from txt files we use FileReader/FileWriter
 
 [Back_to_top](#Table-of-contents)
+
+## 9_1_write_to_file
+
+To write to a file do following steps.
+
+```java
+
+```
+
+
+
+[Back_to_top](#Table-of-contents)
+
+
+
 ```java
 import java.io.File;
 import java.io.FileReader;
@@ -572,10 +589,11 @@ public class _9_Write_Read_Text_to_from_file {
 
 	}
 }
-
 ```
 
-## 9_1_buffered_writer_to_write_list_of_data
+[Back_to_top](#Table-of-contents)
+
+## 9_x_buffered_writer_to_write_list_of_data
 
 See example from link: 
 * https://www.digitalocean.com/community/tutorials/java-append-to-file
