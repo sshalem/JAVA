@@ -21,7 +21,8 @@
 |     |[9.2. `FileWriter` append to existing file](#9_2_filewriter_append_to_existing_file) |
 |     |[9.3. `FileReader` read from a file](#9_3_filereader_read_from_file) |
 |     |[9.4. example combining `FileReader` and `FileWriter`](#9_4_example_with_combined_filewriter_and_filereader) |
-|     |[9.5. BufferedWriter to write List of array to a file](#9_5_buffered_writer_to_write_list_of_data) |
+|     |[9.5. `BufferedWriter` to write to file](#9_5_bufferedwriter_to_write_to_file) |
+|     |[9.6. `BufferedWriter` to append to exsiting data](#9_6_bufferedwriter_to_append_to_existing_data) |
 |  10  |[Write_Read_Binary_to_from_file](#10_Write_Read_Binary_to_from_file) |
 |  11  |[Write_Read_Objects_to_from_file](#11_Write_Read_Objects_to_from_file) |
 |  12  |[Read file from resources Spring boot](https://howtodoinjava.com/spring-boot2/read-file-from-resources/) |
@@ -531,10 +532,14 @@ public class Main {
 	public static void main(String[] args) {
 		String data = "writing to file to gfg";
 		try {
+        		File file = new File("output.txt");
+        		if (!file.exists()) {
+            			file.createNewFile();
+        		}
 			// [1] Creates a FileWriter , write to a file name "output.txt"
 			// [2] Writes the string to the file
 			// [3] Closes the writer
-			FileWriter output = new FileWriter("output.txt");
+			FileWriter output = new FileWriter(file);
 			output.write(data);
 			output.close();
 		} catch (Exception e) {
@@ -566,6 +571,7 @@ public class Main {
 	public static void main(String[] args) {
 		String data1 = "writing to data 1 - ";		
 		try {
+			// For this example ,I skipped the FIle validation, as inprevious example
 			// [1] Creates a FileWriter , write to a file name "output.txt"
 			// [2] Writes the string to the file
 			// [3] Closes the writer
@@ -583,6 +589,9 @@ public class Main {
 [Back_to_top](#Table-of-contents)
 
 ## 9_3_filereader_read_from_file
+
+
+
 
 
 [Back_to_top](#Table-of-contents)
@@ -696,8 +705,12 @@ I use :
     public void writeToFile() throws IOException {
         List<String> str = questionRepository.findAll();
 
-	FileWriter fileWriter = new FileWriter(WRITE_PATH);
-        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        File file = new File(WRITE_PATH);
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+        FileWriter fw = new FileWriter(file);
+        BufferedWriter bw = new BufferedWriter(fw);
 
 	for (String s : str) {
    	    // convert the string to sql statement format
@@ -707,13 +720,42 @@ I use :
                     + "'" + question.getQuestion() + "',"
                     + "'" + question.getAnswers() + "',"
                     + "'" + question.getCorrectAnswer() + ");";
-            bufferedWriter.write(sqlQuestion);
-            bufferedWriter.newLine();
+            bw.write(sqlQuestion);
+            bw.newLine();
         }
-        bufferedWriter.close();
+        bw.close();
     }
 ```
 
+## 9_6_bufferedwriter_to_append_to_existing_data
+
+In this example , I must set the `FileWriter` constructor `new FileWriter (String fileName, boolean append)` </br>
+with the `boolean append` , this way , `BufferedWriter` will paste the data in newLine without destroying the previous data.
+
+```java
+   public void writeNewQuestionToSqlFile(QuestionEntity questionEntity) throws IOException {
+        /**
+         * In order to be able to add new line to an existing file with content (W/O delteing the data already presetn in the file)
+         * Need to set the new FileWriter (String fileName, boolean append)
+         * Thus,
+         * I set the it as `new FileWriter(WRITE_PATH, true)`
+         */
+        FileWriter fw = new FileWriter(WRITE_PATH, true);
+        BufferedWriter bw = new BufferedWriter(fw);
+        String sqlQuestion = "INSERT INTO QUESTION_TB (id ,subject ,question, answers, correct_answer) VALUES ("
+                + questionEntity.getId() + ","
+                + "'" + questionEntity.getSubject() + "',"
+                + "'" + questionEntity.getQuestion() + "',"
+                + "'" + questionEntity.getAnswers() + "',"
+                + "'" + questionEntity.getCorrectAnswer() + "');";
+        bw.write(sqlQuestion);
+        bw.newLine();
+        bw.close();
+        Log.infoGreen(LOGGER, "added Question to question.sql file");
+    }
+```
+
+[Back_to_top](#Table-of-contents)
 
 ----------------------------------------------------------------------------------------------------------
 
@@ -725,6 +767,7 @@ such as jpg files and also from txt files </br>
 
 
 [Back_to_top](#Table-of-contents)
+
 ```java
 import java.io.File;
 import java.io.FileInputStream;
