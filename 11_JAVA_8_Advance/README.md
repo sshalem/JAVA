@@ -19,16 +19,13 @@
 
 ### Functionalities of Lambda Expression in Java
 
-* See great eplanation in link https://www.geeksforgeeks.org/lambda-expressions-java-8/ 
+See great eplanation in link https://www.geeksforgeeks.org/lambda-expressions-java-8/ </br>
 
 * Lambda Expressions implement the only abstract function and therefore implement functional interfaces lambda expressions are added in Java 8 and provide the below functionalities.
-* Functional Interfaces: Lambda expressions implement single abstract methods of functional interfaces.
-* Code as Data: Treat functionality as a method argument.
-* Class Independence: Create functions without defining a class.
-* A lambda expression is a short block of code which takes in parameters and returns a value.
-* Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
-
 * Java lambda functions can be only used with `functional interfaces` (Functional Interface have only one method).
+* Functional Interfaces: Lambda expressions implement single abstract methods of functional interfaces.
+* SO to make it more simple , Instead of , Creating a class and implementing a Functional Interface in the class, with Lambda expression I can Implement immidiatly.
+
 
 ### [How to make a Labmda Expression shoreter](#-)
 
@@ -153,9 +150,16 @@ Predicate<String> p = (t) -> {
 	return t == "shabtay" ? true : false;
 };
 
-// SInce we have only 1 line of code,
+// Since we have only 1 line of code,
 // We can write it even shorter
 Predicate<String> p = (t) -> t == "shabtay" ? true : false;
+
+// Test the code
+public class Application {
+	public static void main(String[] args) {	
+		System.out.println(p.test("shabtay"));
+	}
+}
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
