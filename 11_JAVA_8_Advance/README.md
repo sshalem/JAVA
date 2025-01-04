@@ -29,7 +29,17 @@
 * Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
 
 * Java lambda functions can be only used with `functional interfaces` (Functional Interface have only one method).
-* How to make a Labmda Expression shoreter
+
+### [How to make a Labmda Expression shoreter](#-)
+
+1. On the left side I implement the `Predicate` function interface
+2. In the middle , I delete the code in blue (not includint the `t` letter)
+3. On the left :
+   * I surround the `t` with paranthesis `(t)`
+   * I add arrow to the right side of (t) `(t) ->`
+   * I remove the last curly brace of the method `test`  
+ 
+
 
 ![image](https://github.com/user-attachments/assets/fa0016cf-54b9-40b9-a06e-da426536df02)
 
