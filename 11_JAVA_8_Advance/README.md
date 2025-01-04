@@ -4,7 +4,7 @@
 
 |     |  Subject           |
 |:---:|:------------------------------| 
-|  1  |[Lambda](#-)   | 
+|  1  |[Lambda](#1_lambda)   | 
 |  2  |[Method Reference](#-) |   
 |  3  |[Functional Interfaces](#3)  |   
 |  4  |[Stream](#-) |   
@@ -13,11 +13,136 @@
 
 --------------------------------------------------------------------------------------------------
 
-###### 1
+###### 1_lambda
 
-<img src="https://img.shields.io/badge/-1.  %20-blue" height=40px>
+<img src="https://img.shields.io/badge/- 1. Lambda Expression  %20-blue" height=40px>
+
+### Functionalities of Lambda Expression in Java
+
+* See great eplanation in link https://www.geeksforgeeks.org/lambda-expressions-java-8/ 
+
+* Lambda Expressions implement the only abstract function and therefore implement functional interfaces lambda expressions are added in Java 8 and provide the below functionalities.
+* Functional Interfaces: Lambda expressions implement single abstract methods of functional interfaces.
+* Code as Data: Treat functionality as a method argument.
+* Class Independence: Create functions without defining a class.
+* A lambda expression is a short block of code which takes in parameters and returns a value.
+* Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
+
+* Java lambda functions can be only used with `functional interfaces` (Functional Interface have only one method).
+* How to make a Labmda Expression shoreter
+
+![image](https://github.com/user-attachments/assets/126609cd-280d-40c6-acf9-7b95da0b768f)
+
+
+
+### [Exapmles 1](#-)
+
+- This lambda has no parameters and returns void.
+- It’s similar to a method with an empty body: public void run() { }.
+ 
+```java
+@FunctionalInterface
+public interface Temp {
+	public void app();
+}
+
+// Implementation
+Temp temp = new Temp() {
+	@Override
+	public void app() {
+	}
+};
+
+// Short writing Implementaion , which is used
+Temp temp = () -> {};
+```
+
+### [Exapmles 2](#-)
+
+This lambda has no parameters and returns a String as an expression.
+```java
+@FunctionalInterface
+public interface Temp {
+	public String app();
+}
+
+// Implementation
+Temp temp = new Temp() {
+	@Override
+	public String app() {
+		return "lambda expression";
+	}
+};
+
+// Short writing Implementaion
+// using an explicit return statement, within a block
+// We use this If we have more than 1 line of code in the method ,
+// Thus, We add curly braces , and add the return statement
+Temp temp = () -> {
+	return "lambda expression";
+};
+
+// shorter way , since we have only one line of code
+// We remove the return word , and set it all as 1 line of code
+Temp temp = () -> "lambda expression";
+```
+
+### [Exapmles 3](#-)
+
+This lambda has 1 paremeter and retruns none
+```java
+public interface Temp<T> {
+	public void app(T t);
+}
+
+// Implementation
+Temp<String> temp = new Temp<String>() {
+	@Override
+	public void app(String t) {
+		System.out.println(t);
+	}
+};
+
+// Short writing Implementaion
+// using an explicit return statement, within a block
+// We use this If we have more than 1 line of code in the method ,
+// Thus, We add curly braces , and add the return statement
+Temp<String> temp = (t) -> {
+	System.out.println(t);
+};
+
+
+// shorter way , since we have only one line of code
+// We remove the return word , and set it all as 1 line of code
+Temp<String> temp = (t) -> System.out.println(t);
+```
+
+### [Exapmles 4](#-)
+
+This FunctionalInterface `Predicate` has 1 parameter , and returns a boolean
 
 ```java
+@FunctionalInterface
+public interface Predicate<T> {
+	boolean test(T t);
+}
+
+// Implementation
+Predicate<String> p = new Predicate<String>() {
+	@Override
+	public boolean test(String t) {
+		return t == "shabtay" ? true : false;
+	}
+};
+
+// Short writing Implementaion
+Predicate<String> p = (t) -> {
+	return t == "shabtay" ? true : false;
+};
+
+// SInce we have only 1 line of code,
+// We can write it even shorter
+Predicate<String> p = (t) -> t == "shabtay" ? true : false;
 ```
 
 [<img src="https://img.shields.io/badge/-Back to top%20-brown" height=22px>](#_)
