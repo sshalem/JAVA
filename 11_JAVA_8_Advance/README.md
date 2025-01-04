@@ -31,8 +31,11 @@
 * Java lambda functions can be only used with `functional interfaces` (Functional Interface have only one method).
 * How to make a Labmda Expression shoreter
 
-![image](https://github.com/user-attachments/assets/126609cd-280d-40c6-acf9-7b95da0b768f)
+![image](https://github.com/user-attachments/assets/fa0016cf-54b9-40b9-a06e-da426536df02)
 
+Since we have only 1 line of code , we can mkae it even shorter 
+
+![image](https://github.com/user-attachments/assets/5c62f8c0-01fb-4dc4-84f2-10adcf0c8c11)
 
 
 ### [Exapmles 1](#-)
